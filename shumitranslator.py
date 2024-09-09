@@ -8,6 +8,8 @@ from PyQt6.QtWidgets import QVBoxLayout, QWidget, QScrollArea, QPushButton, QFil
     QColorDialog, QCheckBox
 
 from gamedata import GameData
+from kernel.kernelsectiondata import KernelSectionData
+from kernel.kernelsectionheader import KernelSectionHeader
 from section import Section
 from sectionwidget import SectionWidget
 from translation import Translation
@@ -221,7 +223,35 @@ class ShumiTranslator(QWidget):
 
     def __load_text_from_file(self):
         # First we read all offset section
-        for section_data in self.game_data.kernel_data_json["sections"]:
+        section_list = []
+        for section_id, section_info in enumerate(self.game_data.kernel_data_json["sections"]):
+            if section_id == 0:
+                new_section = KernelSectionHeader(game_data=self.game_data, data=self.current_file_data[0:len(
+                    self.game_data.kernel_data_json["sections"])* KernelSectionHeader.OFFSET_SIZE])
+                section_list.append(new_section)
+                continue # Nothing to print or show for header
+            section_offset_value = section_list[0].get_section_offset_value_from_id(section_id)
+            next_section_offset_value = section_list[0].get_section_offset_value_from_id(section_id+1)
+            if not next_section_offset_value:
+                next_section_offset_value = len(self.current_file_data)
+
+            new_section =
+
+            if next_section_data:
+                next_offset_to_offset_section = next_section_data["section_offset"]
+                next_offset_to_offset_section_data = self.current_file_data[
+                                                     next_offset_to_offset_section: next_offset_to_offset_section +
+                                                                                    next_section_data["size"]]
+                next_offset_to_offset_section_data_int = int.from_bytes(next_offset_to_offset_section_data,
+                                                                        byteorder="little")
+            else:
+                next_offset_to_offset_section_data_int = len(self.current_file_data)
+
+
+            elif section_info['type']=='data':
+                new_section = KernelSectionData(self.game_data , data, id:int, offset:int, section_linked = None)
+
+
             # if section_data["section_offset"] != 0x0004:
             #    continue
             # if section_data["type"] != "data":
