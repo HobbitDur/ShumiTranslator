@@ -10,6 +10,7 @@ from PyQt6.QtWidgets import QVBoxLayout, QWidget, QScrollArea, QPushButton, QFil
 from gamedata import GameData
 from kernel.kernelsectiondata import KernelSectionData
 from kernel.kernelsectionheader import KernelSectionHeader
+from kernel.kernelsectiontext import KernelSectionText
 from section import Section
 from sectionwidget import SectionWidget
 from translation import Translation
@@ -98,62 +99,7 @@ class ShumiTranslator(QWidget):
         self.__load_file()
 
     def __save_file(self):
-        added_offset = 0
-        for section_widget in self.section_widget_list:
-            section = section_widget.section
-            section_info = [x for x in self.game_data.kernel_data_json["sections"] if x["section_offset"] == section.section_offset_address][0]
-            if section_info["type"] == "text":
-                continue
-            print(f"section name: {section.section_name}")
-            print(f"section offset value: {section.section_offset_value}")
-            for sub_section in section.subsection_list:
-                added_sub_section_offset = 0
-                print(f"sub_section id: {sub_section.sub_section_id}")
-                for trans in sub_section.translation_list:
-                    print(f"trans.offset_value: {trans.offset_value}")
-                    print(f"trans.text_address: {trans.text_address}")
-                    print(f"added_offset: {added_offset}")
-                    print(f"added_sub_section_offset: {added_sub_section_offset}")
-                    if trans.offset_value == 0xFFFF:  # Means the data is not used
-                        continue
-                    custom_text_hex = self.game_data.translate_str_to_hex(trans.custom_text)
-                    file_text_hex = self.game_data.translate_str_to_hex(trans.file_text)
-                    if custom_text_hex == file_text_hex and added_offset == 0:  # If no change at all, we can just go on with our life
-                        continue
-                    elif custom_text_hex != file_text_hex and len(custom_text_hex) == len(
-                            file_text_hex) and added_offset == 0:  # Text changed but size same, don't care of offset
-                        self.current_file_data[trans.text_address:trans.text_address + len(custom_text_hex)] = custom_text_hex
-                        trans.file_text = trans.custom_text
-                    else:  # My life is a suffering
-                        trans.offset_value += added_sub_section_offset
-                        trans.text_address += added_offset
-                        added_sub_section_offset += len(custom_text_hex) - len(file_text_hex)
-                        added_offset += len(custom_text_hex) - len(file_text_hex)
-                        self.current_file_data[trans.offset_address:trans.offset_address + 2] = (trans.offset_value).to_bytes(length=2, byteorder="little")
-                        del self.current_file_data[trans.text_address:trans.text_address + len(file_text_hex)]
-                        trans.text_address += len(custom_text_hex) - len(file_text_hex)
-                        for i in range(len(custom_text_hex)):
-                            self.current_file_data.insert(trans.text_address + i, custom_text_hex[i])
-                        trans.file_text = trans.custom_text
-
-            if added_offset != 0:
-                if section_info["section_offset_text_linked"]:
-                    section_info_linked = \
-                        [x for x in self.game_data.kernel_data_json["sections"] if x["section_offset"] == section_info["section_offset_text_linked"]][0]
-                    next_section_info_linked = self.__get_next_section_data(section_info_linked)
-                    if next_section_info_linked:
-                        linked_section = [section_widget.section for section_widget in self.section_widget_list if
-                                          section_widget.section.section_offset_address == next_section_info_linked["section_offset"]]
-                        if linked_section:
-                            linked_section = linked_section[0]
-                            linked_section.section_offset_value += added_offset
-                            self.current_file_data[
-                            linked_section.section_offset_address: linked_section.section_offset_address + 4] = linked_section.section_offset_value.to_bytes(
-                                length=4, byteorder="little")  # Flemme, +4 is the size
-
-        print(f"Added offset {added_offset}")
-
-        print("Saving file")
+        return
         with open(self.file_loaded, "wb") as in_file:
             in_file.write(self.current_file_data)
         print("File saved")
@@ -224,106 +170,44 @@ class ShumiTranslator(QWidget):
     def __load_text_from_file(self):
         # First we read all offset section
         section_list = []
+        section_header = KernelSectionHeader(game_data=self.game_data, data_hex=self.current_file_data[0:len(
+            self.game_data.kernel_data_json["sections"]) * KernelSectionHeader.OFFSET_SIZE])
+        section_list.append(section_header)
         for section_id, section_info in enumerate(self.game_data.kernel_data_json["sections"]):
-            if section_id == 0:
-                new_section = KernelSectionHeader(game_data=self.game_data, data=self.current_file_data[0:len(
-                    self.game_data.kernel_data_json["sections"])* KernelSectionHeader.OFFSET_SIZE])
-                section_list.append(new_section)
-                continue # Nothing to print or show for header
+            print(f"section_id: {section_id}")
             section_offset_value = section_list[0].get_section_offset_value_from_id(section_id)
-            next_section_offset_value = section_list[0].get_section_offset_value_from_id(section_id+1)
+            next_section_offset_value = section_list[0].get_section_offset_value_from_id(section_id + 1)
             if not next_section_offset_value:
+                print("Need end of file")
                 next_section_offset_value = len(self.current_file_data)
-
-            new_section =
-
-            if next_section_data:
-                next_offset_to_offset_section = next_section_data["section_offset"]
-                next_offset_to_offset_section_data = self.current_file_data[
-                                                     next_offset_to_offset_section: next_offset_to_offset_section +
-                                                                                    next_section_data["size"]]
-                next_offset_to_offset_section_data_int = int.from_bytes(next_offset_to_offset_section_data,
-                                                                        byteorder="little")
+            if section_info["type"] == "data":
+                new_section = KernelSectionData(game_data=self.game_data, id=section_id, own_offset=section_offset_value,
+                                                data_hex=self.current_file_data[section_offset_value:next_section_offset_value],
+                                                subsection_nb_text_offset=section_info['sub_section_nb_text_offset'])
+                new_section.init_subsection(nb_subsection=section_info['number_sub_section'], subsection_sized=section_info['sub_section_size'])
+            elif section_info["type"] == "text":
+                section_data_linked = [section_list[i] for i in range(len(section_list)) if
+                                       section_info['section_offset_data_linked'] == section_list[0].get_section_header_offset_from_id(i)][0]
+                print(f"section_data_linked: {section_data_linked}")
+                new_section = KernelSectionText(game_data=self.game_data, id=section_id, own_offset=section_offset_value,
+                                                data_hex=self.current_file_data[section_offset_value:next_section_offset_value],
+                                                section_data_linked=section_data_linked)
             else:
-                next_offset_to_offset_section_data_int = len(self.current_file_data)
+                print(f"Unexpected section info type: {section_info["type"]}")
+                new_section = None
+                # new_section.init_subsection(nb_subsection=section_info['number_sub_section'], subsection_sized=section_info['sub_section_size'])
+            section_list.append(new_section)
 
-
-            elif section_info['type']=='data':
-                new_section = KernelSectionData(self.game_data , data, id:int, offset:int, section_linked = None)
-
-
-            # if section_data["section_offset"] != 0x0004:
-            #    continue
-            # if section_data["type"] != "data":
-            #    continue
-            # if not section_data["section_offset_text_linked"]:
-            #    continue
-            # Reading section
-            offset_to_offset_section = section_data["section_offset"]
-            offset_to_offset_section_data = self.current_file_data[offset_to_offset_section: offset_to_offset_section + section_data["size"]]
-            offset_to_offset_section_data_int = int.from_bytes(offset_to_offset_section_data, byteorder="little")
-
-            next_section_data = self.__get_next_section_data(section_data)
-            if next_section_data:
-                next_offset_to_offset_section = next_section_data["section_offset"]
-                next_offset_to_offset_section_data = self.current_file_data[
-                                                     next_offset_to_offset_section: next_offset_to_offset_section + next_section_data["size"]]
-                next_offset_to_offset_section_data_int = int.from_bytes(next_offset_to_offset_section_data, byteorder="little")
-            else:
-                next_offset_to_offset_section_data_int = len(self.current_file_data)
-
-            section = Section(game_data=self.game_data, section_offset_value=offset_to_offset_section_data_int,
-                              section_offset_address=section_data["section_offset"], nb_subsection=section_data["number_sub_section"],
-                              subsection_size=section_data["sub_section_size"],
-                              section_data=self.current_file_data[offset_to_offset_section_data_int:next_offset_to_offset_section_data_int],
-                              section_name=section_data["section_name"], sub_section_sub_offset=section_data["sub_section_sub_offset"])
-
-            # Now reading the text, as the section doesn't have the data of others section
-            # First get all of text_address
-            for sub_section in section.subsection_list:
-                for translation in sub_section.translation_list:
-                    translation.offset_address = section.section_offset_value + section.subsection_size * sub_section.sub_section_id + translation.offset_in_sub_section
-                    offset_section_linked_info = \
-                        [x for x in self.game_data.kernel_data_json["sections"] if x["section_offset"] == section_data["section_offset_text_linked"]][0]
-                    offset_section_linked_data = self.current_file_data[
-                                                 offset_section_linked_info["section_offset"]: offset_section_linked_info["section_offset"] +
-                                                                                               offset_section_linked_info["size"]]
-                    offset_section_linked_data_int = int.from_bytes(offset_section_linked_data, byteorder="little")
-                    translation.text_address = offset_section_linked_data_int + translation.offset_value
-
-            # Now getting the str
-            for sub_index, sub_section in enumerate(section.subsection_list):
-                for trans_index in range(len(sub_section.translation_list)):
-                    if trans_index == len(sub_section.translation_list) - 1:  # Last one of translation list
-                        if sub_index != len(section.subsection_list) - 1:  # If not last sub, we take the first trans from next sub
-                            text_end_address = section.subsection_list[sub_index + 1].translation_list[0].text_address
-                        else:  # Take the offset for next section
-                            link_offset_data = \
-                                [x for x in self.game_data.kernel_data_json['sections'] if x["section_offset"] == section_data["section_offset_text_linked"]][0]
-                            link_next_offset_data = self.__get_next_section_data(link_offset_data)
-                            if link_next_offset_data:  # There is a next section
-                                text_end_address = link_next_offset_data["section_offset"]
-                            else:  # Means it's the last section so we take the end of file
-                                text_end_address = len(self.current_file_data)
-                    else:
-                        text_end_address = sub_section.translation_list[trans_index + 1].text_address
-                    text_byte_data = self.current_file_data[sub_section.translation_list[trans_index].text_address: text_end_address]
-                    text_str = self.game_data.translate_hex_to_str(text_byte_data)
-                    sub_section.translation_list[trans_index].file_text = text_str
-                    sub_section.translation_list[trans_index].custom_text = text_str
-
-            self.section_widget_list.append(SectionWidget(section))
-            self.layout_translation_lines.addWidget(self.section_widget_list[-1])
-            # self.section_widget_list[-1].show()
-
-    def __get_next_section_data(self, section_data_ref):
-        next_section_data = section_data_ref
-        for section_data in self.game_data.kernel_data_json["sections"]:
-            if next_section_data["section_offset"] > section_data["section_offset"] > section_data_ref["section_offset"] or (
-                    section_data["section_offset"] > section_data_ref["section_offset"] and next_section_data["section_offset"] == section_data_ref[
-                "section_offset"]):
-                next_section_data = section_data
-        if next_section_data == section_data_ref:
-            return None
-        else:
-            return next_section_data
+        print("Section next step")
+        for i, section in enumerate(section_list):
+            print(f"Index section: {i}")
+            if section.type != "header":
+                self.section_widget_list.append(section)
+            if section.type == "text":
+                print("TEXT")
+                # Adding the link from data to text as text were not constructed yet.
+                section.section_data_linked.section_text_linked = section
+                print(section.section_data_linked)
+                print(section.section_data_linked.section_text_linked)
+                # Initializing the text now that we can get all the offset
+                section.init_text(section.section_data_linked.get_all_offset())

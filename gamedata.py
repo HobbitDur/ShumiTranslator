@@ -37,9 +37,8 @@ class GameData():
                 self.kernel_data_json["sections"][i]["section_offset"] = int( self.kernel_data_json["sections"][i]["section_offset"], 16)
             if self.kernel_data_json["sections"][i]["section_offset_text_linked"]:
                 self.kernel_data_json["sections"][i]["section_offset_text_linked"] = int(self.kernel_data_json["sections"][i]["section_offset_text_linked"], 16)
-            for j in range(len(self.kernel_data_json["sections"][i]["sub_section_sub_offset"])):
-                if self.kernel_data_json["sections"][i]["sub_section_sub_offset"][j]:
-                    self.kernel_data_json["sections"][i]["sub_section_sub_offset"][j] = int(self.kernel_data_json["sections"][i]["sub_section_sub_offset"][j], 16)
+            if self.kernel_data_json["sections"][i]["section_offset_data_linked"]:
+                self.kernel_data_json["sections"][i]["section_offset_data_linked"] = int(self.kernel_data_json["sections"][i]["section_offset_data_linked"], 16)
 
     def __init_hex_to_str_table(self):
         with open("Resources/sysfnt.txt", "r", encoding="utf-8") as localize_file:
