@@ -171,43 +171,42 @@ class ShumiTranslator(QWidget):
         # First we read all offset section
         section_list = []
         section_header = KernelSectionHeader(game_data=self.game_data, data_hex=self.current_file_data[0:len(
-            self.game_data.kernel_data_json["sections"]) * KernelSectionHeader.OFFSET_SIZE])
+            self.game_data.kernel_data_json["sections"]) * KernelSectionHeader.OFFSET_SIZE], name="header")
         section_list.append(section_header)
         for section_id, section_info in enumerate(self.game_data.kernel_data_json["sections"]):
-            print(f"section_id: {section_id}")
             section_offset_value = section_list[0].get_section_offset_value_from_id(section_id)
             next_section_offset_value = section_list[0].get_section_offset_value_from_id(section_id + 1)
             if not next_section_offset_value:
-                print("Need end of file")
                 next_section_offset_value = len(self.current_file_data)
             if section_info["type"] == "data":
                 new_section = KernelSectionData(game_data=self.game_data, id=section_id, own_offset=section_offset_value,
                                                 data_hex=self.current_file_data[section_offset_value:next_section_offset_value],
-                                                subsection_nb_text_offset=section_info['sub_section_nb_text_offset'])
+                                                subsection_nb_text_offset=section_info['sub_section_nb_text_offset'], name=section_info['section_name'])
                 new_section.init_subsection(nb_subsection=section_info['number_sub_section'], subsection_sized=section_info['sub_section_size'])
             elif section_info["type"] == "text":
                 section_data_linked = [section_list[i] for i in range(len(section_list)) if
                                        section_info['section_offset_data_linked'] == section_list[0].get_section_header_offset_from_id(i)][0]
-                print(f"section_data_linked: {section_data_linked}")
                 new_section = KernelSectionText(game_data=self.game_data, id=section_id, own_offset=section_offset_value,
                                                 data_hex=self.current_file_data[section_offset_value:next_section_offset_value],
-                                                section_data_linked=section_data_linked)
+                                                section_data_linked=section_data_linked, name=section_info['section_name'])
             else:
                 print(f"Unexpected section info type: {section_info["type"]}")
                 new_section = None
                 # new_section.init_subsection(nb_subsection=section_info['number_sub_section'], subsection_sized=section_info['sub_section_size'])
             section_list.append(new_section)
 
-        print("Section next step")
+
         for i, section in enumerate(section_list):
-            print(f"Index section: {i}")
-            if section.type != "header":
-                self.section_widget_list.append(section)
+            print(f"Index: {i}")
+            if section.type == "data":
+                print(f"subsection_list: {section._subsection_list}")
+                print(f"nb_text_offset: {section._subsection_list[0]._nb_text_offset}")
             if section.type == "text":
-                print("TEXT")
                 # Adding the link from data to text as text were not constructed yet.
                 section.section_data_linked.section_text_linked = section
-                print(section.section_data_linked)
-                print(section.section_data_linked.section_text_linked)
                 # Initializing the text now that we can get all the offset
+                print(f"section data linked: {section.section_data_linked}")
+                print(f"all offset: {section.section_data_linked.get_all_offset()}")
                 section.init_text(section.section_data_linked.get_all_offset())
+                self.section_widget_list.append(SectionWidget(section))
+                self.layout_translation_lines.addWidget(self.section_widget_list[-1])
