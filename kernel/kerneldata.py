@@ -7,6 +7,12 @@ class KernelData(KernelSection):
         KernelSection.__init__(self,  game_data=game_data, own_offset=own_offset, data_hex=data_hex, id=id, name="")
         self._offset_type = offset_type
 
+    def __str__(self):
+        return f"KernelData - Data: {self._data_hex.hex(sep=" ", bytes_per_sep=1)} - offset_type: {self._offset_type}"
+
+    def __repr__(self):
+        return self.__str__()
+
     def get_size(self):
         return self._size
 

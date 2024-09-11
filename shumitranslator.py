@@ -172,10 +172,22 @@ class ShumiTranslator(QWidget):
         section_list = []
         section_header = KernelSectionHeader(game_data=self.game_data, data_hex=self.current_file_data[0:len(
             self.game_data.kernel_data_json["sections"]) * KernelSectionHeader.OFFSET_SIZE], name="header")
+        print(f"Len section header: {len(section_header)} bytes")
+        print(f"section header: {section_header}")
         section_list.append(section_header)
         for section_id, section_info in enumerate(self.game_data.kernel_data_json["sections"]):
+            if section_id == 0: # First section is not a real section, not an offset and doesn't contain any offset.
+                new_section = KernelSectionData(game_data=self.game_data, id=section_id, own_offset=0,
+                                                data_hex=self.current_file_data[0:KernelSectionHeader.OFFSET_SIZE],
+                                                subsection_nb_text_offset=section_info['sub_section_nb_text_offset'], name=section_info['section_name'])
+                new_section.init_subsection(nb_subsection=section_info['number_sub_section'], subsection_sized=section_info['sub_section_size'])
+                continue
+            print(f"section_id: {section_id}")
+            print(f"section_info: {section_info}")
             section_offset_value = section_list[0].get_section_offset_value_from_id(section_id)
+            print(f"section_offset_value: {section_offset_value}")
             next_section_offset_value = section_list[0].get_section_offset_value_from_id(section_id + 1)
+            print(f"next_section_offset_value: {next_section_offset_value}")
             if not next_section_offset_value:
                 next_section_offset_value = len(self.current_file_data)
             if section_info["type"] == "data":
@@ -193,7 +205,10 @@ class ShumiTranslator(QWidget):
                 print(f"Unexpected section info type: {section_info["type"]}")
                 new_section = None
                 # new_section.init_subsection(nb_subsection=section_info['number_sub_section'], subsection_sized=section_info['sub_section_size'])
+            print(f"Len new section: {len(new_section._data_hex)}")
+            print(f"new section: {new_section._data_hex}")
             section_list.append(new_section)
+            print("-------------------------------------------------------")
 
 
         for i, section in enumerate(section_list):

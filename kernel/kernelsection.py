@@ -11,3 +11,7 @@ class KernelSection():
         self.name = name
     def get_size(self):
         return self._size
+    def __len__(self):
+        return self._size
+    def __str__(self):
+        return f"KernelSection - OwnOffet: {self.own_offset} - data_hex: {self._data_hex.hex(sep=" ", bytes_per_sep=1)}"
