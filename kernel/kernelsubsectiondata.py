@@ -16,8 +16,8 @@ class KernelSubSectionData(KernelSection):
     def _analyze_data(self):
         """We consider the subsection to have N+1 data, with N data of offset and 1 big data of whatever (the offset are always at the beggining)"""
         for i in range(self._nb_text_offset):
-            self.add_data(self._data_list[i * self.OFFSET_SIZE: self.OFFSET_SIZE * (i + 1)], offset_type=True)
-        self.add_data(self._data_list[(self._nb_text_offset + 1):], offset_type=False)
+            self.add_data(self._data_hex[i * self.OFFSET_SIZE: self.OFFSET_SIZE * (i + 1)], offset_type=True)
+        self.add_data(self._data_hex[(self._nb_text_offset * self.OFFSET_SIZE):], offset_type=False)
 
     def add_data(self, data_hex, offset_type=False):
         if self._data_list:

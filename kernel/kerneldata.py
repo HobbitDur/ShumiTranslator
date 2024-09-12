@@ -18,7 +18,6 @@ class KernelData(KernelSection):
 
     def get_offset_value(self):
         """We only analyze data that have an offset, the others are garbage data"""
-        print(f"Kernel Data: {self._data_hex}")
         if self._offset_type:
             return int.from_bytes(self._data_hex, byteorder="little")
         else:

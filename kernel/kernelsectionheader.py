@@ -36,14 +36,11 @@ class KernelSectionHeader(KernelSection):
             print(
                 f"Problem when analyzing data, the size is not what is expected: size_list: {len(self._data_list)},"
                 f" size expected: {len(self._game_data.kernel_data_json['sections'])}")
-        print(f"data hex list: {self._data_list}")
 
     def get_section_offset_value_from_id(self, id):
         # This class as the ID 0, so thats why we do the ID -1
-        print("get_section_offset_value_from_id")
-        print(f"Id: {id}, data_list: {self._data_list}")
         if id < len(self._data_list):
-            return self._size + self._data_list[id].get_offset_value() # Offset start from start of file but there is section_header first
+            return self._data_list[id].get_offset_value() # Offset start from start of file but there is section_header first
         else:
             print(f"Section ID unknown. Id: {id}")
             return None
