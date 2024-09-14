@@ -22,7 +22,7 @@ class KernelSectionData(KernelSection):
     def add_subsection(self, data_hex: bytearray):
         if self._subsection_list:
             offset = self._subsection_list[-1].own_offset + self._subsection_list[-1].get_size()
-            id = self._subsection_list[-1].id
+            id = self._subsection_list[-1].id +1
         else:
             offset = 0
             id = 0
@@ -40,9 +40,15 @@ class KernelSectionData(KernelSection):
     def set_all_offset(self, text_list):
         print("set_all_offset")
         text_index = 0
+        current_section_offset = 0
         for i in range(len(self._subsection_list)):
-            print(f"Index: {i}, nb_data_with_offset: {self._subsection_list[i].nb_data_with_offset()}, text_index: {text_index}")
-            print(f"subsection_list: {self._subsection_list}")
-            print(f"text_list: {text_list}")
-            self._subsection_list[i].set_offset_values(text_list[text_index:text_index+ self._subsection_list[i].nb_data_with_offset()])
+            current_section_offset = self._subsection_list[i].set_offset_values(text_list[text_index:text_index+ self._subsection_list[i].nb_data_with_offset()], current_section_offset)
             text_index += self._subsection_list[i].nb_data_with_offset()
+        self._data_hex = bytearray()
+        for data in self._subsection_list:
+            self._data_hex.extend(data.get_data_hex())
+        self._size = len(self._data_hex)
+
+    def get_subsection_list(self):
+        return self._subsection_list
+

@@ -14,12 +14,16 @@ class KernelSectionText(KernelSection):
         if not offset_list:
             print(f"No offset list to init for section id: {self.id}")
             return
-
         for i, offset in enumerate(offset_list):
-            if i == len(offset_list)-1:  # Last one, compare with end of data
-                text_hex = self._data_hex[offset:len(self._data_hex)]
+            if i == len(offset_list) - 1:# Last one, compare with end of data
+                next_offset = len(self._data_hex)
             else:
-                text_hex = self._data_hex[offset:offset_list[i + 1]]
+                next_offset = offset_list[i +1]
+                for j in range(i+1, len(offset_list)):# We are searching the next valid offset
+                    if offset_list[j]!= 0xFFFF: # Unused data:
+                        next_offset = offset_list[j]
+                        break
+            text_hex = self._data_hex[offset:next_offset]
             self.add_text(text_hex)
 
     def add_text(self, text_hex: bytearray):
@@ -33,3 +37,16 @@ class KernelSectionText(KernelSection):
 
     def get_text_list(self):
         return self._text_list
+
+    def update_text_data(self):
+        print("Get data hex from section text")
+        # Now updating the data_hex of the section
+        print(f"Data before in section text: {self._data_hex}")
+        print(f"Data before in section text: {self._text_list}")
+        self._data_hex = bytearray()
+        for data in self._text_list:
+            self._data_hex.extend(data.get_data_hex())
+        self._size = len(self._data_hex)
+        print(f"Data after in section text: {self._data_hex}")
+        print(f"Data after in section text: {self._text_list}")
+        return self._data_hex
