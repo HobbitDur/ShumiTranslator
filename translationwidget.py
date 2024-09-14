@@ -3,7 +3,6 @@ from PyQt6.QtWidgets import QPlainTextEdit, QWidget, QHBoxLayout, QLabel, QVBoxL
 
 from gamedata import GameData
 from kernel.kerneltext import KernelText
-from translation import Translation
 
 
 class TranslationWidget(QWidget):

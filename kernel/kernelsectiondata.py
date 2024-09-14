@@ -38,7 +38,6 @@ class KernelSectionData(KernelSection):
         return offset_list
 
     def set_all_offset(self, text_list):
-        print("set_all_offset")
         text_index = 0
         current_section_offset = 0
         for i in range(len(self._subsection_list)):

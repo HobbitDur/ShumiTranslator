@@ -1,0 +1,10 @@
+.venv/Scripts/pyinstaller.exe -n ShumiTranslator -F --specpath release/build --distpath release --workpath release/build --onefile --noconsole --icon=../../Resources/icon.ico main.py;
+mkdir -p release/ShumiTranslator-x.x;
+cp -R Resources release/ShumiTranslator-x.x/;
+cp release/*.exe release/ShumiTranslator-x.x/;
+cd release/ShumiTranslator-x.x;
+"C:\Program Files\7-Zip\7z.exe" a -tzip ../ShumiTranslator-x.x.zip .;
+cd ..;
+rm -r ShumiTranslator-x.x;
+rm -r build;
+rm *.exe;

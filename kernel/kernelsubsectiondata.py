@@ -44,7 +44,6 @@ class KernelSubSectionData(KernelSection):
         return nb_data
 
     def set_offset_values(self, offset_list_value, last_offset):
-        print("set_offset_values")
         if len(offset_list_value) != self.nb_data_with_offset():
             print(
                 f"The size of the offset list ({len(offset_list_value)}) is different than the nb of offset data of the subsection ({self.nb_data_with_offset()})")
@@ -52,7 +51,6 @@ class KernelSubSectionData(KernelSection):
         current_subsection_offset = last_offset
         for i in range(len(offset_list_value)):  # Assuming offset data is always at the beginning of the subsection
             text_size = len(offset_list_value[i])
-            print(f"offset_list_value[i]: {offset_list_value[i]}")
             self._data_list[i].set_offset_value(current_subsection_offset)
             current_subsection_offset += text_size
         self._data_hex = bytearray()
