@@ -97,7 +97,6 @@ class ShumiTranslator(QWidget):
         self.layout_main.addLayout(self.layout_translation_lines)
         self.layout_main.addStretch(1)
 
-
         self.__load_file()
 
     def __save_file(self):
@@ -110,7 +109,7 @@ class ShumiTranslator(QWidget):
             # First updating all offset on section data
             if section.type == "data" and section.section_text_linked:
                 print(f"Section data: {section}")
-                section_text_linked =  section.section_text_linked
+                section_text_linked = section.section_text_linked
                 print(f"section_text_linked: {section_text_linked}")
                 section_text_list = section_text_linked.get_text_list()
                 print(f"section_text_list: {section_text_list}")
@@ -135,7 +134,6 @@ class ShumiTranslator(QWidget):
             in_file.write(self.current_file_data)
         print("File saved")
 
-
     def __open_csv(self, file_to_load: str = ""):
         # file_to_load = os.path.join("OriginalFiles", "kernel.bin")  # For developing faster
         # print(f"File to load: {file_to_load}")
@@ -154,14 +152,23 @@ class ShumiTranslator(QWidget):
                 csv_data = csv.reader(csv_file, delimiter=';', quotechar='|')
                 row_index = 1
                 csv_data_list = []
-                for row in csv_data:
-                    csv_data_list.append(row)
+                # ['Section data name', 'Section data id', 'Sub section data id', 'Data id', 'Section text id', 'Text id', 'Text']
+                print("['Section data name', 'Section data id', 'Sub section data id', 'Data id', 'Section text id', 'Text id', 'Text']")
+                for row_index, row in enumerate(csv_data):
+                    if row_index == 0:#Ignoring title row
+                        continue
+                    print(row)
+                    section_data_id = int(row[1])
+                    sub_section_data_id = int(row[2])
+                    data_id = int(row[3])
+                    section_text_id = int(row[4])
+                    text_id = int(row[5])
+                    text_loaded = row[6]
+                    for widget_index, widget in enumerate(self.section_widget_list):
+                        if widget.section.type =="text" and widget.section.id == section_text_id:
+                            self.section_widget_list[widget_index].set_text_from_id(text_id, text_loaded)
 
-                for section_widget in self.section_widget_list:
-                    for sub_widget in section_widget.sub_section_widget_list:
-                        for trans_widget in sub_widget.translation_widget_list:
-                            trans_widget.change_custom_text(csv_data_list[row_index][5])  # Text at 6eme place
-                            row_index += 1
+        print("csv loaded")
 
     def __save_csv(self):
         os.makedirs(self.CSV_FOLDER, exist_ok=True)
@@ -175,9 +182,13 @@ class ShumiTranslator(QWidget):
                 if section.type == "data" and section.section_text_linked:
                     for sub_section in section.get_subsection_list():
                         for data in sub_section.get_data_list():
-                            for kernel_text in section.section_text_linked.get_text_list():
+                            if data.get_offset_type():
+                                print(f"sub_section.id: {sub_section.id}")
+                                print(f"data.id: {data.id}")
+                                text_id = sub_section.id * self.game_data.kernel_data_json["sections"][index_section-1]["sub_section_nb_text_offset"] + data.id
                                 csv_writer.writerow(
-                                    [section.name, section.id, sub_section.id, data.id, section.section_text_linked.id, kernel_text.id, kernel_text.get_str()])
+                                    [section.name, section.id, sub_section.id, data.id, section.section_text_linked.id, text_id,
+                                     section.section_text_linked.get_text_from_id(text_id)])
 
         print("Csv saved")
 
@@ -201,31 +212,32 @@ class ShumiTranslator(QWidget):
             while el := in_file.read(1):
                 self.current_file_data.extend(el)
         self.__load_text_from_file()
-        #self.__save_file()
+        # self.__save_file()
 
     def __load_text_from_file(self):
         # First we read all offset section
         self.section_list = []
-        section_header = KernelSectionHeader(game_data=self.game_data, data_hex=self.current_file_data[0:len(
-            self.game_data.kernel_data_json["sections"]) * KernelSectionHeader.OFFSET_SIZE], name="header")
+        # +1 for the number of section
+        section_header = KernelSectionHeader(game_data=self.game_data, data_hex=self.current_file_data[0:(len(
+            self.game_data.kernel_data_json["sections"])+1) * KernelSectionHeader.OFFSET_SIZE], name="header")
         self.section_list.append(section_header)
-        for section_id, section_info in enumerate(self.game_data.kernel_data_json["sections"]):
-            if section_id == 0:  # First section is not a real section, not an offset and doesn't contain any offset.
-                continue # Section 0 is header that have been managed before
+        for id, section_info in enumerate(self.game_data.kernel_data_json["sections"]):
+            section_id = id + 1
+            print(f"Sectuin id: {section_id}")
             section_offset_value = self.section_list[0].get_section_offset_value_from_id(section_id)
             next_section_offset_value = self.section_list[0].get_section_offset_value_from_id(section_id + 1)
+            own_offset = section_offset_value
             if next_section_offset_value is None:
                 next_section_offset_value = len(self.current_file_data)
             if section_info["type"] == "data":
-                own_offset = section_offset_value
                 new_section = KernelSectionData(game_data=self.game_data, id=section_id, own_offset=own_offset,
                                                 data_hex=self.current_file_data[own_offset:next_section_offset_value],
                                                 subsection_nb_text_offset=section_info['sub_section_nb_text_offset'], name=section_info['section_name'])
                 new_section.init_subsection(nb_subsection=section_info['number_sub_section'], subsection_sized=section_info['sub_section_size'])
             elif section_info["type"] == "text":
-                section_data_linked = [self.section_list[i] for i in range(len(self.section_list)) if
+                section_data_linked = [self.section_list[i] for i in range(1, len(self.section_list)) if
                                        section_info['section_offset_data_linked'] == self.section_list[0].get_section_header_offset_from_id(i)][0]
-                own_offset = self.section_list[0].get_section_offset_value_from_id(section_id)
+                print(f"Section data linked: {section_data_linked}")
                 new_section = KernelSectionText(game_data=self.game_data, id=section_id, own_offset=own_offset,
                                                 data_hex=self.current_file_data[own_offset:next_section_offset_value],
                                                 section_data_linked=section_data_linked, name=section_info['section_name'])
@@ -234,6 +246,8 @@ class ShumiTranslator(QWidget):
                 new_section = None
                 # new_section.init_subsection(nb_subsection=section_info['number_sub_section'], subsection_sized=section_info['sub_section_size'])
             self.section_list.append(new_section)
+            print(new_section)
+            print(new_section.id)
 
         for i, section in enumerate(self.section_list):
             if section.type == "text":
