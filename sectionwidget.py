@@ -20,6 +20,8 @@ class SectionWidget(QWidget):
 
         self.setLayout(self.__main_layout)
         self.__create_sub_section_widget()
+    def __str__(self):
+        return "Widget " + str(self.section)
 
     def __create_sub_section_widget(self):
         for kernel_text in self.section.get_text_list():

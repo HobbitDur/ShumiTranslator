@@ -105,10 +105,18 @@ class ShumiTranslator(QWidget):
             for index_section, section in enumerate(self.section_list):
                 # First updating all offset on section data
                 if section.type == "data" and section.section_text_linked:
+                    if index_section == 1:
+                        print("Section type data !")
+                        print(section)
                     section_text_linked = section.section_text_linked
+                    if index_section == 1:
+                        print(section.section_text_linked)
                     section_text_list = section_text_linked.get_text_list()
-                    print(section_text_list)
+                    if index_section == 1:
+                        print(section_text_list)
                     section.set_all_offset(section_text_list)
+                    if index_section == 1:
+                        print(section.get_all_offset())
                 # Then updating text
                 if section.type == "text":
                     section.update_text_data()
@@ -141,16 +149,35 @@ class ShumiTranslator(QWidget):
                     for row_index, row in enumerate(csv_data):
                         if row_index == 0:  # Ignoring title row
                             continue
+
                         # section_data_id = int(row[1])
                         # sub_section_data_id = int(row[2])
                         # data_id = int(row[3])
                         section_text_id = int(row[4])
                         text_id = int(row[5])
                         text_loaded = row[6]
-                        for widget_index, widget in enumerate(self.section_widget_list):
-                            if widget.section.type == "text" and widget.section.id == section_text_id:
-                                self.section_widget_list[widget_index].set_text_from_id(text_id, text_loaded)
-            print("csv loaded")
+                        if row_index == 1:
+                            print("ROW 1")
+                            print(row)
+                        if row_index == 3:
+                            print("Row 3")
+                            print(row)
+                        if text_loaded != "":# If empty it will not be applied, so better be fast
+                            for widget_index, widget in enumerate(self.section_widget_list):
+                                if widget.section.type == "text" and widget.section.id == section_text_id:
+                                    if row_index == 3:
+                                        print('Text found !')
+                                        print(widget.section)
+                                        print(widget.section._text_list)
+                                        print(widget.section.section_data_linked)
+                                        print(widget.section.section_data_linked.get_all_offset())
+
+                                    self.section_widget_list[widget_index].set_text_from_id(text_id, text_loaded)
+                                    if row_index == 3:
+                                        print(widget.section._text_list)
+                                        print(widget.section.section_data_linked)
+                                        print(widget.section.section_data_linked.get_all_offset())
+                print("csv loaded")
 
     def __save_csv(self):
         if self.file_loaded:
@@ -210,6 +237,11 @@ class ShumiTranslator(QWidget):
             section_id = id + 1
             section_offset_value = self.section_list[0].get_section_offset_value_from_id(section_id)
             next_section_offset_value = self.section_list[0].get_section_offset_value_from_id(section_id + 1)
+            if section_id == 1:
+                print("Section loading !")
+                print(self.section_list[0].get_section_header_offset_from_id(1))
+                print(section_offset_value)
+                print(next_section_offset_value)
             own_offset = section_offset_value
             if next_section_offset_value is None:
                 next_section_offset_value = len(self.current_file_data)
@@ -236,5 +268,10 @@ class ShumiTranslator(QWidget):
                 # Initializing the text now that we can get all the offset
                 all_offset = section.section_data_linked.get_all_offset()
                 section.init_text(all_offset)
+                if section.id == 32:
+                    print("Loading section 32 !")
+                    print(all_offset)
+                    print( section)
+                    print( section._text_list)
                 self.section_widget_list.append(SectionWidget(section))
                 self.layout_translation_lines.addWidget(self.section_widget_list[-1])
