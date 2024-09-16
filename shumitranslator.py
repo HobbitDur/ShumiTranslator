@@ -16,6 +16,7 @@ from translationwidget import TranslationWidget
 
 class ShumiTranslator(QWidget):
     CSV_FOLDER = "csv"
+
     def __init__(self, icon_path='Resources'):
         QWidget.__init__(self)
 
@@ -98,11 +99,11 @@ class ShumiTranslator(QWidget):
         added_offset = 0
         for section_widget in self.section_widget_list:
             section = section_widget.section
+            section_info = [x for x in self.game_data.kernel_data_json["sections"] if x["section_offset"] == section.section_offset_address][0]
+            if section_info["type"] == "text":
+                continue
             print(f"section name: {section.section_name}")
             print(f"section offset value: {section.section_offset_value}")
-            if added_offset != 0:
-                section.section_offset_value += added_offset
-                self.current_file_data[section.section_offset_address: section.section_offset_address+4] = section.section_offset_value.to_bytes(length=4, byteorder="little") #Flemme, +4 is the size
             for sub_section in section.subsection_list:
                 added_sub_section_offset = 0
                 print(f"sub_section id: {sub_section.sub_section_id}")
@@ -111,18 +112,18 @@ class ShumiTranslator(QWidget):
                     print(f"trans.text_address: {trans.text_address}")
                     print(f"added_offset: {added_offset}")
                     print(f"added_sub_section_offset: {added_sub_section_offset}")
-                    if trans.offset_value == 0xFFFF:# Means the data is not used
+                    if trans.offset_value == 0xFFFF:  # Means the data is not used
                         continue
                     custom_text_hex = self.game_data.translate_str_to_hex(trans.custom_text)
                     file_text_hex = self.game_data.translate_str_to_hex(trans.file_text)
-                    if custom_text_hex == file_text_hex and added_offset == 0: # If no change at all, we can just go on with our life
+                    if custom_text_hex == file_text_hex and added_offset == 0:  # If no change at all, we can just go on with our life
                         continue
-                    elif custom_text_hex != file_text_hex and len(custom_text_hex) == len(file_text_hex) and added_offset == 0: # Text changed but size same, don't care of offset
+                    elif custom_text_hex != file_text_hex and len(custom_text_hex) == len(
+                            file_text_hex) and added_offset == 0:  # Text changed but size same, don't care of offset
                         self.current_file_data[trans.text_address:trans.text_address + len(custom_text_hex)] = custom_text_hex
                         trans.file_text = trans.custom_text
-                    else: # My life is a suffering
+                    else:  # My life is a suffering
                         trans.offset_value += added_sub_section_offset
-                        trans.offset_address += added_offset
                         trans.text_address += added_offset
                         added_sub_section_offset += len(custom_text_hex) - len(file_text_hex)
                         added_offset += len(custom_text_hex) - len(file_text_hex)
@@ -133,7 +134,20 @@ class ShumiTranslator(QWidget):
                             self.current_file_data.insert(trans.text_address + i, custom_text_hex[i])
                         trans.file_text = trans.custom_text
 
-
+            if added_offset != 0:
+                if section_info["section_offset_text_linked"]:
+                    section_info_linked = \
+                        [x for x in self.game_data.kernel_data_json["sections"] if x["section_offset"] == section_info["section_offset_text_linked"]][0]
+                    next_section_info_linked = self.__get_next_section_data(section_info_linked)
+                    if next_section_info_linked:
+                        linked_section = [section_widget.section for section_widget in self.section_widget_list if
+                                          section_widget.section.section_offset_address == next_section_info_linked["section_offset"]]
+                        if linked_section:
+                            linked_section = linked_section[0]
+                            linked_section.section_offset_value += added_offset
+                            self.current_file_data[
+                            linked_section.section_offset_address: linked_section.section_offset_address + 4] = linked_section.section_offset_value.to_bytes(
+                                length=4, byteorder="little")  # Flemme, +4 is the size
 
         print(f"Added offset {added_offset}")
 
@@ -143,15 +157,15 @@ class ShumiTranslator(QWidget):
         print("File saved")
 
     def __open_csv(self, file_to_load: str = ""):
-        #file_to_load = os.path.join("OriginalFiles", "kernel.bin")  # For developing faster
-        #print(f"File to load: {file_to_load}")
+        # file_to_load = os.path.join("OriginalFiles", "kernel.bin")  # For developing faster
+        # print(f"File to load: {file_to_load}")
         if not file_to_load:
             if os.path.isdir(self.CSV_FOLDER):
                 directory = self.CSV_FOLDER
             else:
                 directory = os.getcwd()
             file_to_load = self.csv_save_dialog.getOpenFileName(parent=self, caption="Find csv file", filter="*.csv",
-                                                            directory=directory)[0]
+                                                                directory=directory)[0]
         if file_to_load:
             self.file_loaded = file_to_load
 
@@ -166,9 +180,8 @@ class ShumiTranslator(QWidget):
                 for section_widget in self.section_widget_list:
                     for sub_widget in section_widget.sub_section_widget_list:
                         for trans_widget in sub_widget.translation_widget_list:
-                            trans_widget.change_custom_text(csv_data_list[row_index][5])# Text at 6eme place
-                            row_index+=1
-
+                            trans_widget.change_custom_text(csv_data_list[row_index][5])  # Text at 6eme place
+                            row_index += 1
 
     def __save_csv(self):
         os.makedirs(self.CSV_FOLDER, exist_ok=True)
@@ -182,7 +195,8 @@ class ShumiTranslator(QWidget):
                 section = section_widget.section
                 for sub_section in section.subsection_list:
                     for trans in sub_section.translation_list:
-                        csv_writer.writerow([section.section_name, sub_section.sub_section_id, trans.offset_address, trans.offset_value, trans.text_address, trans.custom_text])
+                        csv_writer.writerow(
+                            [section.section_name, sub_section.sub_section_id, trans.offset_address, trans.offset_value, trans.text_address, trans.custom_text])
 
     def __load_file(self, file_to_load: str = ""):
         file_to_load = os.path.join("OriginalFiles", "kernel.bin")  # For developing faster
@@ -208,11 +222,11 @@ class ShumiTranslator(QWidget):
     def __load_text_from_file(self):
         # First we read all offset section
         for section_data in self.game_data.kernel_data_json["sections"]:
-            #if section_data["section_offset"] != 0x0004:
+            # if section_data["section_offset"] != 0x0004:
             #    continue
-            #if section_data["type"] != "data":
+            # if section_data["type"] != "data":
             #    continue
-            #if not section_data["section_offset_text_linked"]:
+            # if not section_data["section_offset_text_linked"]:
             #    continue
             # Reading section
             offset_to_offset_section = section_data["section_offset"]
@@ -228,7 +242,8 @@ class ShumiTranslator(QWidget):
             else:
                 next_offset_to_offset_section_data_int = len(self.current_file_data)
 
-            section = Section(game_data=self.game_data, section_offset_value=offset_to_offset_section_data_int, section_offset_address=section_data["section_offset"], nb_subsection=section_data["number_sub_section"],
+            section = Section(game_data=self.game_data, section_offset_value=offset_to_offset_section_data_int,
+                              section_offset_address=section_data["section_offset"], nb_subsection=section_data["number_sub_section"],
                               subsection_size=section_data["sub_section_size"],
                               section_data=self.current_file_data[offset_to_offset_section_data_int:next_offset_to_offset_section_data_int],
                               section_name=section_data["section_name"], sub_section_sub_offset=section_data["sub_section_sub_offset"])
@@ -269,7 +284,7 @@ class ShumiTranslator(QWidget):
 
             self.section_widget_list.append(SectionWidget(section))
             self.layout_translation_lines.addWidget(self.section_widget_list[-1])
-            #self.section_widget_list[-1].show()
+            # self.section_widget_list[-1].show()
 
     def __get_next_section_data(self, section_data_ref):
         next_section_data = section_data_ref
