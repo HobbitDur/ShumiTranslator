@@ -101,7 +101,13 @@ class ShumiTranslator(QWidget):
         self.__load_file()
 
     def __save_file(self):
-        for section in self.section_list:
+        current_offset = 0
+        print(f"Len of current BEFORE: {len(self.current_file_data)}")
+        self.current_file_data = bytearray()
+
+        # Then creating the file
+        for index_section, section in enumerate(self.section_list):
+            # First updating all offset on section data
             if section.type == "data" and section.section_text_linked:
                 print(f"Section data: {section}")
                 section_text_linked =  section.section_text_linked
@@ -110,11 +116,25 @@ class ShumiTranslator(QWidget):
                 print(f"section_text_list: {section_text_list}")
                 section.set_all_offset(section_text_list)
                 print(section)
-                exit(1)
+            # Then updating text
+            if section.type == "text":
+                print(f"self.section_list[0] BEFORE: {self.section_list[0].get_section_offset_value_from_id(index_section)}")
+                section.update_text_data()
+                self.section_list[0].set_section_offset_value_from_id(index_section, current_offset)
 
-        #with open(self.file_loaded, "wb") as in_file:
-        #    in_file.write(self.current_file_data)
-        #print("File saved")
+                print(f"self.section_list[0] AFTER: {self.section_list[0].get_section_offset_value_from_id(index_section)}")
+            print(f"Current offset: {current_offset} for index: {index_section}")
+            current_offset += len(section)
+
+        for section in self.section_list:
+            self.current_file_data.extend(section.get_data_hex())
+
+        print(f"Len of current AFTER: {len(self.current_file_data)}")
+
+        with open(self.file_loaded, "wb") as in_file:
+            in_file.write(self.current_file_data)
+        print("File saved")
+
 
     def __open_csv(self, file_to_load: str = ""):
         # file_to_load = os.path.join("OriginalFiles", "kernel.bin")  # For developing faster
@@ -131,7 +151,7 @@ class ShumiTranslator(QWidget):
 
             with open(self.file_loaded, newline='') as csv_file:
 
-                csv_data = csv.reader(csv_file, delimiter=',', quotechar='|')
+                csv_data = csv.reader(csv_file, delimiter=';', quotechar='|')
                 row_index = 1
                 csv_data_list = []
                 for row in csv_data:
@@ -148,15 +168,18 @@ class ShumiTranslator(QWidget):
         csv_name = pathlib.Path(self.file_loaded).name
         csv_name = csv_name.split('.')[0] + '.csv'
         with open(os.path.join(self.CSV_FOLDER, csv_name), 'w', newline='') as csv_file:
-            csv_writer = csv.writer(csv_file, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
+            csv_writer = csv.writer(csv_file, delimiter=';', quotechar='|', quoting=csv.QUOTE_MINIMAL)
 
-            csv_writer.writerow(['Section name', 'Sub section id', 'Offset address', 'Offset value', 'Text address', 'Text'])
-            for section_widget in self.section_widget_list:
-                section = section_widget.section
-                for sub_section in section.subsection_list:
-                    for trans in sub_section.translation_list:
-                        csv_writer.writerow(
-                            [section.section_name, sub_section.sub_section_id, trans.offset_address, trans.offset_value, trans.text_address, trans.custom_text])
+            csv_writer.writerow(['Section data name', 'Section data id', 'Sub section data id', 'Data id', 'Section text id', 'Text id', 'Text'])
+            for index_section, section in enumerate(self.section_list):
+                if section.type == "data" and section.section_text_linked:
+                    for sub_section in section.get_subsection_list():
+                        for data in sub_section.get_data_list():
+                            for kernel_text in section.section_text_linked.get_text_list():
+                                csv_writer.writerow(
+                                    [section.name, section.id, sub_section.id, data.id, section.section_text_linked.id, kernel_text.id, kernel_text.get_str()])
+
+        print("Csv saved")
 
     def __load_file(self, file_to_load: str = ""):
         file_to_load = os.path.join("OriginalFiles", "kernel.bin")  # For developing faster
@@ -178,7 +201,7 @@ class ShumiTranslator(QWidget):
             while el := in_file.read(1):
                 self.current_file_data.extend(el)
         self.__load_text_from_file()
-        self.__save_file()
+        #self.__save_file()
 
     def __load_text_from_file(self):
         # First we read all offset section
@@ -218,6 +241,7 @@ class ShumiTranslator(QWidget):
                 section.section_data_linked.section_text_linked = section
                 # Initializing the text now that we can get all the offset
                 all_offset = section.section_data_linked.get_all_offset()
+                print(f"All offset: {all_offset}")
                 section.init_text(all_offset)
                 self.section_widget_list.append(SectionWidget(section))
                 self.layout_translation_lines.addWidget(self.section_widget_list[-1])

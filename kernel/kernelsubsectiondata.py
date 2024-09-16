@@ -40,25 +40,26 @@ class KernelSubSectionData(KernelSection):
         nb_data = 0
         for kernel_data in self._data_list:
             if kernel_data.get_offset_type():
-                nb_data+=1
+                nb_data += 1
         return nb_data
 
-    def set_offset_values(self, offset_list_value):
+    def set_offset_values(self, offset_list_value, last_offset):
         print("set_offset_values")
         if len(offset_list_value) != self.nb_data_with_offset():
-            print(f"The size of the offset list ({len(offset_list_value)}) is different than the nb of offset data of the subsection ({self.nb_data_with_offset()})")
-        for i in range(len(offset_list_value)): # Assuming offset data is always at the beginning of the subsection
-            text_to_offset = offset_list_value[i]
-            print(f"text_size from kernel text: {len(text_to_offset)}")
-            print(f"encode: {str.encode(text_to_offset.get_str())}")
-            text_to_offset = text_to_offset.get_str()
-            print(f"Text to offset after get_str size: {len(text_to_offset)}")
-            text_to_offset.rstrip('\n')
-            print(f"Text to offset after rstrip size: {len(text_to_offset)}")
+            print(
+                f"The size of the offset list ({len(offset_list_value)}) is different than the nb of offset data of the subsection ({self.nb_data_with_offset()})")
+
+        current_subsection_offset = last_offset
+        for i in range(len(offset_list_value)):  # Assuming offset data is always at the beginning of the subsection
             text_size = len(offset_list_value[i])
-            print(f"offset_list_value: {offset_list_value}")
-            print(f"Text to write: {text_to_offset}")
-            print(f"text_size: {text_size}")
-            print(f"self._data_list[i]: {self._data_list[i]}")
-            print(f"self._data_list[i].own_offset: {self._data_list[i].own_offset}")
-            self._data_list[i].set_offset_value(text_size + self._data_list[i].own_offset)
+            print(f"offset_list_value[i]: {offset_list_value[i]}")
+            self._data_list[i].set_offset_value(current_subsection_offset)
+            current_subsection_offset += text_size
+        self._data_hex = bytearray()
+        for data in self._data_list:
+            self._data_hex.extend(data.get_data_hex())
+        self._size = len(self._data_hex)
+        return current_subsection_offset
+
+    def get_data_list(self):
+        return self._data_list

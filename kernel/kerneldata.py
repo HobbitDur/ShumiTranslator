@@ -3,9 +3,9 @@ from kernel.kernelsection import KernelSection
 
 
 class KernelData(KernelSection):
-    OFFSET_SIZE = 2
+
     def __init__(self, game_data: GameData, own_offset: int, data_hex: bytearray, id: int, offset_type=False):
-        KernelSection.__init__(self,  game_data=game_data, own_offset=own_offset, data_hex=data_hex, id=id, name="")
+        KernelSection.__init__(self, game_data=game_data, own_offset=own_offset, data_hex=data_hex, id=id, name="")
         self._offset_type = offset_type
 
     def __str__(self):
@@ -24,7 +24,7 @@ class KernelData(KernelSection):
         else:
             return None
 
-    def set_offset_value(self, value:int):
+    def set_offset_value(self, value: int):
         if not self._offset_type:
             print("Can't set offset as the data is not an offset")
         elif int.from_bytes(self._data_hex) == 0xFFFF:
@@ -32,10 +32,9 @@ class KernelData(KernelSection):
         else:
             print(f"Value: {value}")
             print(f"Own size: {self._size}")
-            print(f"Own data before: {self._data_hex}")
-            self._data_hex = value.to_bytes(byteorder="little", length=self.OFFSET_SIZE)
-            print(f"Own data after: {self._data_hex}")
-
+            print(f"Own data before: {self._data_hex.hex(sep=" ")}")
+            self._data_hex = value.to_bytes(byteorder="little", length=len(self._data_hex))
+            print(f"Own data after: {self._data_hex.hex(sep=" ")}")
 
     def get_offset_type(self):
         return self._offset_type
