@@ -26,15 +26,11 @@ class KernelData(KernelSection):
 
     def set_offset_value(self, value: int):
         if not self._offset_type:
-            print("Can't set offset as the data is not an offset")
+            pass #print("Can't set offset as the data is not an offset")
         elif int.from_bytes(self._data_hex) == 0xFFFF:
-            print("Unused data")
+            pass #print("Unused data")
         else:
-            print(f"Value: {value}")
-            print(f"Own size: {self._size}")
-            print(f"Own data before: {self._data_hex.hex(sep=" ")}")
             self._data_hex = value.to_bytes(byteorder="little", length=len(self._data_hex))
-            print(f"Own data after: {self._data_hex.hex(sep=" ")}")
 
     def get_offset_type(self):
         return self._offset_type

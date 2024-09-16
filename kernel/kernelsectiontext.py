@@ -12,7 +12,6 @@ class KernelSectionText(KernelSection):
 
     def init_text(self, offset_list: list):
         if not offset_list:
-            print(f"No offset list to init for section id: {self.id}")
             return
         for i, offset in enumerate(offset_list):
             if i == len(offset_list) - 1:  # Last one, compare with end of data
@@ -42,14 +41,8 @@ class KernelSectionText(KernelSection):
         return self._text_list[id_text].get_str()
 
     def update_text_data(self):
-        print("Get data hex from section text")
-        # Now updating the data_hex of the section
-        print(f"Data before in section text: {self._data_hex}")
-        print(f"Data before in section text: {self._text_list}")
         self._data_hex = bytearray()
         for data in self._text_list:
             self._data_hex.extend(data.get_data_hex())
         self._size = len(self._data_hex)
-        print(f"Data after in section text: {self._data_hex}")
-        print(f"Data after in section text: {self._text_list}")
         return self._data_hex
