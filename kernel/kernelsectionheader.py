@@ -6,8 +6,8 @@ from kernel.kernelsection import KernelSection
 class KernelSectionHeader(KernelSection):
     OFFSET_SIZE = 4
 
-    def __init__(self, game_data: GameData, data_hex):
-        KernelSection.__init__(self, game_data=game_data, data_hex=data_hex, id=0, own_offset=0)
+    def __init__(self, game_data: GameData, data_hex, name):
+        KernelSection.__init__(self, game_data=game_data, data_hex=data_hex, id=0, own_offset=0, name=name)
         self._data_list = []
         self.type = "header"
         self.analyze_data()
