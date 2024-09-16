@@ -175,12 +175,17 @@ class ShumiTranslator(QWidget):
         print(f"Len section header: {len(section_header)} bytes")
         print(f"section header: {section_header}")
         section_list.append(section_header)
+        print("-------------------------------------------------------")
         for section_id, section_info in enumerate(self.game_data.kernel_data_json["sections"]):
             if section_id == 0: # First section is not a real section, not an offset and doesn't contain any offset.
-                new_section = KernelSectionData(game_data=self.game_data, id=section_id, own_offset=0,
+                new_section = KernelSectionData(game_data=self.game_data, id=section_id, own_offset=len(section_list[0]),
                                                 data_hex=self.current_file_data[0:KernelSectionHeader.OFFSET_SIZE],
                                                 subsection_nb_text_offset=section_info['sub_section_nb_text_offset'], name=section_info['section_name'])
                 new_section.init_subsection(nb_subsection=section_info['number_sub_section'], subsection_sized=section_info['sub_section_size'])
+                print(f"Len new section: {len(new_section)}")
+                print(f"new section: {new_section}")
+                section_list.append(new_section)
+                print("-------------------------------------------------------")
                 continue
             print(f"section_id: {section_id}")
             print(f"section_info: {section_info}")
@@ -191,22 +196,22 @@ class ShumiTranslator(QWidget):
             if not next_section_offset_value:
                 next_section_offset_value = len(self.current_file_data)
             if section_info["type"] == "data":
-                new_section = KernelSectionData(game_data=self.game_data, id=section_id, own_offset=section_offset_value,
+                new_section = KernelSectionData(game_data=self.game_data, id=section_id, own_offset=len(section_list[0]) + section_offset_value,
                                                 data_hex=self.current_file_data[section_offset_value:next_section_offset_value],
                                                 subsection_nb_text_offset=section_info['sub_section_nb_text_offset'], name=section_info['section_name'])
                 new_section.init_subsection(nb_subsection=section_info['number_sub_section'], subsection_sized=section_info['sub_section_size'])
             elif section_info["type"] == "text":
                 section_data_linked = [section_list[i] for i in range(len(section_list)) if
                                        section_info['section_offset_data_linked'] == section_list[0].get_section_header_offset_from_id(i)][0]
-                new_section = KernelSectionText(game_data=self.game_data, id=section_id, own_offset=section_offset_value,
+                new_section = KernelSectionText(game_data=self.game_data, id=section_id, own_offset=len(section_list[0]) + section_offset_value,
                                                 data_hex=self.current_file_data[section_offset_value:next_section_offset_value],
                                                 section_data_linked=section_data_linked, name=section_info['section_name'])
             else:
                 print(f"Unexpected section info type: {section_info["type"]}")
                 new_section = None
                 # new_section.init_subsection(nb_subsection=section_info['number_sub_section'], subsection_sized=section_info['sub_section_size'])
-            print(f"Len new section: {len(new_section._data_hex)}")
-            print(f"new section: {new_section._data_hex}")
+            print(f"Len new section: {len(new_section)}")
+            print(f"new section: {new_section}")
             section_list.append(new_section)
             print("-------------------------------------------------------")
 
