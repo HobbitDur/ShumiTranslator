@@ -1,6 +1,8 @@
 .venv/Scripts/pyinstaller.exe -n ShumiTranslator -F --specpath release/build --distpath release --workpath release/build --onefile --noconsole --icon=../../Resources/icon.ico main.py;
 mkdir -p release/ShumiTranslator-x.x;
+mkdir -p release/ShumiTranslator-x.x/FF8GameData;
 cp -R Resources release/ShumiTranslator-x.x/;
+cp -R FF8GameData/Resources release/ShumiTranslator-x.x/FF8GameData/;
 cp release/*.exe release/ShumiTranslator-x.x/;
 cd release/ShumiTranslator-x.x;
 "C:\Program Files\7-Zip\7z.exe" a -tzip ../ShumiTranslator-x.x.zip .;

@@ -39,10 +39,8 @@ class TranslationWidget(QWidget):
         self.setLayout(self.__main_layout)
 
     def __custom_text_changed(self):
-        print("__custom_text_changed")
         self.translation.set_str(self.__custom_text_widget.toPlainText())
         print(self.translation.get_str())
 
     def change_custom_text(self, custom_text):
-        print("change custom text")
         self.__custom_text_widget.setPlainText(custom_text)
