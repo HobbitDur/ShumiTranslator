@@ -43,6 +43,7 @@ class TranslationWidget(QWidget):
 
     def __custom_text_changed(self):
         self.translation.set_str(self.__custom_text_widget.toPlainText())
+        print(self.translation.get_str())
 
     def change_custom_text(self, custom_text):
         self.__custom_text_widget.setPlainText(custom_text)

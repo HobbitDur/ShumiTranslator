@@ -16,7 +16,6 @@ class KernelSectionData(KernelSection):
         self.type = "data"
 
     def init_subsection(self, subsection_sized: int, nb_subsection: int):
-
         for i in range(nb_subsection):
             self.add_subsection(self._data_hex[i * subsection_sized: (i+1) * subsection_sized])
 
@@ -37,3 +36,13 @@ class KernelSectionData(KernelSection):
             sub_offset_list = subsection.get_all_offset()
             offset_list.extend(sub_offset_list)
         return offset_list
+
+    def set_all_offset(self, text_list):
+        print("set_all_offset")
+        text_index = 0
+        for i in range(len(self._subsection_list)):
+            print(f"Index: {i}, nb_data_with_offset: {self._subsection_list[i].nb_data_with_offset()}, text_index: {text_index}")
+            print(f"subsection_list: {self._subsection_list}")
+            print(f"text_list: {text_list}")
+            self._subsection_list[i].set_offset_values(text_list[text_index:text_index+ self._subsection_list[i].nb_data_with_offset()])
+            text_index += self._subsection_list[i].nb_data_with_offset()
