@@ -16,6 +16,7 @@ class KernelSectionData(KernelSection):
         self.type = "data"
 
     def init_subsection(self, subsection_sized: int, nb_subsection: int):
+
         for i in range(nb_subsection):
             self.add_subsection(self._data_hex[i * subsection_sized: (i+1) * subsection_sized])
 
@@ -31,6 +32,8 @@ class KernelSectionData(KernelSection):
 
     def get_all_offset(self):
         offset_list = []
+
         for subsection in self._subsection_list:
-            offset_list.extend(subsection.get_all_offset())
+            sub_offset_list = subsection.get_all_offset()
+            offset_list.extend(sub_offset_list)
         return offset_list
