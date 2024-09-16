@@ -63,3 +63,6 @@ class KernelSubSectionData(KernelSection):
 
     def get_data_list(self):
         return self._data_list
+
+    def set_offset_from_id(self, data_id, value: int):
+        self._data_list[data_id].set_offset_value(value)

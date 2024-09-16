@@ -9,7 +9,7 @@ from translationwidget import TranslationWidget
 
 class SectionWidget(QWidget):
 
-    def __init__(self, section:KernelSectionText):
+    def __init__(self, section: KernelSectionText):
         QWidget.__init__(self)
 
         self.section = section
@@ -30,3 +30,5 @@ class SectionWidget(QWidget):
             self.translation_widget_list.append(translation_widget)
             self.__main_layout.addWidget(self.translation_widget_list[-1])
 
+    def set_text_from_id(self, id: int, text: str):
+        self.translation_widget_list[id].change_custom_text(text)

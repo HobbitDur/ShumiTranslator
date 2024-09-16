@@ -33,7 +33,7 @@ class KernelSectionHeader(KernelSection):
     def analyze_data(self):
         for i in range(0, len(self._data_hex), self.OFFSET_SIZE):
             self.__add_data(self._data_hex[i:i + self.OFFSET_SIZE])
-        if len(self._data_list) != len(self._game_data.kernel_data_json['sections']):
+        if len(self._data_list) != len(self._game_data.kernel_data_json['sections'])+1:
             print(
                 f"Problem when analyzing data, the size is not what is expected: size_list: {len(self._data_list)},"
                 f" size expected: {len(self._game_data.kernel_data_json['sections'])}")

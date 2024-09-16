@@ -18,8 +18,10 @@ class KernelText(KernelSection):
 
     def set_str(self, text: str):
         print(f"Text str before: {self._data_hex}")
+        print(f"Text str before: {self._text_str}")
         self._text_str = text
         self._data_hex = bytearray(self._game_data.translate_str_to_hex(self._text_str))
         self._data_hex.extend([0x00])
         self._size = len(self._data_hex)
         print(f"Text str after: {self._data_hex}")
+        print(f"Text str after: {self._text_str}")

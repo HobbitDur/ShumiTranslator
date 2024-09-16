@@ -4,7 +4,7 @@ from kernel.kerneltext import KernelText
 
 
 class KernelSectionText(KernelSection):
-    def __init__(self, game_data: GameData, data_hex: bytearray, id: int, own_offset: int, name:str, section_data_linked=None):
+    def __init__(self, game_data: GameData, data_hex: bytearray, id: int, own_offset: int, name: str, section_data_linked=None):
         KernelSection.__init__(self, game_data=game_data, data_hex=data_hex, id=id, own_offset=own_offset, name=name)
         self._text_list = []
         self.section_data_linked = section_data_linked
@@ -15,12 +15,12 @@ class KernelSectionText(KernelSection):
             print(f"No offset list to init for section id: {self.id}")
             return
         for i, offset in enumerate(offset_list):
-            if i == len(offset_list) - 1:# Last one, compare with end of data
+            if i == len(offset_list) - 1:  # Last one, compare with end of data
                 next_offset = len(self._data_hex)
             else:
-                next_offset = offset_list[i +1]
-                for j in range(i+1, len(offset_list)):# We are searching the next valid offset
-                    if offset_list[j]!= 0xFFFF: # Unused data:
+                next_offset = offset_list[i + 1]
+                for j in range(i + 1, len(offset_list)):  # We are searching the next valid offset
+                    if offset_list[j] != 0xFFFF:  # Unused data:
                         next_offset = offset_list[j]
                         break
             text_hex = self._data_hex[offset:next_offset]
@@ -37,6 +37,9 @@ class KernelSectionText(KernelSection):
 
     def get_text_list(self):
         return self._text_list
+
+    def get_text_from_id(self, id_text:int):
+        return self._text_list[id_text].get_str()
 
     def update_text_data(self):
         print("Get data hex from section text")
