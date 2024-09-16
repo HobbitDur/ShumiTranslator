@@ -1,4 +1,4 @@
-from gamedata import GameData
+from FF8GameData.gamedata import GameData
 from kernel.kerneldata import KernelData
 from kernel.kernelsection import KernelSection
 

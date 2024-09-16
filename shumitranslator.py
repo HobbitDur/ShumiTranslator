@@ -7,7 +7,7 @@ from PyQt6.QtGui import QIcon, QFont
 from PyQt6.QtWidgets import QVBoxLayout, QWidget, QScrollArea, QPushButton, QFileDialog, QComboBox, QHBoxLayout, QLabel, \
     QColorDialog, QCheckBox
 
-from gamedata import GameData
+from FF8GameData.gamedata import GameData
 from kernel.kernelsectiondata import KernelSectionData
 from kernel.kernelsectionheader import KernelSectionHeader
 from kernel.kernelsectiontext import KernelSectionText
@@ -22,7 +22,7 @@ class ShumiTranslator(QWidget):
 
         # Special data
         self.game_data = GameData()
-        self.game_data.load_kernel_data(os.path.join("Resources", "kernel_bin_data.json"))
+        self.game_data.load_kernel_data()
         self.current_file_data = bytearray()
         self.translation_list = []
         self.file_loaded = ""
@@ -107,6 +107,7 @@ class ShumiTranslator(QWidget):
                 if section.type == "data" and section.section_text_linked:
                     section_text_linked = section.section_text_linked
                     section_text_list = section_text_linked.get_text_list()
+                    print(section_text_list)
                     section.set_all_offset(section_text_list)
                 # Then updating text
                 if section.type == "text":
@@ -179,7 +180,6 @@ class ShumiTranslator(QWidget):
 
     def __load_file(self, file_to_load: str = ""):
         # file_to_load = os.path.join("OriginalFiles", "kernel.bin")  # For developing faster
-        print(f"File to load: {file_to_load}")
         if not file_to_load:
             file_to_load = self.file_dialog.getOpenFileName(parent=self, caption="Find file", filter="*",
                                                             directory=os.getcwd())[0]

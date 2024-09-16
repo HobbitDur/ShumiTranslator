@@ -1,7 +1,5 @@
-from PyQt6.QtCore import QSignalBlocker
-from PyQt6.QtWidgets import QPlainTextEdit, QWidget, QHBoxLayout, QLabel, QVBoxLayout, QTextEdit
+from PyQt6.QtWidgets import QPlainTextEdit, QWidget, QHBoxLayout, QLabel, QVBoxLayout
 
-from gamedata import GameData
 from kernel.kerneltext import KernelText
 
 

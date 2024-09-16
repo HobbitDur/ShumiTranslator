@@ -1,9 +1,7 @@
-from gamedata import GameData
-from kernel.kerneldata import KernelData
+from FF8GameData.gamedata import GameData
 from kernel.kernelsection import KernelSection
 from kernel.kernelsectiontext import KernelSectionText
 from kernel.kernelsubsectiondata import KernelSubSectionData
-from kernel.kerneltext import KernelText
 
 
 class KernelSectionData(KernelSection):

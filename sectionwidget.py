@@ -1,7 +1,5 @@
 from PyQt6.QtWidgets import QWidget, QHBoxLayout, QLabel, QVBoxLayout
 
-from gamedata import GameData
-from kernel.kernelsection import KernelSection
 from kernel.kernelsectiontext import KernelSectionText
 from translationwidget import TranslationWidget
 
