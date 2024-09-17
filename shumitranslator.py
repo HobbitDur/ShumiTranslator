@@ -40,7 +40,7 @@ class ShumiTranslator(QWidget):
         self.scroll_widget.setLayout(self.layout_main)
 
         self.setWindowTitle("ShumiTranslator")
-        self.setMinimumSize(1080, 720)
+        self.setMinimumSize(500, 800)
         self.__shumi_icon = QIcon(os.path.join(icon_path, 'icon.ico'))
         self.setWindowIcon(self.__shumi_icon)
 
@@ -91,7 +91,7 @@ class ShumiTranslator(QWidget):
 
         # Warning
         self.warning_label_widget = QLabel(
-            "<b>WARNING:</b> Don't modify {x0...}, {HP} and {GF} text as they are variable for the game")
+            "<b>WARNING:</b> Don't modify {x0...} text as they are variable for the game")
         self.layout_full_top = QVBoxLayout()
         self.layout_full_top.addLayout(self.layout_top)
         self.layout_full_top.addWidget(self.warning_label_widget)
@@ -156,6 +156,9 @@ class ShumiTranslator(QWidget):
                                                      filter="*.csv", directory=directory)[0]
 
             if csv_to_load:
+                section_text_id = 0
+                text_id = 0
+                text_loaded = ""
                 try:
                     self.csv_loaded = csv_to_load
 
@@ -180,9 +183,11 @@ class ShumiTranslator(QWidget):
                                     if widget.section.type == "text" and widget.section.id == section_text_id:
                                         self.section_widget_list[widget_index].set_text_from_id(text_id, text_loaded)
                     print("csv loaded")
-                except UnicodeDecodeError:
+                except UnicodeDecodeError as e:
+                    print(e)
                     message_box = QMessageBox()
-                    message_box.setText("Wrong <b>encoding</b>, please use <b>UTF8</b> formating only")
+                    message_box.setText("Wrong <b>encoding</b>, please use <b>UTF8</b> formating only.<br>"
+                                        "In excel, you can go to the \"Data tab\", \"Import text file\" and choose UTF8 encoding")
                     message_box.setIcon(QMessageBox.Icon.Critical)
                     message_box.setWindowTitle("ShumiTranslator - Wrong CSV encoding")
                     message_box.setWindowIcon(self.__shumi_icon)

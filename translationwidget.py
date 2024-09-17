@@ -42,13 +42,14 @@ class TranslationWidget(QWidget):
     def __custom_text_changed(self):
         try:
             self.translation.set_str(self.__custom_text_widget.toPlainText())
-        except ValueError:
-
+        except ValueError as e:
+            print(f"Value Error: {self.__custom_text_widget.toPlainText()} with info: {e}")
             message_box = QMessageBox()
-            message_box.setText("For the moment, the tool don't allow to just write a forbidden char liike { or }.\n"
-                                "If you want to write a var like {HP}, copy paste both bracket\n"
-                                "If you want to delete them, delete them both at same time\n"
-                                "Sorry for the inconvenience.")
+            message_box.setText(f"Unknown character in sentence: <b>{self.__custom_text_widget.toPlainText()}</b><br>"
+                                "For the moment, the tool doesn't allow to just write a forbidden char like <b>{</b> or <b>}</b>.<br>"
+                                "If you want to write a character like <b>{HP}</b>, copy paste both bracket.<br>"
+                                "If you want to delete bracket, delete both bracket at same time.<br>"
+                                "Sorry for the inconvenience. The line will be reverted.")
             message_box.setIcon(QMessageBox.Icon.Critical)
             message_box.setWindowTitle("ShumiTranslator - Forbidden char")
             message_box.exec()
