@@ -2,4 +2,5 @@ This tool is a universal translator for FF8 that allow you to extract all text f
 For the moment the following files are compatible:
 - kernel.bin
 
-![image](https://github.com/user-attachments/assets/7684051d-47ea-40ea-b575-6da688075a8a)
+![image](https://github.com/user-attachments/assets/2b231b0a-7c8e-40df-8bd8-3e36190f5377)
+
