@@ -19,6 +19,8 @@ if __name__ == '__main__':
     app = QApplication.instance()
     if not app:  # sinon on crée une instance de QApplication
         app = QApplication(sys.argv)
+        if app.style().objectName() == "windows11":
+            app.setStyle("Fusion")
 
     main_window = ShumiTranslator()
     main_window.show()

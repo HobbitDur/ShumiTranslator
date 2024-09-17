@@ -17,8 +17,9 @@ class KernelText(KernelSection):
         return self._text_str
 
     def set_str(self, text: str):
+        converted_data_list = self._game_data.translate_str_to_hex(text)
+        self._data_hex = bytearray(converted_data_list)
         self._text_str = text
-        self._data_hex = bytearray(self._game_data.translate_str_to_hex(self._text_str))
         if text != "":# If empty don't put \x00
             self._data_hex.extend([0x00])
         self._size = len(self._data_hex)

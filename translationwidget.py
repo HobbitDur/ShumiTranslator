@@ -1,4 +1,5 @@
-from PyQt6.QtWidgets import QPlainTextEdit, QWidget, QHBoxLayout, QLabel, QVBoxLayout
+from PyQt6.QtCore import QSignalBlocker
+from PyQt6.QtWidgets import QPlainTextEdit, QWidget, QHBoxLayout, QLabel, QVBoxLayout, QMessageBox
 
 from kernel.kerneltext import KernelText
 
@@ -39,8 +40,23 @@ class TranslationWidget(QWidget):
         self.setLayout(self.__main_layout)
 
     def __custom_text_changed(self):
-        self.translation.set_str(self.__custom_text_widget.toPlainText())
+        try:
+            self.translation.set_str(self.__custom_text_widget.toPlainText())
+        except ValueError:
+
+            message_box = QMessageBox()
+            message_box.setText("For the moment, the tool don't allow to just write a forbidden char liike { or }.\n"
+                                "If you want to write a var like {HP}, copy paste both bracket\n"
+                                "If you want to delete them, delete them both at same time\n"
+                                "Sorry for the inconvenience.")
+            message_box.setIcon(QMessageBox.Icon.Critical)
+            message_box.setWindowTitle("ShumiTranslator - Forbidden char")
+            message_box.exec()
+            with QSignalBlocker(self.__custom_text_widget):
+                self.__custom_text_widget.setPlainText(self.translation.get_str())
+
         print(self.translation.get_str())
+
 
     def change_custom_text(self, custom_text):
         self.__custom_text_widget.setPlainText(custom_text)

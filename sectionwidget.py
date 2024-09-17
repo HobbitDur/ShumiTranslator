@@ -1,4 +1,5 @@
-from PyQt6.QtWidgets import QWidget, QHBoxLayout, QLabel, QVBoxLayout
+from PyQt6.QtCore import Qt
+from PyQt6.QtWidgets import QWidget, QHBoxLayout, QLabel, QVBoxLayout, QFrame
 
 from kernel.kernelsectiontext import KernelSectionText
 from translationwidget import TranslationWidget
@@ -29,6 +30,10 @@ class SectionWidget(QWidget):
             translation_widget = TranslationWidget(kernel_text)
             self.translation_widget_list.append(translation_widget)
             self.__main_layout.addWidget(self.translation_widget_list[-1])
+        end_separator_line = QFrame()
+        end_separator_line.setFrameStyle(0x04)# Horizontal line
+        end_separator_line.setLineWidth(2)
+        self.__main_layout.addWidget(end_separator_line)
 
     def set_text_from_id(self, id: int, text: str):
         self.translation_widget_list[id].change_custom_text(text)
