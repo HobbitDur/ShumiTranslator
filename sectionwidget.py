@@ -7,12 +7,13 @@ from translationwidget import TranslationWidget
 
 class SectionWidget(QWidget):
 
-    def __init__(self, section: KernelSectionText):
+    def __init__(self, section: KernelSectionText, first_section_line_index):
         QWidget.__init__(self)
 
         self.section = section
+        self.first_section_line_index = first_section_line_index
         self.__section_name_widget = QLabel()
-        self.__section_name_widget.setText("<u><b>Section: </u></b>" + self.section.name)
+        self.__section_name_widget.setText(f"<u><b>Section text n°:{self.section.id} </u></b>" + self.section.name)
 
         self.translation_widget_list = []
 
@@ -26,8 +27,8 @@ class SectionWidget(QWidget):
         return "Widget " + str(self.section)
 
     def __create_sub_section_widget(self):
-        for kernel_text in self.section.get_text_list():
-            translation_widget = TranslationWidget(kernel_text)
+        for i, kernel_text in enumerate(self.section.get_text_list()):
+            translation_widget = TranslationWidget(kernel_text, self.first_section_line_index + i)
             self.translation_widget_list.append(translation_widget)
             self.__main_layout.addWidget(self.translation_widget_list[-1])
         end_separator_line = QFrame()

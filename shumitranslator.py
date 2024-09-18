@@ -5,7 +5,7 @@ import pathlib
 from PyQt6.QtCore import QSize
 from PyQt6.QtGui import QIcon
 from PyQt6.QtWidgets import QVBoxLayout, QWidget, QScrollArea, QPushButton, QFileDialog, QHBoxLayout, QLabel, \
-    QMessageBox
+    QMessageBox, QTreeWidgetItem, QTreeWidget
 
 from FF8GameData.gamedata import GameData
 from kernel.kernelsectiondata import KernelSectionData
@@ -290,6 +290,8 @@ class ShumiTranslator(QWidget):
                 # new_section.init_subsection(nb_subsection=section_info['number_sub_section'], subsection_sized=section_info['sub_section_size'])
             self.section_list.append(new_section)
 
+
+        first_section_line_index = 2 # Start at 2 as in the CSV
         for i, section in enumerate(self.section_list):
             if section.type == "text":
                 # Adding the link from data to text as text were not constructed yet.
@@ -297,5 +299,6 @@ class ShumiTranslator(QWidget):
                 # Initializing the text now that we can get all the offset
                 all_offset = section.section_data_linked.get_all_offset()
                 section.init_text(all_offset)
-                self.section_widget_list.append(SectionWidget(section))
+                self.section_widget_list.append(SectionWidget(section, first_section_line_index))
                 self.layout_translation_lines.addWidget(self.section_widget_list[-1])
+                first_section_line_index += len(all_offset)

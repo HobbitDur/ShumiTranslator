@@ -1,19 +1,22 @@
 from PyQt6.QtCore import QSignalBlocker
-from PyQt6.QtWidgets import QPlainTextEdit, QWidget, QHBoxLayout, QLabel, QVBoxLayout, QMessageBox
+from PyQt6.QtWidgets import QPlainTextEdit, QWidget, QHBoxLayout, QLabel, QVBoxLayout, QMessageBox, QFrame
 
 from kernel.kerneltext import KernelText
 
 
 class TranslationWidget(QWidget):
 
-    def __init__(self, translation: KernelText):
+    def __init__(self, translation: KernelText, line_number):
         QWidget.__init__(self)
         self.translation = translation
+        self.__line_number = line_number
+
+        self.__label_line_widget = QLabel(f"Line {self.__line_number}")
         self.__file_text_description_widget = QLabel("<b>Data read: </b>")
         self.__file_text_widget = QLabel()
         self.__file_text_widget.setText(self.translation.get_str())
         # self.__file_text_widget.setWordWrap(True)
-
+                
         self.__custom_text_description_widget = QLabel("<b>Data modified: </b>")
         self.__custom_text_widget = QPlainTextEdit()
         self.__custom_text_widget.setPlainText(self.translation.get_str())
@@ -21,21 +24,35 @@ class TranslationWidget(QWidget):
         # self.__custom_text_widget.setMaximumHeight(28)
 
         self.__text_original_layout = QHBoxLayout()
-        self.__text_original_layout.addSpacing(20)
+        #self.__text_original_layout.addSpacing(20)
         self.__text_original_layout.addWidget(self.__file_text_description_widget)
         self.__text_original_layout.addWidget(self.__file_text_widget)
         self.__text_original_layout.addStretch(1)
 
         self.__text_custom_layout = QHBoxLayout()
-        self.__text_custom_layout.addSpacing(20)
+        #self.__text_custom_layout.addSpacing(20)
         self.__text_custom_layout.addWidget(self.__custom_text_description_widget)
         self.__text_custom_layout.addWidget(self.__custom_text_widget)
         self.__text_custom_layout.addStretch(1)
 
-        self.__main_layout = QVBoxLayout()
-        self.__main_layout.addLayout(self.__text_original_layout)
-        self.__main_layout.addLayout(self.__text_custom_layout)
-        self.__main_layout.addStretch(1)
+        self.__translation_layout = QVBoxLayout()
+        self.__translation_layout.addLayout(self.__text_original_layout)
+        self.__translation_layout.addLayout(self.__text_custom_layout)
+        self.__translation_layout.addStretch(1)
+
+        self.__end_separator_line = QFrame()
+        self.__end_separator_line.setFrameStyle(0x05)# Vertical line
+        self.__end_separator_line.setLineWidth(2)
+
+        self.__main_layout = QHBoxLayout()
+        self.__main_layout.addWidget(self.__label_line_widget)
+        self.__main_layout.addSpacing(5)
+        self.__main_layout.addWidget(self.__end_separator_line)
+        self.__main_layout.addSpacing(5)
+        self.__main_layout.addLayout(self.__translation_layout)
+
+
+
 
         self.setLayout(self.__main_layout)
 
