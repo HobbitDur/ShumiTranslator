@@ -13,7 +13,7 @@ class SectionWidget(QWidget):
         self.section = section
         self.first_section_line_index = first_section_line_index
         self.__section_name_widget = QLabel()
-        self.__section_name_widget.setText(f"<u><b>Section text n°:{self.section.id} </u></b>" + self.section.name)
+        self.__section_name_widget.setText(f"<b><u>Section text n°{self.section.id}:</u></b> " + self.section.name)
 
         self.translation_widget_list = []
 
