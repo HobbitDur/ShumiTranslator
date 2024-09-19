@@ -94,6 +94,13 @@ class ShumiTranslator(QWidget):
         self.uncompress_button.setEnabled(False)
         self.uncompress_button.clicked.connect(self.__uncompress_data)
 
+        self.info_button = QPushButton()
+        self.info_button.setIcon(QIcon(os.path.join(icon_path, 'info.png')))
+        self.info_button.setIconSize(QSize(30, 30))
+        self.info_button.setFixedSize(40, 40)
+        self.info_button.setToolTip("Show toolmaker info")
+        self.info_button.clicked.connect(self.__show_info)
+
         self.text_file_loaded = QLabel("File loaded: None")
         self.text_file_loaded.hide()
         self.layout_top = QHBoxLayout()
@@ -103,6 +110,7 @@ class ShumiTranslator(QWidget):
         self.layout_top.addWidget(self.csv_upload_button)
         self.layout_top.addWidget(self.compress_button)
         self.layout_top.addWidget(self.uncompress_button)
+        self.layout_top.addWidget(self.info_button)
         self.layout_top.addSpacing(20)
         self.layout_top.addWidget(self.text_file_loaded)
         self.layout_top.addStretch(1)
@@ -133,6 +141,16 @@ class ShumiTranslator(QWidget):
         self.window_layout.addWidget(self.scroll_area)
 
 
+    def __show_info(self):
+        message_box = QMessageBox()
+        message_box.setText(f"Tool done by Hobbitdur.<br/>"
+                            f"You can support me on <a href='https://www.patreon.com/HobbitMods'>Patreon</a>.<br/>"
+                            f"Special thanks to Riccardo for beta testing.<br/>"
+                            f"And to myst6re for the size bug.<br/>")
+        message_box.setIcon(QMessageBox.Icon.Information)
+        message_box.setWindowIcon(self.__shumi_icon)
+        message_box.setWindowTitle("ShumiTranslator - Info")
+        message_box.exec()
 
     def __compress_data(self):
         self.scroll_area.setEnabled(False)
