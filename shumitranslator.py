@@ -78,6 +78,22 @@ class ShumiTranslator(QWidget):
         self.csv_upload_button.setEnabled(False)
         self.csv_upload_button.clicked.connect(self.__open_csv)
 
+        self.compress_button = QPushButton()
+        self.compress_button.setIcon(QIcon(os.path.join(icon_path, 'compress.png')))
+        self.compress_button.setIconSize(QSize(30, 30))
+        self.compress_button.setFixedSize(40, 40)
+        self.compress_button.setToolTip("Compress data")
+        self.compress_button.setEnabled(False)
+        self.compress_button.clicked.connect(self.__compress_data)
+
+        self.uncompress_button = QPushButton()
+        self.uncompress_button.setIcon(QIcon(os.path.join(icon_path, 'uncompress.png')))
+        self.uncompress_button.setIconSize(QSize(30, 30))
+        self.uncompress_button.setFixedSize(40, 40)
+        self.uncompress_button.setToolTip("Uncompress data")
+        self.uncompress_button.setEnabled(False)
+        self.uncompress_button.clicked.connect(self.__uncompress_data)
+
         self.text_file_loaded = QLabel("File loaded: None")
         self.text_file_loaded.hide()
         self.layout_top = QHBoxLayout()
@@ -85,16 +101,23 @@ class ShumiTranslator(QWidget):
         self.layout_top.addWidget(self.save_button)
         self.layout_top.addWidget(self.csv_save_button)
         self.layout_top.addWidget(self.csv_upload_button)
+        self.layout_top.addWidget(self.compress_button)
+        self.layout_top.addWidget(self.uncompress_button)
         self.layout_top.addSpacing(20)
         self.layout_top.addWidget(self.text_file_loaded)
         self.layout_top.addStretch(1)
 
         # Warning
         self.warning_label_widget = QLabel(
-            "<b>WARNING:</b> Don't modify {x0...} text as they are variable for the game")
+            "{x0...} are yet unknown text correspondence.<br/>"
+            "Value between {} are \"compressed\" data.<br/>"
+            "The file as a size max (not yet known).<br/>"
+            "If you wish to get rid of parenthesis you can uncompress<br/>"
+            "But pls compress before saving to avoid size problem.")
+
         self.layout_full_top = QVBoxLayout()
         self.layout_full_top.addLayout(self.layout_top)
-        self.layout_full_top.addWidget(self.warning_label_widget)
+        #self.layout_full_top.addWidget(self.warning_label_widget)
 
         # Translation management
         self.section_widget_list = []
@@ -103,10 +126,27 @@ class ShumiTranslator(QWidget):
 
         # Main management
         self.window_layout.addLayout(self.layout_full_top)
-
+        self.layout_main.addWidget(self.warning_label_widget)
+        self.layout_main.addStretch(1)
         self.layout_main.addLayout(self.layout_translation_lines)
 
         self.window_layout.addWidget(self.scroll_area)
+
+
+
+    def __compress_data(self):
+        self.scroll_area.setEnabled(False)
+        for index_section, section_widget in enumerate(self.section_widget_list):
+            section_widget.compress_str()
+        self.scroll_area.setEnabled(True)
+
+        self.scroll_area.setEnabled(True)
+    def __uncompress_data(self):
+        self.scroll_area.setEnabled(False)
+        for index_section, section_widget in enumerate(self.section_widget_list):
+            section_widget.uncompress_str()
+        self.scroll_area.setEnabled(True)
+
 
     def __save_file(self):
         self.save_button.setDown(True)
@@ -237,9 +277,6 @@ class ShumiTranslator(QWidget):
 
         if file_to_load:
             self.file_loaded = file_to_load
-            self.csv_save_button.setEnabled(True)
-            self.save_button.setEnabled(True)
-            self.csv_upload_button.setEnabled(True)
 
             self.text_file_loaded.setText("File loaded: " + pathlib.Path(self.file_loaded).name)
 
@@ -252,6 +289,11 @@ class ShumiTranslator(QWidget):
                 while el := in_file.read(1):
                     self.current_file_data.extend(el)
             self.__load_text_from_file()
+            self.csv_save_button.setEnabled(True)
+            self.save_button.setEnabled(True)
+            self.csv_upload_button.setEnabled(True)
+            self.compress_button.setEnabled(True)
+            self.uncompress_button.setEnabled(True)
             self.text_file_loaded.show()
 
         self.scroll_area.setEnabled(True)
@@ -302,3 +344,19 @@ class ShumiTranslator(QWidget):
                 self.section_widget_list.append(SectionWidget(section, first_section_line_index))
                 self.layout_translation_lines.addWidget(self.section_widget_list[-1])
                 first_section_line_index += len(all_offset)
+
+    def __disable_all(self):
+        self.csv_save_button.setEnabled(False)
+        self.save_button.setEnabled(False)
+        self.csv_upload_button.setEnabled(False)
+        self.compress_button.setEnabled(False)
+        self.uncompress_button.setEnabled(False)
+        self.scroll_area.setEnabled(False)
+
+    def __enable_all(self):
+        self.csv_save_button.setEnabled(True)
+        self.save_button.setEnabled(True)
+        self.csv_upload_button.setEnabled(True)
+        self.compress_button.setEnabled(True)
+        self.uncompress_button.setEnabled(True)
+        self.scroll_area.setEnabled(True)

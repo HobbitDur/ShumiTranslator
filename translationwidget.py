@@ -73,8 +73,16 @@ class TranslationWidget(QWidget):
             with QSignalBlocker(self.__custom_text_widget):
                 self.__custom_text_widget.setPlainText(self.translation.get_str())
 
-        print(self.translation.get_str())
-
 
     def change_custom_text(self, custom_text):
         self.__custom_text_widget.setPlainText(custom_text)
+
+    def compress_str(self):
+        self.translation.compress_str()
+        with QSignalBlocker(self.__custom_text_widget):
+            self.__custom_text_widget.setPlainText(self.translation.get_str())
+
+    def uncompress_str(self):
+        self.translation.uncompress_str()
+        with QSignalBlocker(self.__custom_text_widget):
+            self.__custom_text_widget.setPlainText(self.translation.get_str())
