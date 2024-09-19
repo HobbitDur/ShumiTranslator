@@ -39,9 +39,9 @@ class SectionWidget(QWidget):
     def set_text_from_id(self, id: int, text: str):
         self.translation_widget_list[id].change_custom_text(text)
 
-    def compress_str(self):
+    def compress_str(self, compressible=3):
         for translation_widget in self.translation_widget_list:
-            translation_widget.compress_str()
+            translation_widget.compress_str(compressible)
 
     def uncompress_str(self):
         for translation_widget in self.translation_widget_list:

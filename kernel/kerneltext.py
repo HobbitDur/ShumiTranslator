@@ -26,7 +26,14 @@ class KernelText(KernelSection):
             self._data_hex.extend([0x00])
         self._size = len(self._data_hex)
 
-    def compress_str(self):
+    def compress_str(self, compressible=3):
+        if compressible == 0: # Not compressible
+            return
+        if compressible == 2 and self.id%2 == 0:# Only second is compressible but we are id 0 of the subsection
+            return
+        if compressible == 1 and self.id%2 == 1:# Only first is compressible but we are id 1 of the subsection (not 0)
+            return
+
         compress_list = ["{in}", "{e }", "{ne}", "{to}", "{re}", "{HP}", "{l }", "{ll}", "{GF}", "{nt}", "{il}", "{o }",
                          "{ef}", "{on}", "{ w}", "{ r}", "{wi}", "{fi}", "{EC}", "{s }", "{ar}", "{FE}", "{ S}", "{ag}"]
         for compress_el in compress_list:

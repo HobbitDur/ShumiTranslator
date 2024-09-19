@@ -119,13 +119,13 @@ class ShumiTranslator(QWidget):
         self.warning_label_widget = QLabel(
             "{x0...} are yet unknown text correspondence.<br/>"
             "Value between {} are \"compressed\" data.<br/>"
-            "The file as a size max (not yet known).<br/>"
+            "The file as a size max (40Ko ?).<br/>"
             "If you wish to get rid of parenthesis you can uncompress<br/>"
             "But pls compress before saving to avoid size problem.")
 
         self.layout_full_top = QVBoxLayout()
         self.layout_full_top.addLayout(self.layout_top)
-        #self.layout_full_top.addWidget(self.warning_label_widget)
+        # self.layout_full_top.addWidget(self.warning_label_widget)
 
         # Translation management
         self.section_widget_list = []
@@ -140,7 +140,6 @@ class ShumiTranslator(QWidget):
 
         self.window_layout.addWidget(self.scroll_area)
 
-
     def __show_info(self):
         message_box = QMessageBox()
         message_box.setText(f"Tool done by Hobbitdur.<br/>"
@@ -153,18 +152,22 @@ class ShumiTranslator(QWidget):
         message_box.exec()
 
     def __compress_data(self):
+        # Not all data can be compressed, so we do case by case
+        # We give to the subsection the offset that can be compressed (0=None, 1=First, 2 = Second, 3=Both)
         self.scroll_area.setEnabled(False)
         for index_section, section_widget in enumerate(self.section_widget_list):
-            section_widget.compress_str()
+            compressibility_factor = [x["compressibility_factor"] for x in self.game_data.kernel_data_json["sections"] if x["id"] == section_widget.section.id][
+                0]
+            section_widget.compress_str(compressibility_factor)
         self.scroll_area.setEnabled(True)
 
         self.scroll_area.setEnabled(True)
+
     def __uncompress_data(self):
         self.scroll_area.setEnabled(False)
         for index_section, section_widget in enumerate(self.section_widget_list):
             section_widget.uncompress_str()
         self.scroll_area.setEnabled(True)
-
 
     def __save_file(self):
         self.save_button.setDown(True)
@@ -210,8 +213,8 @@ class ShumiTranslator(QWidget):
                 else:
                     directory = os.getcwd()
                 csv_to_load = \
-                self.csv_save_dialog.getOpenFileName(parent=self, caption="Find csv file (in UTF8 format only)",
-                                                     filter="*.csv", directory=directory)[0]
+                    self.csv_save_dialog.getOpenFileName(parent=self, caption="Find csv file (in UTF8 format only)",
+                                                         filter="*.csv", directory=directory)[0]
 
             if csv_to_load:
                 section_text_id = 0
@@ -236,7 +239,7 @@ class ShumiTranslator(QWidget):
                             section_text_id = int(row[4])
                             text_id = int(row[5])
                             text_loaded = row[6]
-                            text_loaded =  text_loaded.replace('`', "'")# Managing this case as many people do the mistake.
+                            text_loaded = text_loaded.replace('`', "'")  # Managing this case as many people do the mistake.
                             if text_loaded != "":  # If empty it will not be applied, so better be fast
                                 for widget_index, widget in enumerate(self.section_widget_list):
                                     if widget.section.type == "text" and widget.section.id == section_text_id:
@@ -251,7 +254,6 @@ class ShumiTranslator(QWidget):
                     message_box.setWindowTitle("ShumiTranslator - Wrong CSV encoding")
                     message_box.setWindowIcon(self.__shumi_icon)
                     message_box.exec()
-
 
                 self.scroll_area.setEnabled(True)
 
@@ -351,8 +353,7 @@ class ShumiTranslator(QWidget):
                 # new_section.init_subsection(nb_subsection=section_info['number_sub_section'], subsection_sized=section_info['sub_section_size'])
             self.section_list.append(new_section)
 
-
-        first_section_line_index = 2 # Start at 2 as in the CSV
+        first_section_line_index = 2  # Start at 2 as in the CSV
         for i, section in enumerate(self.section_list):
             if section.type == "text":
                 # Adding the link from data to text as text were not constructed yet.
