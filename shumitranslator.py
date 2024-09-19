@@ -218,6 +218,7 @@ class ShumiTranslator(QWidget):
                             section_text_id = int(row[4])
                             text_id = int(row[5])
                             text_loaded = row[6]
+                            text_loaded =  text_loaded.replace('`', "'")# Managing this case as many people do the mistake.
                             if text_loaded != "":  # If empty it will not be applied, so better be fast
                                 for widget_index, widget in enumerate(self.section_widget_list):
                                     if widget.section.type == "text" and widget.section.id == section_text_id:
