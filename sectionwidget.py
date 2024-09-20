@@ -1,13 +1,12 @@
-from PyQt6.QtCore import Qt
-from PyQt6.QtWidgets import QWidget, QHBoxLayout, QLabel, QVBoxLayout, QFrame
+from PyQt6.QtWidgets import QWidget, QLabel, QVBoxLayout, QFrame
 
-from kernel.kernelsectiontext import KernelSectionText
+from general.ff8sectiontext import FF8SectionText
 from translationwidget import TranslationWidget
 
 
 class SectionWidget(QWidget):
 
-    def __init__(self, section: KernelSectionText, first_section_line_index):
+    def __init__(self, section: FF8SectionText, first_section_line_index):
         QWidget.__init__(self)
 
         self.section = section

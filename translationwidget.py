@@ -1,12 +1,12 @@
 from PyQt6.QtCore import QSignalBlocker
 from PyQt6.QtWidgets import QPlainTextEdit, QWidget, QHBoxLayout, QLabel, QVBoxLayout, QMessageBox, QFrame
 
-from kernel.kerneltext import KernelText
+from general.ff8text import FF8Text
 
 
 class TranslationWidget(QWidget):
 
-    def __init__(self, translation: KernelText, line_number):
+    def __init__(self, translation: FF8Text, line_number):
         QWidget.__init__(self)
         self.translation = translation
         self.__line_number = line_number

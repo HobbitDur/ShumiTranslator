@@ -1,16 +1,14 @@
-from lzma import compress
-
 from FF8GameData.gamedata import GameData
-from kernel.kernelsection import KernelSection
+from general.section import Section
 
 
-class KernelText(KernelSection):
-    def __init__(self, game_data: GameData, own_offset: int, text_hex: bytearray, id: int):
-        KernelSection.__init__(self, game_data=game_data, own_offset=own_offset, data_hex=text_hex, id=id, name="")
+class FF8Text(Section):
+    def __init__(self, game_data: GameData, own_offset: int, data_hex: bytearray, id: int):
+        Section.__init__(self, game_data=game_data, own_offset=own_offset, data_hex=data_hex, id=id, name="")
         self._text_str = self._game_data.translate_hex_to_str(self._data_hex)
 
     def __str__(self):
-        return f"KernelText: Text: {self._text_str} - bytes: {self._data_hex} - Hex: {self._data_hex.hex(sep=" ")}"
+        return f"FF8Text: Text: {self._text_str} - bytes: {self._data_hex} - Hex: {self._data_hex.hex(sep=" ")}"
 
     def __repr__(self):
         return self.__str__()

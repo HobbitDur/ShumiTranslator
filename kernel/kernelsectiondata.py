@@ -1,13 +1,13 @@
 from FF8GameData.gamedata import GameData
-from kernel.kernelsection import KernelSection
-from kernel.kernelsectiontext import KernelSectionText
-from kernel.kernelsubsectiondata import KernelSubSectionData
+from general.section import Section
+from general.ff8sectiontext import FF8SectionText
+from kernel.kernelsubsectiondata import SubSectionData
 
 
-class KernelSectionData(KernelSection):
+class SectionData(Section):
     def __init__(self, game_data: GameData, data_hex: bytearray, id: int, own_offset: int, subsection_nb_text_offset: int, name: str,
-                 section_text_linked: KernelSectionText = None):
-        KernelSection.__init__(self, game_data=game_data, data_hex=data_hex, id=id, own_offset=own_offset, name=name)
+                 section_text_linked: FF8SectionText = None):
+        Section.__init__(self, game_data=game_data, data_hex=data_hex, id=id, own_offset=own_offset, name=name)
         self._subsection_nb_text_offset = subsection_nb_text_offset
         self.section_text_linked = section_text_linked
         self._subsection_list = []
@@ -25,7 +25,7 @@ class KernelSectionData(KernelSection):
             offset = 0
             id = 0
         self._subsection_list.append(
-            KernelSubSectionData(game_data=self._game_data, data_hex=data_hex, own_offset=offset, id=id, nb_text_offset=self._subsection_nb_text_offset))
+            SubSectionData(game_data=self._game_data, data_hex=data_hex, own_offset=offset, id=id, nb_text_offset=self._subsection_nb_text_offset))
 
     def get_all_offset(self):
         offset_list = []

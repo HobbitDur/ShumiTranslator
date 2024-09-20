@@ -1,13 +1,13 @@
 from FF8GameData.gamedata import GameData
-from kernel.kerneldata import KernelData
-from kernel.kernelsection import KernelSection
+from general.ff8data import FF8Data
+from general.section import Section
 
 
-class KernelSectionHeader(KernelSection):
+class SectionHeader(Section):
     OFFSET_SIZE = 4
 
     def __init__(self, game_data: GameData, data_hex, name):
-        KernelSection.__init__(self, game_data=game_data, data_hex=data_hex, id=0, own_offset=0, name=name)
+        Section.__init__(self, game_data=game_data, data_hex=data_hex, id=0, own_offset=0, name=name)
         self._data_list = []
         self.type = "header"
         self.analyze_data()
@@ -28,7 +28,7 @@ class KernelSectionHeader(KernelSection):
             id = 0
             offset_type = False  # Only first section without an offset but with the number of section instead
 
-        self._data_list.append(KernelData(game_data=self._game_data, data_hex=data_hex, own_offset=offset, id=id, offset_type=offset_type))
+        self._data_list.append(FF8Data(game_data=self._game_data, data_hex=data_hex, own_offset=offset, id=id, offset_type=offset_type))
 
     def analyze_data(self):
         for i in range(0, len(self._data_hex), self.OFFSET_SIZE):

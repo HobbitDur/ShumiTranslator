@@ -1,11 +1,11 @@
 from FF8GameData.gamedata import GameData
-from kernel.kernelsection import KernelSection
-from kernel.kerneltext import KernelText
+from general.section import Section
+from general.ff8text import FF8Text
 
 
-class KernelSectionText(KernelSection):
+class FF8SectionText(Section):
     def __init__(self, game_data: GameData, data_hex: bytearray, id: int, own_offset: int, name: str, section_data_linked=None):
-        KernelSection.__init__(self, game_data=game_data, data_hex=data_hex, id=id, own_offset=own_offset, name=name)
+        Section.__init__(self, game_data=game_data, data_hex=data_hex, id=id, own_offset=own_offset, name=name)
         self._text_list = []
         self.section_data_linked = section_data_linked
         self.type = "text"
@@ -32,7 +32,7 @@ class KernelSectionText(KernelSection):
         else:
             offset = 0
             id = 0
-        self._text_list.append(KernelText(game_data=self._game_data, text_hex=text_hex, own_offset=offset, id=id))
+        self._text_list.append(FF8Text(game_data=self._game_data, data_hex=text_hex, own_offset=offset, id=id))
 
     def get_text_list(self):
         return self._text_list

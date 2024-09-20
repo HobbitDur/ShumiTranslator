@@ -1,11 +1,11 @@
 from FF8GameData.gamedata import GameData
-from kernel.kernelsection import KernelSection
+from general.section import Section
 
 
-class KernelData(KernelSection):
+class FF8Data(Section):
 
     def __init__(self, game_data: GameData, own_offset: int, data_hex: bytearray, id: int, offset_type=False):
-        KernelSection.__init__(self, game_data=game_data, own_offset=own_offset, data_hex=data_hex, id=id, name="")
+        Section.__init__(self, game_data=game_data, own_offset=own_offset, data_hex=data_hex, id=id, name="")
         self._offset_type = offset_type
 
     def __str__(self):

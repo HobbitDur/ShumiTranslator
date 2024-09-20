@@ -1,13 +1,13 @@
 from FF8GameData.gamedata import GameData
-from kernel.kerneldata import KernelData
-from kernel.kernelsection import KernelSection
+from general.ff8data import FF8Data
+from general.section import Section
 
 
-class KernelSubSectionData(KernelSection):
+class SubSectionData(Section):
     OFFSET_SIZE = 2
 
     def __init__(self, game_data: GameData, data_hex: bytearray, id: int, own_offset: int, nb_text_offset: int):
-        KernelSection.__init__(self, game_data=game_data, data_hex=data_hex, id=id, own_offset=own_offset, name="")
+        Section.__init__(self, game_data=game_data, data_hex=data_hex, id=id, own_offset=own_offset, name="")
         self._nb_text_offset = nb_text_offset
         self._data_list = []
         self._analyze_data()
@@ -25,7 +25,7 @@ class KernelSubSectionData(KernelSection):
         else:
             offset = 0
             id = 0
-        self._data_list.append(KernelData(game_data=self._game_data, data_hex=data_hex, own_offset=offset, id=id, offset_type=offset_type))
+        self._data_list.append(FF8Data(game_data=self._game_data, data_hex=data_hex, own_offset=offset, id=id, offset_type=offset_type))
 
     def get_all_offset(self):
         offset_list = []
