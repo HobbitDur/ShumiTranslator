@@ -39,9 +39,6 @@ jobs:
           cd release
           rm -r build
           rm *.exe
-          ls -al
-          cd ..
-          ls -al
       - name: zip name continuous
         shell: bash
         if: github.event.ref_type != 'tag' && github.ref == 'refs/heads/master'
