@@ -3,10 +3,14 @@ name: Auto-release
 on:
   push:
     branches: [ "master" ]
+    tags:
+      - "*"
   pull_request:
     branches: [ "master" ]
   workflow_dispatch:
-  create: null
+  create:
+    tags:
+      - "*"
 
 jobs:
   create_assets:
