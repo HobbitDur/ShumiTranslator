@@ -6,6 +6,7 @@ on:
   pull_request:
     branches: [ "master" ]
   workflow_dispatch:
+  create: null
 
 jobs:
   create_assets:
