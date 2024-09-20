@@ -85,12 +85,13 @@ jobs:
         title: "Unstable Build"
         files: |
           artifact-*/*
-    - name: Deploy Package
+    - name: Deploy tag Package
       if: github.event.ref_type == 'tag'
       uses: crowbarmaster/GH-Automatic-Releases@latest
       with:
         repo_token: "${{ secrets.GITHUB_TOKEN }}"
         prerelease: false
-        title: ${{ github.event.ref }}
+        automatic_release_tag: ${{ github.ref_name }}
+        title: ${{ github.ref_name }}
         files: |
           artifact-*/*
