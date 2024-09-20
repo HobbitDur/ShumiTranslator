@@ -10,7 +10,10 @@ jobs:
   create_assets:
       runs-on: windows-latest
       steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: 'true'
       - name: Set up Python 3.12
         uses: actions/setup-python@v5
         with:
