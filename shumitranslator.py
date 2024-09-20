@@ -129,6 +129,7 @@ class ShumiTranslator(QWidget):
             "The file as a size max (40Ko ?).<br/>"
             "If you wish to get rid of parenthesis you can uncompress<br/>"
             "But pls compress before saving to avoid size problem.")
+        self.warning_label_widget.hide()
 
         self.layout_full_top = QVBoxLayout()
         self.layout_full_top.addLayout(self.layout_top)
@@ -147,15 +148,16 @@ class ShumiTranslator(QWidget):
 
         self.window_layout.addWidget(self.scroll_area)
 
-        self.kernel_manager = KernelManager(game_data=self.game_data,  box_icon=self.__shumi_icon)
+        self.kernel_manager = KernelManager(game_data=self.game_data)
         self.namedic_manager = SectionStringManager(game_data=self.game_data)
 
     def __show_info(self):
         message_box = QMessageBox()
-        message_box.setText(f"Tool done by Hobbitdur.<br/>"
+        message_box.setText(f"Tool done by <b>Hobbitdur</b>.<br/>"
                             f"You can support me on <a href='https://www.patreon.com/HobbitMods'>Patreon</a>.<br/>"
-                            f"Special thanks to Riccardo for beta testing.<br/>"
-                            f"And to myst6re for the size bug.<br/>")
+                            f"Special thanks to :<br/>"
+                            f"&nbsp;&nbsp;-<b>Riccardo</b> for beta testing.<br/>"
+                            f"&nbsp;&nbsp;-<b>myst6re</b> for all the retro-engineering.")
         message_box.setIcon(QMessageBox.Icon.Information)
         message_box.setWindowIcon(self.__shumi_icon)
         message_box.setWindowTitle("ShumiTranslator - Info")
@@ -185,7 +187,17 @@ class ShumiTranslator(QWidget):
         self.save_button.setDown(True)
         self.scroll_area.setEnabled(False)
         if self.file_loaded:
-            self.kernel_manager.save_file(self.file_loaded)
+            if self.file_loaded_type == FileType.KERNEL:
+                self.kernel_manager.save_file(self.file_loaded)
+            elif self.file_loaded_type == FileType.NAMEDIC:
+                self.namedic_manager.save_file(self.file_loaded)
+
+        message_box = QMessageBox()
+        message_box.setText("Data saved to file <b>{}</b>".format(pathlib.Path(self.file_loaded).name))
+        message_box.setIcon(QMessageBox.Icon.Information)
+        message_box.setWindowTitle("ShumiTranslator - Data saved")
+        message_box.setWindowIcon(self.__shumi_icon)
+        message_box.exec()
         self.save_button.setDown(False)
         self.scroll_area.setEnabled(True)
 
@@ -201,7 +213,20 @@ class ShumiTranslator(QWidget):
                     self.csv_save_dialog.getOpenFileName(parent=self, caption="Find csv file (in UTF8 format only)",
                                                          filter="*.csv", directory=directory)[0]
             if csv_to_load:
-                self.kernel_manager.load_csv(csv_to_load=csv_to_load, section_widget_list=self.section_widget_list)
+                try:
+                    if self.file_loaded_type == FileType.KERNEL:
+                        self.kernel_manager.load_csv(csv_to_load=csv_to_load, section_widget_list=self.section_widget_list)
+                    elif self.file_loaded_type == FileType.NAMEDIC:
+                        self.namedic_manager.load_csv(csv_to_load=csv_to_load, section_widget_list=self.section_widget_list)
+                except UnicodeDecodeError as e:
+                    print(e)
+                    message_box = QMessageBox()
+                    message_box.setText("Wrong <b>encoding</b>, please use <b>UTF8</b> formating only.<br>"
+                                        "In excel, you can go to the \"Data tab\", \"Import text file\" and choose UTF8 encoding")
+                    message_box.setIcon(QMessageBox.Icon.Critical)
+                    message_box.setWindowTitle("ShumiTranslator - Wrong CSV encoding")
+                    message_box.setWindowIcon(self.__shumi_icon)
+                    message_box.exec()
 
         self.scroll_area.setEnabled(True)
 
@@ -212,7 +237,10 @@ class ShumiTranslator(QWidget):
         default_file_name = os.path.join(self.CSV_FOLDER, csv_name)
         file_to_save = self.csv_save_dialog.getSaveFileName(parent=self, caption="Find csv file", filter="*.csv",
                                                             directory=default_file_name)[0]
-        self.kernel_manager.save_csv(file_to_save)
+        if self.file_loaded_type == FileType.KERNEL:
+            self.kernel_manager.save_csv(file_to_save)
+        elif self.file_loaded_type == FileType.NAMEDIC:
+            self.namedic_manager.save_csv(file_to_save)
 
     def __load_file(self, file_to_load: str = ""):
 
@@ -221,6 +249,7 @@ class ShumiTranslator(QWidget):
         self.uncompress_button.setEnabled(False)
         self.compress_button.hide()
         self.uncompress_button.hide()
+        self.warning_label_widget.hide()
         # file_to_load = os.path.join("OriginalFiles", "kernel.bin")  # For developing faster
         if not file_to_load:
             filter_txt = ""
@@ -244,6 +273,7 @@ class ShumiTranslator(QWidget):
 
             # Choose which manager to load
             if "kernel" in file_name and ".bin" in file_name:
+                self.file_loaded_type = FileType.KERNEL
                 self.kernel_manager.load_file(self.file_loaded)
                 first_section_line_index = 2  # Start at 2 as in the CSV
                 for section in self.kernel_manager.section_list:
@@ -255,8 +285,10 @@ class ShumiTranslator(QWidget):
                 self.uncompress_button.setEnabled(True)
                 self.compress_button.show()
                 self.uncompress_button.show()
+                self.warning_label_widget.show()
 
             elif "namedic" in file_name and ".bin" in file_name:
+                self.file_loaded_type = FileType.NAMEDIC
                 self.namedic_manager.load_file(self.file_loaded)
                 # Only one section
                 first_section_line_index = 2  # Start at 2 as in the CSV

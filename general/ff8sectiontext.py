@@ -10,6 +10,12 @@ class FF8SectionText(Section):
         self.section_data_linked = section_data_linked
         self.type = "text"
 
+    def __str__(self):
+        return "FF8SectionText : " + str(self._text_list)
+
+    def __repr__(self):
+        return self.__str__()
+
     def init_text(self, offset_list: list):
         if not offset_list:
             return
@@ -37,7 +43,7 @@ class FF8SectionText(Section):
     def get_text_list(self):
         return self._text_list
 
-    def get_text_from_id(self, id_text:int):
+    def get_text_from_id(self, id_text: int):
         return self._text_list[id_text].get_str()
 
     def update_text_data(self):

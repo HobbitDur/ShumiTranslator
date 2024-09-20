@@ -1,8 +1,9 @@
+import csv
+
 from FF8GameData.gamedata import GameData
-from general.ff8data import FF8Data
 from general.ff8sectiontext import FF8SectionText
-from general.ff8text import FF8Text
 from general.section import Section
+from mngrp.sectiondata import SectionData
 
 
 class SectionStringManager(Section):
@@ -14,9 +15,8 @@ class SectionStringManager(Section):
         Section.__init__(self, game_data=game_data, data_hex=bytearray(), id=0, own_offset=0, name="")
 
         self._nb_offset = 0
-        self._offset_list = []
+        self._offset_section = None
         self._text_section = None
-        self.__analyse_data()
 
     def load_file(self, file):
         current_file_data = bytearray()
@@ -24,39 +24,65 @@ class SectionStringManager(Section):
             while el := in_file.read(1):
                 current_file_data.extend(el)
         self._set_data_hex(current_file_data)
-        self.__analyse_data()
-
-    def __analyse_data(self):
         self._nb_offset = int.from_bytes(self._data_hex[0:self.HEADER_SIZE], byteorder='little')
-        print(f"Nb offset: {self._nb_offset}")
-        for i in range(self._nb_offset):
-            data_offset = self._data_hex[i * self.OFFSET_SIZE:(i + 1) * self.OFFSET_SIZE]
-            if data_offset != b'\x00\x00':  # offset at 0 are value to be ignored.
-                new_data = FF8Data(game_data=self._game_data, own_offset=self.HEADER_SIZE + i * self.HEADER_SIZE,
-                                   data_hex=data_offset, id=i,
-                                   offset_type=True)
-                self._offset_list.append(new_data)
-        print(f"Offset list: { self._offset_list}")
-        text_data_start = self._nb_offset * self.OFFSET_SIZE + 1
+        self._offset_section = SectionData(game_data=self._game_data,
+                                           data_hex=current_file_data[self.HEADER_SIZE:self._nb_offset * self.OFFSET_SIZE + self.HEADER_SIZE], id=0,
+                                           own_offset=self.HEADER_SIZE, nb_offset=self._nb_offset, name="")
+
+        first_offset = self._offset_section.get_all_offset()[0]
+        text_data_start = first_offset
         text_data = self._data_hex[text_data_start:len(self._data_hex)]
-        self._text_section = FF8SectionText(game_data=self._game_data, data_hex=text_data, id=0, own_offset=0, name="")
-        curr_offset_list= []
-        for ff8_data in self._offset_list:
-            curr_offset_list.append(ff8_data.get_offset_value())
-        self._text_section.init_text(curr_offset_list)
-        print(self._text_section)
+        self._text_section = FF8SectionText(game_data=self._game_data, data_hex=text_data, id=0, own_offset=0, name="",
+                                            section_data_linked=self._offset_section)
+        self._text_section.section_data_linked.section_text_linked = self._text_section
+        offset_list = self._offset_section.get_all_offset()
+        for i in range(len(offset_list)):
+            offset_list[i] -= self.HEADER_SIZE + self.OFFSET_SIZE * self._nb_offset
+        self._text_section.init_text(offset_list)
         self.compute_data()  # To compute if there was offset removed (by removing offset with 0 value)
 
+    def save_file(self, file):
+        self._offset_section.set_all_offset_value(self._text_section.get_text_list())
+
+        self.compute_data()
+        with open(file, "wb") as in_file:
+            in_file.write(self._data_hex)
 
     def compute_data(self):
         self._data_hex = bytearray()
         self._data_hex.extend(self._nb_offset.to_bytes(byteorder='little', length=2))
-        for offset in self._offset_list:
-            self._data_hex.extend(offset.get_data_hex())
+        self._data_hex.extend(self._offset_section.get_data_hex())
         self._text_section.update_text_data()
         self._data_hex.extend(self._text_section.get_data_hex())
-        print(self._data_hex)
         return self._data_hex
 
     def get_text_section(self):
         return self._text_section
+
+    def save_csv(self, csv_path):
+        if csv_path:
+            with open(csv_path, 'w', newline='', encoding="utf-8") as csv_file:
+                csv_writer = csv.writer(csv_file, delimiter=';', quotechar='|', quoting=csv.QUOTE_MINIMAL)
+
+                csv_writer.writerow(
+                    ['Text id', 'Text'])
+                for ff8_text in self._text_section.get_text_list():
+                    text_id = ff8_text.id
+                    csv_writer.writerow([text_id, ff8_text.get_str()])
+
+    def load_csv(self, csv_to_load, section_widget_list):
+        if csv_to_load:
+            with open(csv_to_load, newline='', encoding="utf-8") as csv_file:
+
+                csv_data = csv.reader(csv_file, delimiter=';', quotechar='|')
+                # ['Text id', 'Text']
+                for row_index, row in enumerate(csv_data):
+                    if row_index == 0:  # Ignoring title row
+                        continue
+                    text_id = int(row[0])
+                    text_loaded = row[1]
+                    # Managing this case as many people do the mistake.
+                    text_loaded = text_loaded.replace('`', "'")
+                    if text_loaded != "":  # If empty it will not be applied, so better be fast
+                        for widget_index, widget in enumerate(section_widget_list):
+                            section_widget_list[widget_index].set_text_from_id(text_id, text_loaded)

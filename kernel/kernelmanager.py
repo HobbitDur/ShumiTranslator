@@ -13,11 +13,9 @@ from sectionwidget import SectionWidget
 
 
 class KernelManager():
-    def __init__(self, box_icon:QIcon, game_data:GameData):
-        self.__shumi_icon = box_icon
+    def __init__(self, game_data: GameData):
         self.game_data = game_data
         self.section_list = []
-
 
     def save_file(self, file):
         current_offset = 0
@@ -40,14 +38,6 @@ class KernelManager():
             current_file_data.extend(section.get_data_hex())
         with open(file, "wb") as in_file:
             in_file.write(current_file_data)
-        print("File saved")
-
-        message_box = QMessageBox()
-        message_box.setText("Data saved to file <b>{}</b>".format(pathlib.Path(file).name))
-        message_box.setIcon(QMessageBox.Icon.Information)
-        message_box.setWindowTitle("ShumiTranslator - Data saved")
-        message_box.setWindowIcon(self.__shumi_icon)
-        message_box.exec()
 
     def load_file(self, file):
         current_file_data = bytearray()
@@ -94,7 +84,6 @@ class KernelManager():
                 # Initializing the text now that we can get all the offset
                 section.init_text(section.section_data_linked.get_all_offset())
 
-
     def save_csv(self, csv_path):
         if csv_path:
             with open(csv_path, 'w', newline='', encoding="utf-8") as csv_file:
@@ -117,35 +106,24 @@ class KernelManager():
                                          section.section_text_linked.get_text_from_id(text_id)])
 
     def load_csv(self, csv_to_load, section_widget_list):
-            if csv_to_load:
-                try:
-                    with open(csv_to_load, newline='', encoding="utf-8") as csv_file:
+        if csv_to_load:
+            with open(csv_to_load, newline='', encoding="utf-8") as csv_file:
 
-                        csv_data = csv.reader(csv_file, delimiter=';', quotechar='|')
-                        # ['Section data name', 'Section data id', 'Sub section data id', 'Data id', 'Section text id', 'Text id', 'Text']
-                        for row_index, row in enumerate(csv_data):
-                            if row_index == 0:  # Ignoring title row
-                                continue
+                csv_data = csv.reader(csv_file, delimiter=';', quotechar='|')
+                # ['Section data name', 'Section data id', 'Sub section data id', 'Data id', 'Section text id', 'Text id', 'Text']
+                for row_index, row in enumerate(csv_data):
+                    if row_index == 0:  # Ignoring title row
+                        continue
 
-                            # section_data_id = int(row[1])
-                            # sub_section_data_id = int(row[2])
-                            # data_id = int(row[3])
-                            section_text_id = int(row[4])
-                            text_id = int(row[5])
-                            text_loaded = row[6]
-                            # Managing this case as many people do the mistake.
-                            text_loaded = text_loaded.replace('`',"'")
-                            if text_loaded != "":  # If empty it will not be applied, so better be fast
-                                for widget_index, widget in enumerate(section_widget_list):
-                                    if widget.section.type == "text" and widget.section.id == section_text_id:
-                                        section_widget_list[widget_index].set_text_from_id(text_id, text_loaded)
-                    print("csv loaded")
-                except UnicodeDecodeError as e:
-                    print(e)
-                    message_box = QMessageBox()
-                    message_box.setText("Wrong <b>encoding</b>, please use <b>UTF8</b> formating only.<br>"
-                                        "In excel, you can go to the \"Data tab\", \"Import text file\" and choose UTF8 encoding")
-                    message_box.setIcon(QMessageBox.Icon.Critical)
-                    message_box.setWindowTitle("ShumiTranslator - Wrong CSV encoding")
-                    message_box.setWindowIcon(self.__shumi_icon)
-                    message_box.exec()
+                    # section_data_id = int(row[1])
+                    # sub_section_data_id = int(row[2])
+                    # data_id = int(row[3])
+                    section_text_id = int(row[4])
+                    text_id = int(row[5])
+                    text_loaded = row[6]
+                    # Managing this case as many people do the mistake.
+                    text_loaded = text_loaded.replace('`', "'")
+                    if text_loaded != "":  # If empty it will not be applied, so better be fast
+                        for widget_index, widget in enumerate(section_widget_list):
+                            if widget.section.type == "text" and widget.section.id == section_text_id:
+                                section_widget_list[widget_index].set_text_from_id(text_id, text_loaded)
