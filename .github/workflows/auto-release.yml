@@ -31,11 +31,11 @@ jobs:
         shell: bash
         run: |
           pyinstaller -n ShumiTranslator -F --specpath release/build --distpath release --workpath release/build --onefile --noconsole --icon=../../Resources/icon.ico main.py
-          mkdir -p release/ShumiTranslator-x.x
-          mkdir -p release/ShumiTranslator-x.x/FF8GameData
-          cp -R Resources release/ShumiTranslator-x.x/
+          mkdir -p release/ShumiTranslator
+          mkdir -p release/ShumiTranslator/FF8GameData
+          cp -R Resources release/ShumiTranslator/
           cp -R FF8GameData/Resources release/ShumiTranslator-x.x/FF8GameData/
-          cp release/*.exe release/ShumiTranslator-x.x/
+          cp release/*.exe release/ShumiTranslator/
           cd release
           rm -r build
           rm *.exe
