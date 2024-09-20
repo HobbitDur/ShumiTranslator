@@ -34,7 +34,7 @@ jobs:
           mkdir -p release/ShumiTranslator
           mkdir -p release/ShumiTranslator/FF8GameData
           cp -R Resources release/ShumiTranslator/
-          cp -R FF8GameData/Resources release/ShumiTranslator-x.x/FF8GameData/
+          cp -R FF8GameData/Resources release/ShumiTranslator/FF8GameData/
           cp release/*.exe release/ShumiTranslator/
           cd release
           rm -r build
