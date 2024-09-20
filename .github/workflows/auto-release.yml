@@ -37,7 +37,6 @@ jobs:
           cp -R FF8GameData/Resources release/ShumiTranslator-x.x/FF8GameData/
           cp release/*.exe release/ShumiTranslator-x.x/
           cd release
-          rm -r ShumiTranslator-x.x
           rm -r build
           rm *.exe
           ls -al
