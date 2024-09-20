@@ -1,0 +1,90 @@
+name: Auto-release
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  create_assets:
+      runs-on: windows-latest
+      steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pyinstaller
+          python --version
+          pip freeze
+      - uses: milliewalky/setup-7-zip@v1
+      - name: Create release
+        shell: bash
+        run: |
+          cd ifrit-xlsx/
+          pyinstaller -n ShumiTranslator -F --specpath release/build --distpath release --workpath release/build --onefile --noconsole --icon=../../Resources/icon.ico main.py
+          mkdir -p release/ShumiTranslator-x.x
+          mkdir -p release/ShumiTranslator-x.x/FF8GameData
+          cp -R Resources release/ShumiTranslator-x.x/
+          cp -R FF8GameData/Resources release/ShumiTranslator-x.x/FF8GameData/
+          cp release/*.exe release/ShumiTranslator-x.x/
+          cd release/ShumiTranslator-x.x
+          cd ..
+          rm -r ShumiTranslator-x.x
+          rm -r build
+          rm *.exe
+      - name: zip name continuous
+        shell: bash
+        if: github.event.ref_type != 'tag' && github.ref == 'refs/heads/master'
+        run: |
+          cd release/ShumiTranslator
+          7z  a -tzip "../ShumiTranslator-continuous-${{  github.sha }}.zip" .
+          pwd
+      - name: zip name tag
+        shell: bash
+        if: github.event.ref_type == 'tag'
+        run: |
+          cd release/ShumiTranslator
+          7z  a -tzip "../ShumiTranslator${{  github.ref_name }}.zip" .  
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: "artifact-${{ github.sha }}"
+          path: ${{ github.workspace }}/release/ShumiTranslator*.zip
+  release_assets:
+    name: Release
+    needs:
+    - create_assets
+    runs-on: windows-latest
+    concurrency: release-${{ github.ref }}
+    steps:
+    - name: Download Files
+      uses: actions/download-artifact@v4
+    - name: Test
+      shell: bash
+      run: |
+        ls -al
+    - name: Deploy Package
+      if: github.event.ref_type != 'tag' && github.ref == 'refs/heads/master'
+      uses: crowbarmaster/GH-Automatic-Releases@latest
+      with:
+        repo_token: "${{ secrets.GITHUB_TOKEN }}"
+        automatic_release_tag: "continuous"
+        prerelease: true
+        title: "Unstable Build"
+        files: |
+          artifact-*/*
+    - name: Deploy Package
+      if: github.event.ref_type == 'tag'
+      uses: crowbarmaster/GH-Automatic-Releases@latest
+      with:
+        repo_token: "${{ secrets.GITHUB_TOKEN }}"
+        prerelease: false
+        title: ${{ github.event.ref }}
+        files: |
+          artifact-*/*
