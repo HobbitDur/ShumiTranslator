@@ -43,13 +43,15 @@ jobs:
           rm *.exe
       - name: Set outputs
         id: vars
-        run: echo "sha_short=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
+        run: |
+          calculatedSha=$(git rev-parse --short ${{ github.sha }})
+          echo "COMMIT_SHORT_SHA=$calculatedSha" >> $GITHUB_ENV
       - name: zip name continuous
         shell: bash
         if: github.event.ref_type != 'tag' && github.ref == 'refs/heads/master'
         run: |
           cd release/ShumiTranslator
-          7z  a -tzip "../ShumiTranslator-continuous-${{ steps.vars.outputs.sha_short }}.zip" .
+          7z  a -tzip "../ShumiTranslator-continuous-${{ env.COMMIT_SHORT_SHA }}.zip" .
           pwd
       - name: zip name tag
         shell: bash
@@ -60,7 +62,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: "artifact-${{ steps.vars.outputs.sha_short }}"
+          name: "artifact-${{ env.COMMIT_SHORT_SHA }}"
           path: ${{ github.workspace }}/release/
   release_assets:
     name: Release
