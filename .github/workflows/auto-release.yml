@@ -79,6 +79,10 @@ jobs:
         ls -al
         cd release
         ls -al
+        echo  ${{ github.event.ref_type }}
+        echo  ${{ github.ref}}
+        echo  github.event.ref_type
+        echo  github.ref
     - name: Deploy Package
       if: github.event.ref_type != 'tag' && github.ref == 'refs/heads/master'
       uses: crowbarmaster/GH-Automatic-Releases@latest
@@ -90,12 +94,12 @@ jobs:
         files: |
           release/artifact-*/*
     - name: Deploy tag Package
-      if: github.event.ref_type == 'tag'
+      if: github.event_name == 'create' && github.event.ref_type == 'tag'
       uses: crowbarmaster/GH-Automatic-Releases@latest
       with:
         repo_token: "${{ secrets.GITHUB_TOKEN }}"
+        overwrite_tag: false
         prerelease: false
-        automatic_release_tag: ${{ github.ref_name }}
-        title: ${{ github.ref_name }}
+        title: "ShumiTranslator-${{ github.ref_name }}"
         files: |
           release/artifact-*/*
