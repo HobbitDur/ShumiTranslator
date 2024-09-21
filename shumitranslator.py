@@ -124,7 +124,7 @@ class ShumiTranslator(QWidget):
 
         # Warning
         self.warning_label_widget = QLabel(
-            "{x0...} are yet unknown text correspondence.<br/>"
+            "{x0...} are yet unknown text correspondence. Pls don't modify them.<br/>"
             "Value between {} are \"compressed\" data.<br/>"
             "The file as a size max (40Ko ?).<br/>"
             "If you wish to get rid of parenthesis you can uncompress<br/>"
