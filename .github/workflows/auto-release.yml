@@ -61,7 +61,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: "artifact-${{ github.sha }}"
-          path: ${{ github.workspace }}/release/ShumiTranslator*.zip
+          path: ${{ github.workspace }}/release/
   release_assets:
     name: Release
     needs:
@@ -71,6 +71,8 @@ jobs:
     steps:
     - name: Download Files
       uses: actions/download-artifact@v4
+      with:
+        path: ${{ github.workspace }}/release/
     - name: Test
       shell: bash
       run: |
