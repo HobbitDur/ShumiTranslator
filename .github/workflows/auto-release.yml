@@ -41,14 +41,12 @@ jobs:
           cd release
           rm -r build
           rm *.exe
-      - name: Set outputs
-        run: echo "SHORT_SHA=`echo ${GITHUB_SHA} | cut -c1-7`" >> $GITHUB_ENV
       - name: zip name continuous
         shell: bash
         if: github.event.ref_type != 'tag' && github.ref == 'refs/heads/master'
         run: |
           cd release/ShumiTranslator
-          7z  a -tzip "../ShumiTranslator-continuous-${SHORT_SHA}.zip" .
+          7z  a -tzip "../ShumiTranslator-continuous-${{ github.sha}}.zip" .
           pwd
       - name: zip name tag
         shell: bash
@@ -59,7 +57,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: "artifact-${SHORT_SHA}"
+          name: "artifact-${{ github.sha}}"
           path: ${{ github.workspace }}/release/
   release_assets:
     name: Release
@@ -83,7 +81,6 @@ jobs:
         echo  ${{ github.ref}}
         echo  ${{ github.ref_name}}
         echo  ${{ github.sha}} | cut -c1-7
-        echo  ${SHORT_SHA}
     - name: Deploy Package
       if: github.event.ref_type != 'tag' && github.ref == 'refs/heads/master'
       uses: crowbarmaster/GH-Automatic-Releases@latest
