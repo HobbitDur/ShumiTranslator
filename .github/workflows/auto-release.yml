@@ -77,6 +77,8 @@ jobs:
       shell: bash
       run: |
         ls -al
+        cd release
+        ls -al
     - name: Deploy Package
       if: github.event.ref_type != 'tag' && github.ref == 'refs/heads/master'
       uses: crowbarmaster/GH-Automatic-Releases@latest
@@ -86,7 +88,7 @@ jobs:
         prerelease: true
         title: "Unstable Build"
         files: |
-          artifact-*/*
+          release/artifact-*/*
     - name: Deploy tag Package
       if: github.event.ref_type == 'tag'
       uses: crowbarmaster/GH-Automatic-Releases@latest
@@ -96,4 +98,4 @@ jobs:
         automatic_release_tag: ${{ github.ref_name }}
         title: ${{ github.ref_name }}
         files: |
-          artifact-*/*
+          release/artifact-*/*
