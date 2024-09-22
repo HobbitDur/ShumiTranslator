@@ -13,7 +13,6 @@ class SectionData(Section):
         Section.__init__(self, game_data=game_data, data_hex=data_hex, id=id, own_offset=own_offset, name=name)
         self.section_text_linked = section_text_linked
         self._nb_offset = nb_offset
-        self.type = "data"
         self._offset_list = []
         self.__analyse_data(nb_offset)
 

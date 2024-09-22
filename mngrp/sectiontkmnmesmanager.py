@@ -6,7 +6,7 @@ from general.section import Section, SectionType
 from mngrp.sectiondata import SectionData
 
 
-class SectionStringManager(Section):
+class SectionTkmnmesManager(Section):
     OFFSET_SIZE = 2
     HEADER_SIZE = 2
 

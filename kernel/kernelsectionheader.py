@@ -1,6 +1,6 @@
 from FF8GameData.gamedata import GameData
 from general.ff8data import FF8Data
-from general.section import Section
+from general.section import Section, SectionType
 
 
 class SectionHeader(Section):
@@ -9,7 +9,7 @@ class SectionHeader(Section):
     def __init__(self, game_data: GameData, data_hex, name):
         Section.__init__(self, game_data=game_data, data_hex=data_hex, id=0, own_offset=0, name=name)
         self._data_list = []
-        self.type = "header"
+        self.type = SectionType.KERNEL_HEADER
         self.analyze_data()
 
     def __str__(self):

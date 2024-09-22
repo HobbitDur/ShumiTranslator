@@ -7,22 +7,20 @@ from PyQt6.QtGui import QIcon
 from PyQt6.QtWidgets import QVBoxLayout, QWidget, QScrollArea, QPushButton, QFileDialog, QHBoxLayout, QLabel, \
     QMessageBox
 
-from FF8GameData.gamedata import GameData
+from FF8GameData.gamedata import GameData, FileType
 from kernel.kernelmanager import KernelManager
 from kernel.kernelsectiondata import SectionData
 from kernel.kernelsectionheader import SectionHeader
 from general.ff8sectiontext import FF8SectionText
+from mngrp.mngrpmanager import MngrpManager
 from mngrp.sectionstringmanager import SectionStringManager
 from sectionwidget import SectionWidget
 
-class FileType():
-    NONE = 0
-    KERNEL = 1
-    NAMEDIC = 2
+
 class ShumiTranslator(QWidget):
     CSV_FOLDER = "csv"
-    FILE_MANAGED = ['kernel.bin']
-    FILE_MANAGED_REGEX = ['*kernel*.bin', '*namedic*.bin']
+    FILE_MANAGED = ['kernel.bin',  'namedic.bin', 'mngrp.bin']
+    FILE_MANAGED_REGEX = ['*kernel*.bin', '*namedic*.bin', '*mngrp*.bin']
 
     def __init__(self, icon_path='Resources'):
         QWidget.__init__(self)
@@ -30,6 +28,7 @@ class ShumiTranslator(QWidget):
         # Special data
         self.game_data = GameData("FF8GameData")
         self.game_data.load_kernel_data()
+        self.game_data.load_mngrp_data()
         self.translation_list = []
         self.file_loaded = ""
         self.csv_loaded = ""
@@ -150,6 +149,7 @@ class ShumiTranslator(QWidget):
 
         self.kernel_manager = KernelManager(game_data=self.game_data)
         self.namedic_manager = SectionStringManager(game_data=self.game_data)
+        self.mngrp_manager = MngrpManager(game_data=self.game_data)
 
     def __show_info(self):
         message_box = QMessageBox()
@@ -243,6 +243,7 @@ class ShumiTranslator(QWidget):
             self.namedic_manager.save_csv(file_to_save)
 
     def __load_file(self, file_to_load: str = ""):
+        print("Loading file")
 
         self.scroll_area.setEnabled(False)
         self.compress_button.setEnabled(False)
@@ -250,7 +251,7 @@ class ShumiTranslator(QWidget):
         self.compress_button.hide()
         self.uncompress_button.hide()
         self.warning_label_widget.hide()
-        # file_to_load = os.path.join("OriginalFiles", "kernel.bin")  # For developing faster
+        #file_to_load = os.path.join("OriginalFiles", "mngrp.bin")  # For developing faster
         if not file_to_load:
             filter_txt = ""
             for file_regex in self.FILE_MANAGED_REGEX:
@@ -294,6 +295,27 @@ class ShumiTranslator(QWidget):
                 first_section_line_index = 2  # Start at 2 as in the CSV
                 self.section_widget_list.append(SectionWidget(self.namedic_manager.get_text_section(), first_section_line_index))
                 self.layout_translation_lines.addWidget(self.section_widget_list[-1])
+
+
+            elif "mngrp" in file_name and ".bin" in file_name:
+                self.file_loaded_type = FileType.MNGRP
+                self.mngrp_manager.load_file(self.file_loaded)
+                first_section_line_index = 2
+                print("END LOADED")
+                for section in self.mngrp_manager.section_list:
+                    if section.type == "mngrp_string" or section.type == "text":
+                        print(section)
+                        print(section.id)
+                        print(section.type)
+                        print(section.name)
+                        if section.type == "mngrp_string":
+                            self.section_widget_list.append(SectionWidget(section.get_text_section(), first_section_line_index))
+                        elif section.type == "text":
+                            self.section_widget_list.append(SectionWidget(section, first_section_line_index))
+                        self.layout_translation_lines.addWidget(self.section_widget_list[-1])
+                        first_section_line_index += len(section.get_text_list())
+
+
 
             self.csv_save_button.setEnabled(True)
             self.save_button.setEnabled(True)

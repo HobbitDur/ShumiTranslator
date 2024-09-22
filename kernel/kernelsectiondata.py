@@ -1,5 +1,5 @@
 from FF8GameData.gamedata import GameData
-from general.section import Section
+from general.section import Section, SectionType
 from general.ff8sectiontext import FF8SectionText
 from kernel.kernelsubsectiondata import SubSectionData
 
@@ -11,7 +11,6 @@ class SectionData(Section):
         self._subsection_nb_text_offset = subsection_nb_text_offset
         self.section_text_linked = section_text_linked
         self._subsection_list = []
-        self.type = "data"
 
     def init_subsection(self, subsection_sized: int, nb_subsection: int):
         for i in range(nb_subsection):

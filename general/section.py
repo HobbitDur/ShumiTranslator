@@ -1,5 +1,10 @@
 from FF8GameData.gamedata import GameData
 
+class SectionType():
+    DATA = 1
+    TEXT = 2
+    MNGRP_STRING = 3
+    KERNEL_HEADER = 4
 
 class Section:
     def __init__(self, game_data: GameData, data_hex: bytearray, id: int, own_offset: int, name: str):
@@ -9,6 +14,7 @@ class Section:
         self._game_data = game_data
         self.own_offset = own_offset
         self.name = name
+        self.type = SectionType.DATA
 
     def get_size(self):
         return self._size
