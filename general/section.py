@@ -1,10 +1,5 @@
-from FF8GameData.gamedata import GameData
+from FF8GameData.gamedata import GameData, SectionType
 
-class SectionType():
-    DATA = 1
-    TEXT = 2
-    MNGRP_STRING = 3
-    KERNEL_HEADER = 4
 
 class Section:
     def __init__(self, game_data: GameData, data_hex: bytearray, id: int, own_offset: int, name: str):

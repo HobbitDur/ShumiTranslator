@@ -5,7 +5,7 @@ import pathlib
 from PyQt6.QtGui import QIcon
 from PyQt6.QtWidgets import QMessageBox, QVBoxLayout
 
-from FF8GameData.gamedata import GameData
+from FF8GameData.gamedata import GameData, SectionType
 from general.ff8sectiontext import FF8SectionText
 from kernel.kernelsectiondata import SectionData
 from kernel.kernelsectionheader import SectionHeader
@@ -24,12 +24,12 @@ class KernelManager():
         # Then creating the file
         for index_section, section in enumerate(self.section_list):
             # First updating all offset on section data
-            if section.type == "data" and section.section_text_linked:
+            if section.type == SectionType.DATA and section.section_text_linked:
                 section_text_linked = section.section_text_linked
                 section_text_list = section_text_linked.get_text_list()
                 section.set_all_offset(section_text_list)
             # Then updating text
-            if section.type == "text":
+            if section.type == SectionType.FF8_TEXT:
                 section.update_text_data()
                 self.section_list[0].set_section_offset_value_from_id(index_section, current_offset)
             current_offset += len(section)
@@ -57,14 +57,14 @@ class KernelManager():
             own_offset = section_offset_value
             if next_section_offset_value is None:
                 next_section_offset_value = len(current_file_data)
-            if section_info["type"] == "data":
+            if section_info["type"] == SectionType.DATA:
                 new_section = SectionData(game_data=self.game_data, id=section_id, own_offset=own_offset,
                                           data_hex=current_file_data[own_offset:next_section_offset_value],
                                           subsection_nb_text_offset=section_info['sub_section_nb_text_offset'],
                                           name=section_info['section_name'])
                 new_section.init_subsection(nb_subsection=section_info['number_sub_section'],
                                             subsection_sized=section_info['sub_section_size'])
-            elif section_info["type"] == "text":
+            elif section_info["type"] == SectionType.FF8_TEXT:
                 section_data_linked = [self.section_list[i] for i in range(1, len(self.section_list)) if
                                        section_info['section_offset_data_linked'] == self.section_list[
                                            0].get_section_header_offset_from_id(i)][0]
@@ -78,7 +78,7 @@ class KernelManager():
             self.section_list.append(new_section)
 
         for i, section in enumerate(self.section_list):
-            if section.type == "text":
+            if section.type == SectionType.FF8_TEXT:
                 # Adding the link from data to text as text were not constructed yet.
                 section.section_data_linked.section_text_linked = section
                 # Initializing the text now that we can get all the offset
@@ -93,7 +93,7 @@ class KernelManager():
                     ['Section data name', 'Section data id', 'Sub section data id', 'Data id', 'Section text id',
                      'Text id', 'Text'])
                 for index_section, section in enumerate(self.section_list):
-                    if section.type == "data" and section.section_text_linked:
+                    if section.type == SectionType.DATA and section.section_text_linked:
                         for sub_section in section.get_subsection_list():
                             for data in sub_section.get_data_list():
                                 if data.get_offset_type():
@@ -125,5 +125,5 @@ class KernelManager():
                     text_loaded = text_loaded.replace('`', "'")
                     if text_loaded != "":  # If empty it will not be applied, so better be fast
                         for widget_index, widget in enumerate(section_widget_list):
-                            if widget.section.type == "text" and widget.section.id == section_text_id:
+                            if widget.section.type == SectionType.FF8_TEXT and widget.section.id == section_text_id:
                                 section_widget_list[widget_index].set_text_from_id(text_id, text_loaded)

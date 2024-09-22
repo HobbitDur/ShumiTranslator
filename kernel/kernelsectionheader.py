@@ -1,6 +1,6 @@
-from FF8GameData.gamedata import GameData
+from FF8GameData.gamedata import GameData, SectionType
 from general.ff8data import FF8Data
-from general.section import Section, SectionType
+from general.section import Section
 
 
 class SectionHeader(Section):

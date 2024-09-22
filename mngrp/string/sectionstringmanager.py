@@ -1,8 +1,8 @@
 import csv
 
-from FF8GameData.gamedata import GameData
+from FF8GameData.gamedata import GameData, SectionType
 from general.ff8sectiontext import FF8SectionText
-from general.section import Section, SectionType
+from general.section import Section
 from mngrp.sectiondata import SectionData
 
 
@@ -100,6 +100,3 @@ class SectionStringManager(Section):
 
     def get_text_list(self):
         return self._text_section.get_text_list()
-
-    def get_text_section(self):
-        return self._text_section

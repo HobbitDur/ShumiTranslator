@@ -1,23 +1,20 @@
 from general.section import Section
-from mngrp.sectionstringmanager import SectionStringManager
+from mngrp.complexstring.sectioncomplexstringentry import SectionComplexStringEntry
+from mngrp.complexstring.sectioncomplexstringmanager import SectionComplexStringManager
+from mngrp.complexstring.sectionmapcomplexstring import SectionMapComplexString
+from mngrp.string.sectionstringmanager import SectionStringManager
 import csv
-import os
-import pathlib
 
-from PyQt6.QtGui import QIcon
-from PyQt6.QtWidgets import QMessageBox, QVBoxLayout
-
-from FF8GameData.gamedata import GameData
+from FF8GameData.gamedata import GameData, SectionType
 from general.ff8sectiontext import FF8SectionText
-from kernel.kernelsectiondata import SectionData
-from kernel.kernelsectionheader import SectionHeader
-from sectionwidget import SectionWidget
+from tkmnmes.sectiontkmnmesmanager import SectionTkmnmesManager
 
 
 class MngrpManager():
     def __init__(self, game_data: GameData):
         self.game_data = game_data
         self.section_list = []
+        self.section_complex_string = SectionComplexStringManager(game_data=self.game_data)
 
     def __str__(self):
         for section in self.section_list:
@@ -60,26 +57,47 @@ class MngrpManager():
             section_id = index
             section_offset_value = section_info["section_offset"]
             print(f"section_offset_value: {section_offset_value}")
-            if index == len(self.game_data.mngrp_data_json["sections"])-1:
+            print(f"section_info: {section_info}")
+            if index == len(self.game_data.mngrp_data_json["sections"]) - 1:
                 next_section_offset_value = len(current_file_data)
             else:
                 next_section_offset_value = self.game_data.mngrp_data_json["sections"][section_id + 1]['section_offset']
             print(f"next_section_offset_value: {next_section_offset_value}")
             own_offset = section_offset_value
-            if section_info["data_type"] == "mngrp_string":
+            if section_info["data_type"] == SectionType.MNGRP_STRING:
                 new_section = SectionStringManager(game_data=self.game_data, data_hex=current_file_data[own_offset:next_section_offset_value], id=section_id,
                                                    own_offset=own_offset, name=section_info['section_name'])
-            elif section_info["data_type"] == "text":
+            elif section_info["data_type"] == SectionType.FF8_TEXT:
                 new_section = FF8SectionText(game_data=self.game_data, id=section_id, own_offset=own_offset,
                                              data_hex=current_file_data[own_offset:next_section_offset_value],
                                              section_data_linked=None,
                                              name=section_info['section_name'])
+            elif section_info["data_type"] == SectionType.TKMNMES:
+                new_section = SectionTkmnmesManager(game_data=self.game_data, id=section_id, own_offset=own_offset,
+                                                    data_hex=current_file_data[own_offset:next_section_offset_value],
+                                                    name=section_info['section_name'])
+            elif section_info["data_type"] == SectionType.MNGRP_MAP_COMPLEX_STRING:
+                print("MAP COMPLEX")
+                map_complex_string = SectionMapComplexString(game_data=self.game_data, id=section_id, own_offset=own_offset,
+                                                             data_hex=current_file_data[own_offset:next_section_offset_value],
+                                                             name=section_info['section_name'])
+                print(map_complex_string)
+                self.section_complex_string.add_map_section(map_complex_string)
+                print("End map complex added")
+                new_section = None
+            elif section_info["data_type"] == SectionType.MNGRP_COMPLEX_STRING:
+                print("MNGRP manager adding complex string")
+                new_section = SectionComplexStringEntry(game_data=self.game_data, id=section_id, own_offset=own_offset,
+                                                        data_hex=current_file_data[own_offset:next_section_offset_value],
+                                                        name=section_info['section_name'])
+                self.section_complex_string.add_string_entry(new_section)
 
             else:  # Just saving the data, but will not be modified
                 new_section = Section(game_data=self.game_data, id=section_id, own_offset=own_offset,
                                       data_hex=current_file_data[own_offset:next_section_offset_value], name=section_info['section_name'])
                 # new_section.init_subsection(nb_subsection=section_info['number_sub_section'], subsection_sized=section_info['sub_section_size'])
-            self.section_list.append(new_section)
+            if new_section:
+                self.section_list.append(new_section)
             print(self.section_list)
 
     def save_csv(self, csv_path):

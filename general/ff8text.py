@@ -1,4 +1,4 @@
-from FF8GameData.gamedata import GameData
+from FF8GameData.gamedata import GameData, SectionType
 from general.section import Section
 
 
@@ -6,6 +6,7 @@ class FF8Text(Section):
     def __init__(self, game_data: GameData, own_offset: int, data_hex: bytearray, id: int):
         Section.__init__(self, game_data=game_data, own_offset=own_offset, data_hex=data_hex, id=id, name="")
         self._text_str = self._game_data.translate_hex_to_str(self._data_hex)
+        self.type = SectionType.FF8_TEXT
 
     def __str__(self):
         return f"FF8Text: Text: {self._text_str} - bytes: {self._data_hex} - Hex: {self._data_hex.hex(sep=" ")}"

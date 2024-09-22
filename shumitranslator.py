@@ -1,4 +1,3 @@
-import csv
 import os
 import pathlib
 
@@ -7,19 +6,18 @@ from PyQt6.QtGui import QIcon
 from PyQt6.QtWidgets import QVBoxLayout, QWidget, QScrollArea, QPushButton, QFileDialog, QHBoxLayout, QLabel, \
     QMessageBox
 
-from FF8GameData.gamedata import GameData, FileType
+from FF8GameData.gamedata import GameData, FileType, SectionType
 from kernel.kernelmanager import KernelManager
-from kernel.kernelsectiondata import SectionData
-from kernel.kernelsectionheader import SectionHeader
-from general.ff8sectiontext import FF8SectionText
+from mngrp.complexstring.sectioncomplexstringmanager import SectionComplexStringManager
+from mngrp.complexstring.sectionmapcomplexstring import SectionMapComplexString
 from mngrp.mngrpmanager import MngrpManager
-from mngrp.sectionstringmanager import SectionStringManager
+from mngrp.string.sectionstringmanager import SectionStringManager
 from sectionwidget import SectionWidget
 
 
 class ShumiTranslator(QWidget):
     CSV_FOLDER = "csv"
-    FILE_MANAGED = ['kernel.bin',  'namedic.bin', 'mngrp.bin']
+    FILE_MANAGED = ['kernel.bin', 'namedic.bin', 'mngrp.bin']
     FILE_MANAGED_REGEX = ['*kernel*.bin', '*namedic*.bin', '*mngrp*.bin']
 
     def __init__(self, icon_path='Resources'):
@@ -136,6 +134,7 @@ class ShumiTranslator(QWidget):
 
         # Translation management
         self.section_list = []
+
         self.section_widget_list = []
         self.layout_translation_lines = QVBoxLayout()
 
@@ -169,9 +168,9 @@ class ShumiTranslator(QWidget):
         self.scroll_area.setEnabled(False)
         for index_section, section_widget in enumerate(self.section_widget_list):
             compressibility_factor = \
-            [x["compressibility_factor"] for x in self.game_data.kernel_data_json["sections"] if
-             x["id"] == section_widget.section.id][
-                0]
+                [x["compressibility_factor"] for x in self.game_data.kernel_data_json["sections"] if
+                 x["id"] == section_widget.section.id][
+                    0]
             section_widget.compress_str(compressibility_factor)
         self.scroll_area.setEnabled(True)
 
@@ -251,12 +250,12 @@ class ShumiTranslator(QWidget):
         self.compress_button.hide()
         self.uncompress_button.hide()
         self.warning_label_widget.hide()
-        #file_to_load = os.path.join("OriginalFiles", "mngrp.bin")  # For developing faster
+        file_to_load = os.path.join("OriginalFiles", "mngrp.bin")  # For developing faster
         if not file_to_load:
             filter_txt = ""
             for file_regex in self.FILE_MANAGED_REGEX:
                 filter_txt += file_regex
-                filter_txt+=";"
+                filter_txt += ";"
 
             file_to_load = self.file_dialog.getOpenFileName(parent=self, caption="Find file", filter=filter_txt,
                                                             directory=os.getcwd())[0]
@@ -264,8 +263,7 @@ class ShumiTranslator(QWidget):
         if file_to_load:
             self.file_loaded = file_to_load
             file_name = pathlib.Path(self.file_loaded).name
-            self.text_file_loaded.setText("File loaded: " +file_name)
-
+            self.text_file_loaded.setText("File loaded: " + file_name)
 
             for section_widget in self.section_widget_list:
                 section_widget.setParent(None)
@@ -278,7 +276,7 @@ class ShumiTranslator(QWidget):
                 self.kernel_manager.load_file(self.file_loaded)
                 first_section_line_index = 2  # Start at 2 as in the CSV
                 for section in self.kernel_manager.section_list:
-                    if section.type == "text":
+                    if section.type == SectionType.FF8_TEXT:
                         self.section_widget_list.append(SectionWidget(section, first_section_line_index))
                         self.layout_translation_lines.addWidget(self.section_widget_list[-1])
                         first_section_line_index += len(section.section_data_linked.get_all_offset())
@@ -302,20 +300,32 @@ class ShumiTranslator(QWidget):
                 self.mngrp_manager.load_file(self.file_loaded)
                 first_section_line_index = 2
                 print("END LOADED")
+                count_mngrp_complex_string = 0
                 for section in self.mngrp_manager.section_list:
-                    if section.type == "mngrp_string" or section.type == "text":
-                        print(section)
+                    print("SECTION_TYPE")
+                    print(section.type)
+                    if section.type in [SectionType.MNGRP_STRING, SectionType.FF8_TEXT, SectionType.TKMNMES, SectionType.MNGRP_COMPLEX_STRING]:
+                        print("CORRECT SECTIONTYPE")
                         print(section.id)
-                        print(section.type)
                         print(section.name)
-                        if section.type == "mngrp_string":
+                        if section.type == SectionType.MNGRP_STRING:
                             self.section_widget_list.append(SectionWidget(section.get_text_section(), first_section_line_index))
-                        elif section.type == "text":
+                            first_section_line_index += len(section.get_text_list())
+                            self.layout_translation_lines.addWidget(self.section_widget_list[-1])
+                        elif section.type == SectionType.FF8_TEXT:
                             self.section_widget_list.append(SectionWidget(section, first_section_line_index))
-                        self.layout_translation_lines.addWidget(self.section_widget_list[-1])
-                        first_section_line_index += len(section.get_text_list())
-
-
+                            first_section_line_index += len(section.get_text_list())
+                            self.layout_translation_lines.addWidget(self.section_widget_list[-1])
+                        elif section.type == SectionType.TKMNMES:
+                            for i in range(section.get_nb_text_section()):
+                                self.section_widget_list.append(SectionWidget(section.get_text_section_by_id(i), first_section_line_index))
+                                first_section_line_index += len(section.get_text_section_by_id(i).get_text_list())
+                                self.layout_translation_lines.addWidget(self.section_widget_list[-1])
+                        elif section.type == SectionType.MNGRP_COMPLEX_STRING:
+                            print("Adding complex string for widget list")
+                            self.section_widget_list.append(SectionWidget(section.get_text_section_by_id(count_mngrp_complex_string), first_section_line_index))
+                            self.layout_translation_lines.addWidget(self.section_widget_list[-1])
+                            count_mngrp_complex_string += 1
 
             self.csv_save_button.setEnabled(True)
             self.save_button.setEnabled(True)
@@ -324,7 +334,6 @@ class ShumiTranslator(QWidget):
 
         self.scroll_area.setEnabled(True)
 
-
     def __disable_all(self):
         self.csv_save_button.setEnabled(False)
         self.save_button.setEnabled(False)
@@ -332,7 +341,6 @@ class ShumiTranslator(QWidget):
         self.compress_button.setEnabled(False)
         self.uncompress_button.setEnabled(False)
         self.scroll_area.setEnabled(False)
-
 
     def __enable_all(self):
         self.csv_save_button.setEnabled(True)

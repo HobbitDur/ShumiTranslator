@@ -1,6 +1,6 @@
-from FF8GameData.gamedata import GameData
-from general.section import Section
+from FF8GameData.gamedata import GameData, SectionType
 from general.ff8text import FF8Text
+from general.section import Section
 
 
 class FF8SectionText(Section):
@@ -8,7 +8,7 @@ class FF8SectionText(Section):
         Section.__init__(self, game_data=game_data, data_hex=data_hex, id=id, own_offset=own_offset, name=name)
         self._text_list = []
         self.section_data_linked = section_data_linked
-        self.type = "text"
+        self.type = SectionType.FF8_TEXT
 
     def __str__(self):
         return "FF8SectionText : " + str(self._text_list)

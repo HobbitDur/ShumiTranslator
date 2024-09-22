@@ -1,9 +1,9 @@
 import csv
 
-from FF8GameData.gamedata import GameData
-from general.ff8sectiontext import FF8SectionText
-from general.section import Section, SectionType
+from FF8GameData.gamedata import GameData, SectionType
+from general.section import Section
 from mngrp.sectiondata import SectionData
+from mngrp.string.sectionstringmanager import SectionStringManager
 
 
 class SectionTkmnmesManager(Section):
@@ -14,17 +14,17 @@ class SectionTkmnmesManager(Section):
 
         Section.__init__(self, game_data=game_data, data_hex=data_hex, id=id, own_offset=own_offset, name=name)
 
-        self._nb_offset = 0
+        self._nb_padding = 0
         self._offset_section = None
-        self._text_section = None
-        self.type = SectionType.MNGRP_STRING
+        self._string_section_list = []
+        self.type = SectionType.TKMNMES
         if data_hex:
             self.__analyse_data()
 
     def __str__(self):
-        if not self._offset_section or not self._text_section:
+        if not self._offset_section or not self._string_section_list:
             return "Empty section"
-        return "StringManager offset: " + str(self._offset_section) + '\n' + "StringManager text: " + str(self._text_section)
+        return "TkmnmesManager offset: " + str(self._offset_section) + '\n' + "StringManager text: " + str(self._string_section_list)
 
     def load_file(self, file):
         current_file_data = bytearray()
@@ -43,14 +43,12 @@ class SectionTkmnmesManager(Section):
 
     def compute_data(self):
         self._data_hex = bytearray()
-        self._data_hex.extend(self._nb_offset.to_bytes(byteorder='little', length=2))
+        self._data_hex.extend(self._nb_padding.to_bytes(byteorder='little', length=2))
         self._data_hex.extend(self._offset_section.get_data_hex())
-        self._text_section.update_text_data()
-        self._data_hex.extend(self._text_section.get_data_hex())
+        for section in self._string_section_list:
+            section.compute_data()
+            self._data_hex.extend(section.get_data_hex())
         return self._data_hex
-
-    def get_text_section(self):
-        return self._text_section
 
     def save_csv(self, csv_path):
         if csv_path:
@@ -81,25 +79,31 @@ class SectionTkmnmesManager(Section):
                             section_widget_list[widget_index].set_text_from_id(text_id, text_loaded)
 
     def __analyse_data(self):
-        self._nb_offset = int.from_bytes(self._data_hex[0:self.HEADER_SIZE], byteorder='little')
+        self._nb_padding = int.from_bytes(self._data_hex[0:self.HEADER_SIZE], byteorder='little')
+        end_offset_section = self._nb_padding * self.OFFSET_SIZE + self.HEADER_SIZE
         self._offset_section = SectionData(game_data=self._game_data,
-                                           data_hex=self._data_hex[self.HEADER_SIZE:self._nb_offset * self.OFFSET_SIZE + self.HEADER_SIZE], id=0,
-                                           own_offset=self.HEADER_SIZE, nb_offset=self._nb_offset, name="")
-
-        first_offset = self._offset_section.get_all_offset()[0]
-        text_data_start = first_offset
-        text_data = self._data_hex[text_data_start:len(self._data_hex)]
-        self._text_section = FF8SectionText(game_data=self._game_data, data_hex=text_data, id=self.id, own_offset=self.own_offset, name=self.name,
-                                            section_data_linked=self._offset_section)
-        self._text_section.section_data_linked.section_text_linked = self._text_section
+                                           data_hex=self._data_hex[self.HEADER_SIZE:end_offset_section], id=0,
+                                           own_offset=self.HEADER_SIZE, nb_offset=self._nb_padding, name="")
         offset_list = self._offset_section.get_all_offset()
         for i in range(len(offset_list)):
-            offset_list[i] -= self.HEADER_SIZE + self.OFFSET_SIZE * self._nb_offset
-        self._text_section.init_text(offset_list)
+            if i == len(offset_list) - 1:
+                next_string_section = len(self._data_hex)
+            else:
+                next_string_section = offset_list[i + 1]
+            start_string_section = offset_list[i]
+            self._string_section_list.append(
+                SectionStringManager(game_data=self._game_data, data_hex=self._data_hex[start_string_section:next_string_section], id=self.id,
+                                     own_offset=start_string_section, name=self.name + f" - subsection n°{i}"))
         self.compute_data()  # To compute if there was offset removed (by removing offset with 0 value)
 
-    def get_text_list(self):
-        return self._text_section.get_text_list()
+    def get_nb_text_section(self):
+        return len(self._string_section_list)
 
-    def get_text_section(self):
-        return self._text_section
+    def get_text_section_by_id(self, id):
+        return self._string_section_list[id]
+
+    def get_text_list(self):
+        text_list = []
+        for section_text in self._string_section_list:
+            text_list.extend(section_text.get_text_list())
+        return text_list

@@ -26,6 +26,8 @@ class SectionWidget(QWidget):
         return "Widget " + str(self.section)
 
     def __create_sub_section_widget(self):
+        print("__create_sub_section_widget")
+        print(self.section)
         for i, kernel_text in enumerate(self.section.get_text_list()):
             translation_widget = TranslationWidget(kernel_text, self.first_section_line_index + i)
             self.translation_widget_list.append(translation_widget)
