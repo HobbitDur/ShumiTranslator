@@ -16,6 +16,7 @@ class SectionComplexStringEntry(Section):
 
     def __str__(self):
         return f"SectionComplexStringEntry: {self.string_entry_list}"
+
     def __repr__(self):
         return self.__str__()
 
@@ -26,15 +27,14 @@ class SectionComplexStringEntry(Section):
             if i == len(offset_map_list) - 1:
                 next_offset = self._size
             else:
-                next_offset = offset_map_list[i+1]
-            new_entry = ComplexStringEntry(game_data= self._game_data, data_hex=self._data_hex[offset:next_offset], id=i, own_offset=offset, name="")
+                next_offset = offset_map_list[i + 1]
+            new_entry = ComplexStringEntry(game_data=self._game_data, data_hex=self._data_hex[offset:next_offset], id=i, own_offset=offset, name="")
             self.string_entry_list.append(new_entry)
-        print( self.string_entry_list)
-
+        print(self.string_entry_list)
 
     def get_text_list(self):
         entry_list = []
         for entry in self.string_entry_list:
-            entry_list.append(entry.get_text_section().get_text_list()[0])
+            entry_list.extend(entry.get_text_section().get_text_list())
         print(f"Entry list: {entry_list}")
         return entry_list

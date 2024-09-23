@@ -110,6 +110,120 @@ Vit-J{Green}Condition for Use{White}\n
   {x0a3f}
 
 
+unk:5f 01 a7 01 a3 01 - length:246 - text_section: FF8SectionText : [FF8Text: Text: GF Report                         {xc4}{xc4}{xc4} 1/6
+unk:5f 01 a2 01 a4 01 - length:246 - text_section: FF8SectionText : [FF8Text: Text: GF Report                         {xc4}{xc4}{xc4} 2/6
+unk:5f 01 a3 01 a5 01 - length:246 - text_section: FF8SectionText : [FF8Text: Text: GF Report                         {xc4}{xc4}{xc4} 3/6
+unk:5f 01 a4 01 a6 01 - length:246 - text_section: FF8SectionText : [FF8Text: Text: GF Report                         {xc4}{xc4}{xc4} 4/6
+unk:5f 01 a5 01 a7 01 - length:246 - text_section: FF8SectionText : [FF8Text: Text: GF Report                         {xc4}{xc4}{xc4} 5/6
+unk:5f 01 a6 01 a2 01 - length:116 - text_section: FF8SectionText : [FF8Text: Text: GF Report                         {xc4}{xc4}{xc4} 6/6
+
  unk:79 01 ff ff ff ff - length:152 - text_section: FF8SectionText : [FF8Text: Text: Odine ItemsA device to restrain sorceresses' power.\nDr. Odine, afraid of Sorceress Adel's power,\ncreated it.\nIt looks like beautiful jewelry.\n
  unk:79 01 ff ff ff ff - length:297 - text_section: FF8SectionText : [FF8Text: Text: SorceressThe legend goes that the Great Hyne created\npeople.\nThe sorceresses were given a fragment of Hyne's\nown power.\nIt's hard to determine how many sorceresses exist\ntoday, for many keep their powers concealed.\nHowever, it is believed that they avoid spreading\ntheir power too thin.\n
  unk:00 00 ef 00 ef 00 - length:144 - text_section: FF8SectionText : [FF8Text: Text: Select term                          1/2{x0b21}ßJunction\n{x0b21}àGF  \n{x0b21}ìStats\n{x0b21}íStat Type\n{x0b21}áEXP\n{x0b21}âAP\n{x0b21}äPhysical and Magic Attacks\n{x0b21}çMagic\n
+
+
+ unk:00 00 02 00 02 00 - length:141 - text_section: FF8SectionText : [FF8Text: Text:
+ Select command                 {xc4}{xc4}{xc4}  1/2
+ {x0b20}2Junction \n
+ {x0b20}?Item\n
+ {x0b20}*Magic      \n
+ {x0b20}#Status \n
+ {x0b20}$GF\n
+ {x0b20}'Ability\n
+ {x0b20}_Switch\n
+ {x0b20}CCard\n
+ {x0b20}FConfig\n
+
+
+ unk:00 00 01 00 01 00 - length:77 - text_section: FF8SectionText : [FF8Text: Text:
+ Select command                 {xc4}{xc4}{xc4}  2/2
+ {x0b20}DTutorial\n
+ {x0b20}ESave\n\n\n\n\n\n\n\n\n
+
+
+ unk:01 00 ff ff ff ff - length:149 - text_section: FF8SectionText : [FF8Text: Text:
+ Junction
+ This executes Junction related commands.\n\n
+ {x0b20}3Junction Menu\n
+ {x0b20}4GFJunction\n
+ {x0b20}5Magic Junction\n
+ {x0b20}/Off\n
+ {x0b20}:Auto\n
+ {x0b20}!Setting Ability\n
+
+ unk:03 00 ff ff ff ff - length:273 - text_section: FF8SectionText : [FF8Text: Text:
+ Junction/Junction Menu
+ There are 2 types of Junction: {Green}GF Junction{White} and\n
+ {Green}Magic Junction{White}.\n\n
+ Choose {Blue}Junction{White} command in the menu and the party\n
+ member to junction.\n
+ The screen switches to the Junction menu.\n
+ Ability setting is done on the same Junction screen.\n
+
+ unk:03 00 ff ff ff ff - length:397 - text_section: FF8SectionText : [FF8Text: Text:
+ Junction/GF Junction
+ Signifies junctioning a GF to an ally.\n
+ Choose {Blue}Junction{White} on the junction menu, then choose\n
+ the {Blue}GF{White} command that appears.\n
+ When {Blue}GF{White} command is selected, a screen shows all GF\n
+ acquired.\n
+ Select a GF.\n
+ More than one GF can be junctioned to one ally.\
+ GF junctioned to the current character show up in\n
+ gray, while GF junctioned to other allies show up as\n
+ ghost text.\n
+
+unk:03 00 ff ff ff ff - length:232 - text_section: FF8SectionText : [FF8Text: Text:
+Junction/Magic Junction
+Signifies junctioning magic to an ally.\n
+There are 5 categories:\n
+\n
+ {x0b20}6Stat Junction\n
+  {x0b20}7Elemental Attack Junction\n
+   {x0b20}8Elemental Defense Junction\n
+    {x0b20}9Status Attack Junction\n
+     {x0b20}%Status Defense Junction\n
+
+ unk:06 00 ff ff ff ff - length:169 - text_section: FF8SectionText : [FF8Text: Text:
+ Stat Junction
+ Signifies junctioning magic to HP, Vit, etc. to raise\n
+ their value.\n
+ The effect is different for each magic spell, but any\n
+ magic can be junctioned.\n
+
+
+
+
+
+
+
+ Select term                          1/2
+ {Curseur_location_id:0x2190}Junction\n
+ {Curseur_location_id:0x2191}GF  \n
+ {Curseur_location_id:0x219a}Stats\n
+ {Curseur_location_id:0x219b}Stat Type\n
+ {Curseur_location_id:0x2192}EXP\n
+ {Curseur_location_id:0x2193}AP\n
+ {Curseur_location_id:0x2194}Physical and Magic Attacks\n
+ {Curseur_location_id:0x2195}Magic\n
+
+SectionComplexStringEntry: Ori:238 - left:65535 -right:65535 - length:263 - text_section: FF8SectionText : [FF8Text: Text:
+Basic Terms/Junction
+{Green}Junction{White} equips GF and Magic.\n
+Referred to as: Junctioning GF to a character.\n
+“Magic junctioned to a character” and\n
+“GF junctioned to a character” fall under this\n
+category.\n
+Junction enables a character to use Magic and\n
+summon GF.\n
+
+
+
+
+ GF Report                         {xc4}{xc4}{xc4} 1/6{x0a89}{Green}{x0c60}{White}\n
+ {x0a3f}{x0a89} Enemies Killed    {x0ae0}\n
+ {x0a3f}{x0a89} KO'd           {xc4}{xc4}{xc4}  {x0af0}\n{x0a3f}{x0a8a}{Green}{x0c61}{White}\n
+ {x0a3f}{x0a8a} Enemies Killed    {x0ae1}\n{x0a3f}{x0a8a} KO'd           {xc4}{xc4}{xc4}  {x0af1}\n
+ {x0a3f}{x0a8b}{Green}{x0c62}{White}\n
+ {x0a3f}{x0a8b} Enemies Killed    {x0ae2}\n
+ {x0a3f}{x0a8b} KO'd           {xc4}{xc4}{xc4}  {x0af2}\n{x0a3f}

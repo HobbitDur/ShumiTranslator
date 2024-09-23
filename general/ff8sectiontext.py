@@ -4,11 +4,12 @@ from general.section import Section
 
 
 class FF8SectionText(Section):
-    def __init__(self, game_data: GameData, data_hex: bytearray, id: int, own_offset: int, name: str, section_data_linked=None):
+    def __init__(self, game_data: GameData, data_hex: bytearray, id: int, own_offset: int, name: str, section_data_linked=None, cursor_location_size=2):
         Section.__init__(self, game_data=game_data, data_hex=data_hex, id=id, own_offset=own_offset, name=name)
         self._text_list = []
         self.section_data_linked = section_data_linked
         self.type = SectionType.FF8_TEXT
+        self.cursor_location_size = cursor_location_size
 
     def __str__(self):
         return "FF8SectionText : " + str(self._text_list)
@@ -38,7 +39,7 @@ class FF8SectionText(Section):
         else:
             offset = 0
             id = 0
-        self._text_list.append(FF8Text(game_data=self._game_data, data_hex=text_hex, own_offset=offset, id=id))
+        self._text_list.append(FF8Text(game_data=self._game_data, data_hex=text_hex, own_offset=offset, id=id, cursor_location_size=self.cursor_location_size))
 
     def get_text_list(self):
         return self._text_list

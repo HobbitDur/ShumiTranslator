@@ -3,9 +3,10 @@ from general.section import Section
 
 
 class FF8Text(Section):
-    def __init__(self, game_data: GameData, own_offset: int, data_hex: bytearray, id: int):
+    def __init__(self, game_data: GameData, own_offset: int, data_hex: bytearray, id: int, cursor_location_size=2):
         Section.__init__(self, game_data=game_data, own_offset=own_offset, data_hex=data_hex, id=id, name="")
-        self._text_str = self._game_data.translate_hex_to_str(self._data_hex)
+        self._cursor_location_size = cursor_location_size
+        self._text_str = self._game_data.translate_hex_to_str(self._data_hex, cursor_location_size=self._cursor_location_size)
         self.type = SectionType.FF8_TEXT
 
     def __str__(self):
