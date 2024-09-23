@@ -46,11 +46,13 @@ Select term => 57 63 6a 63 61 72 20 72 63 70 6b 00
 
 UNK: 00 00 01 00 01 00
 
-Select command                 {xc4}{xc4}{xc4}  2/2 => 57 63 6a 63 61 72 20 61 6d 6b 6b 5f 6c 62 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 c4 c4 c4 20 20 23 2c 23 00
+Select command                 {xc4}{xc4}{xc4}  2/2 => ...
 0b 20 48
-{x0b20}DTutorial\n => 58 73 72 6d 70 67 5f 6a 20
-02 0b 49
+{x0b20}DTutorial\n => 58 73 72 6d 70 67 5f 6a 20 02
+0b 49 57
 {x0b20}ESave\n\n\n\n\n\n\n\n\n => 57 5f 74 63 02 02 02 02 02 02 02 02 02 00 00 00 00
+UNK: 00 00 01 00 01 00
+
 
 57 63 6a 63 61 72 20 61 6d 6b 6b 5f 6c 62 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 c4 c4 c4 20 20 23 2c 23 00
 0b 20 48
@@ -80,3 +82,34 @@ Vit-J{Green}Condition for Use{White}\n
   \n
   {Green}Function{White}\n
   ·Junctions magic to character's Speed stat.\n
+
+
+
+  unk:5f 01 a4 01 a6 01
+  GF Report                         {xc4}{xc4}{xc4} 4/6{x0a92}{Green}{x0c69}{White}\n
+  {x0a3f}{x0a92} Enemies Killed    {x0ae9}\n
+  {x0a3f}{x0a92} KO'd           {xc4}{xc4}{xc4}  {x0af9}\n
+  {x0a3f}{x0a93}{Green}{x0c6a}{White}\n
+  {x0a3f}{x0a93} Enemies Killed    {x0aea}\n
+  {x0a3f}{x0a93} KO'd           {xc4}{xc4}{xc4}  {x0afa}\n
+  {x0a3f}{x0a94}{Green}{x0c6b}{White}\n
+  {x0a3f}{x0a94} Enemies Killed    {x0aeb}\n
+  {x0a3f}{x0a94} KO'd           {xc4}{xc4}{xc4}  {x0afb}\n
+  {x0a3f}
+
+  unk:5f 01 a3 01 a5 01
+  GF Report                         {xc4}{xc4}{xc4} 3/6{x0a8f}{Green}{x0c66}{White}\n
+  {x0a3f}{x0a8f} Enemies Killed    {x0ae6}\n
+  {x0a3f}{x0a8f} KO'd           {xc4}{xc4}{xc4}  {x0af6}\n
+  {x0a3f}{x0a90}{Green}{x0c67}{White}\n
+  {x0a3f}{x0a90} Enemies Killed    {x0ae7}\n
+  {x0a3f}{x0a90} KO'd           {xc4}{xc4}{xc4}  {x0af7}\n
+  {x0a3f}{x0a91}{Green}{x0c68}{White}\n
+  {x0a3f}{x0a91} Enemies Killed    {x0ae8}\n
+  {x0a3f}{x0a91} KO'd           {xc4}{xc4}{xc4}  {x0af8}\n
+  {x0a3f}
+
+
+ unk:79 01 ff ff ff ff - length:152 - text_section: FF8SectionText : [FF8Text: Text: Odine ItemsA device to restrain sorceresses' power.\nDr. Odine, afraid of Sorceress Adel's power,\ncreated it.\nIt looks like beautiful jewelry.\n
+ unk:79 01 ff ff ff ff - length:297 - text_section: FF8SectionText : [FF8Text: Text: SorceressThe legend goes that the Great Hyne created\npeople.\nThe sorceresses were given a fragment of Hyne's\nown power.\nIt's hard to determine how many sorceresses exist\ntoday, for many keep their powers concealed.\nHowever, it is believed that they avoid spreading\ntheir power too thin.\n
+ unk:00 00 ef 00 ef 00 - length:144 - text_section: FF8SectionText : [FF8Text: Text: Select term                          1/2{x0b21}ßJunction\n{x0b21}àGF  \n{x0b21}ìStats\n{x0b21}íStat Type\n{x0b21}áEXP\n{x0b21}âAP\n{x0b21}äPhysical and Magic Attacks\n{x0b21}çMagic\n
