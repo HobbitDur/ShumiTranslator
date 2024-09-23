@@ -298,16 +298,10 @@ class ShumiTranslator(QWidget):
             elif "mngrp" in file_name and ".bin" in file_name:
                 self.file_loaded_type = FileType.MNGRP
                 self.mngrp_manager.load_file(self.file_loaded)
+
                 first_section_line_index = 2
-                print("END LOADED")
-                count_mngrp_complex_string = 0
                 for section in self.mngrp_manager.section_list:
-                    print("SECTION_TYPE")
-                    print(section.type)
                     if section.type in [SectionType.MNGRP_STRING, SectionType.FF8_TEXT, SectionType.TKMNMES, SectionType.MNGRP_COMPLEX_STRING]:
-                        print("CORRECT SECTIONTYPE")
-                        print(section.id)
-                        print(section.name)
                         if section.type == SectionType.MNGRP_STRING:
                             self.section_widget_list.append(SectionWidget(section.get_text_section(), first_section_line_index))
                             first_section_line_index += len(section.get_text_list())
@@ -322,10 +316,8 @@ class ShumiTranslator(QWidget):
                                 first_section_line_index += len(section.get_text_section_by_id(i).get_text_list())
                                 self.layout_translation_lines.addWidget(self.section_widget_list[-1])
                         elif section.type == SectionType.MNGRP_COMPLEX_STRING:
-                            print("Adding complex string for widget list")
-                            self.section_widget_list.append(SectionWidget(section.get_text_section_by_id(count_mngrp_complex_string), first_section_line_index))
+                            self.section_widget_list.append(SectionWidget(section, first_section_line_index))
                             self.layout_translation_lines.addWidget(self.section_widget_list[-1])
-                            count_mngrp_complex_string += 1
 
             self.csv_save_button.setEnabled(True)
             self.save_button.setEnabled(True)

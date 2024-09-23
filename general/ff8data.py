@@ -9,7 +9,7 @@ class FF8Data(Section):
         self._offset_type = offset_type
 
     def __str__(self):
-        return f"FF8Data - Data: {self._data_hex.hex(sep=" ", bytes_per_sep=1)} - offset_type: {self._offset_type}"
+        return f"FF8Data : offset_type: {self._offset_type} - Data: {self._data_hex.hex(sep=" ", bytes_per_sep=1)}"
 
     def __repr__(self):
         return self.__str__()

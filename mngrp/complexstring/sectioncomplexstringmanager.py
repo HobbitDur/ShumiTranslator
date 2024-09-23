@@ -19,16 +19,19 @@ class SectionComplexStringManager(Section):
         self.type = SectionType.MNGRP_COMPLEX_STRING
 
     def add_map_section(self, map_section: SectionMapComplexString):
-        print("Adding map section")
         self._map_section = map_section
 
     def add_string_entry(self, string_entry: SectionComplexStringEntry):
-        print("Adding entry string")
+        print("Add entry")
         if not self._map_section:
             print("First add a map before adding string entry")
             return
         offset_list = self._map_section.get_offset_list_from_id(len(self._complex_string_entry_list))
-        string_entry.init_text(offset_list)
+        print(offset_list)
+        string_entry.init_section(offset_list)
+        #string_entry.init_text(offset_list)
+        print(f"LEn: {len(self._complex_string_entry_list)}")
+        print(string_entry)
         self._complex_string_entry_list.append(string_entry)
 
     def get_text_section_by_id(self, section_id):

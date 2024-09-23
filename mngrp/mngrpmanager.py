@@ -46,7 +46,6 @@ class MngrpManager():
             in_file.write(current_file_data)
 
     def load_file(self, file):
-        print("Loading mngrp file")
         current_file_data = bytearray()
         with open(file, "rb") as in_file:
             while el := in_file.read(1):
@@ -56,13 +55,10 @@ class MngrpManager():
         for index, section_info in enumerate(self.game_data.mngrp_data_json["sections"]):
             section_id = index
             section_offset_value = section_info["section_offset"]
-            print(f"section_offset_value: {section_offset_value}")
-            print(f"section_info: {section_info}")
             if index == len(self.game_data.mngrp_data_json["sections"]) - 1:
                 next_section_offset_value = len(current_file_data)
             else:
                 next_section_offset_value = self.game_data.mngrp_data_json["sections"][section_id + 1]['section_offset']
-            print(f"next_section_offset_value: {next_section_offset_value}")
             own_offset = section_offset_value
             if section_info["data_type"] == SectionType.MNGRP_STRING:
                 new_section = SectionStringManager(game_data=self.game_data, data_hex=current_file_data[own_offset:next_section_offset_value], id=section_id,
@@ -77,16 +73,12 @@ class MngrpManager():
                                                     data_hex=current_file_data[own_offset:next_section_offset_value],
                                                     name=section_info['section_name'])
             elif section_info["data_type"] == SectionType.MNGRP_MAP_COMPLEX_STRING:
-                print("MAP COMPLEX")
                 map_complex_string = SectionMapComplexString(game_data=self.game_data, id=section_id, own_offset=own_offset,
                                                              data_hex=current_file_data[own_offset:next_section_offset_value],
                                                              name=section_info['section_name'])
-                print(map_complex_string)
                 self.section_complex_string.add_map_section(map_complex_string)
-                print("End map complex added")
                 new_section = None
             elif section_info["data_type"] == SectionType.MNGRP_COMPLEX_STRING:
-                print("MNGRP manager adding complex string")
                 new_section = SectionComplexStringEntry(game_data=self.game_data, id=section_id, own_offset=own_offset,
                                                         data_hex=current_file_data[own_offset:next_section_offset_value],
                                                         name=section_info['section_name'])
@@ -98,7 +90,7 @@ class MngrpManager():
                 # new_section.init_subsection(nb_subsection=section_info['number_sub_section'], subsection_sized=section_info['sub_section_size'])
             if new_section:
                 self.section_list.append(new_section)
-            print(self.section_list)
+        print(self.section_list)
 
     def save_csv(self, csv_path):
         if csv_path:
