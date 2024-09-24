@@ -14,12 +14,18 @@ class TranslationWidget(QWidget):
         self.__label_line_widget = QLabel(f"Line {self.__line_number}")
         self.__file_text_description_widget = QLabel("<b>Data read: </b>")
         self.__file_text_widget = QLabel()
-        self.__file_text_widget.setText(self.translation.get_str())
+        text_to_show = self.translation.get_str().replace('\\n', '\\n\n')
+        self.__file_text_widget.setText(text_to_show)
         # self.__file_text_widget.setWordWrap(True)
                 
         self.__custom_text_description_widget = QLabel("<b>Data modified: </b>")
         self.__custom_text_widget = QPlainTextEdit()
-        self.__custom_text_widget.setPlainText(self.translation.get_str())
+        text_to_show = self.translation.get_str().replace('\\n', '\n')
+        font_height = self.__custom_text_widget.font().pointSize()
+        self.__custom_text_widget.setPlainText(text_to_show)
+        self.__custom_text_widget.setMinimumWidth(500)
+        height = ((text_to_show.count('\n')+1)*(font_height+10))+10
+        self.__custom_text_widget.setFixedHeight(height)
         self.__custom_text_widget.textChanged.connect(self.__custom_text_changed)
         # self.__custom_text_widget.setMaximumHeight(28)
 

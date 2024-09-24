@@ -44,7 +44,7 @@ class ShumiTranslator(QWidget):
         self.scroll_widget.setLayout(self.layout_main)
 
         self.setWindowTitle("ShumiTranslator")
-        self.setMinimumSize(500, 800)
+        self.setMinimumSize(800, 800)
         self.__shumi_icon = QIcon(os.path.join(icon_path, 'icon.ico'))
         self.setWindowIcon(self.__shumi_icon)
 
@@ -120,13 +120,19 @@ class ShumiTranslator(QWidget):
         self.layout_top.addStretch(1)
 
         # Warning
-        self.warning_label_widget = QLabel(
+        self.warning_kernel_label_widget = QLabel(
             "{x0...} are yet unknown text correspondence. Pls don't modify them.<br/>"
-            "Value between {} are \"compressed\" data.<br/>"
-            "The file as a size max (40Ko ?).<br/>"
+            "Value between {} are \"compressed\" data. Pls don't remove bracket around.<br/>"
+            "The file as a size max (40456?).<br/>"
             "If you wish to get rid of parenthesis you can uncompress<br/>"
             "But pls compress before saving to avoid size problem.")
-        self.warning_label_widget.hide()
+        self.warning_kernel_label_widget.hide()
+        # Warning
+        self.warning_mngrp_label_widget = QLabel(
+            "{x0...} are yet unknown text correspondence. Pls don't modify them.<br/>"
+            "Value between {} are \"compressed\" data. Pls don't remove bracket around.<br/>"
+            "Value {x0a..} as often weird character after. Pls don't modify them<br/>")
+        self.warning_mngrp_label_widget.hide()
 
         self.layout_full_top = QVBoxLayout()
         self.layout_full_top.addLayout(self.layout_top)
@@ -140,7 +146,8 @@ class ShumiTranslator(QWidget):
 
         # Main management
         self.window_layout.addLayout(self.layout_full_top)
-        self.layout_main.addWidget(self.warning_label_widget)
+        self.layout_main.addWidget(self.warning_kernel_label_widget)
+        self.layout_main.addWidget(self.warning_mngrp_label_widget)
         self.layout_main.addStretch(1)
         self.layout_main.addLayout(self.layout_translation_lines)
 
@@ -172,8 +179,6 @@ class ShumiTranslator(QWidget):
                  x["id"] == section_widget.section.id][
                     0]
             section_widget.compress_str(compressibility_factor)
-        self.scroll_area.setEnabled(True)
-
         self.scroll_area.setEnabled(True)
 
     def __uncompress_data(self):
@@ -249,7 +254,8 @@ class ShumiTranslator(QWidget):
         self.uncompress_button.setEnabled(False)
         self.compress_button.hide()
         self.uncompress_button.hide()
-        self.warning_label_widget.hide()
+        self.warning_kernel_label_widget.hide()
+        self.warning_mngrp_label_widget.hide()
         file_to_load = os.path.join("OriginalFiles", "mngrp.bin")  # For developing faster
         if not file_to_load:
             filter_txt = ""
@@ -261,6 +267,7 @@ class ShumiTranslator(QWidget):
                                                             directory=os.getcwd())[0]
 
         if file_to_load:
+            self.file_dialog_button.setEnabled(False)
             self.file_loaded = file_to_load
             file_name = pathlib.Path(self.file_loaded).name
             self.text_file_loaded.setText("File loaded: " + file_name)
@@ -284,7 +291,8 @@ class ShumiTranslator(QWidget):
                 self.uncompress_button.setEnabled(True)
                 self.compress_button.show()
                 self.uncompress_button.show()
-                self.warning_label_widget.show()
+                self.warning_kernel_label_widget.show()
+
 
             elif "namedic" in file_name and ".bin" in file_name:
                 self.file_loaded_type = FileType.NAMEDIC
@@ -318,10 +326,12 @@ class ShumiTranslator(QWidget):
                         elif section.type == SectionType.MNGRP_COMPLEX_STRING:
                             self.section_widget_list.append(SectionWidget(section, first_section_line_index))
                             self.layout_translation_lines.addWidget(self.section_widget_list[-1])
+                    self.warning_mngrp_label_widget.show()
 
             self.csv_save_button.setEnabled(True)
             self.save_button.setEnabled(True)
             self.csv_upload_button.setEnabled(True)
+            self.file_dialog_button.setEnabled(True)
             self.text_file_loaded.show()
 
         self.scroll_area.setEnabled(True)
