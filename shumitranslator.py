@@ -256,7 +256,7 @@ class ShumiTranslator(QWidget):
         self.uncompress_button.hide()
         self.warning_kernel_label_widget.hide()
         self.warning_mngrp_label_widget.hide()
-        file_to_load = os.path.join("OriginalFiles", "mngrp.bin")  # For developing faster
+        #file_to_load = os.path.join("OriginalFiles", "mngrp.bin")  # For developing faster
         if not file_to_load:
             filter_txt = ""
             for file_regex in self.FILE_MANAGED_REGEX:
