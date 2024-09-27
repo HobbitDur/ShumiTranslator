@@ -27,6 +27,9 @@ class ShumiTranslator(QWidget):
         self.game_data = GameData("FF8GameData")
         self.game_data.load_kernel_data()
         self.game_data.load_mngrp_data()
+        self.game_data.load_item_data()
+        self.game_data.load_magic_data()
+        self.game_data.load_card_data()
         self.translation_list = []
         self.file_loaded = ""
         self.csv_loaded = ""
