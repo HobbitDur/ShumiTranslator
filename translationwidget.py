@@ -1,7 +1,7 @@
 from PyQt6.QtCore import QSignalBlocker
 from PyQt6.QtWidgets import QPlainTextEdit, QWidget, QHBoxLayout, QLabel, QVBoxLayout, QMessageBox, QFrame
 
-from general.ff8text import FF8Text
+from FF8GameData.FF8HexReader.ff8text import FF8Text
 
 
 class TranslationWidget(QWidget):

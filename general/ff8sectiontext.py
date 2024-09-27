@@ -1,6 +1,6 @@
+from FF8GameData.FF8HexReader.section import Section
 from FF8GameData.gamedata import GameData, SectionType
-from general.ff8text import FF8Text
-from general.section import Section
+from FF8GameData.FF8HexReader.ff8text import FF8Text
 
 
 class FF8SectionText(Section):

@@ -1,4 +1,3 @@
-from general.section import Section
 from mngrp.complexstring.sectioncomplexstringentry import SectionComplexStringEntry
 from mngrp.complexstring.sectioncomplexstringmanager import SectionComplexStringManager
 from mngrp.complexstring.sectionmapcomplexstring import SectionMapComplexString

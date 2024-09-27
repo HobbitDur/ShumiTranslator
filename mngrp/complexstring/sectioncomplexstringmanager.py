@@ -1,9 +1,7 @@
+from FF8GameData.FF8HexReader.section import Section
 from FF8GameData.gamedata import GameData, SectionType
-from general.ff8sectiontext import FF8SectionText
-from general.section import Section
 from mngrp.complexstring.sectioncomplexstringentry import SectionComplexStringEntry
 from mngrp.complexstring.sectionmapcomplexstring import SectionMapComplexString
-from mngrp.sectiondata import SectionData
 
 
 class SectionComplexStringManager(Section):

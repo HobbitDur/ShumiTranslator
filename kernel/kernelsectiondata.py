@@ -1,5 +1,5 @@
+from FF8GameData.FF8HexReader.section import Section
 from FF8GameData.gamedata import GameData
-from general.section import Section
 from general.ff8sectiontext import FF8SectionText
 from kernel.kernelsubsectiondata import SubSectionData
 

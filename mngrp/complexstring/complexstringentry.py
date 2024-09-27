@@ -1,8 +1,5 @@
-from sys import byteorder
-
+from FF8GameData.FF8HexReader.section import Section
 from FF8GameData.gamedata import GameData, SectionType
-from general.ff8data import FF8Data
-from general.section import Section
 from general.ff8sectiontext import FF8SectionText
 
 

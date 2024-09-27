@@ -1,8 +1,8 @@
 import csv
 
+from FF8GameData.FF8HexReader.section import Section
 from FF8GameData.gamedata import GameData, SectionType
 from general.ff8sectiontext import FF8SectionText
-from general.section import Section
 from mngrp.sectiondata import SectionData
 
 
