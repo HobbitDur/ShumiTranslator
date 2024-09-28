@@ -17,7 +17,7 @@ class SectionData(Section):
         self.__analyse_data(nb_offset)
 
     def __str__(self):
-        return "SectionData : " + str(self._offset_list)
+        return f"SectionData({str(self._offset_list)})"
 
     def __repr__(self):
         self.__str__()

@@ -1,3 +1,5 @@
+from FF8GameData.FF8HexReader.mngrp import Mngrp
+from FF8GameData.FF8HexReader.mngrphd import Mngrphd
 from FF8GameData.FF8HexReader.section import Section
 from mngrp.complexstring.sectioncomplexstringentry import SectionComplexStringEntry
 from mngrp.complexstring.sectioncomplexstringmanager import SectionComplexStringManager
@@ -12,15 +14,16 @@ from general.ff8sectiontext import FF8SectionText
 from tkmnmes.sectiontkmnmesmanager import SectionTkmnmesManager
 
 
-class MngrpManager():
+class MngrpManager:
     def __init__(self, game_data: GameData):
+
+        self.mngrphd = None
+        self.mngrp = None
         self.game_data = game_data
-        self.section_list = []
         self.section_complex_string = SectionComplexStringManager(game_data=self.game_data)
 
     def __str__(self):
-        for section in self.section_list:
-            print(section)
+        return str(self.mngrp)
 
     def __repr__(self):
         return self.__str__()
@@ -30,7 +33,7 @@ class MngrpManager():
         current_file_data = bytearray()
 
         # Then creating the file
-        for index_section, section in enumerate(self.section_list):
+        for index_section, section in enumerate(self.mngrp.get_section_list()):
             # First updating all offset on section data
             if section.type == SectionType.DATA and section.section_text_linked:
                 section_text_linked = section.section_text_linked
@@ -39,7 +42,6 @@ class MngrpManager():
             # Then updating text
             if section.type == SectionType.FF8_TEXT:
                 section.update_text_data()
-                self.section_list[0].set_section_offset_value_from_id(index_section, current_offset)
             current_offset += len(section)
 
         for section in self.section_list:
@@ -47,72 +49,91 @@ class MngrpManager():
         with open(file, "wb") as in_file:
             in_file.write(current_file_data)
 
-    def load_file(self, file):
-        current_file_data = bytearray()
-        with open(file, "rb") as in_file:
-            while el := in_file.read(1):
-                current_file_data.extend(el)
+    def load_file(self, file_mngrphd, file_mngrp):
+        mngrphd_data_hex = bytearray()
+        mngrp_data_hex = bytearray()
+        print("Reading both files")
+        with open(file_mngrphd, "rb") as file:
+            mngrphd_data_hex.extend(file.read())
+        with open(file_mngrp, "rb") as file:
+            mngrp_data_hex.extend(file.read())
+
+        print("Loading mngrphd")
+        self.mngrphd = Mngrphd(self.game_data, mngrphd_data_hex)
+        print("Loading mngrp with entry list")
+        self.mngrp = Mngrp(self.game_data, mngrp_data_hex, self.mngrphd.get_entry_list())
+
+        print(self.mngrphd)
+        print(self.mngrp)
         # First we read all offset section
-        self.section_list = []
         m00bin_counter = 0
         m00msg_counter = 0
-        for index, section_info in enumerate(self.game_data.mngrp_data_json["sections"]):
-            section_id = index
-            section_offset_value = section_info["section_offset"]
-            if index == len(self.game_data.mngrp_data_json["sections"]) - 1:
-                next_section_offset_value = len(current_file_data)
-            else:
-                next_section_offset_value = self.game_data.mngrp_data_json["sections"][section_id + 1]['section_offset']
-            own_offset = section_offset_value
-            if section_info["data_type"] == SectionType.MNGRP_STRING:
-                new_section = SectionStringManager(game_data=self.game_data, data_hex=current_file_data[own_offset:next_section_offset_value], id=section_id,
-                                                   own_offset=own_offset, name=section_info['section_name'])
-            elif section_info["data_type"] == SectionType.FF8_TEXT:
-                new_section = FF8SectionText(game_data=self.game_data, id=section_id, own_offset=own_offset,
-                                             data_hex=current_file_data[own_offset:next_section_offset_value],
+        for index, section_mngrp in enumerate(self.mngrp.get_section_list()):
+            if self.mngrphd.get_entry_list()[index].invalid_value: # If it's a non-existent section, ignore it
+                print("ignored !")
+                continue
+            print(f"Index: {index}")
+            #print(f"section_mngrp: {section_mngrp}")
+            section_id = section_mngrp.id
+            print(f"section_id: {section_id}")
+            section_data_type = self.game_data.mngrp_data_json["sections"][section_id]["data_type"]
+            print(f"Section data type: {section_data_type}")
+            section_name = self.game_data.mngrp_data_json["sections"][section_id]["section_name"]
+            section_offset_value = section_mngrp.own_offset
+            section_data_hex = section_mngrp.get_data_hex()
+            if section_data_type == SectionType.MNGRP_STRING:
+                new_section = SectionStringManager(game_data=self.game_data, data_hex=section_data_hex, id=section_id,
+                                                   own_offset=section_offset_value, name=section_name)
+            elif section_data_type == SectionType.FF8_TEXT:
+
+                new_section = FF8SectionText(game_data=self.game_data, id=section_id, own_offset=section_offset_value,
+                                             data_hex=section_data_hex,
                                              section_data_linked=None,
-                                             name=section_info['section_name'])
-            elif section_info["data_type"] == SectionType.TKMNMES:
-                new_section = SectionTkmnmesManager(game_data=self.game_data, id=section_id, own_offset=own_offset,
-                                                    data_hex=current_file_data[own_offset:next_section_offset_value],
-                                                    name=section_info['section_name'])
-            elif section_info["data_type"] == SectionType.MNGRP_MAP_COMPLEX_STRING:
-                map_complex_string = SectionMapComplexString(game_data=self.game_data, id=section_id, own_offset=own_offset,
-                                                             data_hex=current_file_data[own_offset:next_section_offset_value],
-                                                             name=section_info['section_name'])
+                                             name=section_name)
+            elif section_data_type == SectionType.TKMNMES:
+                new_section = SectionTkmnmesManager(game_data=self.game_data, id=section_id, own_offset=section_offset_value,
+                                                    data_hex=section_data_hex,
+                                                    name=section_name)
+            elif section_data_type == SectionType.MNGRP_MAP_COMPLEX_STRING:
+                map_complex_string = SectionMapComplexString(game_data=self.game_data, id=section_id, own_offset=section_offset_value,
+                                                             data_hex=section_data_hex,
+                                                             name=section_name)
                 self.section_complex_string.add_map_section(map_complex_string)
                 new_section = None
-            elif section_info["data_type"] == SectionType.MNGRP_COMPLEX_STRING:
-                new_section = SectionComplexStringEntry(game_data=self.game_data, id=section_id, own_offset=own_offset,
-                                                        data_hex=current_file_data[own_offset:next_section_offset_value],
-                                                        name=section_info['section_name'])
+            elif section_data_type == SectionType.MNGRP_COMPLEX_STRING:
+                new_section = SectionComplexStringEntry(game_data=self.game_data, id=section_id, own_offset=section_offset_value,
+                                                        data_hex=section_data_hex,
+                                                        name=section_name)
                 self.section_complex_string.add_string_entry(new_section)
-            elif section_info["data_type"] == SectionType.MNGRP_M00BIN:
-                new_section = Sectionm00Bin(game_data=self.game_data, id=section_id, own_offset=own_offset,
-                                                        data_hex=current_file_data[own_offset:next_section_offset_value],
-                                                        name=section_info['section_name'], m00_id=m00bin_counter)
-                m00bin_counter+=1
+            elif section_data_type == SectionType.MNGRP_M00BIN:
+                new_section = Sectionm00Bin(game_data=self.game_data, id=section_id, own_offset=section_offset_value,
+                                            data_hex=section_data_hex,
+                                            name=section_name, m00_id=m00bin_counter)
+                m00bin_counter += 1
 
-            elif section_info["data_type"] == SectionType.MNGRP_M00MSG:
-                new_section = FF8SectionText(game_data=self.game_data, id=section_id, own_offset=own_offset,
-                                                        data_hex=current_file_data[own_offset:next_section_offset_value],
-                                                        name=section_info['section_name'])
-                for section in self.section_list:
+            elif section_data_type == SectionType.MNGRP_M00MSG:
+                new_section = FF8SectionText(game_data=self.game_data, id=section_id, own_offset=section_offset_value,
+                                             data_hex=section_data_hex,
+                                             name=section_name)
+                for section in self.mngrp.get_section_list():
                     if section.type == SectionType.MNGRP_M00BIN and section.m00_id == m00msg_counter:
                         section.section_data_linked = section
                         section.section_data_linked.section_text_linked = new_section
                         new_section.init_text(section.get_all_offset())
                         break
 
-                m00msg_counter +=1
+                m00msg_counter += 1
 
             else:  # Just saving the data, but will not be modified
-                new_section = Section(game_data=self.game_data, id=section_id, own_offset=own_offset,
-                                      data_hex=current_file_data[own_offset:next_section_offset_value], name=section_info['section_name'])
-                # new_section.init_subsection(nb_subsection=section_info['number_sub_section'], subsection_sized=section_info['sub_section_size'])
+                new_section = None # No need to create a new section
+                print("No touch")
+            if section_data_type == SectionType.MNGRP_STRING and section_id == 38:
+                print("YOYO")
+                print(new_section)
+                # new_section.init_subsection(nb_subsection=entry_info['number_sub_section'], subsection_sized=entry_info['sub_section_size'])
             if new_section:
-                self.section_list.append(new_section)
-        print(self.section_list)
+                self.mngrp.set_section_by_id(section_id, new_section, self.mngrphd)
+        #print(self.mngrp)
 
     def save_csv(self, csv_path):
         if csv_path:

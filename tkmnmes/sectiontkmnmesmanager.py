@@ -24,7 +24,7 @@ class SectionTkmnmesManager(Section):
     def __str__(self):
         if not self._offset_section or not self._string_section_list:
             return "Empty section"
-        return "TkmnmesManager offset: " + str(self._offset_section) + '\n' + "StringManager text: " + str(self._string_section_list)
+        return "SectionTkmnmesManager(offset_section: " + str(self._offset_section) + '\n' + "StringManager text: " + str(self._string_section_list) + ")"
 
     def load_file(self, file):
         current_file_data = bytearray()

@@ -24,8 +24,10 @@ class SectionStringManager(Section):
     def __str__(self):
         if not self._offset_section or not self._text_section:
             return "Empty section"
-        return "StringManager offset: " + str(self._offset_section) + '\n' + "StringManager text: " + str(self._text_section)
+        return "SectionStringManager(offset_section: " + str(self._offset_section) + '\n' + "text_section: " + str(self._text_section) + ")"
 
+    def __repr__(self):
+        return self.__str__()
     def load_file(self, file):
         current_file_data = bytearray()
         with open(file, "rb") as in_file:
