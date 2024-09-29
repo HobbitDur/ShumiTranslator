@@ -47,7 +47,7 @@ class FF8SectionText(Section):
     def get_text_from_id(self, id_text: int):
         return self._text_list[id_text].get_str()
 
-    def update_text_data(self):
+    def update_data_hex(self):
         self._data_hex = bytearray()
         for data in self._text_list:
             self._data_hex.extend(data.get_data_hex())

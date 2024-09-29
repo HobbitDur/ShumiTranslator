@@ -36,3 +36,12 @@ class SectionComplexStringEntry(Section):
             entry_list.extend(entry.get_text_section().get_text_list())
         print(f"Entry list: {entry_list}")
         return entry_list
+
+    def update_data_hex(self):
+        self._data_hex = bytearray()
+        for string in self.string_entry_list:
+            string.update_data_hex()
+            self._data_hex.extend(string.get_data_hex())
+        self._size = len(self._data_hex)
+
+

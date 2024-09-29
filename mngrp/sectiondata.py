@@ -9,12 +9,12 @@ class SectionData(Section):
     HEADER_SIZE = 2
 
     def __init__(self, game_data: GameData, data_hex: bytearray, id: int, own_offset: int, nb_offset: int, name: str,
-                 section_text_linked: FF8SectionText = None):
+                 section_text_linked: FF8SectionText = None, ignore_empty_offset=True):
         Section.__init__(self, game_data=game_data, data_hex=data_hex, id=id, own_offset=own_offset, name=name)
         self.section_text_linked = section_text_linked
         self._nb_offset = nb_offset
         self._offset_list = []
-        self.__analyse_data(nb_offset)
+        self.__analyse_data(nb_offset, ignore_empty_offset)
 
     def __str__(self):
         return f"SectionData({str(self._offset_list)})"
@@ -22,10 +22,10 @@ class SectionData(Section):
     def __repr__(self):
         self.__str__()
 
-    def __analyse_data(self, nb_offset):
+    def __analyse_data(self, nb_offset, ignore_empty_offset=True):
         for i in range(nb_offset):
             data_offset = self._data_hex[i * self.OFFSET_SIZE:(i + 1) * self.OFFSET_SIZE]
-            if data_offset != b'\x00\x00':  # offset at 0 are value to be ignored.
+            if (ignore_empty_offset and data_offset != b'\x00\x00') or not ignore_empty_offset:  # offset at 0 are value to be ignored.
                 new_data = FF8Data(game_data=self._game_data, own_offset=self.HEADER_SIZE + i * self.HEADER_SIZE,
                                    data_hex=data_offset, id=i,
                                    offset_type=True)

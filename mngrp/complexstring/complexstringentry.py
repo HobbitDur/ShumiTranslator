@@ -31,3 +31,14 @@ class ComplexStringEntry(Section):
 
     def get_text_section(self):
         return self._text_section
+
+    def update_data_hex(self):
+        self._data_hex = bytearray()
+        self._data_hex.extend(self._text_box_origin_id.to_bytes(length=self.TEXT_BOX_ID_SIZE, byteorder='little'))
+        self._data_hex.extend(self._text_box_left_id.to_bytes(length=self.TEXT_BOX_ID_SIZE, byteorder='little'))
+        self._data_hex.extend(self._text_box_right_id.to_bytes(length=self.TEXT_BOX_ID_SIZE, byteorder='little'))
+        self._data_hex.extend(self._length.to_bytes(length=self.ENTRY_LENGTH, byteorder='little'))
+        self._text_section.update_data_hex()
+        self._data_hex.extend(self._text_section.get_data_hex())
+        self._size = len(self._data_hex)
+

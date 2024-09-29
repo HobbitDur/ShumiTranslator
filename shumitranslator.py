@@ -199,6 +199,8 @@ class ShumiTranslator(QWidget):
                 self.kernel_manager.save_file(self.file_loaded)
             elif self.file_loaded_type == FileType.NAMEDIC:
                 self.namedic_manager.save_file(self.file_loaded)
+            elif self.file_loaded_type == FileType.MNGRP:
+                self.mngrp_manager.save_file(self.file_loaded, self.file_mngrphd_loaded)
 
         message_box = QMessageBox()
         message_box.setText("Data saved to file <b>{}</b>".format(pathlib.Path(self.file_loaded).name))
@@ -260,7 +262,7 @@ class ShumiTranslator(QWidget):
         self.uncompress_button.hide()
         self.warning_kernel_label_widget.hide()
         self.warning_mngrp_label_widget.hide()
-        #file_to_load = os.path.join("OriginalFiles", "mngrp_fr.bin")  # For developing faster
+        #file_to_load = os.path.join("OriginalFiles", "mngrp_en - Copie.bin")  # For developing faster
         if not file_to_load:
             filter_txt = ""
             for file_regex in self.FILE_MANAGED_REGEX:
@@ -309,16 +311,17 @@ class ShumiTranslator(QWidget):
 
             elif "mngrp" in file_name and ".bin" in file_name:
                 self.file_loaded_type = FileType.MNGRP
-                #self.file_mngrphd_loaded = os.path.join("OriginalFiles", "mngrphd_fr.bin")  # For developing faster
+                #self.file_mngrphd_loaded = os.path.join("OriginalFiles", "mngrphd_en - Copie.bin")  # For developing faster
                 if not self.file_mngrphd_loaded:
                     self.file_mngrphd_loaded = self.file_dialog.getOpenFileName(parent=self, caption="Find mngrphd", filter="*mngrphd*.bin",
-                                                                    directory=os.getcwd())[0]
+                                                                                directory=os.getcwd())[0]
 
                 print("Loading file for mngrp manager")
                 self.mngrp_manager.load_file(self.file_mngrphd_loaded, self.file_loaded)
 
                 first_section_line_index = 2
                 for section in self.mngrp_manager.mngrp.get_section_list():
+
                     if section.type in [SectionType.MNGRP_STRING, SectionType.FF8_TEXT, SectionType.TKMNMES, SectionType.MNGRP_COMPLEX_STRING]:
                         if section.type == SectionType.MNGRP_STRING:
                             self.section_widget_list.append(SectionWidget(section.get_text_section(), first_section_line_index))

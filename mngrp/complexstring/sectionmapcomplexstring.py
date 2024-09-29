@@ -48,3 +48,12 @@ class SectionMapComplexString(Section):
             if location_info.section_number == section_id:
                 offset_list.append(location_info.seek_location)
         return offset_list
+
+    def update_data_hex(self):
+        self._data_hex = bytearray()
+        self._data_hex.extend(self._nb_seek_location.to_bytes(length=self.HEADER_SIZE,byteorder="little"))
+        for seek_location in self._seek_location_info_list:
+            self._data_hex.extend(seek_location.seek_location.to_bytes(length=self.SEEK_LOCATION_SIZE, byteorder="little"))
+            self._data_hex.extend(seek_location.seek_location.to_bytes(length=self.SEEK_SECTION_NB_SIZE, byteorder="little"))
+        self._size = len(self._data_hex)
+

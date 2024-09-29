@@ -30,7 +30,7 @@ class KernelManager():
                 section.set_all_offset(section_text_list)
             # Then updating text
             if section.type == SectionType.FF8_TEXT:
-                section.update_text_data()
+                section.update_data_hex()
                 self.section_list[0].set_section_offset_value_from_id(index_section, current_offset)
             current_offset += len(section)
 
