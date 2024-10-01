@@ -86,7 +86,6 @@ class MngrpManager:
                 new_section = SectionTkmnmesManager(game_data=self.game_data, id=section_id, own_offset=section_offset_value,
                                                     data_hex=section_data_hex,
                                                     name=section_name)
-                print(new_section)
             elif section_data_type == SectionType.MNGRP_MAP_COMPLEX_STRING:
                 map_complex_string = SectionMapComplexString(game_data=self.game_data, id=section_id, own_offset=section_offset_value,
                                                              data_hex=section_data_hex,

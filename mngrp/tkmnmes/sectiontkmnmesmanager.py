@@ -42,11 +42,11 @@ class SectionTkmnmesManager(Section):
         print(f"end_offset_section: {end_offset_section}")
         self._offset_section = SectionData(game_data=self._game_data,
                                            data_hex=self._data_hex[self.HEADER_SIZE:end_offset_section], id=0,
-                                           own_offset=self.HEADER_SIZE, nb_offset=self._nb_padding, name="", ignore_empty_offset=False)
+                                           own_offset=self.HEADER_SIZE, nb_offset=self._nb_padding, name="")
         print(f"self._offset_section: {self._offset_section}")
 
         offset_list = self._offset_section.get_all_offset()
-
+        print(f"Toto offset list: {offset_list}")
         for i in range(len(offset_list)):
             print(f"Yes i : {i}")
             if i == len(offset_list) - 1:
@@ -61,30 +61,37 @@ class SectionTkmnmesManager(Section):
                     next_string_section = len(self._data_hex)
 
             start_string_section = offset_list[i]
-
-            if start_string_section == 0:
-                print("Ignore")
+            print(f"start_string_section: {start_string_section}")
+            print(f"next_string_section: {next_string_section}")
+            if next_string_section == 0:
+                print("Unexpected empty next offset in tkmnmes manager")
                 continue
             else:
                 print("Building string")
+
                 string_data_hex = self._data_hex[start_string_section:next_string_section]
-                self._string_section_list.append(
-                    SectionStringManager(game_data=self._game_data, data_hex=string_data_hex, id=i,
-                                         own_offset=start_string_section, name=self.name + f" - subsection n°{i}"))
-        self.update_data_hex()  # To compute if there was offset removed (by removing offset with 0 value)
+                new_section = SectionStringManager(game_data=self._game_data, data_hex=string_data_hex, id=i,
+                                         own_offset=start_string_section, name=self.name + f" - subsection n°{i}")
+                self._string_section_list.append(new_section)
+                print(f"new section: {new_section}")
 
     def update_data_hex(self):
+        new_padding_list = []
+        # First we update all string section, so we can compute the padding
+        shift_padding = self.HEADER_SIZE + self.OFFSET_SIZE* self._nb_padding
+        for i in range(len(self._string_section_list)):
+            print(f"len(self._string_section_list[i]): {len(self._string_section_list[i])}")
+            self._string_section_list[i].update_data_hex()
+            print(f"len(self._string_section_list[i]): {len(self._string_section_list[i])}")
+            new_padding_list.append(shift_padding)
+            shift_padding+=len(self._string_section_list[i])
+        self._offset_section.set_all_offset_by_value_list(new_padding_list)
+
         self._data_hex = bytearray()
         self._data_hex.extend((self._nb_padding-1).to_bytes(byteorder='little', length=2))
         self._data_hex.extend(self._offset_section.get_data_hex())
-        offset_list = self._offset_section.get_all_offset()
-        string_section_index = 0
-        for i in range(len(offset_list)):
-            if offset_list[i] == 0:
-                continue
-            self._string_section_list[string_section_index].update_data_hex()
-            self._data_hex.extend(self._string_section_list[string_section_index].get_data_hex())
-            string_section_index += 1
+        for i in range(len(self._string_section_list)):
+            self._data_hex.extend( self._string_section_list[i].get_data_hex())
         self._size = len(self._data_hex)
         return self._data_hex
 

@@ -1,3 +1,5 @@
+from sys import byteorder
+
 from FF8GameData.FF8HexReader.section import Section
 from FF8GameData.gamedata import GameData
 from general.ff8data import FF8Data
@@ -25,11 +27,15 @@ class SectionData(Section):
     def __analyse_data(self, nb_offset, ignore_empty_offset=True):
         for i in range(nb_offset):
             data_offset = self._data_hex[i * self.OFFSET_SIZE:(i + 1) * self.OFFSET_SIZE]
-            if (ignore_empty_offset and data_offset != b'\x00\x00') or not ignore_empty_offset:  # offset at 0 are value to be ignored.
-                new_data = FF8Data(game_data=self._game_data, own_offset=self.HEADER_SIZE + i * self.HEADER_SIZE,
-                                   data_hex=data_offset, id=i,
-                                   offset_type=True)
-                self._offset_list.append(new_data)
+            if ignore_empty_offset and bytes(data_offset) == bytes(b'\x00\x00'):
+                continue
+            new_data = FF8Data(game_data=self._game_data, own_offset=self.HEADER_SIZE + i * self.OFFSET_SIZE,
+                               data_hex=data_offset, id=i,
+                               offset_type=True)
+            self._offset_list.append(new_data)
+        self._nb_offset = len(self._offset_list)  # As some offset are ignored, changing the nb of offset
+
+
 
     def get_all_offset(self):
         offset_list = []
@@ -37,18 +43,38 @@ class SectionData(Section):
             offset_list.append(ff8_data.get_offset_value())
         return offset_list
 
-    def set_all_offset_value(self, text_list):
+    def set_all_offset_by_text_list(self, text_list, shift = 0):
         if len(text_list) != self._nb_offset:
             print(
-                f"The size of the offset list ({len(text_list)}) is different than the nb of offset data ({self._nb_offset})")
+                f"The size of the text list ({len(text_list)}) is different than the nb of offset ({self._nb_offset})")
 
-        current_offset = self._offset_list[0].get_offset_value()
+        self._offset_list = []
         for i in range(len(text_list)):  # Assuming offset data is always at the beginning of the subsection
             text_size = len(text_list[i])
-            self._offset_list[i].set_offset_value(current_offset)
-            current_offset += text_size
+            new_data = FF8Data(game_data=self._game_data, own_offset=self.HEADER_SIZE + i * self.OFFSET_SIZE,
+                               data_hex=(text_size+shift).to_bytes(length=self.OFFSET_SIZE, byteorder='little'), id=i,
+                               offset_type=True)
+            self._offset_list.append(new_data)
 
+    def set_all_offset_by_value_list(self, value_list):
+        print("set_all_offset_by_value_list")
+        print(f"value_list: {value_list}")
+        print(f"self._offset_list: {self._offset_list}")
+        if len(value_list) != self._nb_offset:
+            print(
+                f"The size of the value list ({len(value_list)}) is different than the nb of offset ({self._nb_offset})")
+        self._offset_list = []
+        for i in range(len(value_list)):  # Assuming offset data is always at the beginning of the subsection
+            new_data = FF8Data(game_data=self._game_data, own_offset=self.HEADER_SIZE + i * self.OFFSET_SIZE,
+                               data_hex=value_list[i].to_bytes(length=self.OFFSET_SIZE, byteorder='little'), id=i,
+                               offset_type=True)
+            self._offset_list.append(new_data)
+        print(f"self._offset_list: {self._offset_list}")
+
+    def update_data_hex(self):
+        end_data = self._data_hex[self._nb_offset*self.OFFSET_SIZE:]
         self._data_hex = bytearray()
-        for ff8_data in self._offset_list:
-            self._data_hex.extend(ff8_data.get_data_hex())
+        for data in self._offset_list:
+            self._data_hex.extend(data.get_data_hex())
+        self._data_hex.extend(end_data)
         self._size = len(self._data_hex)
