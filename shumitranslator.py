@@ -134,8 +134,7 @@ class ShumiTranslator(QWidget):
         # Warning
         self.warning_mngrp_label_widget = QLabel(
             "{x0...} are yet unknown text correspondence. Pls don't modify them.<br/>"
-            "Value between {} are \"compressed\" data. Pls don't remove bracket around.<br/>"
-            "Value {x0a..} as often weird character after. Pls don't modify them<br/>")
+            "Value between {} are \"compressed\" data. Pls don't remove bracket around.<br/>")
         self.warning_mngrp_label_widget.hide()
 
         self.layout_full_top = QVBoxLayout()
