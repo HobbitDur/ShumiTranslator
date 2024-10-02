@@ -27,24 +27,9 @@ class MngrpManager:
         return self.__str__()
 
     def save_file(self, file_mngrp, file_mngrphd):
-        current_offset = 0
-        current_file_data = bytearray()
-
-        # Then creating the file
-        #for index_section, section in enumerate(self.mngrp.get_section_list()):
-        #    if section.type == SectionType.TKMNMES:
-        #        section.update_data_hex()
         self.mngrp.update_data_hex()
-        #for index_section, section in enumerate(self.mngrp.get_section_list()):
-        #    # First updating all offset on section data
-        #    if section.type == SectionType.DATA and section.section_text_linked:
-        #        section_text_linked = section.section_text_linked
-        #        section_text_list = section_text_linked.get_text_list()
-        #        section.set_all_offset(section_text_list)
-        #    # Then updating text
-        #    if section.type == SectionType.FF8_TEXT:
-        #        section.update_text_data()
-        #    current_offset += len(section)
+        self.mngrphd.update_from_section_list(self.mngrp.get_section_list())
+        self.mngrphd.update_data_hex()
 
         with open(file_mngrp, "wb") as in_file:
             in_file.write(self.mngrp.get_data_hex())
@@ -119,8 +104,8 @@ class MngrpManager:
             else:  # Just saving the data, but will not be modified
                 new_section = None # No need to create a new section
                 # new_section.init_subsection(nb_subsection=entry_info['number_sub_section'], subsection_sized=entry_info['sub_section_size'])
-            if new_section:
-                self.mngrp.set_section_by_id(section_id, new_section, self.mngrphd)
+            if new_section and section_data_type == SectionType.MNGRP_COMPLEX_STRING:
+                self.mngrp.set_section_by_id(section_id, new_section)
 
     def save_csv(self, csv_path):
         if csv_path:

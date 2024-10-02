@@ -323,7 +323,7 @@ class ShumiTranslator(QWidget):
                 print(self.mngrp_manager.mngrp.get_section_list())
                 print(len(self.mngrp_manager.mngrp.get_section_list()))
                 for section in self.mngrp_manager.mngrp.get_section_list():
-                    if section.type in [SectionType.MNGRP_STRING, SectionType.FF8_TEXT, SectionType.TKMNMES, SectionType.MNGRP_COMPLEX_STRING]:
+                    if section.type in (SectionType.TKMNMES, SectionType.MNGRP_STRING, SectionType.FF8_TEXT, SectionType.MNGRP_COMPLEX_STRING):
                         if section.type == SectionType.MNGRP_STRING:
                             self.section_widget_list.append(SectionWidget(section.get_text_section(), first_section_line_index))
                             first_section_line_index += len(section.get_text_list())

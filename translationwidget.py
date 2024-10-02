@@ -77,7 +77,7 @@ class TranslationWidget(QWidget):
             message_box.setWindowTitle("ShumiTranslator - Forbidden char")
             message_box.exec()
             with QSignalBlocker(self.__custom_text_widget):
-                self.__custom_text_widget.setPlainText(self.translation.get_str())
+                self.__custom_text_widget.setPlainText(self.translation.get_str().replace('\\n', '\n'))
 
     def change_custom_text(self, custom_text):
         self.__custom_text_widget.setPlainText(custom_text)
@@ -85,9 +85,9 @@ class TranslationWidget(QWidget):
     def compress_str(self, compressible=3):
         self.translation.compress_str(compressible)
         with QSignalBlocker(self.__custom_text_widget):
-            self.__custom_text_widget.setPlainText(self.translation.get_str())
+            self.__custom_text_widget.setPlainText(self.translation.get_str().replace('\\n', '\n'))
 
     def uncompress_str(self):
         self.translation.uncompress_str()
         with QSignalBlocker(self.__custom_text_widget):
-            self.__custom_text_widget.setPlainText(self.translation.get_str())
+            self.__custom_text_widget.setPlainText(self.translation.get_str().replace('\\n', '\n'))

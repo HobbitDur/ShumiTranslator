@@ -27,18 +27,21 @@ class SectionWidget(QWidget):
 
     def __create_sub_section_widget(self):
         print("__create_sub_section_widget")
-        print(self.section)
-        for i, kernel_text in enumerate(self.section.get_text_list()):
-            translation_widget = TranslationWidget(kernel_text, self.first_section_line_index + i)
-            self.translation_widget_list.append(translation_widget)
-            self.__main_layout.addWidget(self.translation_widget_list[-1])
-        end_separator_line = QFrame()
-        end_separator_line.setFrameStyle(0x04)# Horizontal line
-        end_separator_line.setLineWidth(2)
-        self.__main_layout.addWidget(end_separator_line)
+        if self.section:
+            for i, kernel_text in enumerate(self.section.get_text_list()):
+                translation_widget = TranslationWidget(kernel_text, self.first_section_line_index + i)
+                self.translation_widget_list.append(translation_widget)
+                self.__main_layout.addWidget(self.translation_widget_list[-1])
+            end_separator_line = QFrame()
+            end_separator_line.setFrameStyle(0x04)# Horizontal line
+            end_separator_line.setLineWidth(2)
+            self.__main_layout.addWidget(end_separator_line)
+        else:
+            print(self.section)
 
     def set_text_from_id(self, id: int, text: str):
-        self.translation_widget_list[id].change_custom_text(text)
+        if id < len(self.translation_widget_list):
+            self.translation_widget_list[id].change_custom_text(text)
 
     def compress_str(self, compressible=3):
         for translation_widget in self.translation_widget_list:

@@ -17,6 +17,9 @@ class FF8SectionText(Section):
     def __repr__(self):
         return self.__str__()
 
+    def __bool__(self):
+        return bool(self._text_list)
+
     def init_text(self, offset_list: list):
         if not offset_list:
             return

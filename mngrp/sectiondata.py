@@ -24,12 +24,15 @@ class SectionData(Section):
     def __repr__(self):
         self.__str__()
 
+    def __bool__(self):
+        return bool(self._offset_list)
+
     def __analyse_data(self, nb_offset, ignore_empty_offset=True):
         for i in range(nb_offset):
             data_offset = self._data_hex[i * self.OFFSET_SIZE:(i + 1) * self.OFFSET_SIZE]
             if ignore_empty_offset and bytes(data_offset) == bytes(b'\x00\x00'):
                 continue
-            new_data = FF8Data(game_data=self._game_data, own_offset=self.HEADER_SIZE + i * self.OFFSET_SIZE,
+            new_data = FF8Data(game_data=self._game_data, own_offset=i * self.OFFSET_SIZE,
                                data_hex=data_offset, id=i,
                                offset_type=True)
             self._offset_list.append(new_data)
@@ -49,17 +52,15 @@ class SectionData(Section):
                 f"The size of the text list ({len(text_list)}) is different than the nb of offset ({self._nb_offset})")
 
         self._offset_list = []
+        current_offset = shift
         for i in range(len(text_list)):  # Assuming offset data is always at the beginning of the subsection
-            text_size = len(text_list[i])
-            new_data = FF8Data(game_data=self._game_data, own_offset=self.HEADER_SIZE + i * self.OFFSET_SIZE,
-                               data_hex=(text_size+shift).to_bytes(length=self.OFFSET_SIZE, byteorder='little'), id=i,
+            new_data = FF8Data(game_data=self._game_data, own_offset=i * self.OFFSET_SIZE,
+                               data_hex=current_offset.to_bytes(length=self.OFFSET_SIZE, byteorder='little'), id=i,
                                offset_type=True)
+            current_offset +=len(text_list[i])
             self._offset_list.append(new_data)
 
     def set_all_offset_by_value_list(self, value_list):
-        print("set_all_offset_by_value_list")
-        print(f"value_list: {value_list}")
-        print(f"self._offset_list: {self._offset_list}")
         if len(value_list) != self._nb_offset:
             print(
                 f"The size of the value list ({len(value_list)}) is different than the nb of offset ({self._nb_offset})")
@@ -69,12 +70,9 @@ class SectionData(Section):
                                data_hex=value_list[i].to_bytes(length=self.OFFSET_SIZE, byteorder='little'), id=i,
                                offset_type=True)
             self._offset_list.append(new_data)
-        print(f"self._offset_list: {self._offset_list}")
 
     def update_data_hex(self):
-        end_data = self._data_hex[self._nb_offset*self.OFFSET_SIZE:]
         self._data_hex = bytearray()
         for data in self._offset_list:
             self._data_hex.extend(data.get_data_hex())
-        self._data_hex.extend(end_data)
         self._size = len(self._data_hex)
