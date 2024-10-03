@@ -2,10 +2,10 @@ from sys import byteorder
 
 from FF8GameData.FF8HexReader.section import Section
 from FF8GameData.gamedata import GameData, SectionType
-from mngrp.complexstring.complexstringentry import ComplexStringEntry
+from mngrp.textbox.textboxentry import TextBoxEntry
 
 
-class SectionComplexStringEntry(Section):
+class SectionTextBoxEntry(Section):
 
     def __init__(self, game_data: GameData, data_hex: bytearray, id: int, own_offset: int, name: str):
         Section.__init__(self, game_data=game_data, data_hex=data_hex, id=id, own_offset=own_offset, name=name)
@@ -26,7 +26,7 @@ class SectionComplexStringEntry(Section):
                 next_offset = self._size
             else:
                 next_offset = offset_map_list[i + 1]
-            new_entry = ComplexStringEntry(game_data=self._game_data, data_hex=self._data_hex[offset:next_offset], id=i, own_offset=offset, name="")
+            new_entry = TextBoxEntry(game_data=self._game_data, data_hex=self._data_hex[offset:next_offset], id=i, own_offset=offset, name="")
             self.string_entry_list.append(new_entry)
         print(self.string_entry_list)
 

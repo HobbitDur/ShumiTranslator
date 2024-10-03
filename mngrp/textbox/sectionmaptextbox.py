@@ -14,7 +14,7 @@ class SeekLocationInfo:
         return self.__str__()
 
 
-class SectionMapComplexString(Section):
+class SectionMapTextBox(Section):
     OFFSET_SIZE = 2
     HEADER_SIZE = 4
     SEEK_LOCATION_SIZE = 2

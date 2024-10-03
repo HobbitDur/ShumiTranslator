@@ -8,10 +8,8 @@ from PyQt6.QtWidgets import QVBoxLayout, QWidget, QScrollArea, QPushButton, QFil
 
 from FF8GameData.gamedata import GameData, FileType, SectionType
 from kernel.kernelmanager import KernelManager
-from mngrp.complexstring.sectioncomplexstringmanager import SectionComplexStringManager
-from mngrp.complexstring.sectionmapcomplexstring import SectionMapComplexString
 from mngrp.mngrpmanager import MngrpManager
-from mngrp.string.sectionstringmanager import SectionStringManager
+from mngrp.string.sectionstring import SectionString
 from sectionwidget import SectionWidget
 
 
@@ -157,7 +155,7 @@ class ShumiTranslator(QWidget):
         self.window_layout.addWidget(self.scroll_area)
 
         self.kernel_manager = KernelManager(game_data=self.game_data)
-        self.namedic_manager = SectionStringManager(game_data=self.game_data)
+        self.namedic_manager = SectionString(game_data=self.game_data)
         self.mngrp_manager = MngrpManager(game_data=self.game_data)
 
     def __show_info(self):

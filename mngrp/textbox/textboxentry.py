@@ -3,7 +3,7 @@ from FF8GameData.gamedata import GameData, SectionType
 from general.ff8sectiontext import FF8SectionText
 
 
-class ComplexStringEntry(Section):
+class TextBoxEntry(Section):
     TEXT_BOX_ID_SIZE = 2
     ENTRY_LENGTH = 2
 

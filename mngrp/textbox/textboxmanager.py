@@ -1,17 +1,15 @@
 from FF8GameData.FF8HexReader.section import Section
 from FF8GameData.gamedata import GameData, SectionType
-from mngrp.complexstring.complexstringentry import ComplexStringEntry
-from mngrp.complexstring.sectioncomplexstringentry import SectionComplexStringEntry
-from mngrp.complexstring.sectionmapcomplexstring import SectionMapComplexString
+from mngrp.textbox.textboxentry import TextBoxEntry
+from mngrp.textbox.sectiontextboxentry import SectionTextBoxEntry
+from mngrp.textbox.sectionmaptextbox import SectionMapTextBox
 
 
-class SectionComplexStringManager(Section):
+class TextBoxManager:
     OFFSET_SIZE = 2
     HEADER_SIZE = 4
 
-    def __init__(self, game_data: GameData, data_hex=bytearray(), id=0, own_offset=0, name=""):
-        Section.__init__(self, game_data=game_data, data_hex=data_hex, id=id, own_offset=own_offset, name=name)
-
+    def __init__(self):
         self._nb_offset = 0
         self._map_section = None
         self._complex_string_entry_list = []
@@ -20,10 +18,10 @@ class SectionComplexStringManager(Section):
     def __str__(self):
         return f"{str(self._map_section)} \n {self._complex_string_entry_list}"
 
-    def add_map_section(self, map_section: SectionMapComplexString):
+    def add_map_section(self, map_section: SectionMapTextBox):
         self._map_section = map_section
 
-    def add_string_entry(self, string_entry: SectionComplexStringEntry):
+    def add_string_entry(self, string_entry: SectionTextBoxEntry):
         if not self._map_section:
             print("First add a map before adding string entry")
             return
@@ -37,6 +35,6 @@ class SectionComplexStringManager(Section):
     def update_map_offset(self):
         print("Update map offset")
         for i in range(len(self._complex_string_entry_list)):
-            shift = ComplexStringEntry.ENTRY_LENGTH + ComplexStringEntry.TEXT_BOX_ID_SIZE * 3
+            shift = TextBoxEntry.ENTRY_LENGTH + TextBoxEntry.TEXT_BOX_ID_SIZE * 3
             self._map_section.set_offset_from_text_list(self._complex_string_entry_list[i].get_text_list(), i,
                                                         shift=shift)

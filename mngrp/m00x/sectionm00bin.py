@@ -49,11 +49,9 @@ class Sectionm00Bin(Section):
                 entry.text_offset = int.from_bytes(bytearray(self._data_hex[index:index + 2]), byteorder='little')
                 entry.amount_received = int(self._data_hex[index + 2])
                 entry.unk = int.from_bytes(bytearray(self._data_hex[index + 3:index + 5]), byteorder='little')
-                entry.element_in_id = str(int(self._data_hex[index + 5])) + ':' + \
-                                      input_table[int(self._data_hex[index + 5])]['name']
+                entry.element_in_id = int(self._data_hex[index + 5])
                 entry.amount_required = int(self._data_hex[index + 6])
-                entry.element_out_id = str(int(self._data_hex[index + 7])) + ':' + \
-                                       output_table[int(self._data_hex[index + 7])]['name']
+                entry.element_out_id = int(self._data_hex[index + 7])
                 index += entry.ENTRY_SIZE
 
     def get_all_offset(self):
@@ -62,3 +60,31 @@ class Sectionm00Bin(Section):
             for entry in data.entries:
                 offset_list.append(entry.text_offset)
         return offset_list
+
+    def set_offset_by_text_list(self, text_list):
+        text_offset = 0
+        nb_entry = 0
+        for data in self.m00bin.list_data:
+            for entry in data.entries:
+                entry.text_offset = text_offset
+                text_offset += len(text_list[nb_entry])
+                nb_entry+=1
+        if nb_entry != len(text_list):
+            print(f"Not same number of entry: {nb_entry} than the size of text list: {len(text_list)}")
+
+
+    def update_data_hex(self):
+        self._data_hex = bytearray()
+        for index_data, data in enumerate(self.m00bin.list_data):
+            for nb_entry, entry in enumerate(data.entries):
+                self._data_hex.extend(entry.text_offset.to_bytes(length=2, byteorder="little"))
+                self._data_hex.extend(entry.amount_received.to_bytes(length=1, byteorder="little"))
+                self._data_hex.extend(entry.unk.to_bytes(length=2, byteorder="little"))
+                self._data_hex.extend(entry.element_in_id.to_bytes(length=1, byteorder="little"))
+                self._data_hex.extend(entry.amount_required.to_bytes(length=1, byteorder="little"))
+                self._data_hex.extend(entry.element_out_id.to_bytes(length=1, byteorder="little"))
+        self._size = len(self._data_hex)
+
+
+
+

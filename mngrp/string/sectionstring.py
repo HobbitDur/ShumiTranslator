@@ -6,7 +6,7 @@ from general.ff8sectiontext import FF8SectionText
 from mngrp.sectiondata import SectionData
 
 
-class SectionStringManager(Section):
+class SectionString(Section):
     OFFSET_SIZE = 2
     HEADER_SIZE = 2
 
