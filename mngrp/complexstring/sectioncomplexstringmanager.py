@@ -1,5 +1,6 @@
 from FF8GameData.FF8HexReader.section import Section
 from FF8GameData.gamedata import GameData, SectionType
+from mngrp.complexstring.complexstringentry import ComplexStringEntry
 from mngrp.complexstring.sectioncomplexstringentry import SectionComplexStringEntry
 from mngrp.complexstring.sectionmapcomplexstring import SectionMapComplexString
 
@@ -36,5 +37,6 @@ class SectionComplexStringManager(Section):
     def update_map_offset(self):
         print("Update map offset")
         for i in range(len(self._complex_string_entry_list)):
-            self._map_section.set_offset_from_text_list(self._complex_string_entry_list[i].get_text_list(), i)
-
+            shift = ComplexStringEntry.ENTRY_LENGTH + ComplexStringEntry.TEXT_BOX_ID_SIZE * 3
+            self._map_section.set_offset_from_text_list(self._complex_string_entry_list[i].get_text_list(), i,
+                                                        shift=shift)

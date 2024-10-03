@@ -18,7 +18,7 @@ class MngrpManager:
         self.mngrphd = None
         self.mngrp = None
         self.game_data = game_data
-        self.section_complex_string = SectionComplexStringManager(game_data=self.game_data)
+        self.section_complex_string_manager = SectionComplexStringManager(game_data=self.game_data)
 
     def __str__(self):
         return str(self.mngrp)
@@ -29,7 +29,8 @@ class MngrpManager:
     def save_file(self, file_mngrp, file_mngrphd):
 
         # Some sections are interdependent, so we update their value first
-        self.section_complex_string.update_map_offset()
+        self.section_complex_string_manager.update_map_offset()
+
 
         # then we update mngrp hex
         self.mngrp.update_data_hex()
@@ -82,13 +83,13 @@ class MngrpManager:
                 map_complex_string = SectionMapComplexString(game_data=self.game_data, id=section_id, own_offset=section_offset_value,
                                                              data_hex=section_data_hex,
                                                              name=section_name)
-                self.section_complex_string.add_map_section(map_complex_string)
-                new_section = None
+                self.section_complex_string_manager.add_map_section(map_complex_string)
+                new_section = map_complex_string
             elif section_data_type == SectionType.MNGRP_COMPLEX_STRING:
                 new_section = SectionComplexStringEntry(game_data=self.game_data, id=section_id, own_offset=section_offset_value,
                                                         data_hex=section_data_hex,
                                                         name=section_name)
-                self.section_complex_string.add_string_entry(new_section)
+                self.section_complex_string_manager.add_string_entry(new_section)
             elif section_data_type == SectionType.MNGRP_M00BIN:
                 new_section = Sectionm00Bin(game_data=self.game_data, id=section_id, own_offset=section_offset_value,
                                             data_hex=section_data_hex,
@@ -111,7 +112,7 @@ class MngrpManager:
             else:  # Just saving the data, but will not be modified
                 new_section = None # No need to create a new section
                 # new_section.init_subsection(nb_subsection=entry_info['number_sub_section'], subsection_sized=entry_info['sub_section_size'])
-            if new_section and section_data_type == SectionType.MNGRP_COMPLEX_STRING:
+            if new_section and (section_data_type == SectionType.MNGRP_COMPLEX_STRING or section_data_type == SectionType.MNGRP_MAP_COMPLEX_STRING):
                 self.mngrp.set_section_by_id(section_id, new_section)
 
     def save_csv(self, csv_path):

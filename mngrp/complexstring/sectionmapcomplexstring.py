@@ -49,7 +49,7 @@ class SectionMapComplexString(Section):
                 offset_list.append(location_info.seek_location)
         return offset_list
 
-    def set_offset_from_text_list(self, text_list, p_section_number):
+    def set_offset_from_text_list(self, text_list, p_section_number, shift = 0):
         print("set_offset_from_text_list")
         print(p_section_number)
         print(f"First len seek_location: {len(self._seek_location_info_list)}")
@@ -59,9 +59,11 @@ class SectionMapComplexString(Section):
             if self._seek_location_info_list[i].section_number != p_section_number:
                 cleared_list.append(self._seek_location_info_list[i])
         location=0
-        for text in text_list:
+        for i in range(0, len(text_list), 2):
             new_seek_location = SeekLocationInfo(seek_location=location, section_number=p_section_number)
-            location +=len(text)
+            print(text_list[i])
+            print(text_list[i+1])
+            location +=len(text_list[i]) + len(text_list[i+1]) + shift
             cleared_list.append(new_seek_location)
 
         self._seek_location_info_list = cleared_list
