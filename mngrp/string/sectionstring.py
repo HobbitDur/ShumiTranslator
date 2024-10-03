@@ -57,6 +57,7 @@ class SectionString(Section):
         print(self._offset_section.get_all_offset())
 
         self._nb_offset= len(self._text_section.get_text_list()) # As some offset are ignored, changing the nb of offset
+        self._nb_offset = 0x82
         self._text_section.update_data_hex()
         self._offset_section.set_all_offset_by_text_list(self._text_section.get_text_list(), shift = self.HEADER_SIZE +  self.OFFSET_SIZE * self._nb_offset)
         self._offset_section.update_data_hex()
@@ -64,6 +65,8 @@ class SectionString(Section):
         self._data_hex = bytearray()
         self._data_hex.extend(self._nb_offset.to_bytes(byteorder='little', length=2))
         self._data_hex.extend(self._offset_section.get_data_hex())
+        for i in range(len(self._offset_section.get_all_offset()), self._nb_offset):
+            self._data_hex.extend([0,0])
         self._data_hex.extend(self._text_section.get_data_hex())
         self._size = len(self._data_hex)
         return self._data_hex

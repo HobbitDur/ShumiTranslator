@@ -47,7 +47,7 @@ class SectionTkmnmes(Section):
         end_offset_section = self._nb_padding * self.OFFSET_SIZE + self.HEADER_SIZE
         self._offset_section = SectionData(game_data=self._game_data,
                                            data_hex=self._data_hex[self.HEADER_SIZE:end_offset_section], id=0,
-                                           own_offset=self.HEADER_SIZE, nb_offset=self._nb_padding, name="")
+                                           own_offset=self.HEADER_SIZE, nb_offset=self._nb_padding, name="", ignore_empty_offset=True)
 
         offset_list = self._offset_section.get_all_offset()
         # print(f"Offset list: {offset_list}")
@@ -93,16 +93,15 @@ class SectionTkmnmes(Section):
             self._string_section_list[i].update_data_hex()
             new_padding_list.append(shift_padding)
             shift_padding += len(self._string_section_list[i])
-
         self._offset_section.set_all_offset_by_value_list(new_padding_list)
         self._offset_section.update_data_hex()
         self._data_hex = bytearray()
         # -1 because FF8 can't count
         self._data_hex.extend((self._nb_padding - 1).to_bytes(byteorder='little', length=self.HEADER_SIZE))
         self._data_hex.extend(self._offset_section.get_data_hex())
+        # To be checked if it's needed, but adding 0 to get to 17 padding
         for i in range(len(self._string_section_list), self._nb_padding):
             self._data_hex.extend([0,0])
-        # To be checked if it's needed, but adding 0 to get to 17 padding
         for i in range(len(self._string_section_list)):
             self._data_hex.extend(self._string_section_list[i].get_data_hex())
         self._size = len(self._data_hex)
