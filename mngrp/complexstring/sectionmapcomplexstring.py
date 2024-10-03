@@ -49,11 +49,30 @@ class SectionMapComplexString(Section):
                 offset_list.append(location_info.seek_location)
         return offset_list
 
+    def set_offset_from_text_list(self, text_list, p_section_number):
+        print("set_offset_from_text_list")
+        print(p_section_number)
+        print(f"First len seek_location: {len(self._seek_location_info_list)}")
+        # First remove all previous data of the section
+        cleared_list = []
+        for i in range(len(self._seek_location_info_list)):
+            if self._seek_location_info_list[i].section_number != p_section_number:
+                cleared_list.append(self._seek_location_info_list[i])
+        location=0
+        for text in text_list:
+            new_seek_location = SeekLocationInfo(seek_location=location, section_number=p_section_number)
+            location +=len(text)
+            cleared_list.append(new_seek_location)
+
+        self._seek_location_info_list = cleared_list
+        print(f"Second len seek_location: {len(self._seek_location_info_list)}")
+
     def update_data_hex(self):
+        print("update data hex for map !")
         self._data_hex = bytearray()
         self._data_hex.extend(self._nb_seek_location.to_bytes(length=self.HEADER_SIZE,byteorder="little"))
         for seek_location in self._seek_location_info_list:
             self._data_hex.extend(seek_location.seek_location.to_bytes(length=self.SEEK_LOCATION_SIZE, byteorder="little"))
-            self._data_hex.extend(seek_location.seek_location.to_bytes(length=self.SEEK_SECTION_NB_SIZE, byteorder="little"))
+            self._data_hex.extend(seek_location.section_number.to_bytes(length=self.SEEK_SECTION_NB_SIZE, byteorder="little"))
         self._size = len(self._data_hex)
 

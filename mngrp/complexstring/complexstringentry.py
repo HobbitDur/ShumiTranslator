@@ -15,6 +15,10 @@ class ComplexStringEntry(Section):
         self._length = int.from_bytes(self._data_hex[self.TEXT_BOX_ID_SIZE * 3:self.TEXT_BOX_ID_SIZE * 3 + self.ENTRY_LENGTH],
                                       byteorder='little')
         text_data_hex = self._data_hex[self.TEXT_BOX_ID_SIZE * 3 + self.ENTRY_LENGTH:]
+        print(text_data_hex)
+        print(len(text_data_hex))
+        print(text_data_hex.hex(sep=" "))
+        print(self._game_data.translate_hex_to_str(text_data_hex))
         offset_end_title = text_data_hex.index(b'\x00')
         self._text_section = FF8SectionText(game_data=game_data, data_hex=text_data_hex, id=0, own_offset=0, name="", cursor_location_size=3)
         self._text_section.init_text([0, offset_end_title])

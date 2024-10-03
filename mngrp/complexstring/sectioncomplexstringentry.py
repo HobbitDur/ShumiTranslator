@@ -33,9 +33,11 @@ class SectionComplexStringEntry(Section):
     def get_text_list(self):
         entry_list = []
         for entry in self.string_entry_list:
-            entry_list.extend(entry.get_text_section().get_text_list())
+            new_ff8text = entry.get_text_section().get_text_list() [0] + entry.get_text_section().get_text_list()[1]
+            entry_list.append(new_ff8text)
         print(f"Entry list: {entry_list}")
         return entry_list
+
 
     def update_data_hex(self):
         self._data_hex = bytearray()

@@ -27,7 +27,14 @@ class MngrpManager:
         return self.__str__()
 
     def save_file(self, file_mngrp, file_mngrphd):
+
+        # Some sections are interdependent, so we update their value first
+        self.section_complex_string.update_map_offset()
+
+        # then we update mngrp hex
         self.mngrp.update_data_hex()
+
+        # Updating mngrphd value from ther new mngrp computed
         self.mngrphd.update_from_section_list(self.mngrp.get_section_list())
         self.mngrphd.update_data_hex()
 
