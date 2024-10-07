@@ -38,38 +38,50 @@ class SectionData(Section):
             self._offset_list.append(new_data)
         self._nb_offset = len(self._offset_list)  # As some offset are ignored, changing the nb of offset
 
-
-
     def get_all_offset(self):
         offset_list = []
         for ff8_data in self._offset_list:
             offset_list.append(ff8_data.get_offset_value())
         return offset_list
 
-    def set_all_offset_by_text_list(self, text_list, shift = 0):
+    def set_all_offset_by_text_list(self, text_list, shift=0):
         if len(text_list) != self._nb_offset:
             print(
                 f"The size of the text list ({len(text_list)}) is different than the nb of offset ({self._nb_offset})")
 
-        self._offset_list = []
+        new_list = []
+        index_value_list = 0
         current_offset = shift
-        for i in range(len(text_list)):  # Assuming offset data is always at the beginning of the subsection
+        for i in range(len(self._offset_list)):  # Assuming offset data is always at the beginning of the subsection
+            if self._offset_list[i].get_offset_value() == 0:
+                new_hex = bytes([0, 0])
+            else:
+                new_hex = current_offset.to_bytes(length=self.OFFSET_SIZE, byteorder='little')
+                current_offset += len(text_list[index_value_list])
+                index_value_list += 1
             new_data = FF8Data(game_data=self._game_data, own_offset=i * self.OFFSET_SIZE,
-                               data_hex=current_offset.to_bytes(length=self.OFFSET_SIZE, byteorder='little'), id=i,
+                               data_hex=new_hex, id=i,
                                offset_type=True)
-            current_offset +=len(text_list[i])
-            self._offset_list.append(new_data)
+            new_list.append(new_data)
+        self._offset_list = new_list
 
     def set_all_offset_by_value_list(self, value_list):
         if len(value_list) != self._nb_offset:
             print(
                 f"The size of the value list ({len(value_list)}) is different than the nb of offset ({self._nb_offset})")
-        self._offset_list = []
-        for i in range(len(value_list)):  # Assuming offset data is always at the beginning of the subsection
+        new_list = []
+        index_value_list = 0
+        for i in range(len(self._offset_list)):  # Assuming offset data is always at the beginning of the subsection
+            if self._offset_list[i].get_offset_value() == 0:
+                new_hex = bytes([0, 0])
+            else:
+                new_hex = value_list[index_value_list].to_bytes(length=self.OFFSET_SIZE, byteorder='little')
+                index_value_list += 1
             new_data = FF8Data(game_data=self._game_data, own_offset=self.HEADER_SIZE + i * self.OFFSET_SIZE,
-                               data_hex=value_list[i].to_bytes(length=self.OFFSET_SIZE, byteorder='little'), id=i,
+                               data_hex=new_hex, id=i,
                                offset_type=True)
-            self._offset_list.append(new_data)
+            new_list.append(new_data)
+        self._offset_list = new_list
 
     def update_data_hex(self):
         self._data_hex = bytearray()

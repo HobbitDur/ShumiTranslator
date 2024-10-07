@@ -50,9 +50,6 @@ class SectionMapTextBox(Section):
         return offset_list
 
     def set_offset_from_text_list(self, text_list, p_section_number, shift = 0):
-        print("set_offset_from_text_list")
-        print(p_section_number)
-        print(f"First len seek_location: {len(self._seek_location_info_list)}")
         # First remove all previous data of the section
         cleared_list = []
         for i in range(len(self._seek_location_info_list)):
@@ -61,16 +58,12 @@ class SectionMapTextBox(Section):
         location=0
         for i in range(0, len(text_list), 2):
             new_seek_location = SeekLocationInfo(seek_location=location, section_number=p_section_number)
-            print(text_list[i])
-            print(text_list[i+1])
             location +=len(text_list[i]) + len(text_list[i+1]) + shift
             cleared_list.append(new_seek_location)
 
         self._seek_location_info_list = cleared_list
-        print(f"Second len seek_location: {len(self._seek_location_info_list)}")
 
     def update_data_hex(self):
-        print("update data hex for map !")
         self._data_hex = bytearray()
         self._data_hex.extend(self._nb_seek_location.to_bytes(length=self.HEADER_SIZE,byteorder="little"))
         for seek_location in self._seek_location_info_list:

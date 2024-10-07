@@ -13,7 +13,7 @@ class TextBoxManager:
         self._nb_offset = 0
         self._map_section = None
         self._complex_string_entry_list = []
-        self.type = SectionType.MNGRP_COMPLEX_STRING
+        self.type = SectionType.MNGRP_TEXTBOX
 
     def __str__(self):
         return f"{str(self._map_section)} \n {self._complex_string_entry_list}"
@@ -33,7 +33,6 @@ class TextBoxManager:
         return self._complex_string_entry_list[section_id].get_text_section()
 
     def update_map_offset(self):
-        print("Update map offset")
         for i in range(len(self._complex_string_entry_list)):
             shift = TextBoxEntry.ENTRY_LENGTH + TextBoxEntry.TEXT_BOX_ID_SIZE * 3
             self._map_section.set_offset_from_text_list(self._complex_string_entry_list[i].get_text_list(), i,

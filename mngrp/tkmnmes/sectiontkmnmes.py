@@ -42,19 +42,16 @@ class SectionTkmnmes(Section):
         self.__analyse_data()
 
     def __analyse_data(self):
-        print("Analysing data of tkmnmes manager")
         self._nb_padding = int.from_bytes(self._data_hex[0:self.HEADER_SIZE], byteorder='little') + 1
         end_offset_section = self._nb_padding * self.OFFSET_SIZE + self.HEADER_SIZE
         self._offset_section = SectionData(game_data=self._game_data,
                                            data_hex=self._data_hex[self.HEADER_SIZE:end_offset_section], id=0,
-                                           own_offset=self.HEADER_SIZE, nb_offset=self._nb_padding, name="", ignore_empty_offset=True)
+                                           own_offset=self.HEADER_SIZE, nb_offset=self._nb_padding, name="", ignore_empty_offset=False)
 
         offset_list = self._offset_section.get_all_offset()
-        # print(f"Offset list: {offset_list}")
-        print(f"len(Offset list): {len(offset_list)}")
-        print(f"len(self._data_hex): {len(self._data_hex)}")
         for i in range(len(offset_list)):
-            print(f"i: {i}")
+            if offset_list[i] == 0:
+                continue
             if i == len(offset_list) - 1:
                 next_string_section = len(self._data_hex)
             else:
@@ -67,24 +64,17 @@ class SectionTkmnmes(Section):
                     next_string_section = len(self._data_hex)
 
             start_string_section = offset_list[i]
-            print(f"start_string_section: {start_string_section}")
-            print(f"next_string_section: {next_string_section}")
             if next_string_section == 0:
                 print("Unexpected empty next offset in tkmnmes manager")
                 continue
             else:
                 string_data_hex = self._data_hex[start_string_section:next_string_section]
-                print(f"String data: {string_data_hex.hex(sep=" ")}")
                 new_section = SectionString(game_data=self._game_data, data_hex=string_data_hex, id=i,
                                             own_offset=start_string_section,
                                             name=self.name + f" - subsection n°{i}")
                 self._string_section_list.append(new_section)
-                print(f"len(self._string_section_list): {len(self._string_section_list)}")
-
-        # print(self._string_section_list)
 
     def update_data_hex(self):
-        print("Update data for tkmnmes")
         new_padding_list = []
         # First we update all string section, so we can compute the padding
         shift_padding = self.HEADER_SIZE + self.OFFSET_SIZE * self._nb_padding
@@ -99,9 +89,6 @@ class SectionTkmnmes(Section):
         # -1 because FF8 can't count
         self._data_hex.extend((self._nb_padding - 1).to_bytes(byteorder='little', length=self.HEADER_SIZE))
         self._data_hex.extend(self._offset_section.get_data_hex())
-        # To be checked if it's needed, but adding 0 to get to 17 padding
-        for i in range(len(self._string_section_list), self._nb_padding):
-            self._data_hex.extend([0,0])
         for i in range(len(self._string_section_list)):
             self._data_hex.extend(self._string_section_list[i].get_data_hex())
         self._size = len(self._data_hex)

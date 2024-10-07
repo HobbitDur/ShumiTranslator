@@ -88,7 +88,7 @@ class MngrpManager:
                                                        name=section_name)
                 self.text_box_manager.add_map_section(map_complex_string)
                 new_section = map_complex_string
-            elif section_data_type == SectionType.MNGRP_COMPLEX_STRING:
+            elif section_data_type == SectionType.MNGRP_TEXTBOX:
                 new_section = SectionTextBoxEntry(game_data=self.game_data, id=section_id, own_offset=section_offset_value,
                                                   data_hex=section_data_hex,
                                                   name=section_name)
@@ -103,6 +103,7 @@ class MngrpManager:
                 new_section = FF8SectionText(game_data=self.game_data, id=section_id, own_offset=section_offset_value,
                                              data_hex=section_data_hex,
                                              name=section_name)
+                new_section.type = SectionType.MNGRP_M00MSG
                 self.m00_manager.add_msg(new_section)
                 for section in self.mngrp.get_section_list():
                     if section.type == SectionType.MNGRP_M00BIN and section.m00_id == m00msg_counter:

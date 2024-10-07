@@ -259,7 +259,7 @@ class ShumiTranslator(QWidget):
         self.uncompress_button.hide()
         self.warning_kernel_label_widget.hide()
         self.warning_mngrp_label_widget.hide()
-        file_to_load = os.path.join("OriginalFiles", "mngrp_en - Copie.bin")  # For developing faster
+        #file_to_load = os.path.join("OriginalFiles", "mngrp_en - Copie.bin")  # For developing faster
         if not file_to_load:
             filter_txt = ""
             for file_regex in self.FILE_MANAGED_REGEX:
@@ -308,24 +308,21 @@ class ShumiTranslator(QWidget):
 
             elif "mngrp" in file_name and ".bin" in file_name:
                 self.file_loaded_type = FileType.MNGRP
-                self.file_mngrphd_loaded = os.path.join("OriginalFiles", "mngrphd_en - Copie.bin")  # For developing faster
+                #self.file_mngrphd_loaded = os.path.join("OriginalFiles", "mngrphd_en - Copie.bin")  # For developing faster
                 if not self.file_mngrphd_loaded:
                     self.file_mngrphd_loaded = self.file_dialog.getOpenFileName(parent=self, caption="Find mngrphd", filter="*mngrphd*.bin",
                                                                                 directory=os.getcwd())[0]
 
-                print("Loading file for mngrp manager")
                 self.mngrp_manager.load_file(self.file_mngrphd_loaded, self.file_loaded)
-                print("End load file !")
                 first_section_line_index = 2
-                print(self.mngrp_manager.mngrp.get_section_list())
-                print(len(self.mngrp_manager.mngrp.get_section_list()))
                 for section in self.mngrp_manager.mngrp.get_section_list():
-                    if section.type in (SectionType.TKMNMES, SectionType.MNGRP_STRING, SectionType.FF8_TEXT, SectionType.MNGRP_COMPLEX_STRING):
+                    if section.type in (
+                            SectionType.TKMNMES, SectionType.MNGRP_STRING, SectionType.FF8_TEXT, SectionType.MNGRP_TEXTBOX, SectionType.MNGRP_M00MSG):
                         if section.type == SectionType.MNGRP_STRING:
                             self.section_widget_list.append(SectionWidget(section.get_text_section(), first_section_line_index))
                             first_section_line_index += len(section.get_text_list())
                             self.layout_translation_lines.addWidget(self.section_widget_list[-1])
-                        elif section.type == SectionType.FF8_TEXT:
+                        elif section.type == SectionType.FF8_TEXT or section.type == SectionType.MNGRP_M00MSG:
                             self.section_widget_list.append(SectionWidget(section, first_section_line_index))
                             first_section_line_index += len(section.get_text_list())
                             self.layout_translation_lines.addWidget(self.section_widget_list[-1])
@@ -334,13 +331,11 @@ class ShumiTranslator(QWidget):
                                 self.section_widget_list.append(SectionWidget(section.get_text_section_by_id(i), first_section_line_index))
                                 first_section_line_index += len(section.get_text_section_by_id(i).get_text_list())
                                 self.layout_translation_lines.addWidget(self.section_widget_list[-1])
-                        elif section.type == SectionType.MNGRP_COMPLEX_STRING:
+                        elif section.type == SectionType.MNGRP_TEXTBOX:
                             self.section_widget_list.append(SectionWidget(section, first_section_line_index))
+                            first_section_line_index += len(section.get_text_list())
                             self.layout_translation_lines.addWidget(self.section_widget_list[-1])
                     self.warning_mngrp_label_widget.show()
-                print("End section widget list")
-                print( self.section_widget_list)
-                print( len(self.section_widget_list))
 
             self.csv_save_button.setEnabled(True)
             self.save_button.setEnabled(True)
