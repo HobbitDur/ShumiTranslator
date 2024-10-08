@@ -53,6 +53,34 @@ class SectionString(Section):
         with open(file, "wb") as in_file:
             in_file.write(self._data_hex)
 
+    def save_csv(self, csv_path):
+        if csv_path:
+            with open(csv_path, 'w', newline='', encoding="utf-8") as csv_file:
+                csv_writer = csv.writer(csv_file, delimiter=';', quotechar='|', quoting=csv.QUOTE_MINIMAL)
+
+                csv_writer.writerow(
+                    ['Text id', 'Text'])
+                for ff8_text in self._text_section.get_text_list():
+                    text_id = ff8_text.id
+                    csv_writer.writerow([text_id, ff8_text.get_str()])
+
+    def load_csv(self, csv_to_load, section_widget_list):
+        if csv_to_load:
+            with open(csv_to_load, newline='', encoding="utf-8") as csv_file:
+
+                csv_data = csv.reader(csv_file, delimiter=';', quotechar='|')
+                # ['Text id', 'Text']
+                for row_index, row in enumerate(csv_data):
+                    if row_index == 0:  # Ignoring title row
+                        continue
+                    text_id = int(row[0])
+                    text_loaded = row[1]
+                    # Managing this case as many people do the mistake.
+                    text_loaded = text_loaded.replace('`', "'")
+                    if text_loaded != "":  # If empty it will not be applied, so better be fast
+                        for widget_index, widget in enumerate(section_widget_list):
+                            section_widget_list[widget_index].set_text_from_id(text_id, text_loaded)
+
     def update_data_hex(self):
         self._text_section.update_data_hex()
         self._offset_section.set_all_offset_by_text_list(self._text_section.get_text_list(), shift=self.HEADER_SIZE + self.OFFSET_SIZE * self._nb_offset)

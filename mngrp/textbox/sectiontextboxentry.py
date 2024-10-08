@@ -33,6 +33,12 @@ class SectionTextBoxEntry(Section):
             entry_list.extend(entry.get_text_section().get_text_list())
         return entry_list
 
+    def get_nb_entry_section(self):
+        return len(self.string_entry_list)
+
+    def get_entry_section_by_id(self, id):
+        return self.string_entry_list[id]
+
     def get_concatenate_text_list(self):
         entry_list = []
         for entry in self.string_entry_list:

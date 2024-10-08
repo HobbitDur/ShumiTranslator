@@ -29,6 +29,9 @@ class TextBoxEntry(Section):
     def get_text_section(self):
         return self._text_section
 
+    def get_text_list(self):
+        return self._text_section.get_text_list()
+
     def update_data_hex(self):
         self._data_hex = bytearray()
         self._data_hex.extend(self._text_box_origin_id.to_bytes(length=self.TEXT_BOX_ID_SIZE, byteorder='little'))

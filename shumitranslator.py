@@ -225,6 +225,8 @@ class ShumiTranslator(QWidget):
                         self.kernel_manager.load_csv(csv_to_load=csv_to_load, section_widget_list=self.section_widget_list)
                     elif self.file_loaded_type == FileType.NAMEDIC:
                         self.namedic_manager.load_csv(csv_to_load=csv_to_load, section_widget_list=self.section_widget_list)
+                    elif self.file_loaded_type == FileType.MNGRP:
+                        self.mngrp_manager.load_csv(csv_to_load=csv_to_load, section_widget_list=self.section_widget_list)
                 except UnicodeDecodeError as e:
                     print(e)
                     message_box = QMessageBox()
@@ -248,6 +250,8 @@ class ShumiTranslator(QWidget):
             self.kernel_manager.save_csv(file_to_save)
         elif self.file_loaded_type == FileType.NAMEDIC:
             self.namedic_manager.save_csv(file_to_save)
+        elif self.file_loaded_type == FileType.MNGRP:
+            self.mngrp_manager.save_csv(file_to_save)
 
     def __load_file(self, file_to_load: str = ""):
         print("Loading file")

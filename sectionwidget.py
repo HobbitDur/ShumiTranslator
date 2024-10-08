@@ -27,8 +27,8 @@ class SectionWidget(QWidget):
 
     def __create_sub_section_widget(self):
         if self.section:
-            for i, kernel_text in enumerate(self.section.get_text_list()):
-                translation_widget = TranslationWidget(kernel_text, self.first_section_line_index + i)
+            for i, ff8_text in enumerate(self.section.get_text_list()):
+                translation_widget = TranslationWidget(ff8_text, self.first_section_line_index + i)
                 self.translation_widget_list.append(translation_widget)
                 self.__main_layout.addWidget(self.translation_widget_list[-1])
             end_separator_line = QFrame()

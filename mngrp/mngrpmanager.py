@@ -22,7 +22,6 @@ class MngrpManager:
         self.text_box_manager = TextBoxManager()
         self.m00_manager = m00XManager()
 
-
     def __str__(self):
         return str(self.mngrp)
 
@@ -34,7 +33,6 @@ class MngrpManager:
         # Some sections are interdependent, so we update their value first
         self.text_box_manager.update_map_offset()
         self.m00_manager.update_offset()
-
 
         # then we update mngrp hex
         self.mngrp.update_data_hex()
@@ -63,7 +61,7 @@ class MngrpManager:
         m00bin_counter = 0
         m00msg_counter = 0
         for index, section_mngrp in enumerate(self.mngrp.get_section_list()):
-            if self.mngrphd.get_entry_list()[index].invalid_value: # If it's a non-existent section, ignore it
+            if self.mngrphd.get_entry_list()[index].invalid_value:  # If it's a non-existent section, ignore it
                 continue
             section_id = section_mngrp.id
             section_data_type = self.game_data.mngrp_data_json["sections"][section_id]["data_type"]
@@ -83,13 +81,15 @@ class MngrpManager:
                                              data_hex=section_data_hex,
                                              name=section_name)
             elif section_data_type == SectionType.MNGRP_MAP_COMPLEX_STRING:
-                map_complex_string = SectionMapTextBox(game_data=self.game_data, id=section_id, own_offset=section_offset_value,
+                map_complex_string = SectionMapTextBox(game_data=self.game_data, id=section_id,
+                                                       own_offset=section_offset_value,
                                                        data_hex=section_data_hex,
                                                        name=section_name)
                 self.text_box_manager.add_map_section(map_complex_string)
                 new_section = map_complex_string
             elif section_data_type == SectionType.MNGRP_TEXTBOX:
-                new_section = SectionTextBoxEntry(game_data=self.game_data, id=section_id, own_offset=section_offset_value,
+                new_section = SectionTextBoxEntry(game_data=self.game_data, id=section_id,
+                                                  own_offset=section_offset_value,
                                                   data_hex=section_data_hex,
                                                   name=section_name)
                 self.text_box_manager.add_string_entry(new_section)
@@ -114,8 +114,7 @@ class MngrpManager:
                 m00msg_counter += 1
 
             else:  # Just saving the data, but will not be modified
-                new_section = None # No need to create a new section
-                # new_section.init_subsection(nb_subsection=entry_info['number_sub_section'], subsection_sized=entry_info['sub_section_size'])
+                new_section = None  # No need to create a new section
             if new_section:
                 self.mngrp.set_section_by_id(section_id, new_section)
 
@@ -123,42 +122,90 @@ class MngrpManager:
         if csv_path:
             with open(csv_path, 'w', newline='', encoding="utf-8") as csv_file:
                 csv_writer = csv.writer(csv_file, delimiter=';', quotechar='|', quoting=csv.QUOTE_MINIMAL)
-
                 csv_writer.writerow(
-                    ['Section data name', 'Section data id', 'Sub section data id', 'Data id', 'Section text id',
-                     'Text id', 'Text'])
-                for index_section, section in enumerate(self.section_list):
-                    if section.type == "data" and section.section_text_linked:
-                        for sub_section in section.get_subsection_list():
-                            for data in sub_section.get_data_list():
-                                if data.get_offset_type():
-                                    text_id = sub_section.id * \
-                                              self.game_data.kernel_data_json["sections"][index_section - 1][
-                                                  "sub_section_nb_text_offset"] + data.id
+                    ['Section data name', 'Section id', 'Subsection id', 'Text Sub id', 'Text'])
+                text_line = 2
+                for index_section, section in enumerate(self.mngrp.get_section_list()):
+                    if section.type in (
+                            SectionType.TKMNMES, SectionType.MNGRP_STRING, SectionType.FF8_TEXT,
+                            SectionType.MNGRP_TEXTBOX, SectionType.MNGRP_M00MSG):
+                        if section.type == SectionType.TKMNMES:
+                            for i in range(section.get_nb_text_section()):
+                                text_section = section.get_text_section_by_id(i)
+                                subsection_id = text_section.id
+                                for ff8text in text_section.get_text_list():
                                     csv_writer.writerow(
-                                        [section.name, section.id, sub_section.id, data.id,
-                                         section.section_text_linked.id, text_id,
-                                         section.section_text_linked.get_text_from_id(text_id)])
+                                        [section.name, section.id, subsection_id, ff8text.id,  ff8text.get_str()])
+                                    text_line += 1
+                        if section.type == SectionType.MNGRP_TEXTBOX:
+                            for i in range(section.get_nb_entry_section()):
+                                entry_section = section.get_entry_section_by_id(i)
+                                subsection_id = entry_section.id
+                                for ff8text in entry_section.get_text_list():
+                                    csv_writer.writerow(
+                                        [section.name, section.id, subsection_id, ff8text.id,  ff8text.get_str()])
+                                    text_line += 1
+                        if section.type in (SectionType.MNGRP_M00MSG, SectionType.FF8_TEXT, SectionType.MNGRP_STRING):
+                                for ff8text in section.get_text_list():
+                                    csv_writer.writerow(
+                                        [section.name, section.id, 0, ff8text.id,  ff8text.get_str()])
+                                    text_line += 1
+
 
     def load_csv(self, csv_to_load, section_widget_list):
         if csv_to_load:
             with open(csv_to_load, newline='', encoding="utf-8") as csv_file:
 
                 csv_data = csv.reader(csv_file, delimiter=';', quotechar='|')
-                # ['Section data name', 'Section data id', 'Sub section data id', 'Data id', 'Section text id', 'Text id', 'Text']
+                #   ['Section data name', 'Section id', 'Subsection id', 'Text Sub id', 'Text']
+                tkmnmes_index =0
                 for row_index, row in enumerate(csv_data):
                     if row_index == 0:  # Ignoring title row
                         continue
 
-                    # section_data_id = int(row[1])
-                    # sub_section_data_id = int(row[2])
-                    # data_id = int(row[3])
-                    section_text_id = int(row[4])
-                    text_id = int(row[5])
-                    text_loaded = row[6]
+                    #section_data_name = row[0]
+                    section_id = int(row[1])
+                    subsection_id = int(row[2])
+                    text_sub_id = int(row[3])
+                    text_loaded = row[4]
+
+                    if text_loaded == "":
+                        continue
                     # Managing this case as many people do the mistake.
                     text_loaded = text_loaded.replace('`', "'")
-                    if text_loaded != "":  # If empty it will not be applied, so better be fast
-                        for widget_index, widget in enumerate(section_widget_list):
-                            if widget.section.type == "text" and widget.section.id == section_text_id:
-                                section_widget_list[widget_index].set_text_from_id(text_id, text_loaded)
+                    for widget_index, widget in enumerate(section_widget_list):
+                        if widget.section.type in (
+                                SectionType.TKMNMES, SectionType.MNGRP_STRING, SectionType.FF8_TEXT,
+                                SectionType.MNGRP_TEXTBOX, SectionType.MNGRP_M00MSG):
+                            if widget.section.id == section_id:
+                                if widget.section.type == SectionType.MNGRP_TEXTBOX:
+                                    nb_sub_element = 0
+                                    for i in range(widget.section.get_nb_entry_section()):
+                                        entry_section = widget.section.get_entry_section_by_id(i)
+                                        if entry_section.id < subsection_id :
+                                            nb_sub_element += len(entry_section.get_text_list())
+                                        elif subsection_id == entry_section.id:
+                                            nb_sub_element += text_sub_id
+                                            text_sub_id = nb_sub_element
+                                            break
+                                        elif entry_section.id > subsection_id :
+                                            print(
+                                                f"In csv, unexpected error where subsection id ({subsection_id})> entry_section id ({entry_section.id})")
+                                elif widget.section.type == SectionType.TKMNMES:
+
+                                    nb_sub_element = 0
+                                    for i in range(widget.section.get_nb_text_section()):
+                                        text_section = widget.section.get_text_section_by_id(i)
+                                        if text_section.id < subsection_id:
+                                            nb_sub_element += len(text_section.get_text_list())
+                                        elif subsection_id == text_section.id:
+                                            nb_sub_element += text_sub_id
+                                            text_sub_id = nb_sub_element
+                                            break
+                                        elif text_section.id > subsection_id:
+                                            print(f"In csv, unexpected error where subsection id ({subsection_id})> text_section id ({text_section.id})")
+
+
+
+                                section_widget_list[widget_index].set_text_from_id(text_sub_id, text_loaded)
+                                break
