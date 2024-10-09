@@ -7,6 +7,7 @@ from PyQt6.QtWidgets import QVBoxLayout, QWidget, QScrollArea, QPushButton, QFil
     QMessageBox, QTabWidget
 
 from FF8GameData.gamedata import GameData, FileType, SectionType
+from model.exe.exefilesection import ExeFileSection
 from model.kernel.kernelmanager import KernelManager
 from model.mngrp.mngrpmanager import MngrpManager
 from model.mngrp.string.sectionstring import SectionString
@@ -17,7 +18,7 @@ from view.tabholderwidget import TabHolderWidget
 class ShumiTranslator(QWidget):
     CSV_FOLDER = "csv"
     FILE_MANAGED = ['kernel.bin', 'namedic.bin', 'mngrp.bin']
-    FILE_MANAGED_REGEX = ['*kernel*.bin', '*namedic*.bin', '*mngrp*.bin']
+    FILE_MANAGED_REGEX = ['*kernel*.bin', '*namedic*.bin', '*mngrp*.bin', 'FF8_*.exe']
 
     def __init__(self, icon_path='Resources'):
         QWidget.__init__(self)
@@ -165,6 +166,7 @@ class ShumiTranslator(QWidget):
         self.kernel_manager = KernelManager(game_data=self.game_data)
         self.namedic_manager = SectionString(game_data=self.game_data)
         self.mngrp_manager = MngrpManager(game_data=self.game_data)
+        self.exe_manager = None
 
     def __show_info(self):
         message_box = QMessageBox()
@@ -277,7 +279,8 @@ class ShumiTranslator(QWidget):
 
         self.update()
 
-        file_to_load = os.path.join("OriginalFiles", "mngrp_en - Copie.bin")  # For developing faster
+        #file_to_load = os.path.join("OriginalFiles", "mngrp_en - Copie.bin")  # For developing faster
+        file_to_load = os.path.join("OriginalFiles", "FF8_EN.exe")  # For developing faster
         if not file_to_load:
             filter_txt = ""
             for file_regex in self.FILE_MANAGED_REGEX:
@@ -327,7 +330,7 @@ class ShumiTranslator(QWidget):
 
             elif "mngrp" in file_name and ".bin" in file_name:
                 self.file_loaded_type = FileType.MNGRP
-                self.file_mngrphd_loaded = os.path.join("OriginalFiles", "mngrphd_en - Copie.bin")  # For developing faster
+                #self.file_mngrphd_loaded = os.path.join("OriginalFiles", "mngrphd_en - Copie.bin")  # For developing faster
                 if not self.file_mngrphd_loaded:
                     self.file_mngrphd_loaded = self.file_dialog.getOpenFileName(parent=self, caption="Find mngrphd", filter="*mngrphd*.bin",
                                                                                 directory=os.getcwd())[0]
@@ -359,6 +362,14 @@ class ShumiTranslator(QWidget):
                 for section_widget in self.section_widget_list:
                     self._tab_widget.add_section(section_widget)
                 self._tab_widget.show()
+
+            elif ".exe" in file_name:
+                data_hex_exe = bytearray()
+                with open(self.file_loaded, "rb") as file:
+                    data_hex_exe.extend(file.read())
+                self.exe_manager = ExeFileSection(game_data=self.game_data, data_hex=data_hex_exe)
+
+
 
             self.csv_save_button.setEnabled(True)
             self.save_button.setEnabled(True)
