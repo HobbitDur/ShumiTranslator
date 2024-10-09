@@ -56,6 +56,9 @@ class MngrpManager:
 
         self.mngrphd = Mngrphd(self.game_data, mngrphd_data_hex)
         self.mngrp = Mngrp(self.game_data, mngrp_data_hex, self.mngrphd.get_entry_list())
+        self.text_box_manager = TextBoxManager()
+        self.m00_manager = m00XManager()
+
 
         # First we read all offset section
         m00bin_counter = 0

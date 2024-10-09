@@ -265,6 +265,8 @@ class ShumiTranslator(QWidget):
         print("Loading file")
 
         self.scroll_area.setEnabled(False)
+        self.csv_upload_button.setEnabled(False)
+        self.csv_save_button.setEnabled(False)
         self.compress_button.setEnabled(False)
         self.uncompress_button.setEnabled(False)
         self._tab_widget.hide()
@@ -272,7 +274,10 @@ class ShumiTranslator(QWidget):
         self.uncompress_button.hide()
         self.warning_kernel_label_widget.hide()
         self.warning_mngrp_label_widget.hide()
-        #file_to_load = os.path.join("OriginalFiles", "mngrp_en - Copie.bin")  # For developing faster
+
+        self.update()
+
+        file_to_load = os.path.join("OriginalFiles", "mngrp_en - Copie.bin")  # For developing faster
         if not file_to_load:
             filter_txt = ""
             for file_regex in self.FILE_MANAGED_REGEX:
@@ -292,6 +297,7 @@ class ShumiTranslator(QWidget):
                 section_widget.setParent(None)
                 section_widget.deleteLater()
             self.section_widget_list = []
+
 
             # Choose which manager to load
             if "kernel" in file_name and ".bin" in file_name:
@@ -321,7 +327,7 @@ class ShumiTranslator(QWidget):
 
             elif "mngrp" in file_name and ".bin" in file_name:
                 self.file_loaded_type = FileType.MNGRP
-                #self.file_mngrphd_loaded = os.path.join("OriginalFiles", "mngrphd_en - Copie.bin")  # For developing faster
+                self.file_mngrphd_loaded = os.path.join("OriginalFiles", "mngrphd_en - Copie.bin")  # For developing faster
                 if not self.file_mngrphd_loaded:
                     self.file_mngrphd_loaded = self.file_dialog.getOpenFileName(parent=self, caption="Find mngrphd", filter="*mngrphd*.bin",
                                                                                 directory=os.getcwd())[0]
@@ -354,11 +360,11 @@ class ShumiTranslator(QWidget):
                     self._tab_widget.add_section(section_widget)
                 self._tab_widget.show()
 
-
             self.csv_save_button.setEnabled(True)
             self.save_button.setEnabled(True)
             self.csv_upload_button.setEnabled(True)
             self.file_dialog_button.setEnabled(True)
+
             self.text_file_loaded.show()
 
         self.scroll_area.setEnabled(True)
@@ -378,3 +384,4 @@ class ShumiTranslator(QWidget):
         self.compress_button.setEnabled(True)
         self.uncompress_button.setEnabled(True)
         self.scroll_area.setEnabled(True)
+

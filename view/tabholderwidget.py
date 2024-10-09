@@ -22,9 +22,8 @@ class TabHolderWidget(QTabWidget):
             self.addTab(self._page_list[-1], "Miscellaneous")
         self.setSizePolicy(QSizePolicy.Policy.MinimumExpanding,QSizePolicy.Policy.Maximum)
         self.currentChanged.connect(self.updateGeometry)
+
     def add_section(self, section_widget:SectionWidget):
-        print("Add section")
-        print(section_widget.section.type)
         for i in range(len(self._page_list)):
             if self._page_list[i].get_type() == section_widget.section.type:
                 self._page_list[i].add_section_widget(section_widget)
