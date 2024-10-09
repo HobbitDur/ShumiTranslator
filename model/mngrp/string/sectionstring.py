@@ -2,8 +2,8 @@ import csv
 
 from FF8GameData.FF8HexReader.section import Section
 from FF8GameData.gamedata import GameData, SectionType
-from general.ff8sectiontext import FF8SectionText
-from mngrp.sectiondata import SectionData
+from model.general.ff8sectiontext import FF8SectionText
+from model.mngrp.sectiondata import SectionData
 
 
 class SectionString(Section):

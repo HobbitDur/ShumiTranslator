@@ -7,10 +7,10 @@ from PyQt6.QtWidgets import QVBoxLayout, QWidget, QScrollArea, QPushButton, QFil
     QMessageBox
 
 from FF8GameData.gamedata import GameData, FileType, SectionType
-from kernel.kernelmanager import KernelManager
-from mngrp.mngrpmanager import MngrpManager
-from mngrp.string.sectionstring import SectionString
-from sectionwidget import SectionWidget
+from model.kernel.kernelmanager import KernelManager
+from model.mngrp.mngrpmanager import MngrpManager
+from model.mngrp.string.sectionstring import SectionString
+from view.sectionwidget import SectionWidget
 
 
 class ShumiTranslator(QWidget):

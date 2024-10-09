@@ -1,8 +1,6 @@
-from sys import byteorder
-
 from FF8GameData.FF8HexReader.section import Section
 from FF8GameData.gamedata import GameData, SectionType
-from mngrp.textbox.textboxentry import TextBoxEntry
+from model.mngrp.textbox.textboxentry import TextBoxEntry
 
 
 class SectionTextBoxEntry(Section):

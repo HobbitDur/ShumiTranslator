@@ -1,15 +1,9 @@
 import csv
-import os
-import pathlib
-
-from PyQt6.QtGui import QIcon
-from PyQt6.QtWidgets import QMessageBox, QVBoxLayout
 
 from FF8GameData.gamedata import GameData, SectionType
-from general.ff8sectiontext import FF8SectionText
-from kernel.kernelsectiondata import SectionData
-from kernel.kernelsectionheader import SectionHeader
-from sectionwidget import SectionWidget
+from model.general.ff8sectiontext import FF8SectionText
+from model.kernel.kernelsectiondata import SectionData
+from model.kernel.kernelsectionheader import SectionHeader
 
 
 class KernelManager():

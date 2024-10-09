@@ -1,6 +1,6 @@
 from FF8GameData.FF8HexReader.section import Section
-from FF8GameData.gamedata import GameData, SectionType
-from general.ff8sectiontext import FF8SectionText
+from FF8GameData.gamedata import GameData
+from model.general.ff8sectiontext import FF8SectionText
 
 
 class TextBoxEntry(Section):

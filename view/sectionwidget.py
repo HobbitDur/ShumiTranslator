@@ -1,7 +1,7 @@
 from PyQt6.QtWidgets import QWidget, QLabel, QVBoxLayout, QFrame
 
-from general.ff8sectiontext import FF8SectionText
-from translationwidget import TranslationWidget
+from model.general.ff8sectiontext import FF8SectionText
+from view.translationwidget import TranslationWidget
 
 
 class SectionWidget(QWidget):

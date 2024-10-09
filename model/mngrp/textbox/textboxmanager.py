@@ -1,8 +1,7 @@
-from FF8GameData.FF8HexReader.section import Section
-from FF8GameData.gamedata import GameData, SectionType
-from mngrp.textbox.textboxentry import TextBoxEntry
-from mngrp.textbox.sectiontextboxentry import SectionTextBoxEntry
-from mngrp.textbox.sectionmaptextbox import SectionMapTextBox
+from FF8GameData.gamedata import SectionType
+from model.mngrp.textbox.textboxentry import TextBoxEntry
+from model.mngrp.textbox.sectiontextboxentry import SectionTextBoxEntry
+from model.mngrp.textbox.sectionmaptextbox import SectionMapTextBox
 
 
 class TextBoxManager:

@@ -1,6 +1,6 @@
 from FF8GameData.FF8HexReader.section import Section
 from FF8GameData.gamedata import GameData
-from general.ff8data import FF8Data
+from model.general.ff8data import FF8Data
 
 
 class SubSectionData(Section):

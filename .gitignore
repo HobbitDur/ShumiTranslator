@@ -4,3 +4,4 @@
 **/OriginalFiles
 **/csv/**
 *.bin
+create_exe.sh

@@ -1,16 +1,16 @@
 from FF8GameData.FF8HexReader.mngrp import Mngrp
 from FF8GameData.FF8HexReader.mngrphd import Mngrphd
-from mngrp.m00x.m00xmanager import m00XManager
-from mngrp.textbox.sectiontextboxentry import SectionTextBoxEntry
-from mngrp.textbox.textboxmanager import TextBoxManager
-from mngrp.textbox.sectionmaptextbox import SectionMapTextBox
-from mngrp.m00x.sectionm00bin import Sectionm00Bin
-from mngrp.string.sectionstring import SectionString
+from model.mngrp.m00x.m00xmanager import m00XManager
+from model.mngrp.textbox.sectiontextboxentry import SectionTextBoxEntry
+from model.mngrp.textbox.textboxmanager import TextBoxManager
+from model.mngrp.textbox.sectionmaptextbox import SectionMapTextBox
+from model.mngrp.m00x.sectionm00bin import Sectionm00Bin
+from model.mngrp.string.sectionstring import SectionString
 import csv
 
 from FF8GameData.gamedata import GameData, SectionType
-from general.ff8sectiontext import FF8SectionText
-from mngrp.tkmnmes.sectiontkmnmes import SectionTkmnmes
+from model.general.ff8sectiontext import FF8SectionText
+from model.mngrp.tkmnmes.sectiontkmnmes import SectionTkmnmes
 
 
 class MngrpManager:
