@@ -4,13 +4,14 @@ import pathlib
 from PyQt6.QtCore import QSize
 from PyQt6.QtGui import QIcon
 from PyQt6.QtWidgets import QVBoxLayout, QWidget, QScrollArea, QPushButton, QFileDialog, QHBoxLayout, QLabel, \
-    QMessageBox
+    QMessageBox, QTabWidget
 
 from FF8GameData.gamedata import GameData, FileType, SectionType
 from model.kernel.kernelmanager import KernelManager
 from model.mngrp.mngrpmanager import MngrpManager
 from model.mngrp.string.sectionstring import SectionString
 from view.sectionwidget import SectionWidget
+from view.tabholderwidget import TabHolderWidget
 
 
 class ShumiTranslator(QWidget):
@@ -137,7 +138,13 @@ class ShumiTranslator(QWidget):
 
         self.layout_full_top = QVBoxLayout()
         self.layout_full_top.addLayout(self.layout_top)
-        # self.layout_full_top.addWidget(self.warning_label_widget)
+
+        self._tab_widget = TabHolderWidget(FileType.MNGRP)
+        self._tab_widget.currentChanged.connect(self.adjustSize)
+        self._tab_widget.hide()
+        self._tab_layout = QVBoxLayout()
+        self._tab_layout.addWidget(self._tab_widget)
+        self._tab_layout.addStretch(1)
 
         # Translation management
         self.section_list = []
@@ -149,8 +156,9 @@ class ShumiTranslator(QWidget):
         self.window_layout.addLayout(self.layout_full_top)
         self.layout_main.addWidget(self.warning_kernel_label_widget)
         self.layout_main.addWidget(self.warning_mngrp_label_widget)
-        self.layout_main.addStretch(1)
+        self.layout_main.addLayout(self._tab_layout)
         self.layout_main.addLayout(self.layout_translation_lines)
+        self.layout_main.addStretch(1)
 
         self.window_layout.addWidget(self.scroll_area)
 
@@ -259,6 +267,7 @@ class ShumiTranslator(QWidget):
         self.scroll_area.setEnabled(False)
         self.compress_button.setEnabled(False)
         self.uncompress_button.setEnabled(False)
+        self._tab_widget.hide()
         self.compress_button.hide()
         self.uncompress_button.hide()
         self.warning_kernel_label_widget.hide()
@@ -325,21 +334,26 @@ class ShumiTranslator(QWidget):
                         if section.type == SectionType.MNGRP_STRING:
                             self.section_widget_list.append(SectionWidget(section.get_text_section(), first_section_line_index))
                             first_section_line_index += len(section.get_text_list())
-                            self.layout_translation_lines.addWidget(self.section_widget_list[-1])
+                            #self.layout_translation_lines.addWidget(self.section_widget_list[-1])
                         elif section.type == SectionType.FF8_TEXT or section.type == SectionType.MNGRP_M00MSG:
                             self.section_widget_list.append(SectionWidget(section, first_section_line_index))
                             first_section_line_index += len(section.get_text_list())
-                            self.layout_translation_lines.addWidget(self.section_widget_list[-1])
+                            #self.layout_translation_lines.addWidget(self.section_widget_list[-1])
                         elif section.type == SectionType.TKMNMES:
                             for i in range(section.get_nb_text_section()):
                                 self.section_widget_list.append(SectionWidget(section.get_text_section_by_id(i), first_section_line_index))
                                 first_section_line_index += len(section.get_text_section_by_id(i).get_text_list())
-                                self.layout_translation_lines.addWidget(self.section_widget_list[-1])
+                                #self.layout_translation_lines.addWidget(self.section_widget_list[-1])
                         elif section.type == SectionType.MNGRP_TEXTBOX:
                             self.section_widget_list.append(SectionWidget(section, first_section_line_index))
                             first_section_line_index += len(section.get_text_list())
-                            self.layout_translation_lines.addWidget(self.section_widget_list[-1])
+                            #self.layout_translation_lines.addWidget(self.section_widget_list[-1])
                     self.warning_mngrp_label_widget.show()
+
+                for section_widget in self.section_widget_list:
+                    self._tab_widget.add_section(section_widget)
+                self._tab_widget.show()
+
 
             self.csv_save_button.setEnabled(True)
             self.save_button.setEnabled(True)
