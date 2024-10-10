@@ -1,6 +1,6 @@
-from FF8GameData.FF8HexReader.section import Section
+from FF8GameData.GenericSection.section import Section
 from FF8GameData.gamedata import GameData
-from model.general.ff8sectiontext import FF8SectionText
+from FF8GameData.GenericSection.listff8text import ListFF8Text
 
 
 class TextBoxEntry(Section):
@@ -16,7 +16,7 @@ class TextBoxEntry(Section):
                                       byteorder='little') + 1
         text_data_hex = self._data_hex[self.TEXT_BOX_ID_SIZE * 3 + self.ENTRY_LENGTH:]
         offset_end_title = text_data_hex.index(b'\x00')
-        self._text_section = FF8SectionText(game_data=game_data, data_hex=text_data_hex, id=0, own_offset=0, name="", cursor_location_size=3)
+        self._text_section = ListFF8Text(game_data=game_data, data_hex=text_data_hex, id=0, own_offset=0, name="", cursor_location_size=3)
         self._text_section.init_text([0, offset_end_title])
 
     def __str__(self):

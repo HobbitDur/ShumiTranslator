@@ -1,12 +1,12 @@
 from PyQt6.QtWidgets import QWidget, QLabel, QVBoxLayout, QFrame
 
-from model.general.ff8sectiontext import FF8SectionText
+from FF8GameData.GenericSection.listff8text import ListFF8Text
 from view.translationwidget import TranslationWidget
 
 
 class SectionWidget(QWidget):
 
-    def __init__(self, section: FF8SectionText, first_section_line_index):
+    def __init__(self, section: ListFF8Text, first_section_line_index):
         QWidget.__init__(self)
 
         self.section = section

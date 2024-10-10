@@ -4,10 +4,11 @@ import pathlib
 from PyQt6.QtCore import QSize
 from PyQt6.QtGui import QIcon
 from PyQt6.QtWidgets import QVBoxLayout, QWidget, QScrollArea, QPushButton, QFileDialog, QHBoxLayout, QLabel, \
-    QMessageBox, QTabWidget
+    QMessageBox
 
 from FF8GameData.gamedata import GameData, FileType, SectionType
-from model.exe.exefilesection import ExeFileSection
+from FF8GameData.ExeSection.exefile import SectionExeFile
+from model.exe.exemanager import ExeManager
 from model.kernel.kernelmanager import KernelManager
 from model.mngrp.mngrpmanager import MngrpManager
 from model.mngrp.string.sectionstring import SectionString
@@ -35,6 +36,8 @@ class ShumiTranslator(QWidget):
         self.file_mngrphd_loaded = ""
         self.csv_loaded = ""
         self.file_loaded_type = FileType.NONE
+
+        self.lang_list = ["en", "sp", "fr", "it", "ge"]
 
         # Window management
         self.window_layout = QVBoxLayout()
@@ -166,7 +169,7 @@ class ShumiTranslator(QWidget):
         self.kernel_manager = KernelManager(game_data=self.game_data)
         self.namedic_manager = SectionString(game_data=self.game_data)
         self.mngrp_manager = MngrpManager(game_data=self.game_data)
-        self.exe_manager = None
+        self.exe_manager = ExeManager(game_data=self.game_data)
 
     def __show_info(self):
         message_box = QMessageBox()
@@ -201,6 +204,8 @@ class ShumiTranslator(QWidget):
     def __save_file(self):
         self.save_button.setDown(True)
         self.scroll_area.setEnabled(False)
+        popup_save = True
+        popup_text = "Data saved to file <b>{}</b>".format(pathlib.Path(self.file_loaded).name)
         if self.file_loaded:
             if self.file_loaded_type == FileType.KERNEL:
                 self.kernel_manager.save_file(self.file_loaded)
@@ -208,13 +213,26 @@ class ShumiTranslator(QWidget):
                 self.namedic_manager.save_file(self.file_loaded)
             elif self.file_loaded_type == FileType.MNGRP:
                 self.mngrp_manager.save_file(self.file_loaded, self.file_mngrphd_loaded)
+            elif self.file_loaded_type == FileType.EXE:
 
-        message_box = QMessageBox()
-        message_box.setText("Data saved to file <b>{}</b>".format(pathlib.Path(self.file_loaded).name))
-        message_box.setIcon(QMessageBox.Icon.Information)
-        message_box.setWindowTitle("ShumiTranslator - Data saved")
-        message_box.setWindowIcon(self.__shumi_icon)
-        message_box.exec()
+                print(self.exe_manager.get_exe_section().get_lang())
+                print(self.exe_manager.get_exe_section().get_lang().value)
+                lang_str = self.lang_list[self.exe_manager.get_exe_section().get_lang().value]
+
+                default_file_name = os.path.join(os.getcwd(),
+                                                 "translation_" + lang_str + ".hext")
+                file_to_save = self.file_dialog.getSaveFileName(parent=self, caption="Write hext file", filter="*.hext",
+                                                                  directory=default_file_name)[0]
+                self.exe_manager.save_file(file_to_save)
+                popup_text = "Data saved to file <b>{}</b>".format(pathlib.Path(file_to_save).name)
+
+        if popup_save:
+            message_box = QMessageBox()
+            message_box.setText(popup_text)
+            message_box.setIcon(QMessageBox.Icon.Information)
+            message_box.setWindowTitle("ShumiTranslator - Data saved")
+            message_box.setWindowIcon(self.__shumi_icon)
+            message_box.exec()
         self.save_button.setDown(False)
         self.scroll_area.setEnabled(True)
 
@@ -364,11 +382,14 @@ class ShumiTranslator(QWidget):
                 self._tab_widget.show()
 
             elif ".exe" in file_name:
+                self.file_loaded_type = FileType.EXE
                 data_hex_exe = bytearray()
                 with open(self.file_loaded, "rb") as file:
                     data_hex_exe.extend(file.read())
-                self.exe_manager = ExeFileSection(game_data=self.game_data, data_hex=data_hex_exe)
-
+                self.exe_manager.load_file(self.file_loaded)
+                first_section_line_index = 2
+                self.section_widget_list.append(SectionWidget(self.exe_manager.get_exe_section().get_section_card_name().get_text_section(), first_section_line_index))
+                self.layout_translation_lines.addWidget(self.section_widget_list[-1])
 
 
             self.csv_save_button.setEnabled(True)

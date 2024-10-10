@@ -1,7 +1,7 @@
-from FF8GameData.FF8HexReader.section import Section
+from FF8GameData.GenericSection.section import Section
 from FF8GameData.gamedata import GameData
 from model.general.ff8data import FF8Data
-from model.general.ff8sectiontext import FF8SectionText
+from FF8GameData.GenericSection.listff8text import ListFF8Text
 
 
 class SectionData(Section):
@@ -9,7 +9,7 @@ class SectionData(Section):
     HEADER_SIZE = 2
 
     def __init__(self, game_data: GameData, data_hex: bytearray, id: int, own_offset: int, nb_offset: int, name: str,
-                 section_text_linked: FF8SectionText = None, ignore_empty_offset=True):
+                 section_text_linked: ListFF8Text = None, ignore_empty_offset=True):
         Section.__init__(self, game_data=game_data, data_hex=data_hex, id=id, own_offset=own_offset, name=name)
         self.section_text_linked = section_text_linked
         self._nb_offset = nb_offset

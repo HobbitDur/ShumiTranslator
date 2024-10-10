@@ -1,7 +1,7 @@
 import csv
 
 from FF8GameData.gamedata import GameData, SectionType
-from model.general.ff8sectiontext import FF8SectionText
+from FF8GameData.GenericSection.listff8text import ListFF8Text
 from model.kernel.kernelsectiondata import SectionData
 from model.kernel.kernelsectionheader import SectionHeader
 
@@ -62,10 +62,10 @@ class KernelManager():
                 section_data_linked = [self.section_list[i] for i in range(1, len(self.section_list)) if
                                        section_info['section_offset_data_linked'] == self.section_list[
                                            0].get_section_header_offset_from_id(i)][0]
-                new_section = FF8SectionText(game_data=self.game_data, id=section_id, own_offset=own_offset,
-                                             data_hex=current_file_data[own_offset:next_section_offset_value],
-                                             section_data_linked=section_data_linked,
-                                             name=section_info['section_name'])
+                new_section = ListFF8Text(game_data=self.game_data, id=section_id, own_offset=own_offset,
+                                          data_hex=current_file_data[own_offset:next_section_offset_value],
+                                          section_data_linked=section_data_linked,
+                                          name=section_info['section_name'])
             else:
                 new_section = None
                 # new_section.init_subsection(nb_subsection=section_info['number_sub_section'], subsection_sized=section_info['sub_section_size'])

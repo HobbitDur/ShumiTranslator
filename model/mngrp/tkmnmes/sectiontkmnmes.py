@@ -1,4 +1,4 @@
-from FF8GameData.FF8HexReader.section import Section
+from FF8GameData.GenericSection.section import Section
 from FF8GameData.gamedata import GameData, SectionType
 from model.mngrp.sectiondata import SectionData
 from model.mngrp.string.sectionstring import SectionString

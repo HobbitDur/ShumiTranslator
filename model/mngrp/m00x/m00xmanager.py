@@ -1,5 +1,5 @@
 from FF8GameData.gamedata import SectionType
-from model.general.ff8sectiontext import FF8SectionText
+from FF8GameData.GenericSection.listff8text import ListFF8Text
 from model.mngrp.m00x.sectionm00bin import Sectionm00Bin
 
 
@@ -13,7 +13,7 @@ class m00XManager:
     def add_bin(self, bin_section: Sectionm00Bin):
         self._m00bin_list.append(bin_section)
 
-    def add_msg(self, msg_section: FF8SectionText):
+    def add_msg(self, msg_section: ListFF8Text):
         self._m00msg_list.append(msg_section)
 
     def update_offset(self):

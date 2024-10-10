@@ -1,8 +1,8 @@
 import csv
 
-from FF8GameData.FF8HexReader.section import Section
+from FF8GameData.GenericSection.section import Section
 from FF8GameData.gamedata import GameData, SectionType
-from model.general.ff8sectiontext import FF8SectionText
+from FF8GameData.GenericSection.listff8text import ListFF8Text
 from model.mngrp.sectiondata import SectionData
 
 
@@ -22,7 +22,7 @@ class SectionString(Section):
             self.__analyse_data()
         else:
             self._offset_section = SectionData(game_data=game_data, data_hex=data_hex, id=0, own_offset=0, nb_offset=0, name="", ignore_empty_offset=False)
-            self._text_section = FF8SectionText(game_data=game_data, data_hex=data_hex, id=0, own_offset=0, name="")
+            self._text_section = ListFF8Text(game_data=game_data, data_hex=data_hex, id=0, own_offset=0, name="")
 
     def __str__(self):
         if not self.__bool__():
@@ -108,8 +108,8 @@ class SectionString(Section):
                 text_data_start = offset
                 break
         text_data = self._data_hex[text_data_start:len(self._data_hex)]
-        self._text_section = FF8SectionText(game_data=self._game_data, data_hex=text_data, id=self.id, own_offset=self.own_offset, name=self.name,
-                                            section_data_linked=self._offset_section)
+        self._text_section = ListFF8Text(game_data=self._game_data, data_hex=text_data, id=self.id, own_offset=self.own_offset, name=self.name,
+                                         section_data_linked=self._offset_section)
         self._text_section.section_data_linked.section_text_linked = self._text_section
 
         # The original offset start from the start of the section, so we need to shift them for the text offset.
