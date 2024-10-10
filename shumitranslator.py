@@ -134,11 +134,14 @@ class ShumiTranslator(QWidget):
             "If you wish to get rid of parenthesis you can uncompress<br/>"
             "But pls compress before saving to avoid size problem.")
         self.warning_kernel_label_widget.hide()
-        # Warning
         self.warning_mngrp_label_widget = QLabel(
             "{x0...} are yet unknown text correspondence. Pls don't modify them.<br/>"
             "Value between {} are \"compressed\" data. Pls don't remove bracket around.<br/>")
         self.warning_mngrp_label_widget.hide()
+        self.warning_exe_label_widget = QLabel(
+            "/!\\ Only compatible with FFNx (2000 and 2013 version)<br/>"
+            "When saving, this tool produce msd files that need to be put in the folder direct/exe/")
+        self.warning_exe_label_widget.hide()
 
         self.layout_full_top = QVBoxLayout()
         self.layout_full_top.addLayout(self.layout_top)
@@ -160,6 +163,7 @@ class ShumiTranslator(QWidget):
         self.window_layout.addLayout(self.layout_full_top)
         self.layout_main.addWidget(self.warning_kernel_label_widget)
         self.layout_main.addWidget(self.warning_mngrp_label_widget)
+        self.layout_main.addWidget(self.warning_exe_label_widget)
         self.layout_main.addLayout(self._tab_layout)
         self.layout_main.addLayout(self.layout_translation_lines)
         self.layout_main.addStretch(1)
@@ -217,14 +221,13 @@ class ShumiTranslator(QWidget):
 
                 print(self.exe_manager.get_exe_section().get_lang())
                 print(self.exe_manager.get_exe_section().get_lang().value)
-                lang_str = self.lang_list[self.exe_manager.get_exe_section().get_lang().value]
 
-                default_file_name = os.path.join(os.getcwd(),
-                                                 "translation_" + lang_str + ".hext")
-                file_to_save = self.file_dialog.getSaveFileName(parent=self, caption="Write hext file", filter="*.hext",
-                                                                  directory=default_file_name)[0]
-                self.exe_manager.save_file(file_to_save)
-                popup_text = "Data saved to file <b>{}</b>".format(pathlib.Path(file_to_save).name)
+                folder_to_save = self.file_dialog.getExistingDirectory(parent=self, caption="Save msd file", directory=os.getcwd())
+                if folder_to_save:
+                    self.exe_manager.save_file(folder_to_save)
+                    popup_text = "Msd files saved to folder <b>{}</b>".format(pathlib.Path(folder_to_save).name)
+                else:
+                    popup_save = False
 
         if popup_save:
             message_box = QMessageBox()
@@ -255,6 +258,8 @@ class ShumiTranslator(QWidget):
                         self.namedic_manager.load_csv(csv_to_load=csv_to_load, section_widget_list=self.section_widget_list)
                     elif self.file_loaded_type == FileType.MNGRP:
                         self.mngrp_manager.load_csv(csv_to_load=csv_to_load, section_widget_list=self.section_widget_list)
+                    elif self.file_loaded_type == FileType.EXE:
+                        self.exe_manager.load_csv(csv_to_load=csv_to_load, section_widget_list=self.section_widget_list)
                 except UnicodeDecodeError as e:
                     print(e)
                     message_box = QMessageBox()
@@ -274,12 +279,15 @@ class ShumiTranslator(QWidget):
         default_file_name = os.path.join(self.CSV_FOLDER, csv_name)
         file_to_save = self.csv_save_dialog.getSaveFileName(parent=self, caption="Find csv file", filter="*.csv",
                                                             directory=default_file_name)[0]
-        if self.file_loaded_type == FileType.KERNEL:
-            self.kernel_manager.save_csv(file_to_save)
-        elif self.file_loaded_type == FileType.NAMEDIC:
-            self.namedic_manager.save_csv(file_to_save)
-        elif self.file_loaded_type == FileType.MNGRP:
-            self.mngrp_manager.save_csv(file_to_save)
+        if file_to_save:
+            if self.file_loaded_type == FileType.KERNEL:
+                self.kernel_manager.save_csv(file_to_save)
+            elif self.file_loaded_type == FileType.NAMEDIC:
+                self.namedic_manager.save_csv(file_to_save)
+            elif self.file_loaded_type == FileType.MNGRP:
+                self.mngrp_manager.save_csv(file_to_save)
+            elif self.file_loaded_type == FileType.EXE:
+                self.exe_manager.save_csv(file_to_save)
 
     def __load_file(self, file_to_load: str = ""):
         print("Loading file")
@@ -294,19 +302,19 @@ class ShumiTranslator(QWidget):
         self.uncompress_button.hide()
         self.warning_kernel_label_widget.hide()
         self.warning_mngrp_label_widget.hide()
+        self.warning_exe_label_widget.hide()
 
         self.update()
 
-        #file_to_load = os.path.join("OriginalFiles", "mngrp_en - Copie.bin")  # For developing faster
-        file_to_load = os.path.join("OriginalFiles", "FF8_EN.exe")  # For developing faster
+        # file_to_load = os.path.join("OriginalFiles", "mngrp_en - Copie.bin")  # For developing faster
+        # file_to_load = os.path.join("OriginalFiles", "FF8_EN.exe")  # For developing faster
         if not file_to_load:
             filter_txt = ""
             for file_regex in self.FILE_MANAGED_REGEX:
                 filter_txt += file_regex
                 filter_txt += ";"
 
-            file_to_load = self.file_dialog.getOpenFileName(parent=self, caption="Find file", filter=filter_txt,
-                                                            directory=os.getcwd())[0]
+            file_to_load = self.file_dialog.getOpenFileName(parent=self, caption="Find file", filter=filter_txt, directory=os.getcwd())[0]
 
         if file_to_load:
             self.file_dialog_button.setEnabled(False)
@@ -318,7 +326,6 @@ class ShumiTranslator(QWidget):
                 section_widget.setParent(None)
                 section_widget.deleteLater()
             self.section_widget_list = []
-
 
             # Choose which manager to load
             if "kernel" in file_name and ".bin" in file_name:
@@ -335,8 +342,6 @@ class ShumiTranslator(QWidget):
                 self.compress_button.show()
                 self.uncompress_button.show()
                 self.warning_kernel_label_widget.show()
-
-
             elif "namedic" in file_name and ".bin" in file_name:
                 self.file_loaded_type = FileType.NAMEDIC
                 self.namedic_manager.load_file(self.file_loaded)
@@ -344,15 +349,12 @@ class ShumiTranslator(QWidget):
                 first_section_line_index = 2  # Start at 2 as in the CSV
                 self.section_widget_list.append(SectionWidget(self.namedic_manager.get_text_section(), first_section_line_index))
                 self.layout_translation_lines.addWidget(self.section_widget_list[-1])
-
-
             elif "mngrp" in file_name and ".bin" in file_name:
                 self.file_loaded_type = FileType.MNGRP
-                #self.file_mngrphd_loaded = os.path.join("OriginalFiles", "mngrphd_en - Copie.bin")  # For developing faster
+                # self.file_mngrphd_loaded = os.path.join("OriginalFiles", "mngrphd_en - Copie.bin")  # For developing faster
                 if not self.file_mngrphd_loaded:
                     self.file_mngrphd_loaded = self.file_dialog.getOpenFileName(parent=self, caption="Find mngrphd", filter="*mngrphd*.bin",
                                                                                 directory=os.getcwd())[0]
-
                 self.mngrp_manager.load_file(self.file_mngrphd_loaded, self.file_loaded)
                 first_section_line_index = 2
                 for section in self.mngrp_manager.mngrp.get_section_list():
@@ -361,26 +363,21 @@ class ShumiTranslator(QWidget):
                         if section.type == SectionType.MNGRP_STRING:
                             self.section_widget_list.append(SectionWidget(section.get_text_section(), first_section_line_index))
                             first_section_line_index += len(section.get_text_list())
-                            #self.layout_translation_lines.addWidget(self.section_widget_list[-1])
                         elif section.type == SectionType.FF8_TEXT or section.type == SectionType.MNGRP_M00MSG:
                             self.section_widget_list.append(SectionWidget(section, first_section_line_index))
                             first_section_line_index += len(section.get_text_list())
-                            #self.layout_translation_lines.addWidget(self.section_widget_list[-1])
                         elif section.type == SectionType.TKMNMES:
                             for i in range(section.get_nb_text_section()):
                                 self.section_widget_list.append(SectionWidget(section.get_text_section_by_id(i), first_section_line_index))
                                 first_section_line_index += len(section.get_text_section_by_id(i).get_text_list())
-                                #self.layout_translation_lines.addWidget(self.section_widget_list[-1])
                         elif section.type == SectionType.MNGRP_TEXTBOX:
                             self.section_widget_list.append(SectionWidget(section, first_section_line_index))
                             first_section_line_index += len(section.get_text_list())
-                            #self.layout_translation_lines.addWidget(self.section_widget_list[-1])
                     self.warning_mngrp_label_widget.show()
 
                 for section_widget in self.section_widget_list:
                     self._tab_widget.add_section(section_widget)
                 self._tab_widget.show()
-
             elif ".exe" in file_name:
                 self.file_loaded_type = FileType.EXE
                 data_hex_exe = bytearray()
@@ -388,9 +385,16 @@ class ShumiTranslator(QWidget):
                     data_hex_exe.extend(file.read())
                 self.exe_manager.load_file(self.file_loaded)
                 first_section_line_index = 2
-                self.section_widget_list.append(SectionWidget(self.exe_manager.get_exe_section().get_section_card_name().get_text_section(), first_section_line_index))
+                self.section_widget_list.append(
+                    SectionWidget(self.exe_manager.get_exe_section().get_section_card_name().get_text_section(), first_section_line_index))
+                first_section_line_index += len(self.exe_manager.get_exe_section().get_section_card_name().get_text_section().get_text_list())
                 self.layout_translation_lines.addWidget(self.section_widget_list[-1])
 
+                self.section_widget_list.append(
+                    SectionWidget(self.exe_manager.get_exe_section().get_section_scan_text().get_text_section(), first_section_line_index))
+                self.layout_translation_lines.addWidget(self.section_widget_list[-1])
+
+                self.warning_exe_label_widget.show()
 
             self.csv_save_button.setEnabled(True)
             self.save_button.setEnabled(True)
@@ -416,4 +420,3 @@ class ShumiTranslator(QWidget):
         self.compress_button.setEnabled(True)
         self.uncompress_button.setEnabled(True)
         self.scroll_area.setEnabled(True)
-
