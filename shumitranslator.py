@@ -218,10 +218,6 @@ class ShumiTranslator(QWidget):
             elif self.file_loaded_type == FileType.MNGRP:
                 self.mngrp_manager.save_file(self.file_loaded, self.file_mngrphd_loaded)
             elif self.file_loaded_type == FileType.EXE:
-
-                print(self.exe_manager.get_exe_section().get_lang())
-                print(self.exe_manager.get_exe_section().get_lang().value)
-
                 folder_to_save = self.file_dialog.getExistingDirectory(parent=self, caption="Save msd file", directory=os.getcwd())
                 if folder_to_save:
                     self.exe_manager.save_file(folder_to_save)
