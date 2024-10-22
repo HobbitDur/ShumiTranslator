@@ -1,3 +1,4 @@
+import faulthandler
 import sys
 
 from PyQt6.QtWidgets import QApplication
@@ -15,7 +16,7 @@ def exception_hook(exctype, value, traceback):
 
 if __name__ == '__main__':
     sys.excepthook = exception_hook
-
+    #faulthandler.enable()
     app = QApplication.instance()
     if not app:  # sinon on crée une instance de QApplication
         app = QApplication(sys.argv)
