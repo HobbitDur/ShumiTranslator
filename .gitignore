@@ -2,7 +2,6 @@
 **/.idea/
 **/release/**
 **/OriginalFiles
-**/csv/**
 *.bin
 create_exe.sh
 *.hext
