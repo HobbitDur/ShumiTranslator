@@ -22,7 +22,7 @@ class ExeManager:
 
     def save_file(self, folder):
         file_scan = os.path.join(folder, "battle_scans.msd")
-        card_name = os.path.join(folder, "card_name.msd")
+        card_name = os.path.join(folder, "card_names.msd")
         with open(file_scan, "wb") as f:
             f.write(self.exe_section.produce_msd(MsdType.SCAN_TEXT))
         with open(card_name, "wb") as f:
