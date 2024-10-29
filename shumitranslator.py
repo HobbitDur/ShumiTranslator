@@ -299,7 +299,13 @@ class ShumiTranslator(QWidget):
 
     def __save_csv(self):
         os.makedirs(self.CSV_FOLDER, exist_ok=True)
-        csv_name = pathlib.Path(self.file_loaded).name
+        if self.file_type_selection_widget.currentIndex() == 4:
+            if self.file_loaded == 1:
+                csv_name = pathlib.Path(self.file_loaded[0]).name
+            else:
+                csv_name = "c0mxx.dat"
+        else:
+            csv_name = pathlib.Path(self.file_loaded).name
         csv_name = csv_name.split('.')[0] + '.csv'
         default_file_name = os.path.join(self.CSV_FOLDER, csv_name)
         file_to_save = self.csv_save_dialog.getSaveFileName(parent=self, caption="Find csv file", filter="*.csv",
@@ -313,6 +319,8 @@ class ShumiTranslator(QWidget):
                 self.mngrp_manager.save_csv(file_to_save)
             elif self.file_loaded_type == FileType.EXE:
                 self.exe_manager.save_csv(file_to_save)
+            elif self.file_loaded_type == FileType.DAT:
+                self.battle_manager.save_csv(file_to_save)
 
     def __load_file(self, file_to_load: str = ""):
         print("Loading file")

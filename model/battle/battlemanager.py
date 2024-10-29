@@ -65,40 +65,14 @@ class BattleManager:
         if csv_path:
             with open(csv_path, 'w', newline='', encoding="utf-8") as csv_file:
                 csv_writer = csv.writer(csv_file, delimiter=GameData.find_delimiter_from_csv_file(csv_path), quotechar='|', quoting=csv.QUOTE_MINIMAL)
-                csv_writer.writerow(
-                    ['Section data name', 'Section id', 'Subsection id', 'Text Sub id', 'Text'])
-                text_line = 2
-                for index_section, section in enumerate(self.mngrp.get_section_list()):
-                    if section.type in (
-                            SectionType.TKMNMES, SectionType.MNGRP_STRING, SectionType.FF8_TEXT,
-                            SectionType.MNGRP_TEXTBOX, SectionType.MNGRP_M00MSG):
-                        if section.type == SectionType.TKMNMES:
-                            for i in range(section.get_nb_text_section()):
-                                text_section = section.get_text_section_by_id(i)
-                                subsection_id = text_section.id
-                                for ff8text in text_section.get_text_list():
-                                    csv_writer.writerow(
-                                        [section.name, section.id, subsection_id, ff8text.id,  ff8text.get_str()])
-                                    text_line += 1
-                        if section.type == SectionType.MNGRP_TEXTBOX:
-                            for i in range(section.get_nb_entry_section()):
-                                entry_section = section.get_entry_section_by_id(i)
-                                subsection_id = entry_section.id
-                                for ff8text in entry_section.get_text_list():
-                                    csv_writer.writerow(
-                                        [section.name, section.id, subsection_id, ff8text.id,  ff8text.get_str()])
-                                    text_line += 1
-                        if section.type in (SectionType.MNGRP_M00MSG, SectionType.FF8_TEXT, SectionType.MNGRP_STRING):
-                                for ff8text in section.get_text_list():
-                                    csv_writer.writerow(
-                                        [section.name, section.id, 0, ff8text.id,  ff8text.get_str()])
-                                    text_line += 1
-
+                csv_writer.writerow(['Section data name', 'Section id', 'Text Sub id', 'Text'])
+                for index_section, section in enumerate(self.section_text_list):
+                    for ff8text in section.get_text_list():
+                        csv_writer.writerow([section.name, section.id, ff8text.id,  ff8text.get_str()])
 
     def load_csv(self, csv_to_load, section_widget_list):
         if csv_to_load:
             with open(csv_to_load, newline='', encoding="utf-8") as csv_file:
-
                 csv_data = csv.reader(csv_file, delimiter=GameData.find_delimiter_from_csv_file(csv_to_load), quotechar='|')
                 #   ['Section data name', 'Section id', 'Subsection id', 'Text Sub id', 'Text']
                 tkmnmes_index =0
