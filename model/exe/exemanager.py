@@ -38,7 +38,7 @@ class ExeManager:
     def save_csv(self, csv_path):
         if csv_path:
             with open(csv_path, 'w', newline='', encoding="utf-8") as csv_file:
-                csv_writer = csv.writer(csv_file, delimiter=';', quotechar='|', quoting=csv.QUOTE_MINIMAL)
+                csv_writer = csv.writer(csv_file, delimiter=GameData.find_delimiter_from_csv_file(csv_path), quotechar='|', quoting=csv.QUOTE_MINIMAL)
                 csv_writer.writerow(
                     ['Section data name', 'Section id', 'Text Sub id', 'Text'])
                 card_name_section = self.exe_section.get_section_card_name()
@@ -51,7 +51,7 @@ class ExeManager:
     def load_csv(self, csv_to_load, section_widget_list):
         if csv_to_load:
             with open(csv_to_load, newline='', encoding="utf-8") as csv_file:
-                csv_data = csv.reader(csv_file, delimiter=';', quotechar='|')
+                csv_data = csv.reader(csv_file, delimiter=GameData.find_delimiter_from_csv_file(csv_to_load), quotechar='|')
                 #  ['Section data name', 'Section id', 'Text Sub id', 'Text']
                 for row_index, row in enumerate(csv_data):
                     if row_index == 0:  # Ignoring title row

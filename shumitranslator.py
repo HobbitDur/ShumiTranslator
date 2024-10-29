@@ -4,10 +4,10 @@ import pathlib
 from PyQt6.QtCore import QSize
 from PyQt6.QtGui import QIcon
 from PyQt6.QtWidgets import QVBoxLayout, QWidget, QScrollArea, QPushButton, QFileDialog, QHBoxLayout, QLabel, \
-    QMessageBox
+    QMessageBox, QComboBox
 
 from FF8GameData.gamedata import GameData, FileType, SectionType
-from FF8GameData.ExeSection.exefile import SectionExeFile
+from model.battle.battlemanager import BattleManager
 from model.exe.exemanager import ExeManager
 from model.kernel.kernelmanager import KernelManager
 from model.mngrp.mngrpmanager import MngrpManager
@@ -18,8 +18,8 @@ from view.tabholderwidget import TabHolderWidget
 
 class ShumiTranslator(QWidget):
     CSV_FOLDER = "csv"
-    FILE_MANAGED = ['kernel.bin', 'namedic.bin', 'mngrp.bin']
-    FILE_MANAGED_REGEX = ['*kernel*.bin', '*namedic*.bin', '*mngrp*.bin', 'FF8_*.exe']
+    FILE_MANAGED = ['kernel.bin', 'namedic.bin', 'mngrp.bin', 'FF8.exe', 'c0mxx.dat']
+    FILE_MANAGED_REGEX = ['*kernel*.bin', '*namedic*.bin', '*mngrp*.bin', 'FF8_*.exe', "c0m0*.dat"]
 
     def __init__(self, icon_path='Resources'):
         QWidget.__init__(self)
@@ -31,6 +31,13 @@ class ShumiTranslator(QWidget):
         self.game_data.load_item_data()
         self.game_data.load_magic_data()
         self.game_data.load_card_data()
+        self.game_data.load_stat_data()
+        self.game_data.load_ai_data()
+        self.game_data.load_monster_data()
+        self.game_data.load_status_data()
+        self.game_data.load_gforce_data()
+        self.game_data.load_special_action_data()
+
         self.translation_list = []
         self.file_loaded = ""
         self.file_mngrphd_loaded = ""
@@ -61,7 +68,7 @@ class ShumiTranslator(QWidget):
         self.file_dialog_button.setIcon(QIcon(os.path.join(icon_path, 'folder.png')))
         self.file_dialog_button.setIconSize(QSize(30, 30))
         self.file_dialog_button.setFixedSize(40, 40)
-        self.file_dialog_button.setToolTip("Open data file")
+        self.file_dialog_button.setToolTip("Open data file (choose a file type first")
         self.file_dialog_button.clicked.connect(self.__load_file)
 
         self.save_button = QPushButton()
@@ -105,6 +112,16 @@ class ShumiTranslator(QWidget):
         self.uncompress_button.setEnabled(False)
         self.uncompress_button.clicked.connect(self.__uncompress_data)
 
+        self.file_type_selection_label = QLabel("File type to load:")
+        self.file_type_selection_widget = QComboBox()
+        self.file_type_selection_widget.addItems(self.FILE_MANAGED)
+        self.file_type_selection_widget.setToolTip("Allow you to choose which file to load")
+        self.file_type_selection_widget.setCurrentIndex(4)
+
+        self.file_type_layout = QHBoxLayout()
+        self.file_type_layout.addWidget(self.file_type_selection_label)
+        self.file_type_layout.addWidget(self.file_type_selection_widget)
+
         self.info_button = QPushButton()
         self.info_button.setIcon(QIcon(os.path.join(icon_path, 'info.png')))
         self.info_button.setIconSize(QSize(30, 30))
@@ -122,6 +139,7 @@ class ShumiTranslator(QWidget):
         self.layout_top.addWidget(self.compress_button)
         self.layout_top.addWidget(self.uncompress_button)
         self.layout_top.addWidget(self.info_button)
+        self.layout_top.addLayout(self.file_type_layout)
         self.layout_top.addSpacing(20)
         self.layout_top.addWidget(self.text_file_loaded)
         self.layout_top.addStretch(1)
@@ -174,6 +192,7 @@ class ShumiTranslator(QWidget):
         self.namedic_manager = SectionString(game_data=self.game_data)
         self.mngrp_manager = MngrpManager(game_data=self.game_data)
         self.exe_manager = ExeManager(game_data=self.game_data)
+        self.battle_manager = BattleManager(game_data=self.game_data)
 
     def __show_info(self):
         message_box = QMessageBox()
@@ -208,15 +227,19 @@ class ShumiTranslator(QWidget):
     def __save_file(self):
         self.save_button.setDown(True)
         self.scroll_area.setEnabled(False)
-        popup_save = True
-        popup_text = "Data saved to file <b>{}</b>".format(pathlib.Path(self.file_loaded).name)
+
         if self.file_loaded:
+            popup_save = True
+
             if self.file_loaded_type == FileType.KERNEL:
                 self.kernel_manager.save_file(self.file_loaded)
+                popup_text = "Data saved to file <b>{}</b>".format(pathlib.Path(self.file_loaded).name)
             elif self.file_loaded_type == FileType.NAMEDIC:
                 self.namedic_manager.save_file(self.file_loaded)
+                popup_text = "Data saved to file <b>{}</b>".format(pathlib.Path(self.file_loaded).name)
             elif self.file_loaded_type == FileType.MNGRP:
                 self.mngrp_manager.save_file(self.file_loaded, self.file_mngrphd_loaded)
+                popup_text = "Data saved to file <b>{}</b>".format(pathlib.Path(self.file_loaded).name)
             elif self.file_loaded_type == FileType.EXE:
                 folder_to_save = self.file_dialog.getExistingDirectory(parent=self, caption="Save msd file", directory=os.getcwd())
                 if folder_to_save:
@@ -224,14 +247,20 @@ class ShumiTranslator(QWidget):
                     popup_text = "Msd files saved to folder <b>{}</b>".format(pathlib.Path(folder_to_save).name)
                 else:
                     popup_save = False
+            elif self.file_loaded_type == FileType.DAT:
+                self.battle_manager.save_all_file()
+                if len(self.file_loaded) == 1:
+                    popup_text = "Data saved to file <b>{}</b>".format(pathlib.Path(self.file_loaded[0]).name)
+                else:
+                    popup_text = "Data saved to file c0mxx.dat"
 
-        if popup_save:
-            message_box = QMessageBox()
-            message_box.setText(popup_text)
-            message_box.setIcon(QMessageBox.Icon.Information)
-            message_box.setWindowTitle("ShumiTranslator - Data saved")
-            message_box.setWindowIcon(self.__shumi_icon)
-            message_box.exec()
+            if popup_save:
+                message_box = QMessageBox()
+                message_box.setText(popup_text)
+                message_box.setIcon(QMessageBox.Icon.Information)
+                message_box.setWindowTitle("ShumiTranslator - Data saved")
+                message_box.setWindowIcon(self.__shumi_icon)
+                message_box.exec()
         self.save_button.setDown(False)
         self.scroll_area.setEnabled(True)
 
@@ -300,28 +329,35 @@ class ShumiTranslator(QWidget):
         self.warning_mngrp_label_widget.hide()
         self.warning_exe_label_widget.hide()
 
-        self.update()
-
+        # file_to_load = [os.path.join("OriginalFiles", "battle", "c0m028.dat")]  # For developing faster
         # file_to_load = os.path.join("OriginalFiles", "mngrp_en - Copie.bin")  # For developing faster
         # file_to_load = os.path.join("OriginalFiles", "FF8_EN.exe")  # For developing faster
-        if not file_to_load:
-            filter_txt = ""
-            for file_regex in self.FILE_MANAGED_REGEX:
-                filter_txt += file_regex
-                filter_txt += ";"
 
-            file_to_load = self.file_dialog.getOpenFileName(parent=self, caption="Find file", filter=filter_txt, directory=os.getcwd())[0]
+
+        if not file_to_load:
+            filter_file =self.FILE_MANAGED_REGEX[self.file_type_selection_widget.currentIndex()]
+            if self.file_type_selection_widget.currentIndex() == 4: # c0mxx.dat
+                file_to_load = self.file_dialog.getOpenFileNames(parent=self, caption="Find file", filter=filter_file, directory=os.getcwd())[0]
+            else:
+                file_to_load = self.file_dialog.getOpenFileName(parent=self, caption="Find file", filter=filter_file, directory=os.getcwd())[0]
 
         if file_to_load:
             self.file_dialog_button.setEnabled(False)
             self.file_loaded = file_to_load
-            file_name = pathlib.Path(self.file_loaded).name
+            if self.file_type_selection_widget.currentIndex() == 4:
+                if len(self.file_loaded) == 1:
+                    file_name = pathlib.Path(self.file_loaded[0]).name
+                else:
+                    file_name = self.FILE_MANAGED[self.file_type_selection_widget.currentIndex()]
+            else:
+                file_name = pathlib.Path(self.file_loaded).name
             self.text_file_loaded.setText("File loaded: " + file_name)
 
             for section_widget in self.section_widget_list:
                 section_widget.setParent(None)
                 section_widget.deleteLater()
             self.section_widget_list = []
+
 
             # Choose which manager to load
             if "kernel" in file_name and ".bin" in file_name:
@@ -391,6 +427,18 @@ class ShumiTranslator(QWidget):
                 self.layout_translation_lines.addWidget(self.section_widget_list[-1])
 
                 self.warning_exe_label_widget.show()
+            elif ".dat" in file_name:
+                self.battle_manager.reset()
+                self.file_loaded_type = FileType.DAT
+                for file_to_load in self.file_loaded:
+                    self.battle_manager.add_file(file_to_load)
+
+                text_section_list = self.battle_manager.get_section_list()
+                first_section_line_index = 2
+                for section in text_section_list:
+                    self.section_widget_list.append(SectionWidget(section, first_section_line_index))
+                    first_section_line_index+=len(section.get_text_list())
+                    self.layout_translation_lines.addWidget(self.section_widget_list[-1])
 
             self.csv_save_button.setEnabled(True)
             self.save_button.setEnabled(True)
