@@ -6,9 +6,11 @@ from PyQt6.QtGui import QIcon
 from PyQt6.QtWidgets import QVBoxLayout, QWidget, QScrollArea, QPushButton, QFileDialog, QHBoxLayout, QLabel, \
     QMessageBox, QComboBox
 
-from FF8GameData.gamedata import GameData, FileType, SectionType
+from FF8GameData.ExeSection.remasterdat import SectionRemasterDat
+from FF8GameData.gamedata import GameData, FileType, SectionType, RemasterCardType
 from model.battle.battlemanager import BattleManager
 from model.exe.exemanager import ExeManager
+from model.exe.remasterdatmanager import RemasterDatManager
 from model.kernel.kernelmanager import KernelManager
 from model.mngrp.mngrpmanager import MngrpManager
 from model.mngrp.string.sectionstring import SectionString
@@ -18,8 +20,8 @@ from view.tabholderwidget import TabHolderWidget
 
 class ShumiTranslator(QWidget):
     CSV_FOLDER = "csv"
-    FILE_MANAGED = ['kernel.bin', 'namedic.bin', 'mngrp.bin', 'FF8.exe', 'c0mxx.dat']
-    FILE_MANAGED_REGEX = ['*kernel*.bin', '*namedic*.bin', '*mngrp*.bin', 'FF8_*.exe', "c0m0*.dat"]
+    FILE_MANAGED = ['kernel.bin', 'namedic.bin', 'mngrp.bin', 'FF8.exe/remaster.dat', 'c0mxx.dat']
+    FILE_MANAGED_REGEX = ['*kernel*.bin', '*namedic*.bin', '*mngrp*.bin', 'FF8_*.exe;off_cards_names_en.dat', "c0m0*.dat"]
 
     def __init__(self, icon_path='Resources'):
         QWidget.__init__(self)
@@ -193,6 +195,7 @@ class ShumiTranslator(QWidget):
         self.mngrp_manager = MngrpManager(game_data=self.game_data)
         self.exe_manager = ExeManager(game_data=self.game_data)
         self.battle_manager = BattleManager(game_data=self.game_data)
+        self.remaster_dat_manager = RemasterDatManager(game_data=self.game_data)
 
     def __show_info(self):
         message_box = QMessageBox()
@@ -227,8 +230,10 @@ class ShumiTranslator(QWidget):
     def __save_file(self):
         self.save_button.setDown(True)
         self.scroll_area.setEnabled(False)
-
+        print("__save_file")
+        print(self.file_loaded_type)
         if self.file_loaded:
+            print("file loaded")
             popup_save = True
 
             if self.file_loaded_type == FileType.KERNEL:
@@ -253,6 +258,10 @@ class ShumiTranslator(QWidget):
                     popup_text = "Data saved to file <b>{}</b>".format(pathlib.Path(self.file_loaded[0]).name)
                 else:
                     popup_text = "Data saved to file c0mxx.dat"
+            elif self.file_loaded_type == FileType.REMASTER_DAT:
+                self.remaster_dat_manager.save_file(self.file_loaded)
+                print("Saving remaster file !")
+                popup_text = "Data saved to file <b>{}</b>".format(pathlib.Path(self.file_loaded).name)
 
             if popup_save:
                 message_box = QMessageBox()
@@ -287,6 +296,8 @@ class ShumiTranslator(QWidget):
                         self.exe_manager.load_csv(csv_to_load=csv_to_load, section_widget_list=self.section_widget_list)
                     elif self.file_loaded_type == FileType.DAT:
                         self.battle_manager.load_csv(csv_to_load=csv_to_load, section_widget_list=self.section_widget_list)
+                    elif self.file_loaded_type == FileType.REMASTER_DAT:
+                        self.remaster_dat_manager.load_csv(csv_to_load=csv_to_load, section_widget_list=self.section_widget_list)
                 except UnicodeDecodeError as e:
                     print(e)
                     message_box = QMessageBox()
@@ -323,6 +334,8 @@ class ShumiTranslator(QWidget):
                 self.exe_manager.save_csv(file_to_save)
             elif self.file_loaded_type == FileType.DAT:
                 self.battle_manager.save_csv(file_to_save)
+            elif self.file_loaded_type == FileType.REMASTER_DAT:
+                self.remaster_dat_manager.save_csv(file_to_save)
 
     def __load_file(self, file_to_load: str = ""):
         print("Loading file")
@@ -437,7 +450,7 @@ class ShumiTranslator(QWidget):
                 self.layout_translation_lines.addWidget(self.section_widget_list[-1])
 
                 self.warning_exe_label_widget.show()
-            elif ".dat" in file_name:
+            elif ".dat" in file_name and "c0m" in file_name:
                 self.battle_manager.reset()
                 self.file_loaded_type = FileType.DAT
                 for file_to_load in self.file_loaded:
@@ -449,6 +462,21 @@ class ShumiTranslator(QWidget):
                     self.section_widget_list.append(SectionWidget(section, first_section_line_index))
                     first_section_line_index+=len(section.get_text_list())
                     self.layout_translation_lines.addWidget(self.section_widget_list[-1])
+            elif ".dat" in file_name:# Remaster file
+                self.file_loaded_type = FileType.REMASTER_DAT
+                if "off_cards_names" in file_name and "2" not in file_name:
+                    type_to_load = RemasterCardType.CARD_NAME
+                elif "off_cards_names" in file_name and "2" in file_name:
+                    type_to_load = RemasterCardType.CARD_NAME2
+                else:
+                    print(f"Unexpected file name: {file_name}")
+                    type_to_load = RemasterCardType.CARD_NAME
+
+                self.remaster_dat_manager.load_file(file_to_load, type_to_load)
+                first_section_line_index = 2
+                self.section_widget_list.append(SectionWidget(self.remaster_dat_manager.get_section().get_text_section(), first_section_line_index))
+                self.layout_translation_lines.addWidget(self.section_widget_list[-1])
+
 
             self.csv_save_button.setEnabled(True)
             self.save_button.setEnabled(True)
@@ -474,3 +502,4 @@ class ShumiTranslator(QWidget):
         self.compress_button.setEnabled(True)
         self.uncompress_button.setEnabled(True)
         self.scroll_area.setEnabled(True)
+
