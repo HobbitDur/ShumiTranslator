@@ -21,7 +21,7 @@ from view.tabholderwidget import TabHolderWidget
 class ShumiTranslator(QWidget):
     CSV_FOLDER = "csv"
     FILE_MANAGED = ['kernel.bin', 'namedic.bin', 'mngrp.bin', 'FF8.exe/remaster.dat', 'c0mxx.dat']
-    FILE_MANAGED_REGEX = ['*kernel*.bin', '*namedic*.bin', '*mngrp*.bin', 'FF8_*.exe;off_cards_names_en.dat', "c0m0*.dat"]
+    FILE_MANAGED_REGEX = ['*kernel*.bin', '*namedic*.bin', '*mngrp*.bin', 'FF8_*.exe;off_cards_names_*.dat', "c0m0*.dat"]
 
     def __init__(self, icon_path='Resources'):
         QWidget.__init__(self)
