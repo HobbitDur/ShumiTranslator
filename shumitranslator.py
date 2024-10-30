@@ -356,7 +356,6 @@ class ShumiTranslator(QWidget):
         # file_to_load = os.path.join("OriginalFiles", "mngrp_en - Copie.bin")  # For developing faster
         # file_to_load = os.path.join("OriginalFiles", "FF8_EN.exe")  # For developing faster
 
-
         if not file_to_load:
             filter_file =self.FILE_MANAGED_REGEX[self.file_type_selection_widget.currentIndex()]
             if self.file_type_selection_widget.currentIndex() == 4: # c0mxx.dat
@@ -407,28 +406,28 @@ class ShumiTranslator(QWidget):
             elif "mngrp" in file_name and ".bin" in file_name:
                 self.file_loaded_type = FileType.MNGRP
                 # self.file_mngrphd_loaded = os.path.join("OriginalFiles", "mngrphd_en - Copie.bin")  # For developing faster
-                if not self.file_mngrphd_loaded:
-                    self.file_mngrphd_loaded = self.file_dialog.getOpenFileName(parent=self, caption="Find mngrphd", filter="*mngrphd*.bin",
-                                                                                directory=os.getcwd())[0]
-                self.mngrp_manager.load_file(self.file_mngrphd_loaded, self.file_loaded)
-                first_section_line_index = 2
-                for section in self.mngrp_manager.mngrp.get_section_list():
-                    if section.type in (
-                            SectionType.TKMNMES, SectionType.MNGRP_STRING, SectionType.FF8_TEXT, SectionType.MNGRP_TEXTBOX, SectionType.MNGRP_M00MSG):
-                        if section.type == SectionType.MNGRP_STRING:
-                            self.section_widget_list.append(SectionWidget(section.get_text_section(), first_section_line_index))
-                            first_section_line_index += len(section.get_text_list())
-                        elif section.type == SectionType.FF8_TEXT or section.type == SectionType.MNGRP_M00MSG:
-                            self.section_widget_list.append(SectionWidget(section, first_section_line_index))
-                            first_section_line_index += len(section.get_text_list())
-                        elif section.type == SectionType.TKMNMES:
-                            for i in range(section.get_nb_text_section()):
-                                self.section_widget_list.append(SectionWidget(section.get_text_section_by_id(i), first_section_line_index))
-                                first_section_line_index += len(section.get_text_section_by_id(i).get_text_list())
-                        elif section.type == SectionType.MNGRP_TEXTBOX:
-                            self.section_widget_list.append(SectionWidget(section, first_section_line_index))
-                            first_section_line_index += len(section.get_text_list())
-                    self.warning_mngrp_label_widget.show()
+                self.file_mngrphd_loaded = self.file_dialog.getOpenFileName(parent=self, caption="Find mngrphd", filter="*mngrphd*.bin",
+                                                                            directory=os.getcwd())[0]
+                if self.file_mngrphd_loaded:
+                    self.mngrp_manager.load_file(self.file_mngrphd_loaded, self.file_loaded)
+                    first_section_line_index = 2
+                    for section in self.mngrp_manager.mngrp.get_section_list():
+                        if section.type in (
+                                SectionType.TKMNMES, SectionType.MNGRP_STRING, SectionType.FF8_TEXT, SectionType.MNGRP_TEXTBOX, SectionType.MNGRP_M00MSG):
+                            if section.type == SectionType.MNGRP_STRING:
+                                self.section_widget_list.append(SectionWidget(section.get_text_section(), first_section_line_index))
+                                first_section_line_index += len(section.get_text_list())
+                            elif section.type == SectionType.FF8_TEXT or section.type == SectionType.MNGRP_M00MSG:
+                                self.section_widget_list.append(SectionWidget(section, first_section_line_index))
+                                first_section_line_index += len(section.get_text_list())
+                            elif section.type == SectionType.TKMNMES:
+                                for i in range(section.get_nb_text_section()):
+                                    self.section_widget_list.append(SectionWidget(section.get_text_section_by_id(i), first_section_line_index))
+                                    first_section_line_index += len(section.get_text_section_by_id(i).get_text_list())
+                            elif section.type == SectionType.MNGRP_TEXTBOX:
+                                self.section_widget_list.append(SectionWidget(section, first_section_line_index))
+                                first_section_line_index += len(section.get_text_list())
+                        self.warning_mngrp_label_widget.show()
 
                 for section_widget in self.section_widget_list:
                     self._tab_widget.add_section(section_widget)
@@ -502,4 +501,5 @@ class ShumiTranslator(QWidget):
         self.compress_button.setEnabled(True)
         self.uncompress_button.setEnabled(True)
         self.scroll_area.setEnabled(True)
+
 
