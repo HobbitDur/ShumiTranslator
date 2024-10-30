@@ -116,7 +116,7 @@ class ShumiTranslator(QWidget):
         self.file_type_selection_widget = QComboBox()
         self.file_type_selection_widget.addItems(self.FILE_MANAGED)
         self.file_type_selection_widget.setToolTip("Allow you to choose which file to load")
-        self.file_type_selection_widget.setCurrentIndex(4)
+        self.file_type_selection_widget.setCurrentIndex(0)
 
         self.file_type_layout = QHBoxLayout()
         self.file_type_layout.addWidget(self.file_type_selection_label)
@@ -285,6 +285,8 @@ class ShumiTranslator(QWidget):
                         self.mngrp_manager.load_csv(csv_to_load=csv_to_load, section_widget_list=self.section_widget_list)
                     elif self.file_loaded_type == FileType.EXE:
                         self.exe_manager.load_csv(csv_to_load=csv_to_load, section_widget_list=self.section_widget_list)
+                    elif self.file_loaded_type == FileType.DAT:
+                        self.battle_manager.load_csv(csv_to_load=csv_to_load, section_widget_list=self.section_widget_list)
                 except UnicodeDecodeError as e:
                     print(e)
                     message_box = QMessageBox()
