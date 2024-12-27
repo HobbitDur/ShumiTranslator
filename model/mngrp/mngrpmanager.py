@@ -37,7 +37,7 @@ class MngrpManager:
         # then we update mngrp hex
         self.mngrp.update_data_hex()
 
-        # Updating mngrphd value from ther new mngrp computed
+        # Updating mngrphd value from the new mngrp computed
         self.mngrphd.update_from_section_list(self.mngrp.get_section_list())
         self.mngrphd.update_data_hex()
 
@@ -54,7 +54,9 @@ class MngrpManager:
         with open(file_mngrp, "rb") as file:
             mngrp_data_hex.extend(file.read())
 
+        print("Loading mngrphd")
         self.mngrphd = Mngrphd(self.game_data, mngrphd_data_hex)
+        print(self.mngrphd)
         self.mngrp = Mngrp(self.game_data, mngrp_data_hex, self.mngrphd.get_entry_list())
         self.text_box_manager = TextBoxManager()
         self.m00_manager = m00XManager()
@@ -64,6 +66,7 @@ class MngrpManager:
         m00bin_counter = 0
         m00msg_counter = 0
         for index, section_mngrp in enumerate(self.mngrp.get_section_list()):
+            print(f"index: {index}")
             if self.mngrphd.get_entry_list()[index].invalid_value:  # If it's a non-existent section, ignore it
                 continue
             section_id = section_mngrp.id
