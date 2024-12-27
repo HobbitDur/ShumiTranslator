@@ -1,7 +1,10 @@
 import faulthandler
 import os
 import sys
-import IfritAI
+# To manage submodule import
+folder_path = "IfritAI"
+if folder_path not in sys.path:
+    sys.path.append(folder_path)
 from PyQt6.QtWidgets import QApplication
 from shumitranslator import ShumiTranslator
 
