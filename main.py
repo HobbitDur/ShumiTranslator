@@ -1,8 +1,8 @@
 import faulthandler
+import os
 import sys
-
+import IfritAI
 from PyQt6.QtWidgets import QApplication
-
 from shumitranslator import ShumiTranslator
 
 sys._excepthook = sys.excepthook

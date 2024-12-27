@@ -1,6 +1,6 @@
 import pathlib
 
-from IfritEnhanced.IfritAI.ennemy import Ennemy
+from IfritAI.ennemy import Ennemy
 import csv
 
 from FF8GameData.gamedata import GameData

@@ -1,6 +1,6 @@
 [submodule "FF8GameData"]
 	path = FF8GameData
 	url = https://github.com/HobbitDur/FF8GameData.git
-[submodule "IfritEnhanced"]
-	path = IfritEnhanced
-	url = https://github.com/HobbitDur/IfritEnhanced.git
+[submodule "IfritAI"]
+	path = IfritAI
+	url = https://github.com/HobbitDur/IfritAI.git
