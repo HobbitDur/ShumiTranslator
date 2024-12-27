@@ -41,8 +41,10 @@ class BattleManager:
         self.section_text_list.append(
             ListFF8Text(game_data=self.game_data, data_hex=bytearray(), id=len(self.section_text_list), own_offset=0, name=name))
         if not error:
+            self.section_text_list[-1].add_text(self.game_data.translate_str_to_hex(ennemy.info_stat_data['monster_name']))
             for text in ennemy.battle_script_data['battle_text']:
                 self.section_text_list[-1].add_text(self.game_data.translate_str_to_hex(text))
+
 
     def get_section_list(self):
         return self.section_text_list
@@ -51,8 +53,9 @@ class BattleManager:
         for i in range(len(self.section_text_list)):
             if self.section_text_list[i]:
                 self.section_text_list[i].update_data_hex()
+                self.ennemy_list[i].info_stat_data['monster_name'] = self.section_text_list[i].get_text_list()[0]
                 offset = 0
-                for j, text in enumerate(self.section_text_list[i].get_text_list()):
+                for j, text in enumerate(self.section_text_list[i].get_text_list()[1:]):
                     self.ennemy_list[i].battle_script_data['text_offset'][j] = offset
                     self.ennemy_list[i].battle_script_data['battle_text'][j] = text
                     offset += len(text)
