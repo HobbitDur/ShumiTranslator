@@ -22,7 +22,7 @@ from view.tabholderwidget import TabHolderWidget
 class ShumiTranslator(QWidget):
     CSV_FOLDER = "csv"
     FILE_MANAGED = ['kernel.bin', 'namedic.bin', 'mngrp.bin', 'FF8.exe/remaster.dat', 'c0mxx.dat', 'field.fs']
-    FILE_MANAGED_REGEX = ['*kernel*.bin', '*namedic*.bin', '*mngrp*.bin', 'FF8_*.exe;off_cards_names_*.dat', "c0m0*.dat", 'field*.fs']
+    FILE_MANAGED_REGEX = ['*kernel*.bin', '*namedic*.bin', '*mngrp*.bin', 'FF8_*.exe;off_cards_names_*.dat', "c0m*.dat", 'field*.fs']
 
     def __init__(self, icon_path='Resources'):
         QWidget.__init__(self)
@@ -154,6 +154,9 @@ class ShumiTranslator(QWidget):
             "The file as a size max (40456?).<br/>"
             "If you wish to get rid of parenthesis you can uncompress<br/>"
             "But pls compress before saving to avoid size problem.")
+        self.warning_comx_label_widget = QLabel(
+            "c0m127 and all files > 143 are garbage so they are ignored even if selected")
+        self.warning_comx_label_widget.hide()
         self.warning_kernel_label_widget.hide()
         self.warning_mngrp_label_widget = QLabel(
             "{x0...} are yet unknown text correspondence. Pls don't modify them.<br/>"
@@ -193,6 +196,7 @@ class ShumiTranslator(QWidget):
         # Main management
         self.window_layout.addLayout(self.layout_full_top)
         self.layout_main.addWidget(self.warning_kernel_label_widget)
+        self.layout_main.addWidget(self.warning_comx_label_widget)
         self.layout_main.addWidget(self.warning_mngrp_label_widget)
         self.layout_main.addWidget(self.warning_exe_label_widget)
         self.layout_main.addWidget(self.warning_field_label_widget)
@@ -394,6 +398,7 @@ class ShumiTranslator(QWidget):
         self.compress_button.hide()
         self.uncompress_button.hide()
         self.warning_kernel_label_widget.hide()
+        self.warning_comx_label_widget.hide()
         self.warning_mngrp_label_widget.hide()
         self.warning_exe_label_widget.hide()
         self.warning_field_label_widget.hide()
@@ -406,6 +411,12 @@ class ShumiTranslator(QWidget):
             filter_file =self.FILE_MANAGED_REGEX[self.file_type_selection_widget.currentIndex()]
             if self.file_type_selection_widget.currentIndex() == 4: # c0mxx.dat
                 file_to_load = self.file_dialog.getOpenFileNames(parent=self, caption="Find file", filter=filter_file, directory=os.getcwd())[0]
+                new_file_to_load = []
+                for file in file_to_load:
+                    file_name = pathlib.Path(file).name.split('.')[0].split("m")[1]
+                    if int(file_name) < 144 and int(file_name) != 127:  # Not Garbage data
+                        new_file_to_load.append(file)
+                file_to_load = new_file_to_load
             else:
                 file_to_load = self.file_dialog.getOpenFileName(parent=self, caption="Find file", filter=filter_file, directory=os.getcwd())[0]
 
@@ -497,6 +508,7 @@ class ShumiTranslator(QWidget):
 
                 self.warning_exe_label_widget.show()
             elif ".dat" in file_name and "c0m" in file_name:
+                self.warning_comx_label_widget.show()
                 self.battle_manager.reset()
                 self.file_loaded_type = FileType.DAT
                 for file_to_load in self.file_loaded:
