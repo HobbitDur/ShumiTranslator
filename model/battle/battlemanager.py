@@ -1,10 +1,9 @@
 import pathlib
-
-from IfritAI.ennemy import Ennemy
 import csv
 
 from FF8GameData.gamedata import GameData
 from FF8GameData.GenericSection.listff8text import ListFF8Text
+from IfritAI.IfritAI.ennemy import Ennemy
 
 
 class BattleManager:
