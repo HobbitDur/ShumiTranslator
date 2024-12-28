@@ -119,7 +119,7 @@ class ShumiTranslator(QWidget):
         self.file_type_selection_widget = QComboBox()
         self.file_type_selection_widget.addItems(self.FILE_MANAGED)
         self.file_type_selection_widget.setToolTip("Allow you to choose which file to load")
-        self.file_type_selection_widget.setCurrentIndex(4) # Change this for faster test
+        self.file_type_selection_widget.setCurrentIndex(0) # Change this for faster test
 
         self.file_type_layout = QHBoxLayout()
         self.file_type_layout.addWidget(self.file_type_selection_label)

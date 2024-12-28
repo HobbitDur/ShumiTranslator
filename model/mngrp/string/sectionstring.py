@@ -68,7 +68,7 @@ class SectionString(Section):
         if csv_to_load:
             with open(csv_to_load, newline='', encoding="utf-8") as csv_file:
 
-                csv_data = csv.reader(csv_file, delimiter=GameData.find_delimiter_from_csv_file(csv_path), quotechar='|')
+                csv_data = csv.reader(csv_file, delimiter=GameData.find_delimiter_from_csv_file(csv_to_load), quotechar='|')
                 # ['Text id', 'Text']
                 for row_index, row in enumerate(csv_data):
                     if row_index == 0:  # Ignoring title row
