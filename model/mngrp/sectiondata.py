@@ -28,6 +28,7 @@ class SectionData(Section):
     def __analyse_data(self, nb_offset, ignore_empty_offset=True):
         for i in range(nb_offset):
             data_offset = self._data_hex[i * self.OFFSET_SIZE:(i + 1) * self.OFFSET_SIZE]
+            print(data_offset)
             if ignore_empty_offset and bytes(data_offset) == bytes(b'\x00\x00'):
                 continue
             new_data = FF8Data(game_data=self._game_data, own_offset=i * self.OFFSET_SIZE,
@@ -47,6 +48,8 @@ class SectionData(Section):
             print(
                 f"The size of the text list ({len(text_list)}) is different than the nb of offset ({self._nb_offset})")
 
+        print(text_list)
+        print(self._offset_list)
         new_list = []
         index_value_list = 0
         current_offset = shift

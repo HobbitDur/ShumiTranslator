@@ -1,6 +1,6 @@
+import csv
 import os
 import pathlib
-
 
 from PyQt6.QtCore import QSize
 from PyQt6.QtGui import QIcon
@@ -119,7 +119,7 @@ class ShumiTranslator(QWidget):
         self.file_type_selection_widget = QComboBox()
         self.file_type_selection_widget.addItems(self.FILE_MANAGED)
         self.file_type_selection_widget.setToolTip("Allow you to choose which file to load")
-        self.file_type_selection_widget.setCurrentIndex(0) # Change this for faster test
+        self.file_type_selection_widget.setCurrentIndex(2)  # Change this for faster test
 
         self.file_type_layout = QHBoxLayout()
         self.file_type_layout.addWidget(self.file_type_selection_label)
@@ -312,19 +312,7 @@ class ShumiTranslator(QWidget):
                                                          filter="*.csv", directory=directory)[0]
             if csv_to_load:
                 try:
-                    if self.file_loaded_type == FileType.KERNEL:
-                        self.kernel_manager.load_csv(csv_to_load=csv_to_load, section_widget_list=self.section_widget_list)
-                    elif self.file_loaded_type == FileType.NAMEDIC:
-                        self.namedic_manager.load_csv(csv_to_load=csv_to_load, section_widget_list=self.section_widget_list)
-                    elif self.file_loaded_type == FileType.MNGRP:
-                        self.mngrp_manager.load_csv(csv_to_load=csv_to_load, section_widget_list=self.section_widget_list)
-                    elif self.file_loaded_type == FileType.EXE:
-                        self.exe_manager.load_csv(csv_to_load=csv_to_load, section_widget_list=self.section_widget_list)
-                    elif self.file_loaded_type == FileType.DAT:
-                        self.battle_manager.load_csv(csv_to_load=csv_to_load, section_widget_list=self.section_widget_list)
-                    elif self.file_loaded_type == FileType.REMASTER_DAT:
-                        self.remaster_dat_manager.load_csv(csv_to_load=csv_to_load, section_widget_list=self.section_widget_list)
-                    elif self.file_loaded_type == FileType.FIELD_FS:
+                    if self.file_loaded_type == FileType.FIELD_FS:
                         self.scroll_area.setEnabled(False)
                         self.csv_upload_button.setEnabled(False)
                         self.csv_save_button.setEnabled(False)
@@ -339,6 +327,26 @@ class ShumiTranslator(QWidget):
                         message_box.setWindowTitle("ShumiTranslator - Data saved")
                         message_box.setWindowIcon(self.__shumi_icon)
                         message_box.exec()
+                    else:
+
+                        with open(csv_to_load, newline='', encoding="utf-8") as csv_file:
+
+                            csv_data = csv.reader(csv_file, delimiter=GameData.find_delimiter_from_csv_file(csv_to_load), quotechar='|')
+                            #   ['Section data name', 'Section widget id', 'Text Sub id', 'Text']
+                            for row_index, row in enumerate(csv_data):
+                                if row_index == 0:  # Ignoring title row
+                                    continue
+                                # section_data_name = row[0]
+                                section_widget_id = int(row[1])
+                                text_sub_id = int(row[2])
+                                text_loaded = row[3]
+
+                                if text_loaded == "":
+                                    continue
+                                # Managing this case as many people do the mistake.
+                                text_loaded = text_loaded.replace('`', "'")
+                                self.section_widget_list[section_widget_id].set_text_from_id(text_sub_id, text_loaded)
+
                 except UnicodeDecodeError as e:
                     print(e)
                     message_box = QMessageBox()
@@ -362,29 +370,28 @@ class ShumiTranslator(QWidget):
             csv_name = pathlib.Path(self.file_loaded).name
         csv_name = csv_name.split('.')[0] + '.csv'
         default_file_name = os.path.join(self.CSV_FOLDER, csv_name)
-        file_to_save = self.csv_save_dialog.getSaveFileName(parent=self, caption="Find csv file", filter="*.csv",
-                                                            directory=default_file_name)[0]
+        file_to_save = self.csv_save_dialog.getSaveFileName(parent=self, caption="Find csv file", filter="*.csv", directory=default_file_name)[0]
+
         if file_to_save:
-            if self.file_loaded_type == FileType.KERNEL:
-                self.kernel_manager.save_csv(file_to_save)
-            elif self.file_loaded_type == FileType.NAMEDIC:
-                self.namedic_manager.save_csv(file_to_save)
-            elif self.file_loaded_type == FileType.MNGRP:
-                self.mngrp_manager.save_csv(file_to_save)
-            elif self.file_loaded_type == FileType.EXE:
-                self.exe_manager.save_csv(file_to_save)
-            elif self.file_loaded_type == FileType.DAT:
-                self.battle_manager.save_csv(file_to_save)
-            elif self.file_loaded_type == FileType.REMASTER_DAT:
-                self.remaster_dat_manager.save_csv(file_to_save)
-            elif self.file_loaded_type == FileType.FIELD_FS:
+            if self.file_loaded_type == FileType.FIELD_FS:
                 self.scroll_area.setEnabled(False)
                 self.csv_upload_button.setEnabled(False)
                 self.csv_save_button.setEnabled(False)
                 self.field_fs_manager.save_csv(file_to_save)
-                self.scroll_area.setEnabled(True)
-                self.csv_upload_button.setEnabled(True)
-                self.csv_save_button.setEnabled(True)
+            else:
+                with open(file_to_save, 'w', newline='', encoding="utf-8") as csv_file:
+                    csv_writer = csv.writer(csv_file, delimiter=GameData.find_delimiter_from_csv_file(file_to_save), quotechar='|', quoting=csv.QUOTE_MINIMAL)
+                    csv_writer.writerow(
+                        ['Section data name', 'Section Widget id', 'Text Sub id', 'Text'])
+
+                    for section_widget_id, section_widget in enumerate(self.section_widget_list):
+                        for ff8_widget_id, ff8_text in enumerate(section_widget.section.get_text_list()):
+                            csv_writer.writerow([section_widget.section.name, section_widget_id, ff8_widget_id, ff8_text.get_str()])
+
+        if self.file_loaded_type == FileType.FIELD_FS:
+            self.scroll_area.setEnabled(True)
+            self.csv_upload_button.setEnabled(True)
+            self.csv_save_button.setEnabled(True)
 
     def __load_file(self, file_to_load: str = ""):
         print("Loading file")
@@ -404,13 +411,13 @@ class ShumiTranslator(QWidget):
         self.warning_field_label_widget.hide()
 
         # file_to_load = [os.path.join("OriginalFiles", "battle", "c0m028.dat")]  # For developing faster
-        #file_to_load = os.path.join("OriginalFiles", "c0m001.dat")  # For developing faster
-        #file_to_load = ['I:/Mod_FF8/Outils modding/Fichier de travail/GitProject/ShumiTranslator/OriginalFiles/c0m001.dat']  # For developing faster
+        #file_to_load = os.path.join("OriginalFiles", "mngrp.bin")  # For developing faster
+        # file_to_load = ['I:/Mod_FF8/Outils modding/Fichier de travail/GitProject/ShumiTranslator/OriginalFiles/c0m001.dat']  # For developing faster
         # file_to_load = os.path.join("OriginalFiles", "FF8_EN.exe")  # For developing faster
 
         if not file_to_load:
-            filter_file =self.FILE_MANAGED_REGEX[self.file_type_selection_widget.currentIndex()]
-            if self.file_type_selection_widget.currentIndex() == 4: # c0mxx.dat
+            filter_file = self.FILE_MANAGED_REGEX[self.file_type_selection_widget.currentIndex()]
+            if self.file_type_selection_widget.currentIndex() == 4:  # c0mxx.dat
                 file_to_load = self.file_dialog.getOpenFileNames(parent=self, caption="Find file", filter=filter_file, directory=os.getcwd())[0]
                 new_file_to_load = []
                 for file in file_to_load:
@@ -438,7 +445,6 @@ class ShumiTranslator(QWidget):
                 section_widget.deleteLater()
             self.section_widget_list = []
 
-
             # Choose which manager to load
             if "kernel" in file_name and ".bin" in file_name:
                 self.file_loaded_type = FileType.KERNEL
@@ -463,9 +469,9 @@ class ShumiTranslator(QWidget):
                 self.layout_translation_lines.addWidget(self.section_widget_list[-1])
             elif "mngrp" in file_name and ".bin" in file_name:
                 self.file_loaded_type = FileType.MNGRP
-                #self.file_mngrphd_loaded = os.path.join("OriginalFiles", "field.fs")  # For developing faster
+                #self.file_mngrphd_loaded = os.path.join("OriginalFiles", "mngrphd.bin")  # For developing faster
                 self.file_mngrphd_loaded = self.file_dialog.getOpenFileName(parent=self, caption="Find mngrphd", filter="*mngrphd*.bin",
-                                                                            directory=os.getcwd())[0]
+                                                                           directory=os.getcwd())[0]
 
                 if self.file_mngrphd_loaded:
                     self.mngrp_manager.load_file(self.file_mngrphd_loaded, self.file_loaded)
@@ -519,9 +525,9 @@ class ShumiTranslator(QWidget):
                 first_section_line_index = 2
                 for section in text_section_list:
                     self.section_widget_list.append(SectionWidget(section, first_section_line_index))
-                    first_section_line_index+=len(section.get_text_list())
+                    first_section_line_index += len(section.get_text_list())
                     self.layout_translation_lines.addWidget(self.section_widget_list[-1])
-            elif ".dat" in file_name:# Remaster file
+            elif ".dat" in file_name:  # Remaster file
                 self.file_loaded_type = FileType.REMASTER_DAT
                 if "off_cards_names" in file_name and "2" not in file_name:
                     type_to_load = RemasterCardType.CARD_NAME
@@ -539,7 +545,6 @@ class ShumiTranslator(QWidget):
                 self.warning_field_label_widget.show()
                 self.file_loaded_type = FileType.FIELD_FS
                 self.field_fs_manager.load_file(self.file_loaded)
-
 
             self.csv_save_button.setEnabled(True)
             self.save_button.setEnabled(True)
@@ -565,5 +570,3 @@ class ShumiTranslator(QWidget):
         self.compress_button.setEnabled(True)
         self.uncompress_button.setEnabled(True)
         self.scroll_area.setEnabled(True)
-
-

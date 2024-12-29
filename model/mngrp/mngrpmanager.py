@@ -74,6 +74,7 @@ class MngrpManager:
             section_name = self.game_data.mngrp_data_json["sections"][section_id]["section_name"]
             section_offset_value = section_mngrp.own_offset
             section_data_hex = section_mngrp.get_data_hex()
+
             if section_data_type == SectionType.MNGRP_STRING:
                 new_section = SectionString(game_data=self.game_data, data_hex=section_data_hex, id=section_id,
                                             own_offset=section_offset_value, name=section_name)
@@ -124,47 +125,26 @@ class MngrpManager:
             if new_section:
                 self.mngrp.set_section_by_id(section_id, new_section)
 
-    def save_csv(self, csv_path):
+    def save_csv(self, csv_path, section_widget_list):
         if csv_path:
             with open(csv_path, 'w', newline='', encoding="utf-8") as csv_file:
                 csv_writer = csv.writer(csv_file, delimiter=GameData.find_delimiter_from_csv_file(csv_path), quotechar='|', quoting=csv.QUOTE_MINIMAL)
                 csv_writer.writerow(
-                    ['Section data name', 'Section id', 'Subsection id', 'Text Sub id', 'Text'])
+                    ['Section data name', 'Section id', 'Text Sub id', 'Text'])
                 text_line = 2
-                for index_section, section in enumerate(self.mngrp.get_section_list()):
-                    if section.type in (
-                            SectionType.TKMNMES, SectionType.MNGRP_STRING, SectionType.FF8_TEXT,
-                            SectionType.MNGRP_TEXTBOX, SectionType.MNGRP_M00MSG):
-                        if section.type == SectionType.TKMNMES:
-                            for i in range(section.get_nb_text_section()):
-                                text_section = section.get_text_section_by_id(i)
-                                subsection_id = text_section.id
-                                for ff8text in text_section.get_text_list():
-                                    csv_writer.writerow(
-                                        [section.name, section.id, subsection_id, ff8text.id,  ff8text.get_str()])
-                                    text_line += 1
-                        if section.type == SectionType.MNGRP_TEXTBOX:
-                            for i in range(section.get_nb_entry_section()):
-                                entry_section = section.get_entry_section_by_id(i)
-                                subsection_id = entry_section.id
-                                for ff8text in entry_section.get_text_list():
-                                    csv_writer.writerow(
-                                        [section.name, section.id, subsection_id, ff8text.id,  ff8text.get_str()])
-                                    text_line += 1
-                        if section.type in (SectionType.MNGRP_M00MSG, SectionType.FF8_TEXT, SectionType.MNGRP_STRING):
-                                for ff8text in section.get_text_list():
-                                    csv_writer.writerow(
-                                        [section.name, section.id, 0, ff8text.id,  ff8text.get_str()])
-                                    text_line += 1
+
+                for section_widget in section_widget_list:
+                    for ff8_text in section_widget.section.get_text_list():
+                        csv_writer.writerow([section_widget.section.name, section_widget.section.id, ff8_text.id, ff8_text.get_str()])
 
 
     def load_csv(self, csv_to_load, section_widget_list):
         if csv_to_load:
+            print("load csv")
             with open(csv_to_load, newline='', encoding="utf-8") as csv_file:
 
                 csv_data = csv.reader(csv_file, delimiter=GameData.find_delimiter_from_csv_file(csv_to_load), quotechar='|')
                 #   ['Section data name', 'Section id', 'Subsection id', 'Text Sub id', 'Text']
-                tkmnmes_index =0
                 for row_index, row in enumerate(csv_data):
                     if row_index == 0:  # Ignoring title row
                         continue
@@ -179,12 +159,41 @@ class MngrpManager:
                         continue
                     # Managing this case as many people do the mistake.
                     text_loaded = text_loaded.replace('`', "'")
-                    for widget_index, widget in enumerate(section_widget_list):
-                        if widget.section.type in (
+
+                    for index_section, section in enumerate(self.mngrp.get_section_list()):
+                        if section.id != section_id:
+                            continue
+                        if section.type in (
                                 SectionType.TKMNMES, SectionType.MNGRP_STRING, SectionType.FF8_TEXT,
                                 SectionType.MNGRP_TEXTBOX, SectionType.MNGRP_M00MSG):
+                            if section.type == SectionType.TKMNMES:
+                                for i in range(section.get_nb_text_section()):
+                                    text_section = section.get_text_section_by_id(i)
+                                    subsection_id = text_section.id
+                                    if subsection_id == subsection_id:
+                                        text_section
+
+
+
+
+
+
+
+
+
+
+
+                    for widget_index, widget in enumerate(section_widget_list):
+                        print(widget.section.type)
+                        print(widget.section.id)
+                        if widget.section_type in (
+                                SectionType.TKMNMES, SectionType.MNGRP_STRING, SectionType.FF8_TEXT,
+                                SectionType.MNGRP_TEXTBOX, SectionType.MNGRP_M00MSG):
+                            if widget.section.type == SectionType.TKMNMES:
+                                print(widget.section.id)
+                                print(section_id)
                             if widget.section.id == section_id:
-                                if widget.section.type == SectionType.MNGRP_TEXTBOX:
+                                if widget.section_type == SectionType.MNGRP_TEXTBOX:
                                     nb_sub_element = 0
                                     for i in range(widget.section.get_nb_entry_section()):
                                         entry_section = widget.section.get_entry_section_by_id(i)
@@ -197,7 +206,7 @@ class MngrpManager:
                                         elif entry_section.id > subsection_id :
                                             print(
                                                 f"In csv, unexpected error where subsection id ({subsection_id})> entry_section id ({entry_section.id})")
-                                elif widget.section.type == SectionType.TKMNMES:
+                                elif widget.section_type == SectionType.TKMNMES:
 
                                     nb_sub_element = 0
                                     for i in range(widget.section.get_nb_text_section()):
@@ -210,8 +219,6 @@ class MngrpManager:
                                             break
                                         elif text_section.id > subsection_id:
                                             print(f"In csv, unexpected error where subsection id ({subsection_id})> text_section id ({text_section.id})")
-
-
 
                                 section_widget_list[widget_index].set_text_from_id(text_sub_id, text_loaded)
                                 break
