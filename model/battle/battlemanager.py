@@ -61,35 +61,3 @@ class BattleManager:
                     offset += len(text)
                 self.ennemy_list[i].write_data_to_file(self.game_data, self.file_list[i])
 
-    def save_csv(self, csv_path):
-        if csv_path:
-            with open(csv_path, 'w', newline='', encoding="utf-8") as csv_file:
-                csv_writer = csv.writer(csv_file, delimiter=GameData.find_delimiter_from_csv_file(csv_path), quotechar='|', quoting=csv.QUOTE_MINIMAL)
-                csv_writer.writerow(['Monster name', 'Section id', 'File name', 'Text Sub id', 'Text'])
-                for index_section, section in enumerate(self.section_text_list):
-                    for ff8text in section.get_text_list():
-                        file_name = pathlib.Path(self.file_list[index_section]).name
-                        csv_writer.writerow([section.name, section.id, file_name, ff8text.id, ff8text.get_str()])
-
-    def load_csv(self, csv_to_load, section_widget_list):
-        if csv_to_load:
-            with open(csv_to_load, newline='', encoding="utf-8") as csv_file:
-                csv_data = csv.reader(csv_file, delimiter=GameData.find_delimiter_from_csv_file(csv_to_load), quotechar='|')
-                #  ['Monster name', 'Section id', 'File name', 'Text Sub id', 'Text']
-                for row_index, row in enumerate(csv_data):
-                    if row_index == 0:  # Ignoring title row
-                        continue
-                    # section_data_name = row[0]
-                    section_id = int(row[1])
-                    # file_name =row[2]
-                    text_sub_id = int(row[3])
-                    text_loaded = row[4]
-
-                    if text_loaded == "":
-                        continue
-                    # Managing this case as many people do the mistake.
-                    text_loaded = text_loaded.replace('`', "'")
-                    for widget_index, widget in enumerate(section_widget_list):
-                        if widget.section.id == section_id:
-                            section_widget_list[widget_index].set_text_from_id(text_sub_id, text_loaded)
-                            break

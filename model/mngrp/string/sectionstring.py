@@ -69,20 +69,17 @@ class SectionString(Section):
         return self._text_section
 
     def __analyse_data(self):
-        print("__analyse_data of sectionstring")
         self._nb_offset = int.from_bytes(self._data_hex[0:self.HEADER_SIZE], byteorder='little')
         self._offset_section = SectionData(game_data=self._game_data,
                                            data_hex=self._data_hex[self.HEADER_SIZE:self._nb_offset * self.OFFSET_SIZE + self.HEADER_SIZE], id=0,
                                            own_offset=self.HEADER_SIZE, nb_offset=self._nb_offset, name="", ignore_empty_offset=False)
         text_data_start = 0
         offset_list = self._offset_section.get_all_offset()
-
-        print(f"Offset list: {offset_list}")
         for offset in offset_list:
             if offset != 0:
                 text_data_start = offset
                 break
-        text_data = self._data_hex[text_data_start:len(self._data_hex)]
+        text_data = self._data_hex[text_data_start:]
         self._text_section = ListFF8Text(game_data=self._game_data, data_hex=text_data, id=self.id, own_offset=self.own_offset, name=self.name,
                                          section_data_linked=self._offset_section)
         self._text_section.section_data_linked.section_text_linked = self._text_section
@@ -90,11 +87,8 @@ class SectionString(Section):
         # The original offset start from the start of the section, so we need to shift them for the text offset.
         offset_text_list = []
         for i in range(len(offset_list)):
-            #if offset_list[i] != 0 and offset_list[i] >= offset_list[i-1]:
             if offset_list[i] != 0:
                 offset_text_list.append(offset_list[i] - text_data_start)
-            #elif offset_list[i] < offset_list[i-1] and offset_list[i] != 0:
-            #    print(f"Unexpected case of negative offset in sectionstring where the previous offset is {offset_list[i-1]} and next offset is {offset_list[i]}")
         self._text_section.init_text(offset_text_list)
 
     def get_text_list(self):
