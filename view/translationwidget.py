@@ -78,6 +78,7 @@ class TranslationWidget(QWidget):
 
     def change_custom_text(self, custom_text):
         self.__custom_text_widget.setPlainText(custom_text)
+        self.__custom_text_widget.setPlainText(self.translation.get_str().replace('\\n', '\n'))
 
     def get_custom_text(self):
         self.__custom_text_widget.toPlainText()

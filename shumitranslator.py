@@ -119,7 +119,7 @@ class ShumiTranslator(QWidget):
         self.file_type_selection_widget = QComboBox()
         self.file_type_selection_widget.addItems(self.FILE_MANAGED)
         self.file_type_selection_widget.setToolTip("Allow you to choose which file to load")
-        self.file_type_selection_widget.setCurrentIndex(0)  # Change this for faster test
+        self.file_type_selection_widget.setCurrentIndex(3)  # Change this for faster test
 
         self.file_type_layout = QHBoxLayout()
         self.file_type_layout.addWidget(self.file_type_selection_label)
@@ -164,7 +164,10 @@ class ShumiTranslator(QWidget):
         self.warning_mngrp_label_widget.hide()
         self.warning_exe_label_widget = QLabel(
             "/!\\ Only compatible with FFNx (2000 and 2013 version)<br/>"
-            "When saving, this tool produce msd files that need to be put in the folder direct/exe/")
+            "W"
+            "hen saving, this tool produce:<br/>"
+            "- msd files that need to be put in the folder direct/exe/<br/>"
+            "- hext files that need to be put in hext/nv depending of your version<br/>")
         self.warning_exe_label_widget.hide()
         self.warning_field_label_widget = QLabel(
             "This tool use deling, an external tool done my myst6re, to manage all field text (what character says). <br/> Due to this, the tool doesn't offer direct "
@@ -263,7 +266,7 @@ class ShumiTranslator(QWidget):
                 folder_to_save = self.file_dialog.getExistingDirectory(parent=self, caption="Save msd file", directory=os.getcwd())
                 if folder_to_save:
                     self.exe_manager.save_file(folder_to_save)
-                    popup_text = "Msd files saved to folder <b>{}</b>".format(pathlib.Path(folder_to_save).name)
+                    popup_text = "Msd and hext files saved to folder <b>{}</b>".format(pathlib.Path(folder_to_save).name)
                 else:
                     popup_save = False
             elif self.file_loaded_type == FileType.DAT:
@@ -413,7 +416,7 @@ class ShumiTranslator(QWidget):
         # file_to_load = [os.path.join("OriginalFiles", "battle", "c0m028.dat")]  # For developing faster
         # file_to_load = os.path.join("OriginalFiles", "mngrp.bin")  # For developing faster
         # file_to_load = ['I:/Mod_FF8/Outils modding/Fichier de travail/GitProject/ShumiTranslator/OriginalFiles/c0m001.dat']  # For developing faster
-        # file_to_load = os.path.join("OriginalFiles", "FF8_EN.exe")  # For developing faster
+        file_to_load = os.path.join("OriginalFiles", "FF8_EN.exe")  # For developing faster
 
         if not file_to_load:
             filter_file = self.FILE_MANAGED_REGEX[self.file_type_selection_widget.currentIndex()]
@@ -504,13 +507,15 @@ class ShumiTranslator(QWidget):
                     data_hex_exe.extend(file.read())
                 self.exe_manager.load_file(self.file_loaded)
                 first_section_line_index = 2
-                self.section_widget_list.append(
-                    SectionWidget(self.exe_manager.get_exe_section().get_section_card_name().get_text_section(), first_section_line_index))
+                self.section_widget_list.append(SectionWidget(self.exe_manager.get_exe_section().get_section_card_misc_text().get_text_section(), first_section_line_index))
+                first_section_line_index += len(self.exe_manager.get_exe_section().get_section_card_misc_text().get_text_section().get_text_list())
+                self.layout_translation_lines.addWidget(self.section_widget_list[-1])
+
+                self.section_widget_list.append(SectionWidget(self.exe_manager.get_exe_section().get_section_card_name().get_text_section(), first_section_line_index))
                 first_section_line_index += len(self.exe_manager.get_exe_section().get_section_card_name().get_text_section().get_text_list())
                 self.layout_translation_lines.addWidget(self.section_widget_list[-1])
 
-                self.section_widget_list.append(
-                    SectionWidget(self.exe_manager.get_exe_section().get_section_scan_text().get_text_section(), first_section_line_index))
+                self.section_widget_list.append(SectionWidget(self.exe_manager.get_exe_section().get_section_scan_text().get_text_section(), first_section_line_index))
                 self.layout_translation_lines.addWidget(self.section_widget_list[-1])
 
                 self.warning_exe_label_widget.show()
