@@ -119,7 +119,7 @@ class ShumiTranslator(QWidget):
         self.file_type_selection_widget = QComboBox()
         self.file_type_selection_widget.addItems(self.FILE_MANAGED)
         self.file_type_selection_widget.setToolTip("Allow you to choose which file to load")
-        self.file_type_selection_widget.setCurrentIndex(3)  # Change this for faster test
+        self.file_type_selection_widget.setCurrentIndex(0)  # Change this for faster test
 
         self.file_type_layout = QHBoxLayout()
         self.file_type_layout.addWidget(self.file_type_selection_label)
@@ -416,7 +416,7 @@ class ShumiTranslator(QWidget):
         # file_to_load = [os.path.join("OriginalFiles", "battle", "c0m028.dat")]  # For developing faster
         # file_to_load = os.path.join("OriginalFiles", "mngrp.bin")  # For developing faster
         # file_to_load = ['I:/Mod_FF8/Outils modding/Fichier de travail/GitProject/ShumiTranslator/OriginalFiles/c0m001.dat']  # For developing faster
-        file_to_load = os.path.join("OriginalFiles", "FF8_EN.exe")  # For developing faster
+        #file_to_load = os.path.join("OriginalFiles", "FF8_EN.exe")  # For developing faster
 
         if not file_to_load:
             filter_file = self.FILE_MANAGED_REGEX[self.file_type_selection_widget.currentIndex()]
