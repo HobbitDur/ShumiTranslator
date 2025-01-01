@@ -25,9 +25,9 @@ Card misc text data;0;22;Direct
 Card misc text data;0;23;All
 Card misc text data;0;24;\nPlay\nQuit
 Card misc text data;0;25;Used up
-Card misc text data;0;26;{NewPage}
-Card misc text data;0;27;{NewPage}
-Card misc text data;0;28;{NewPage}
+Card misc text data;0;26;
+Card misc text data;0;27;
+Card misc text data;0;28;
 Card name;1;0;Geezard
 Card name;1;1;Funguar
 Card name;1;2;Bite Bug
