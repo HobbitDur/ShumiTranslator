@@ -61,10 +61,11 @@ class FieldFsManager:
 
                 # Check if the file does not end with .msd
                 if not file.lower().endswith('.msd'):
-                    try:
-                        os.remove(file_path)
-                    except Exception as e:
-                        print(f"Error deleting file {file_path}: {e}")
+                    if not file.lower().endswith('.jsm'):
+                        try:
+                            os.remove(file_path)
+                        except Exception as e:
+                            print(f"Error deleting file {file_path}: {e}")
 
     @staticmethod
     def move_contents_and_delete_parents(base_folder, target_field_folder):
