@@ -24,12 +24,15 @@ class ExeManager:
         file_scan = os.path.join(folder, "battle_scans.msd")
         card_name = os.path.join(folder, "card_names.msd")
         card_misc_text = os.path.join(folder, "card_misc_text.hext")
+        draw_misc_text = os.path.join(folder, "draw_misc_text.hext")
         with open(file_scan, "wb") as f:
             f.write(self.exe_section.produce_msd(MsdType.SCAN_TEXT))
         with open(card_name, "wb") as f:
             f.write(self.exe_section.produce_msd(MsdType.CARD_NAME))
         with open(card_misc_text, "w") as f:
-            f.write(self.exe_section.produce_str_hext())
+            f.write(self.exe_section.produce_misc_card_str_hext())
+        with open(draw_misc_text, "w") as f:
+            f.write(self.exe_section.produce_draw_str_hext())
 
     def load_file(self, file_exe):
         exe_hex = bytearray()

@@ -507,6 +507,10 @@ class ShumiTranslator(QWidget):
                     data_hex_exe.extend(file.read())
                 self.exe_manager.load_file(self.file_loaded)
                 first_section_line_index = 2
+                self.section_widget_list.append(SectionWidget(self.exe_manager.get_exe_section().get_section_draw_text().get_text_section(), first_section_line_index))
+                first_section_line_index += len(self.exe_manager.get_exe_section().get_section_draw_text().get_text_section().get_text_list())
+                self.layout_translation_lines.addWidget(self.section_widget_list[-1])
+
                 self.section_widget_list.append(SectionWidget(self.exe_manager.get_exe_section().get_section_card_misc_text().get_text_section(), first_section_line_index))
                 first_section_line_index += len(self.exe_manager.get_exe_section().get_section_card_misc_text().get_text_section().get_text_list())
                 self.layout_translation_lines.addWidget(self.section_widget_list[-1])
