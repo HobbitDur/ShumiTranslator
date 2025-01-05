@@ -384,12 +384,11 @@ class ShumiTranslator(QWidget):
             else:
                 with open(file_to_save, 'w', newline='', encoding="utf-8") as csv_file:
                     csv_writer = csv.writer(csv_file, delimiter=GameData.find_delimiter_from_csv_file(file_to_save), quotechar='|', quoting=csv.QUOTE_MINIMAL)
-                    csv_writer.writerow(
-                        ['Section data name', 'Section Widget id', 'Text Sub id', 'Text'])
+                    csv_writer.writerow(['Section data name', 'Section Widget id', 'Text Sub id', 'Text'])
 
                     for section_widget_id, section_widget in enumerate(self.section_widget_list):
                         for ff8_widget_id, ff8_text in enumerate(section_widget.section.get_text_list()):
-                            csv_writer.writerow([section_widget.section.name, section_widget_id, ff8_widget_id, ff8_text.get_str()])
+                            csv_writer.writerow([section_widget.section.name, section_widget_id, ff8_widget_id, ff8_text.get_str().replace('\n', '\\n')])
 
         if self.file_loaded_type == FileType.FIELD_FS:
             self.scroll_area.setEnabled(True)
