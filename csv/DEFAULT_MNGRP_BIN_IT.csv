@@ -868,327 +868,327 @@ Chocobo tutorial;18;11;                  {xc4}{xc4}{xc4}{xc4}       {Blue}Status
 Chocobo tutorial;18;12; {Blue}Optical communication Screen{White}  8/8\n1: Posizione neutrale.\n2: Premere il tasto giù per ricevere.\n3: Premere il tasto su per inviare.\n4: Battaglia tra i 2 Kochocobo.\n   Il Kochocobo a destra è il tuo.\n5: Se vinci, ottieni l'ID avversario.\n   Confrontala con l'ID personale\n   e usala come arma in battaglia.\n
 Chocobo tutorial;18;13;           {xc4}{xc4}{xc4}{Blue}Console-【Chocobo World】{White}  8/8\n
 Chocobo tutorial;18;14;1: ‘A passeggio': Kochocobo\n   da FF{xc6}{xc7} a 【Chocobo World】.\n2: ‘A casa': Kochocobo da\n    【Chocobo World】 a FF{xc6}{xc7}.\n3: ‘Ricomincia': Kochocobo da\n    FF{xc6}{xc7} a nuova 【Chocobo World】.\n4: ‘Istruzioni': quelle che vedi ora!\n
-Test seed general;19;0;{NewPage}\nComincia l'esame scritto SeeD.\nProvi il livello {x0a22}?\n\n\n\n  {Cursor_location_id:0x20}Sì      {Cursor_location_id:0x21}No\n
-Test seed general;19;1;{NewPage}\nComincia l'esame scritto della SeeD.\nIl tuo attuale livello è il numero {x0a22}.\nProvi il livello {x0a22}?\n\n\n  {Cursor_location_id:0x20}Sì      {Cursor_location_id:0x21}No\n
-Test seed general;19;2;{NewPage}\nHai preso 100 punti.\nHai passato l'esame scritto livello {x0a20}.\nIl tuo rango SeeD sale a {x0a26}.\n\n\n  {Cursor_location_id:0x20}Fine
-Test seed general;19;3;{NewPage}\nHai preso 100 punti.\nHai passato l'esame scritto livello {x0a20}.\nTuttavia, essendo {x0a26}ail tuo rango SeeD non cambia.\n\n\n  {Cursor_location_id:0x20}Fine
-Test seed general;19;4;{NewPage}\nHai preso {x0a20} punti.\nPurtroppo sei stato bocciato.\nMi raccomando, la prossima volta studia di più.\n\n\n  {Cursor_location_id:0x20}Fine
-Test seed general;19;5;{NewPage}\nSei al livello 30.\nNon ci sono più esami scritti da sostenere.\n\n\n\n  {Cursor_location_id:0x20}Indietro
-Test seed general;19;6;{NewPage}\nIl tuo rango ora è {x0a26}.\nNon esistono livelli più alti.\nVuoi comunque fare l'esame?\n\n\n  {Cursor_location_id:0x20}Sì      {Cursor_location_id:0x21}No\n
-Test seed general;19;7;{NewPage}\nDavvero?\n\n\n\n\n  {Cursor_location_id:0x20}No      {Cursor_location_id:0x21}Sì\n
-Test seed general;19;8;{NewPage}\nRipasso completo! Sai tutto del livello {x0a20}!\n\n\n\n\n  {Cursor_location_id:0x20}Fine
-Test seed general;19;9;{NewPage}\nHai preso {x0a20} punti. Che ti è successo?\n\n\n\n\n  {Cursor_location_id:0x20}Fine
-Test seed general;19;10;{NewPage}\nIl livello di {Squall} è {x0a20}.\nNon puoi fare esami SeeD oltre al livello {x0a22}.\nRitenta dopo Level up!\n\n\n  {Cursor_location_id:0x20}Fine
-Test seed 1 ;20;0;{NewPage}Domanda n°1\n\nIl comando Assimila estrae le magie dai nemici.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 1 ;20;1;{NewPage}Domanda n°2\n\nG.F. vuol dire Garden Fighter.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 1 ;20;2;{NewPage}Domanda n°3\n\nGli elementi sono in tutto 8.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 1 ;20;3;{NewPage}Domanda n°4\n\nIn battaglia, tanto più alto è il livello di\nFRZ (Forza), tanto maggiore sarà il danno\narrecato al nemico negli attacchi fisici.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 1 ;20;4;{NewPage}Domanda n°5\n\nJ HP è un abilità di tipo Junction.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 1 ;20;5;{NewPage}Domanda n°6\n\nNon si può scegliere quale abilità il G.F. deve\nimparare.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 1 ;20;6;{NewPage}Domanda n°7\n\nLa magia consuma MP.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 1 ;20;7;{NewPage}Domanda n°8\n\nIl nome del G.F. può essere cambiato.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 1 ;20;8;{NewPage}Domanda n°9\n\nI personaggi possono indossare un equipaggiamento\nprotettivo in battaglia.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 1 ;20;9;{NewPage}Domanda n°10\n\nIl G.F. aumenta di livello con l'acquisizione\ndi A.P. (Ability Point).\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 2 ;21;0;{NewPage}Domanda n°1\n\nFacendo Junction tra magie e RES la resistenza\ndel personaggio aumenta.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 2 ;21;1;{NewPage}Domanda n°2\n\nL'arma di {Squall} è il Gauntlet.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 2 ;21;2;{NewPage}Domanda n°3\n\nLe magie assimilate possono essere accumulate.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 2 ;21;3;{NewPage}Domanda n°4\n\nIn ogni azione che si compie in status veleno,\nil proprio HP diminuisce.\nSe non si agisce, non si riceve alcun danno.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 2 ;21;4;{NewPage}Domanda n°5\n\nSe si viene colpiti da un attacco fisico, lo status\nCaos viene annullato.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 2 ;21;5;{NewPage}Domanda n°6\n\nLa tecnica speciale di {Squall} è Haryuken.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 2 ;21;6;{NewPage}Domanda n°7\n\nPer fare Junction alle magie è necessaria\nun'abilità Junction corrispondente al parametro\nche si vuole collegare alle magie.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 2 ;21;7;{NewPage}Domanda n°8\n\n{CharacterAbility} indica le Abilità Junction\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 2 ;21;8;{NewPage}Domanda n°9\n\nGli 8 Elementi sono Fuoco, Gelo, Tuono, Terra,\nVeleno, Vento, Magia e Sacro.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 2 ;21;9;{NewPage}Domanda n°10\n\nC'è un limite al numero di magie che si possono\ncatturare dai mostri.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 3 ;22;0;{NewPage}Domanda n°1\n\nPozione può ripristinare l'HP del G.F.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 3 ;22;1;{NewPage}Domanda n°2\n\nLe magie si ottengono solo usando il comando\nAssimila in battaglia.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 3 ;22;2;{NewPage}Domanda n°3\n\nL'arma di Selphie è il nunchaku.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 3 ;22;3;{NewPage}Domanda n°4\n\nLe armi possono essere migliorate solo pagando\ndenaro.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 3 ;22;4;{NewPage}Domanda n°5\n\nChi dà l'ultimo colpo e finisce il nemico riceve il\nmaggiore punteggio di EXP.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 3 ;22;5;{NewPage}Domanda n°6\n\nPiù è alto il livello dei G.F., più potenti sono\ngli attacchi.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 3 ;22;6;{NewPage}Domanda n°7\n\n{PartyAbility} indica le Abilità comando.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 3 ;22;7;{NewPage}Domanda n°8\n\nOgni membro di un gruppo può avere fino a 5 abilità\npersonaggio e squadra.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 3 ;22;8;{NewPage}Domanda n°9\n\nLe abilità comando possono essere usate solo se\nassegnate prima al personaggio.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 3 ;22;9;{NewPage}Domanda n°10\n\nAP significa Action Point.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 4 ;23;0;{NewPage}Domanda n°1\n\nSolo {Squall} può usare il Gunblade.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 4 ;23;1;{NewPage}Domanda n°2\n\nAttacchi magici possono essere usati anche contro\ngli alleati.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 4 ;23;2;{NewPage}Domanda n°3\n\nC'è un'abilità che trasforma gli oggetti in magie.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 4 ;23;3;{NewPage}Domanda n°4\n\nMaggiore è la Resistenza, minori sono i danni fisici\nricevuti.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 4 ;23;4;{NewPage}Domanda n°5\n\nLa tecnica speciale Magia blu si apprende solo\nquando la si subisce da un mostro.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 4 ;23;5;{NewPage}Domanda n°6\n\nLa magia Dispel cura Veleno.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 4 ;23;6;{NewPage}Domanda n°7\n\nIn caso di K.O. e status alterato, se si riattiva\nl'assetto di guerra sparisce anche alterazione\ndi status.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 4 ;23;7;{NewPage}Domanda n°8\n\nNel centro addestramento del Garden c'è anche il\nmostro Archeosaurus.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 4 ;23;8;{NewPage}Domanda n°9\n\nIl Gunblade di {Squall} diventa più offensivo\npremendo {L2} al momento giusto.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 4 ;23;9;{NewPage}Domanda n°10\n\nÈ possibile accumulare fino a 255 unità per\nogni magia.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 5 ;24;0;{NewPage}Domanda n°1\n\n{MenuAbility} indica Abilità squadra.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 5 ;24;1;{NewPage}Domanda n°2\n\nSi possono assimilare magie anche dai propri\ncompagni di squadra.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 5 ;24;2;{NewPage}Domanda n°3\n\nIl gioco si può salvare ovunque e in qualsiasi\nmomento.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 5 ;24;3;{NewPage}Domanda n°4\n\nQuando un G.F. acquisisce un'abilità, possono\napparire anche nuove abilità da apprendere che\nfino a quel momento non erano state indicate.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 5 ;24;4;{NewPage}Domanda n°5\n\nLe Abilità personaggio devono essere impostate,\naltrimenti non si possono usare.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 5 ;24;5;{NewPage}Domanda n°6\n\nTanto più alto è il livello di VEL tanto più\nfrequentemente si possono usare le tecniche\nspeciali.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 5 ;24;6;{NewPage}Domanda n°7\n\nIl personaggio apprende abilità accumulando EXP.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 5 ;24;7;{NewPage}Domanda n°8\n\nCon status Zombie si è più deboli alla proprietà\nelementale Sacro.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 5 ;24;8;{NewPage}Domanda n°9\n\nAttacco fisico significa causare danni fisici con\nspade o fucili.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 5 ;24;9;{NewPage}Domanda n°10\n\nÈ possibile ottenere il Tubo di ferro utilizzando il\ncomando Ruba su Wendigo.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 6 ;25;0;{NewPage}Domanda n°1\n\nL'arma di Zell sono i guanti con le borchie.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 6 ;25;1;{NewPage}Domanda n°2\n\nSi può invocare il G.F. anche se si è in status\nMutismo.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 6 ;25;2;{NewPage}Domanda n°3\n\n{Ifrit} può imparare l'abilità ElbMag Fuoco.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 6 ;25;3;{NewPage}Domanda n°4\n\nSe un G.F. con una stessa abilità Junction del\npersonaggio è connesso al personaggio, l'effetto\ndi tale abilità rimane uguale.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 6 ;25;4;{NewPage}Domanda n°5\n\nTutte le alterazioni di status tornano alla\nnormalità alla fine della battaglia.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 6 ;25;5;{NewPage}Domanda n°6\n\nI comandi Attacco e Assimila possono essere usati\nanche senza Junction ai G.F.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 6 ;25;6;{NewPage}Domanda n°7\n\nSelezionando Auto, non è necessario premere {R1}\nper usare il Gunblade di {Squall}.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 6 ;25;7;{NewPage}Domanda n°8\n\nIl valore del parametro MAG determina la forza e\nl'efficacia delle magie usate.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 6 ;25;8;{NewPage}Domanda n°9\n\nJunction automatico magie permette di scegliere\nsolo fra le opzioni ATT e DIF.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 6 ;25;9;{NewPage}Domanda n°10\n\nIl mostro Grat attacca con magia Gas Ipnotico.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 7 ;26;0;{NewPage}Domanda n°1\n\nDST (destrezza) è il parametro indicante la\ncapacità di evitare gli attacchi fisici.\nPiù elevato è tale parametro, più difficile è subire\nattacchi fisici.\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 7 ;26;1;{NewPage}Domanda n°2\n\nUsando Fire contro nemici che assorbono magie\nelem. Fuoco si aumenta il loro HP.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 7 ;26;2;{NewPage}Domanda n°3\n\nIl colpo speciale che fa {Squall} con il Gunblade\nè diverso in base al tipo di Gunblade che possiede.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 7 ;26;3;{NewPage}Domanda n°4\n\nUsando ElbMag Fuoco si possono ottenere 5 unità\nFire con 1 Quarzo magico.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 7 ;26;4;{NewPage}Domanda n°5\n\nTra le carte, di alcune ne esiste un solo\nesemplare al mondo.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 7 ;26;5;{NewPage}Domanda n°6\n\nA volte Buel usa la magia Fire.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 7 ;26;6;{NewPage}Domanda n°7\n\nIl valore di Spirito influisce solamente sulla magia\nCaos. Maggiore è il valore di Spirito, maggiore sarà\nl'effetto di Caos.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 7 ;26;7;{NewPage}Domanda n°8\n\nSpesso al Geezard cadono le viti.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 7 ;26;8;{NewPage}Domanda n°9\n\nI nemici salgono di livello come te.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 7 ;26;9;{NewPage}Domanda n°10\n\nSe nella World Map invece di correre si cammina,\nsi incontreranno meno nemici.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 8 ;27;0;{NewPage}Domanda n°1\n\nI soldati di Galbadia non usano magie.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 8 ;27;1;{NewPage}Domanda n°2\n\nLe armi possono essere migliorate in modelli più\npotenti nel JunkShop.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 8 ;27;2;{NewPage}Domanda n°3\n\n{Fire} indica le abilità dei personaggi.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 8 ;27;3;{NewPage}Domanda n°4\n\nUsando Slow contro Haste si cancella Haste e si\ntorna allo status normale.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 8 ;27;4;{NewPage}Domanda n°5\n\nNella World Map si incontrano più nemici nei boschi\nche in pianura.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 8 ;27;5;{NewPage}Domanda n°6\n\nSe Elem-Dif supera il 100%, i danni dell'elemento\nassociato verranno assorbiti.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 8 ;27;6;{NewPage}Domanda n°7\n\nDi Garden esiste solo quello di Balamb.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 8 ;27;7;{NewPage}Domanda n°8\n\nNella Caverna di fuoco non ci sono Piros.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 8 ;27;8;{NewPage}Domanda n°9\n\nOgni G.F. può acquisire diverse abilità.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 8 ;27;9;{NewPage}Domanda n°10\n\nIl JunkShop è un negozio che vende armi.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 9 ;28;0;{NewPage}Domanda n°1\n\nSi può usare subito il G.F. assimilato dal nemico\ninvece di accumularlo.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 9 ;28;1;{NewPage}Domanda n°2\n\n{Thunder} indica le Abilità Menu.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 9 ;28;2;{NewPage}Domanda n°3\n\nLe magie che usa Selphie in Slot sono le magie\nche lei possiede.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 9 ;28;3;{NewPage}Domanda n°4\n\nSe il G.F. non ha affinità con i membri della squadra,\npotrebbe lasciare il gruppo.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 9 ;28;4;{NewPage}Domanda n°5\n\nSi possono usare le Abilità squadra anche senza\naverle assegnate al personaggio.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 9 ;28;5;{NewPage}Domanda n°6\n\nLasciando a lungo un G.F. in stato di K.O. muore\ne non può più tornare in battaglia.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 9 ;28;6;{NewPage}Domanda n°7\n\nÈ possibile elaborare 5 Colpi perforanti con\n1 Artiglio affilato.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 9 ;28;7;{NewPage}Domanda n°8\n\nSconfiggendo il nemico che ha causato alterazione\ndi status, lo status ritorna alla normalità.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 9 ;28;8;{NewPage}Domanda n°9\n\nI nemici cambiano tipo di attacco quando salgono\ndi livello.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 9 ;28;9;{NewPage}Domanda n°10\n\nCon status Veleno, qualsiasi movimento si faccia,\ndiminuisce l'HP.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 10;29;0;{NewPage}Domanda n°1\n\nLo status Caos viene causato da una magia che\nporta il medesimo nome.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 10;29;1;{NewPage}Domanda n°2\n\nUna Pozione restituisce 100 HP.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 10;29;2;{NewPage}Domanda n°3\n\nL'arma di Quistis è una spada magica.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 10;29;3;{NewPage}Domanda n°4\n\nATB significa Ability Tone Black.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 10;29;4;{NewPage}Domanda n°5\n\nIn stato Zombie si è più deboli a attacchi elementali\nFuoco.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 10;29;5;{NewPage}Domanda n°6\n\nSi può elaborare 1 Tenda da 1 Acqua torbida\nusando Elb Strumenti del Menu abilità.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 10;29;6;{NewPage}Domanda n°7\n\nL'EXP viene diviso equamente fra i membri della\nsquadra.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 10;29;7;{NewPage}Domanda n°8\n\nBlind è la magia che non fa usare il cervello\nin attacco.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 10;29;8;{NewPage}Domanda n°9\n\nAgo dorato o Esna curano lo status Pietra.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 10;29;9;{NewPage}Domanda n°10\n\nNulla cura lo status Sonno.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 11;30;0;{NewPage}Domanda n°1\n\nCamminando, il G.F. recupera HP.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 11;30;1;{NewPage}Domanda n°2\n\nSe il comando Assimila non è stato selezionato\nprecedentemente, non si possono ottenere magie\nda una fonte energetica.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 11;30;2;{NewPage}Domanda n°3\n\nI colpi finali distruggono sempre il nemico.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 11;30;3;{NewPage}Domanda n°4\n\n{Sire} può apprendere l'abilità Vitamina.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 11;30;4;{NewPage}Domanda n°5\n\nUn personaggio può effettuare Junction a più G.F.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 11;30;5;{NewPage}Domanda n°6\n\nAdamantio è l'oggetto che si ottiene da\nAdamanthart al 10° livello.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 11;30;6;{NewPage}Domanda n°7\n\nÈ possibile cambiare l'ordine di magie e oggetti\nche si usano in battaglia.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 11;30;7;{NewPage}Domanda n°8\n\nUna volta divenuto alleato, {Shiva} può\napprendere l‘abilità Sentenza.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 11;30;8;{NewPage}Domanda n°9\n\nDrain si usa per assorbire HP dagli avversari,\nma non si può usare contro gli alleati.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 11;30;9;{NewPage}Domanda n°10\n\nUtilizzando magie di ripristino con i mostri\nnon-morti, si danneggia il loro HP.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 12;31;0;{NewPage}Domanda n°1\n\nArmadodo assorbe attacchi elementali Terra.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 12;31;1;{NewPage}Domanda n°2\n\nCon ElbMag vitali si elaborano 20 unità Energira\ncon 1 Acqua torbida.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 12;31;2;{NewPage}Domanda n°3\n\nSi ottiene EXP con la vittoria in battaglia anche\nse si conclude con K.O.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 12;31;3;{NewPage}Domanda n°4\n\nEsistono solo due modi per ottenere un G.F.:\nO lo si sconfigge in battaglia, o lo si assimila\nda un nemico.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 12;31;4;{NewPage}Domanda n°5\n\nSi possono assimilare (e accumulare) al massimo\n9 magie dal nemico.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 12;31;5;{NewPage}Domanda n°6\n\nNon si può rubare l'Artiglio affilato a Belos.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 12;31;6;{NewPage}Domanda n°7\n\nSi può togliere temporaneamente la finestra dei\ncomandi durante la battaglia premendo {Select}\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 12;31;7;{NewPage}Domanda n°8\n\nI comandi che non si possono usare in status\nMutismo sono solo i comandi Magie e G.F.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 12;31;8;{NewPage}Domanda n°9\n\nSi può usare Scan sui membri della squadra.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 12;31;9;{NewPage}Domanda n°10\n\nImpostando magia elementale Veleno (100%)\na J ST-Dif, non si viene danneggiati da attacchi\nfisici di elemento Veleno.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 13;32;0;{NewPage}Domanda n°1\n\nSi ottiene EXP anche se, dopo aver danneggiato\nil nemico, si fugge dalla battaglia.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 13;32;1;{NewPage}Domanda n°2\n\nDa Chimera si ottiene Zanna blu.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 13;32;2;{NewPage}Domanda n°3\n\nLe abilità del G.F. funzionano solo se assegnate\nad un personaggio della squadra.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 13;32;3;{NewPage}Domanda n°4\n\nLa stessa fonte d'energia può essere usata una\nvolta sola.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 13;32;4;{NewPage}Domanda n°5\n\nIl G.F. {Quezacotl} può apprendere l'abilità\nTranscard senza usare un oggetto.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 13;32;5;{NewPage}Domanda n°6\n\nSe il comando Assimila fallisce più volte non lo si\npuò più usare per un po'.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 13;32;6;{NewPage}Domanda n°7\n\nL'affinità tra G.F. e personaggio peggiora se il G.F.\nè in stato di K.O.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 13;32;7;{NewPage}Domanda n°8\n\nSi può fuggire dal campo di battaglia con qualsiasi\nnemico, è solo questione di tempo.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 13;32;8;{NewPage}Domanda n°9\n\nBisogna avere le munizioni per far sparare il\nGunblade di {Squall}.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 13;32;9;{NewPage}Domanda n°10\n\nSe si attacca un nemico di elemento Fuoco si\nsubiscono sicuramente danni elem. Fuoco.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 14;33;0;{NewPage}Domanda n°1\n\nCi sono dei G.F. che si possono assimilare.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 14;33;1;{NewPage}Domanda n°2\n\nIn situazioni gravi {Squall} può usare più spesso\nil Renzokuken.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 14;33;2;{NewPage}Domanda n°3\n\nPiù alto è il livello di MIRA, più gli attacchi fisici\nandranno a segno. Ma se il livello DST del nemico\nè alto è possibile fallire il colpo.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 14;33;3;{NewPage}Domanda n°4\n\nCi sono alcuni oggetti che influiscono sulla affinità\ntra G.F. e personaggio.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 14;33;4;{NewPage}Domanda n°5\n\nCon la magia Shell si diminuiscono di 1/4 i danni\ndi un attacco magico subito.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 14;33;5;{NewPage}Domanda n°6\n\nC'è un mostro chiamato Belhelmelhel.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 14;33;6;{NewPage}Domanda n°7\n\nIn battaglia si può usare solo il comando Attacco\nse non sono stati fatti Junction ai G.F. o se non è\nstata configurata alcuna abilità.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 14;33;7;{NewPage}Domanda n°8\n\nSi ottiene maggiore EXP sconfiggendo i nemici con\nattacco fisico piuttosto che con le magie.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 14;33;8;{NewPage}Domanda n°9\n\nL'abilità Altruismo protegge solo i personaggi che si\ntrovano di fianco a chi la utilizza.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 14;33;9;{NewPage}Domanda n°10\n\nIl modo migliore di usare l'abilità Supporto è\npremere {Square} ripetutamente.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 15;34;0;{NewPage}Domanda n°1\n\nPiù volte si invoca un G.F., più aumenta l'affinità\ntra lui e il personaggio.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 15;34;1;{NewPage}Domanda n°2\n\nÈ impossibile che 1 solo personaggio abbia tutte le\nmagie.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 15;34;2;{NewPage}Domanda n°3\n\nLa Tempesta di sabbia di Focaral è un attacco\nelementale Vento.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 15;34;3;{NewPage}Domanda n°4\n\nÈ possibile usare Reflex per riflettere magie che\ngià sono state riflesse.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 15;34;4;{NewPage}Domanda n°5\n\nAnche in status Caos non si attacca mai da soli.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 15;34;5;{NewPage}Domanda n°6\n\nÈ possibile elaborare Vento artico da Blizzard\nusando le abilità.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 15;34;6;{NewPage}Domanda n°7\n\nIl G.F. {Cerberus} può imparare l'abilità\nBonus VEL.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 15;34;7;{NewPage}Domanda n°8\n\nI personaggi in status Mutismo non possono usare\nle magie, neanche dal Menu.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 15;34;8;{NewPage}Domanda n°9\n\nErba dell'eco cura status Pietra.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 15;34;9;{NewPage}Domanda n°10\n\nSe durante l'invocazione di un G.F. si entra in\nstatus Mutismo, l'invocazione si blocca.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 16;35;0;{NewPage}Domanda n°1\n\nCon l'HP a livelli molto bassi è più probabile che si\npossano usare le tecniche speciali.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 16;35;1;{NewPage}Domanda n°2\n\nEffettuando Junction ad un G.F. che ha appreso\nJ Elem-Dif e J Elem-Dif 2x, è possibile associare\n3 magie a Elem-Dif.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 16;35;2;{NewPage}Domanda n°3\n\nSulla finestra Junction del menu c'è un comando per\neliminare Junction ai G.F. senza perdere magie.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 16;35;3;{NewPage}Domanda n°4\n\nCi sono nemici il cui status non cambia nemmeno\nse viene attaccato con J ST-Att al 100%.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 16;35;4;{NewPage}Domanda n°5\n\nIl comando Assimila permette di assimilare le magie\naccumulate dei mostri. Se si assimilano loro\ntutte le magie, i mostri non potranno più usarle.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 16;35;5;{NewPage}Domanda n°6\n\nDa un Lesmathor di basso livello si ottiene un\nQuarzo magico.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 16;35;6;{NewPage}Domanda n°7\n\nMegapozione G è un oggetto che riattiva l'assetto\ndi guerra del G.F.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 16;35;7;{NewPage}Domanda n°8\n\nSi viene sconfitti quando tutta la squadra è K.O.,\nZombie o in status Pietra.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 16;35;8;{NewPage}Domanda n°9\n\nGranpozione permette il recupero di 1000 HP.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 16;35;9;{NewPage}Domanda n°10\n\nCon l'abilità Via per i guil si ottengono guil\ncamminando.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 17;36;0;{NewPage}Domanda n°1\n\nLe tecniche speciali possono essere usate più\nfrequentemente in status Aura.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 17;36;1;{NewPage}Domanda n°2\n\nLa Pozione G si può usare anche in battaglia per\nrecuperare l'HP dei G.F.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 17;36;2;{NewPage}Domanda n°3\n\nL'abilità Nozioni mediche permette di usare\n2 pozioni alla volta.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 17;36;3;{NewPage}Domanda n°4\n\nI Colpi finali sono più frequenti se il tempo con\ncui si preme il grilletto del Renzokuken di\n{Squall} è buono.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 17;36;4;{NewPage}Domanda n°5\n\nCon l'abilità Vigilanza si evitano gli attacchi alle\nspalle.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 17;36;5;{NewPage}Domanda n°6\n\nIn status Berserk è automatico l'uso di tecniche\nspeciali.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 17;36;6;{NewPage}Domanda n°7\n\nÈ possibile usare le pozioni dal menu per curare un\npersonaggio in status Zombie.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 17;36;7;{NewPage}Domanda n°8\n\nGli attacchi del G.F. {Alexander} sono di\nproprietà elementale Sacro.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 17;36;8;{NewPage}Domanda n°9\n\nDa un Archeosaurus si può ottenere il Dente\ndi drago.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 17;36;9;{NewPage}Domanda n°10\n\nCon Blind non si riconoscono i nemici e si possono\nattaccare i compagni di squadra.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 18;37;0;{NewPage}Domanda n°1\n\nPer quanto alto sia il proprio livello, non si può fare\nJunction se non si possiedono G.F.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 18;37;1;{NewPage}Domanda n°2\n\nReflex può rifrangere qualsiasi magia.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 18;37;2;{NewPage}Domanda n°3\n\nEsistono 30 tipi di Status.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 18;37;3;{NewPage}Domanda n°4\n\nNon esiste magia che cura lo status Zombie.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 18;37;4;{NewPage}Domanda n°5\n\nPremendo {L1} durante la battaglia, è possibile\nscegliere il target d'attacco dalle opzioni della\nfinestra che apparirà sullo schermo.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 18;37;5;{NewPage}Domanda n°6\n\nC'è solo un'abilità che si può apprendere da soli.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 18;37;6;{NewPage}Domanda n°7\n\nSe riceve un danno magico Wendigo cade a terra\ne spara colpi vibranti dalla bocca. \n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 18;37;7;{NewPage}Domanda n°8\n\nIn status Sonno l'HP si recupera lentamente.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 18;37;8;{NewPage}Domanda n°9\n\n{Carbuncle} è il G.F. che usa Protect e Shell su\ntutti i membri del gruppo.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 18;37;9;{NewPage}Domanda n°10\n\nCaos ha la precedenza su Berserk nel caso\nvengano usati contemporaneamente.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 19;38;0;{NewPage}Domanda n°1\n\nLa difesa contro la magia Ade è determinata\ndalla % di J ST-Dif Morte.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 19;38;1;{NewPage}Domanda n°2\n\nSe un personaggio in status Zombie effettua\nDrain ad un nemico col medesimo status, viene\ndanneggiato.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 19;38;2;{NewPage}Domanda n°3\n\nSe si viene morsi da Cokatoris a volte si può\nessere avvelenati.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 19;38;3;{NewPage}Domanda n°4\n\nLo status Invincibilità torna alla normalità alla\nfine della battaglia.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 19;38;4;{NewPage}Domanda n°5\n\nChimera è il mostro con 5 teste: drago, rana,\ncapra, uccello e cinghiale.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 19;38;5;{NewPage}Domanda n°6\n\nProtect non ha effetto con status RES 0.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 19;38;6;{NewPage}Domanda n°7\n\nPiù si usa la magia Levita, più si riesce a fluttuare\nnell'aria.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 19;38;7;{NewPage}Domanda n°8\n\nX-ATMO92 è invincibile.\nSi può tentare solo di fuggire.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 19;38;8;{NewPage}Domanda n°9\n\nPoiché Medusa riduce a 0 lo Spirito del nemico,\nnon ha effetto sui nemici con SPR 0.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 19;38;9;{NewPage}Domanda n°10\n\nIl JunkShop indica in grigio le nuove armi che\nvengono apprese dalla rivista ‘Armi mese'.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 20;39;0;{NewPage}Domanda n°1\n\nNon si incontrano nemici quando si sale in macchina.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 20;39;1;{NewPage}Domanda n°2\n\nDa 1 Zanna di drago si ottengono 20 Flare.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 20;39;2;{NewPage}Domanda n°3\n\nL'altezza di un Gyala è di circa 12 metri.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 20;39;3;{NewPage}Domanda n°4\n\nCi sono anche mostri senza nessuna proprietà\nelementale.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 20;39;4;{NewPage}Domanda n°5\n\nCol Level up SeeD aumenta il livello MAG e\nl'efficienza del comando Assimila.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 20;39;5;{NewPage}Domanda n°6\n\nI danni che si infliggono al nemico non dipendono\ndallo stato del proprio HP.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 20;39;6;{NewPage}Domanda n°7\n\nMigliore è l'affinità con i G.F., minore è il tempo\nimpiegato per invocarli.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 20;39;7;{NewPage}Domanda n°8\n\nDa Kedachiku si ottiene 1 Ragnatela.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 20;39;8;{NewPage}Domanda n°9\n\nFRZ+20% e FRZ+40% insieme hanno più efficacia\ndi FRZ+60%.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 20;39;9;{NewPage}Domanda n°10\n\nIl G.F. {Sire} arreca danni fisici e status\nCaos.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 21;40;0;{NewPage}Domanda n°1\n\nSpesso Piros usa Kamikaze.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 21;40;1;{NewPage}Domanda n°2\n\nMolboro è un mostro di Esthar nord.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 21;40;2;{NewPage}Domanda n°3\n\n‘La guerra' è una rivista che presenta una serie di\ntecniche belliche.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 21;40;3;{NewPage}Domanda n°4\n\nSi può assimilare un G.F. da Herbia nella Torre di\ntrasmissione.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 21;40;4;{NewPage}Domanda n°5\n\nSe durante l'invocazione di un G.F. si entra in\nstatus Arresto, il processo di invocazione non\nsi interrompe.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 21;40;5;{NewPage}Domanda n°6\n\nIl comando Protezione difende da attacchi fisici, ma\nnon protegge da attacchi magici.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 21;40;6;{NewPage}Domanda n°7\n\nEffettuando Junction a Reiz, aumenta il liv.\ndi difesa di tutte le proprietà elementali.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 21;40;7;{NewPage}Domanda n°8\n\nNel Garden di Balamb c'è una biblioteca.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 21;40;8;{NewPage}Domanda n°9\n\nMegafenice è la magia che dà a tutta la squadra\nl'effetto di Coda di fenice.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 21;40;9;{NewPage}Domanda n°10\n\nDa 1 carta Piros si ottiene 1 Anima di Piros.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 22;41;0;{NewPage}Domanda n°1\n\nSe si applica la magia Protect su un personaggio\ncon lo status Shell, quest'ultimo status viene\nannullato e resta solo lo status Protect.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 22;41;1;{NewPage}Domanda n°2\n\nSi possono perdere oggetti e guil se il livello di\nFortuna è basso.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 22;41;2;{NewPage}Domanda n°3\n\nPer difendersi contro attacco elem. Fuoco basta\ncollegare magie el. Gelo a Elem-Dif.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 22;41;3;{NewPage}Domanda n°4\n\nCollegando Reflex a ST-Dif i valori dei 9 slot di\ndifesa aumentano.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 22;41;4;{NewPage}Domanda n°5\n\nZombie e Pain sono magie el. Magia.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 22;41;5;{NewPage}Domanda n°6\n\nL'oggetto Granpozione+ permette il recupero\ndi 3000 HP.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 22;41;6;{NewPage}Domanda n°7\n\nPiù alto è livello SeeD più bassi sono i prezzi nei\nnegozi.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 22;41;7;{NewPage}Domanda n°8\n\nUsando una magia dello stesso elemento\ndell'attacco del G.F. aumenta l'affinità G.F.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 22;41;8;{NewPage}Domanda n°9\n\nQuando si ottengono nuove informazioni, in Aiuto\ndel menu appariranno ulteriori spiegazioni.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 22;41;9;{NewPage}Domanda n°10\n\nIl comando Assimila è più efficace quando è molto\nalta la % di Mira. \n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 23;42;0;{NewPage}Domanda n°1\n\nSi può ottenere Panacea+ da Panacea.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 23;42;1;{NewPage}Domanda n°2\n\nPer fuggire dalle battaglie si preme {R1} {R2}.\n(In alcune battaglie non si può fuggire)\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 23;42;2;{NewPage}Domanda n°3\n\nL'abilità Recupero riattiva l'assetto di guerra dei\nmembri della squadra.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 23;42;3;{NewPage}Domanda n°4\n\nEsna elimina le alterazioni di status, Dispel elimina\nle alterazioni elementali.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 23;42;4;{NewPage}Domanda n°5\n\nCon Rigene l'HP torna regolare anche se si è in\nstatus Arresto.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 23;42;5;{NewPage}Domanda n°6\n\nCon status Maledizione non si possono usare le\nTecniche speciali.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 23;42;6;{NewPage}Domanda n°7\n\nCon Berserk si è più forti nell'attacco, ma si può\nusare solo il comando Attacco.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 23;42;7;{NewPage}Domanda n°8\n\nEsiste un'abilità che trasforma Antenna Molboro\nin Panacea.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 23;42;8;{NewPage}Domanda n°9\n\nLo status Levita ha un effetto limitato nel tempo.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 23;42;9;{NewPage}Domanda n°10\n\nProtect dimezza i danni fisici.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 24;43;0;{NewPage}Domanda n°1\n\nEsna cura lo status Lentezza.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 24;43;1;{NewPage}Domanda n°2\n\nEffettuando J Elem-Dif a Levita, aumenta la %\ndi difesa elemento Terra.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 24;43;2;{NewPage}Domanda n°3\n\nL'ATB continua a scorrere anche quando arriva\nun G.F.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 24;43;3;{NewPage}Domanda n°4\n\nL'abilità Autoreflex porta lo status Reflex a tutta\nla squadra fino a quando qualche personaggio non\nva in K.O.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 24;43;4;{NewPage}Domanda n°5\n\n{Ice} indica Abilità G.F.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 24;43;5;{NewPage}Domanda n°6\n\nIl n° di abilità che il G.F. può apprendere sono\nlimitate.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 24;43;6;{NewPage}Domanda n°7\n\nPiù si effettua Protect, più si è difesi dagli attacchi\nfisici.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 24;43;7;{NewPage}Domanda n°8\n\nSe si effettua Drain verso un nemico con status\nVeleno, si assorbe anche il Veleno.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 24;43;8;{NewPage}Domanda n°9\n\nLe armi si possono rompere dopo molte battaglie.\n(Ma si possono anche riparare)\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 24;43;9;{NewPage}Domanda n°10\n\nIn status Mutismo e Caos non si possono usare\nmagie.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 25;44;0;{NewPage}Domanda n°1\n\nSi può rubare il Cannone laser al mostro Invinta.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 25;44;1;{NewPage}Domanda n°2\n\nIl G.F. {Leviathan} attacca con Ruggito ciclonico.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 25;44;2;{NewPage}Domanda n°3\n\nSmemorerba fa dimenticare le abilità ai G.F.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 25;44;3;{NewPage}Domanda n°4\n\nC'è un'abilità che fa trovare tutti i Save Point\ne le fonti energetiche.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 25;44;4;{NewPage}Domanda n°5\n\nI G.F. accumulano più EXP se solo 1, piuttosto che\ntanti, è in Junction con 1 personaggio del gruppo.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 25;44;5;{NewPage}Domanda n°6\n\nSi deve tornare a volte al Garden di Balamb per\nprendere lo stipendio.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 25;44;6;{NewPage}Domanda n°7\n\nLe magie Acqua+ e Acqua++ sono più forti della\nmagia Acqua.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 25;44;7;{NewPage}Domanda n°8\n\nContrattacco non ha effetto contro i membri della\nsquadra.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 25;44;8;{NewPage}Domanda n°9\n\nI G.F. possono imparare abilità Ruba con l'oggetto\nchiamato Assegno a vuoto.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 25;44;9;{NewPage}Domanda n°10\n\nSi possono assorbire magie che causano status\nMaledizione.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 26;45;0;{NewPage}Domanda n°1\n\nFacendo Drain da un mostro non-morto si\nsubiscono danni.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 26;45;1;{NewPage}Domanda n°2\n\nL'abilità Iniziativa permette di cominciare le\nbattaglie con ATB al massimo anche quando si\nsubisce attacco alle spalle.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 26;45;2;{NewPage}Domanda n°3\n\nL'abilità comando Sacrificio permette di causare\nstatus Blind anche con un attacco fisico.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 26;45;3;{NewPage}Domanda n°4\n\nSancta è l'unica magia di elemento Sacro.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 26;45;4;{NewPage}Domanda n°5\n\nAnche i G.F. che non sono in Junction accumulano\nEXP e AP.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 26;45;5;{NewPage}Domanda n°6\n\nLo status Shell dimezza anche l'effetto delle magie\ndi ripristino.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 26;45;6;{NewPage}Domanda n°7\n\nCon alta % di DST è possibile schivare attacchi\nanche in status Sonno.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 26;45;7;{NewPage}Domanda n°8\n\nÈ possibile far dimenticare al G.F. un'abilità\nappresa.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 26;45;8;{NewPage}Domanda n°9\n\nCon Sentenza continua il conto alla rovescia\nanche se si fugge dal campo di battaglia.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 26;45;9;{NewPage}Domanda n°10\n\nL'attacco magico è più efficace se il valore FRZ\nè più alto di quello di MAG.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 27;46;0;{NewPage}Domanda n°1\n\nLo status Haste riduce l'efficienza di Assimila.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 27;46;1;{NewPage}Domanda n°2\n\nLo stipendio SeeD dipende anche dal numero di\nnemici sconfitti.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 27;46;2;{NewPage}Domanda n°3\n\nPer invocare più G.F. allo stesso tempo esiste\nl'abilità Doppio G.F.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 27;46;3;{NewPage}Domanda n°4\n\nScegliere Cambia dal Menu per ordinare\nautomaticamente gli oggetti.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 27;46;4;{NewPage}Domanda n°5\n\nTutti i mostri hanno un punto debole.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 27;46;5;{NewPage}Domanda n°6\n\nBio è la magia che indebolisce le cellule e rende il\nfisico più vulnerabile.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 27;46;6;{NewPage}Domanda n°7\n\nÈ difficile fuggire se attaccati alle spalle.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 27;46;7;{NewPage}Domanda n°8\n\nFlare è una magia di elemento Fuoco.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 27;46;8;{NewPage}Domanda n°9\n\nÈ possibile sapere quanti mostri il personaggio\nha sconfitto.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 27;46;9;{NewPage}Domanda n°10\n\nAnche i personaggi che non hanno partecipato\nalla battaglia ricevono EXP.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 28;47;0;{NewPage}Domanda n°1\n\nPiù alto è il valore di Vel, maggiore\nè la velocità dell'indicatore ATB\ndel personaggio corrispondente.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 28;47;1;{NewPage}Domanda n°2\n\nEsna cura Sentenza.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 28;47;2;{NewPage}Domanda n°3\n\nAttacco magico permette un attacco con le magie\ndi tutti gli elementi escluso Sacro.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 28;47;3;{NewPage}Domanda n°4\n\nNon c'è magia che toglie Sentenza.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 28;47;4;{NewPage}Domanda n°5\n\nPain causa status Veleno, Blind e Mutismo.\nPerò non sempre causa tutti e tre i tipi di status.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 28;47;5;{NewPage}Domanda n°6\n\nSe ci si ferma in albergo, HP torna al massimo\ne ogni alterazione di status sparisce.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 28;47;6;{NewPage}Domanda n°7\n\nPremendo {X} si blocca il Renzokuken di {Squall}.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 28;47;7;{NewPage}Domanda n°8\n\nDouble e Triple permettono l'uso della stessa magia\npiù volte.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 28;47;8;{NewPage}Domanda n°9\n\nLo status Pietra sparisce dopo un po' di tempo.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 28;47;9;{NewPage}Domanda n°10\n\nAnche usando Ago dorato, la pietricazione non\nsi ferma.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 29;48;0;{NewPage}Domanda n°1\n\nCuore di fenice riattiva l'assetto di guerra dei\npersonaggi.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 29;48;1;{NewPage}Domanda n°2\n\nUn G.F. in K.O. torna automaticamente in vita nella\nbattaglia successiva.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 29;48;2;{NewPage}Domanda n°3\n\nRicevendo la magia Double in status Double, lo\nstatus diventa Triple.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 29;48;3;{NewPage}Domanda n°4\n\nMAG UP aumenta di Forza magica di 1 punto.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 29;48;4;{NewPage}Domanda n°5\n\nL'abilità Oggetti rari incide sulla probabilità che i\nnemici perdano oggetti.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 29;48;5;{NewPage}Domanda n°6\n\nBiggs, soldato che combatte nella torre di\ntrasmissione di Galbadia, è colonnello.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 29;48;6;{NewPage}Domanda n°7\n\nServono almeno 3 magie per usare Triple.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 29;48;7;{NewPage}Domanda n°8\n\nSe 2 membri della squadra sono uno in status\nZombie e l'altro in status Caos il gioco ha termine. \n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 29;48;8;{NewPage}Domanda n°9\n\nIl target di attacco Meteor è scelto a caso fra il\ngruppo.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 29;48;9;{NewPage}Domanda n°10\n\nZero è la magia che scioglie il nemico.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 30;49;0;{NewPage}Domanda n°1\n\nPoiché Trusthevis in stato critico usa Quake,\nè meglio usare la magia Levita.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 30;49;1;{NewPage}Domanda n°2\n\nNon è necessario fare Reiz o Areiz su personaggi\nche non sono K.O.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 30;49;2;{NewPage}Domanda n°3\n\nSe si subisce un danno 800 HP mentre si invoca un\nG.F. con 500 HP, la differenza di 300 HP verrà\nricevuta dal G.F. invocato.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 30;49;3;{NewPage}Domanda n°4\n\nDa un Kwaul si ottiene Baffi di Kwaul.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 30;49;4;{NewPage}Domanda n°5\n\nEffettuando Aura in status Maledizione la\nsituazione ritorna alla normalità.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 30;49;5;{NewPage}Domanda n°6\n\nA Galbadia c'è un mostro che si chiama Gravios.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 30;49;6;{NewPage}Domanda n°7\n\nStatus Mutismo rimane anche dopo la fine della\nbattaglia.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 30;49;7;{NewPage}Domanda n°8\n\nLa magia Reflex si ripercuote sempre su chi l'ha\nlanciata.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 30;49;8;{NewPage}Domanda n°9\n\nSi possono verificare altre alterazioni di status\ncon lo status Pietra.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 30;49;9;{NewPage}Domanda n°10\n\nL'unico modo per far apprendere le abilità al G.F.\nè accumulare AP.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 31;50;0;{NewPage}Domanda n°1\n\nPoiché Trusthevis in stato critico usa Quake,\nè meglio usare la magia Levita.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 31;50;1;{NewPage}Domanda n°2\n\nNon è necessario fare Reiz o Areiz su personaggi\nche non sono K.O.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 31;50;2;{NewPage}Domanda n°3\n\nSe si subisce un danno 800 HP mentre si invoca un\nG.F. con 500 HP, la differenza di 300 HP verrà\nricevuta dal G.F. invocato.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 31;50;3;{NewPage}Domanda n°4\n\nDa un Kwaul si ottiene Baffi di Kwaul.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 31;50;4;{NewPage}Domanda n°5\n\nEffettuando Aura in status Maledizione la\nsituazione ritorna alla normalità.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 31;50;5;{NewPage}Domanda n°6\n\nA Galbadia c'è un mostro che si chiama Gravios.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 31;50;6;{NewPage}Domanda n°7\n\nStatus Mutismo rimane anche dopo la fine della\nbattaglia.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 31;50;7;{NewPage}Domanda n°8\n\nLa magia Reflex si ripercuote sempre su chi l'ha\nlanciata.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 31;50;8;{NewPage}Domanda n°9\n\nSi possono verificare altre alterazioni di status\ncon lo status Pietra.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
-Test seed 31;50;9;{NewPage}Domanda n°10\n\nL'unico modo per far apprendere le abilità al G.F.\nè accumulare AP.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed general;19;0;{x00}\nComincia l'esame scritto SeeD.\nProvi il livello {x0a22}?\n\n\n\n  {Cursor_location_id:0x20}Sì      {Cursor_location_id:0x21}No\n
+Test seed general;19;1;{x00}\nComincia l'esame scritto della SeeD.\nIl tuo attuale livello è il numero {x0a22}.\nProvi il livello {x0a22}?\n\n\n  {Cursor_location_id:0x20}Sì      {Cursor_location_id:0x21}No\n
+Test seed general;19;2;{x00}\nHai preso 100 punti.\nHai passato l'esame scritto livello {x0a20}.\nIl tuo rango SeeD sale a {x0a26}.\n\n\n  {Cursor_location_id:0x20}Fine
+Test seed general;19;3;{x00}\nHai preso 100 punti.\nHai passato l'esame scritto livello {x0a20}.\nTuttavia, essendo {x0a26}ail tuo rango SeeD non cambia.\n\n\n  {Cursor_location_id:0x20}Fine
+Test seed general;19;4;{x00}\nHai preso {x0a20} punti.\nPurtroppo sei stato bocciato.\nMi raccomando, la prossima volta studia di più.\n\n\n  {Cursor_location_id:0x20}Fine
+Test seed general;19;5;{x00}\nSei al livello 30.\nNon ci sono più esami scritti da sostenere.\n\n\n\n  {Cursor_location_id:0x20}Indietro
+Test seed general;19;6;{x00}\nIl tuo rango ora è {x0a26}.\nNon esistono livelli più alti.\nVuoi comunque fare l'esame?\n\n\n  {Cursor_location_id:0x20}Sì      {Cursor_location_id:0x21}No\n
+Test seed general;19;7;{x00}\nDavvero?\n\n\n\n\n  {Cursor_location_id:0x20}No      {Cursor_location_id:0x21}Sì\n
+Test seed general;19;8;{x00}\nRipasso completo! Sai tutto del livello {x0a20}!\n\n\n\n\n  {Cursor_location_id:0x20}Fine
+Test seed general;19;9;{x00}\nHai preso {x0a20} punti. Che ti è successo?\n\n\n\n\n  {Cursor_location_id:0x20}Fine
+Test seed general;19;10;{x00}\nIl livello di {Squall} è {x0a20}.\nNon puoi fare esami SeeD oltre al livello {x0a22}.\nRitenta dopo Level up!\n\n\n  {Cursor_location_id:0x20}Fine
+Test seed 1 ;20;0;{x00}Domanda n°1\n\nIl comando Assimila estrae le magie dai nemici.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 1 ;20;1;{x01}Domanda n°2\n\nG.F. vuol dire Garden Fighter.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 1 ;20;2;{x00}Domanda n°3\n\nGli elementi sono in tutto 8.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 1 ;20;3;{x00}Domanda n°4\n\nIn battaglia, tanto più alto è il livello di\nFRZ (Forza), tanto maggiore sarà il danno\narrecato al nemico negli attacchi fisici.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 1 ;20;4;{x00}Domanda n°5\n\nJ HP è un abilità di tipo Junction.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 1 ;20;5;{x01}Domanda n°6\n\nNon si può scegliere quale abilità il G.F. deve\nimparare.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 1 ;20;6;{x01}Domanda n°7\n\nLa magia consuma MP.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 1 ;20;7;{x00}Domanda n°8\n\nIl nome del G.F. può essere cambiato.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 1 ;20;8;{x01}Domanda n°9\n\nI personaggi possono indossare un equipaggiamento\nprotettivo in battaglia.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 1 ;20;9;{x01}Domanda n°10\n\nIl G.F. aumenta di livello con l'acquisizione\ndi A.P. (Ability Point).\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 2 ;21;0;{x00}Domanda n°1\n\nFacendo Junction tra magie e RES la resistenza\ndel personaggio aumenta.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 2 ;21;1;{x01}Domanda n°2\n\nL'arma di {Squall} è il Gauntlet.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 2 ;21;2;{x00}Domanda n°3\n\nLe magie assimilate possono essere accumulate.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 2 ;21;3;{x00}Domanda n°4\n\nIn ogni azione che si compie in status veleno,\nil proprio HP diminuisce.\nSe non si agisce, non si riceve alcun danno.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 2 ;21;4;{x00}Domanda n°5\n\nSe si viene colpiti da un attacco fisico, lo status\nCaos viene annullato.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 2 ;21;5;{x01}Domanda n°6\n\nLa tecnica speciale di {Squall} è Haryuken.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 2 ;21;6;{x00}Domanda n°7\n\nPer fare Junction alle magie è necessaria\nun'abilità Junction corrispondente al parametro\nche si vuole collegare alle magie.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 2 ;21;7;{x00}Domanda n°8\n\n{CharacterAbility} indica le Abilità Junction\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 2 ;21;8;{x01}Domanda n°9\n\nGli 8 Elementi sono Fuoco, Gelo, Tuono, Terra,\nVeleno, Vento, Magia e Sacro.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 2 ;21;9;{x01}Domanda n°10\n\nC'è un limite al numero di magie che si possono\ncatturare dai mostri.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 3 ;22;0;{x01}Domanda n°1\n\nPozione può ripristinare l'HP del G.F.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 3 ;22;1;{x01}Domanda n°2\n\nLe magie si ottengono solo usando il comando\nAssimila in battaglia.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 3 ;22;2;{x00}Domanda n°3\n\nL'arma di Selphie è il nunchaku.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 3 ;22;3;{x01}Domanda n°4\n\nLe armi possono essere migliorate solo pagando\ndenaro.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 3 ;22;4;{x00}Domanda n°5\n\nChi dà l'ultimo colpo e finisce il nemico riceve il\nmaggiore punteggio di EXP.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 3 ;22;5;{x00}Domanda n°6\n\nPiù è alto il livello dei G.F., più potenti sono\ngli attacchi.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 3 ;22;6;{x00}Domanda n°7\n\n{PartyAbility} indica le Abilità comando.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 3 ;22;7;{x01}Domanda n°8\n\nOgni membro di un gruppo può avere fino a 5 abilità\npersonaggio e squadra.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 3 ;22;8;{x00}Domanda n°9\n\nLe abilità comando possono essere usate solo se\nassegnate prima al personaggio.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 3 ;22;9;{x01}Domanda n°10\n\nAP significa Action Point.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 4 ;23;0;{x01}Domanda n°1\n\nSolo {Squall} può usare il Gunblade.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 4 ;23;1;{x00}Domanda n°2\n\nAttacchi magici possono essere usati anche contro\ngli alleati.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 4 ;23;2;{x00}Domanda n°3\n\nC'è un'abilità che trasforma gli oggetti in magie.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 4 ;23;3;{x00}Domanda n°4\n\nMaggiore è la Resistenza, minori sono i danni fisici\nricevuti.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 4 ;23;4;{x01}Domanda n°5\n\nLa tecnica speciale Magia blu si apprende solo\nquando la si subisce da un mostro.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 4 ;23;5;{x01}Domanda n°6\n\nLa magia Dispel cura Veleno.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 4 ;23;6;{x00}Domanda n°7\n\nIn caso di K.O. e status alterato, se si riattiva\nl'assetto di guerra sparisce anche alterazione\ndi status.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 4 ;23;7;{x00}Domanda n°8\n\nNel centro addestramento del Garden c'è anche il\nmostro Archeosaurus.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 4 ;23;8;{x01}Domanda n°9\n\nIl Gunblade di {Squall} diventa più offensivo\npremendo {L2} al momento giusto.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 4 ;23;9;{x01}Domanda n°10\n\nÈ possibile accumulare fino a 255 unità per\nogni magia.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 5 ;24;0;{x01}Domanda n°1\n\n{MenuAbility} indica Abilità squadra.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 5 ;24;1;{x01}Domanda n°2\n\nSi possono assimilare magie anche dai propri\ncompagni di squadra.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 5 ;24;2;{x01}Domanda n°3\n\nIl gioco si può salvare ovunque e in qualsiasi\nmomento.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 5 ;24;3;{x00}Domanda n°4\n\nQuando un G.F. acquisisce un'abilità, possono\napparire anche nuove abilità da apprendere che\nfino a quel momento non erano state indicate.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 5 ;24;4;{x00}Domanda n°5\n\nLe Abilità personaggio devono essere impostate,\naltrimenti non si possono usare.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 5 ;24;5;{x01}Domanda n°6\n\nTanto più alto è il livello di VEL tanto più\nfrequentemente si possono usare le tecniche\nspeciali.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 5 ;24;6;{x01}Domanda n°7\n\nIl personaggio apprende abilità accumulando EXP.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 5 ;24;7;{x00}Domanda n°8\n\nCon status Zombie si è più deboli alla proprietà\nelementale Sacro.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 5 ;24;8;{x00}Domanda n°9\n\nAttacco fisico significa causare danni fisici con\nspade o fucili.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 5 ;24;9;{x00}Domanda n°10\n\nÈ possibile ottenere il Tubo di ferro utilizzando il\ncomando Ruba su Wendigo.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 6 ;25;0;{x00}Domanda n°1\n\nL'arma di Zell sono i guanti con le borchie.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 6 ;25;1;{x01}Domanda n°2\n\nSi può invocare il G.F. anche se si è in status\nMutismo.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 6 ;25;2;{x00}Domanda n°3\n\n{Ifrit} può imparare l'abilità ElbMag Fuoco.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 6 ;25;3;{x00}Domanda n°4\n\nSe un G.F. con una stessa abilità Junction del\npersonaggio è connesso al personaggio, l'effetto\ndi tale abilità rimane uguale.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 6 ;25;4;{x01}Domanda n°5\n\nTutte le alterazioni di status tornano alla\nnormalità alla fine della battaglia.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 6 ;25;5;{x01}Domanda n°6\n\nI comandi Attacco e Assimila possono essere usati\nanche senza Junction ai G.F.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 6 ;25;6;{x00}Domanda n°7\n\nSelezionando Auto, non è necessario premere {R1}\nper usare il Gunblade di {Squall}.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 6 ;25;7;{x00}Domanda n°8\n\nIl valore del parametro MAG determina la forza e\nl'efficacia delle magie usate.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 6 ;25;8;{x01}Domanda n°9\n\nJunction automatico magie permette di scegliere\nsolo fra le opzioni ATT e DIF.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 6 ;25;9;{x00}Domanda n°10\n\nIl mostro Grat attacca con magia Gas Ipnotico.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 7 ;26;0;{x00}Domanda n°1\n\nDST (destrezza) è il parametro indicante la\ncapacità di evitare gli attacchi fisici.\nPiù elevato è tale parametro, più difficile è subire\nattacchi fisici.\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 7 ;26;1;{x00}Domanda n°2\n\nUsando Fire contro nemici che assorbono magie\nelem. Fuoco si aumenta il loro HP.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 7 ;26;2;{x00}Domanda n°3\n\nIl colpo speciale che fa {Squall} con il Gunblade\nè diverso in base al tipo di Gunblade che possiede.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 7 ;26;3;{x00}Domanda n°4\n\nUsando ElbMag Fuoco si possono ottenere 5 unità\nFire con 1 Quarzo magico.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 7 ;26;4;{x00}Domanda n°5\n\nTra le carte, di alcune ne esiste un solo\nesemplare al mondo.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 7 ;26;5;{x00}Domanda n°6\n\nA volte Buel usa la magia Fire.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 7 ;26;6;{x01}Domanda n°7\n\nIl valore di Spirito influisce solamente sulla magia\nCaos. Maggiore è il valore di Spirito, maggiore sarà\nl'effetto di Caos.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 7 ;26;7;{x00}Domanda n°8\n\nSpesso al Geezard cadono le viti.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 7 ;26;8;{x00}Domanda n°9\n\nI nemici salgono di livello come te.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 7 ;26;9;{x01}Domanda n°10\n\nSe nella World Map invece di correre si cammina,\nsi incontreranno meno nemici.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 8 ;27;0;{x01}Domanda n°1\n\nI soldati di Galbadia non usano magie.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 8 ;27;1;{x00}Domanda n°2\n\nLe armi possono essere migliorate in modelli più\npotenti nel JunkShop.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 8 ;27;2;{x01}Domanda n°3\n\n{Fire} indica le abilità dei personaggi.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 8 ;27;3;{x01}Domanda n°4\n\nUsando Slow contro Haste si cancella Haste e si\ntorna allo status normale.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 8 ;27;4;{x00}Domanda n°5\n\nNella World Map si incontrano più nemici nei boschi\nche in pianura.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 8 ;27;5;{x00}Domanda n°6\n\nSe Elem-Dif supera il 100%, i danni dell'elemento\nassociato verranno assorbiti.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 8 ;27;6;{x01}Domanda n°7\n\nDi Garden esiste solo quello di Balamb.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 8 ;27;7;{x01}Domanda n°8\n\nNella Caverna di fuoco non ci sono Piros.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 8 ;27;8;{x00}Domanda n°9\n\nOgni G.F. può acquisire diverse abilità.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 8 ;27;9;{x01}Domanda n°10\n\nIl JunkShop è un negozio che vende armi.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 9 ;28;0;{x01}Domanda n°1\n\nSi può usare subito il G.F. assimilato dal nemico\ninvece di accumularlo.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 9 ;28;1;{x00}Domanda n°2\n\n{Thunder} indica le Abilità Menu.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 9 ;28;2;{x01}Domanda n°3\n\nLe magie che usa Selphie in Slot sono le magie\nche lei possiede.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 9 ;28;3;{x01}Domanda n°4\n\nSe il G.F. non ha affinità con i membri della squadra,\npotrebbe lasciare il gruppo.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 9 ;28;4;{x01}Domanda n°5\n\nSi possono usare le Abilità squadra anche senza\naverle assegnate al personaggio.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 9 ;28;5;{x01}Domanda n°6\n\nLasciando a lungo un G.F. in stato di K.O. muore\ne non può più tornare in battaglia.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 9 ;28;6;{x01}Domanda n°7\n\nÈ possibile elaborare 5 Colpi perforanti con\n1 Artiglio affilato.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 9 ;28;7;{x01}Domanda n°8\n\nSconfiggendo il nemico che ha causato alterazione\ndi status, lo status ritorna alla normalità.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 9 ;28;8;{x00}Domanda n°9\n\nI nemici cambiano tipo di attacco quando salgono\ndi livello.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 9 ;28;9;{x00}Domanda n°10\n\nCon status Veleno, qualsiasi movimento si faccia,\ndiminuisce l'HP.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 10;29;0;{x00}Domanda n°1\n\nLo status Caos viene causato da una magia che\nporta il medesimo nome.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 10;29;1;{x01}Domanda n°2\n\nUna Pozione restituisce 100 HP.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 10;29;2;{x01}Domanda n°3\n\nL'arma di Quistis è una spada magica.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 10;29;3;{x01}Domanda n°4\n\nATB significa Ability Tone Black.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 10;29;4;{x01}Domanda n°5\n\nIn stato Zombie si è più deboli a attacchi elementali\nFuoco.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 10;29;5;{x01}Domanda n°6\n\nSi può elaborare 1 Tenda da 1 Acqua torbida\nusando Elb Strumenti del Menu abilità.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 10;29;6;{x01}Domanda n°7\n\nL'EXP viene diviso equamente fra i membri della\nsquadra.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 10;29;7;{x01}Domanda n°8\n\nBlind è la magia che non fa usare il cervello\nin attacco.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 10;29;8;{x00}Domanda n°9\n\nAgo dorato o Esna curano lo status Pietra.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 10;29;9;{x01}Domanda n°10\n\nNulla cura lo status Sonno.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 11;30;0;{x00}Domanda n°1\n\nCamminando, il G.F. recupera HP.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 11;30;1;{x00}Domanda n°2\n\nSe il comando Assimila non è stato selezionato\nprecedentemente, non si possono ottenere magie\nda una fonte energetica.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 11;30;2;{x01}Domanda n°3\n\nI colpi finali distruggono sempre il nemico.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 11;30;3;{x00}Domanda n°4\n\n{Sire} può apprendere l'abilità Vitamina.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 11;30;4;{x00}Domanda n°5\n\nUn personaggio può effettuare Junction a più G.F.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 11;30;5;{x01}Domanda n°6\n\nAdamantio è l'oggetto che si ottiene da\nAdamanthart al 10° livello.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 11;30;6;{x00}Domanda n°7\n\nÈ possibile cambiare l'ordine di magie e oggetti\nche si usano in battaglia.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 11;30;7;{x01}Domanda n°8\n\nUna volta divenuto alleato, {Shiva} può\napprendere l‘abilità Sentenza.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 11;30;8;{x01}Domanda n°9\n\nDrain si usa per assorbire HP dagli avversari,\nma non si può usare contro gli alleati.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 11;30;9;{x00}Domanda n°10\n\nUtilizzando magie di ripristino con i mostri\nnon-morti, si danneggia il loro HP.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 12;31;0;{x01}Domanda n°1\n\nArmadodo assorbe attacchi elementali Terra.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 12;31;1;{x00}Domanda n°2\n\nCon ElbMag vitali si elaborano 20 unità Energira\ncon 1 Acqua torbida.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 12;31;2;{x01}Domanda n°3\n\nSi ottiene EXP con la vittoria in battaglia anche\nse si conclude con K.O.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 12;31;3;{x01}Domanda n°4\n\nEsistono solo due modi per ottenere un G.F.:\nO lo si sconfigge in battaglia, o lo si assimila\nda un nemico.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 12;31;4;{x00}Domanda n°5\n\nSi possono assimilare (e accumulare) al massimo\n9 magie dal nemico.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 12;31;5;{x01}Domanda n°6\n\nNon si può rubare l'Artiglio affilato a Belos.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 12;31;6;{x00}Domanda n°7\n\nSi può togliere temporaneamente la finestra dei\ncomandi durante la battaglia premendo {Select}\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 12;31;7;{x01}Domanda n°8\n\nI comandi che non si possono usare in status\nMutismo sono solo i comandi Magie e G.F.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 12;31;8;{x00}Domanda n°9\n\nSi può usare Scan sui membri della squadra.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 12;31;9;{x01}Domanda n°10\n\nImpostando magia elementale Veleno (100%)\na J ST-Dif, non si viene danneggiati da attacchi\nfisici di elemento Veleno.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 13;32;0;{x00}Domanda n°1\n\nSi ottiene EXP anche se, dopo aver danneggiato\nil nemico, si fugge dalla battaglia.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 13;32;1;{x01}Domanda n°2\n\nDa Chimera si ottiene Zanna blu.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 13;32;2;{x01}Domanda n°3\n\nLe abilità del G.F. funzionano solo se assegnate\nad un personaggio della squadra.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 13;32;3;{x01}Domanda n°4\n\nLa stessa fonte d'energia può essere usata una\nvolta sola.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 13;32;4;{x00}Domanda n°5\n\nIl G.F. {Quezacotl} può apprendere l'abilità\nTranscard senza usare un oggetto.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 13;32;5;{x01}Domanda n°6\n\nSe il comando Assimila fallisce più volte non lo si\npuò più usare per un po'.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 13;32;6;{x01}Domanda n°7\n\nL'affinità tra G.F. e personaggio peggiora se il G.F.\nè in stato di K.O.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 13;32;7;{x01}Domanda n°8\n\nSi può fuggire dal campo di battaglia con qualsiasi\nnemico, è solo questione di tempo.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 13;32;8;{x01}Domanda n°9\n\nBisogna avere le munizioni per far sparare il\nGunblade di {Squall}.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 13;32;9;{x01}Domanda n°10\n\nSe si attacca un nemico di elemento Fuoco si\nsubiscono sicuramente danni elem. Fuoco.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 14;33;0;{x00}Domanda n°1\n\nCi sono dei G.F. che si possono assimilare.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 14;33;1;{x00}Domanda n°2\n\nIn situazioni gravi {Squall} può usare più spesso\nil Renzokuken.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 14;33;2;{x00}Domanda n°3\n\nPiù alto è il livello di MIRA, più gli attacchi fisici\nandranno a segno. Ma se il livello DST del nemico\nè alto è possibile fallire il colpo.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 14;33;3;{x00}Domanda n°4\n\nCi sono alcuni oggetti che influiscono sulla affinità\ntra G.F. e personaggio.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 14;33;4;{x01}Domanda n°5\n\nCon la magia Shell si diminuiscono di 1/4 i danni\ndi un attacco magico subito.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 14;33;5;{x00}Domanda n°6\n\nC'è un mostro chiamato Belhelmelhel.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 14;33;6;{x00}Domanda n°7\n\nIn battaglia si può usare solo il comando Attacco\nse non sono stati fatti Junction ai G.F. o se non è\nstata configurata alcuna abilità.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 14;33;7;{x01}Domanda n°8\n\nSi ottiene maggiore EXP sconfiggendo i nemici con\nattacco fisico piuttosto che con le magie.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 14;33;8;{x00}Domanda n°9\n\nL'abilità Altruismo protegge solo i personaggi che si\ntrovano di fianco a chi la utilizza.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 14;33;9;{x01}Domanda n°10\n\nIl modo migliore di usare l'abilità Supporto è\npremere {Square} ripetutamente.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 15;34;0;{x00}Domanda n°1\n\nPiù volte si invoca un G.F., più aumenta l'affinità\ntra lui e il personaggio.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 15;34;1;{x00}Domanda n°2\n\nÈ impossibile che 1 solo personaggio abbia tutte le\nmagie.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 15;34;2;{x01}Domanda n°3\n\nLa Tempesta di sabbia di Focaral è un attacco\nelementale Vento.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 15;34;3;{x01}Domanda n°4\n\nÈ possibile usare Reflex per riflettere magie che\ngià sono state riflesse.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 15;34;4;{x01}Domanda n°5\n\nAnche in status Caos non si attacca mai da soli.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 15;34;5;{x01}Domanda n°6\n\nÈ possibile elaborare Vento artico da Blizzard\nusando le abilità.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 15;34;6;{x01}Domanda n°7\n\nIl G.F. {Cerberus} può imparare l'abilità\nBonus VEL.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 15;34;7;{x00}Domanda n°8\n\nI personaggi in status Mutismo non possono usare\nle magie, neanche dal Menu.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 15;34;8;{x01}Domanda n°9\n\nErba dell'eco cura status Pietra.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 15;34;9;{x00}Domanda n°10\n\nSe durante l'invocazione di un G.F. si entra in\nstatus Mutismo, l'invocazione si blocca.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 16;35;0;{x00}Domanda n°1\n\nCon l'HP a livelli molto bassi è più probabile che si\npossano usare le tecniche speciali.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 16;35;1;{x01}Domanda n°2\n\nEffettuando Junction ad un G.F. che ha appreso\nJ Elem-Dif e J Elem-Dif 2x, è possibile associare\n3 magie a Elem-Dif.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 16;35;2;{x01}Domanda n°3\n\nSulla finestra Junction del menu c'è un comando per\neliminare Junction ai G.F. senza perdere magie.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 16;35;3;{x00}Domanda n°4\n\nCi sono nemici il cui status non cambia nemmeno\nse viene attaccato con J ST-Att al 100%.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 16;35;4;{x01}Domanda n°5\n\nIl comando Assimila permette di assimilare le magie\naccumulate dei mostri. Se si assimilano loro\ntutte le magie, i mostri non potranno più usarle.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 16;35;5;{x00}Domanda n°6\n\nDa un Lesmathor di basso livello si ottiene un\nQuarzo magico.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 16;35;6;{x01}Domanda n°7\n\nMegapozione G è un oggetto che riattiva l'assetto\ndi guerra del G.F.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 16;35;7;{x01}Domanda n°8\n\nSi viene sconfitti quando tutta la squadra è K.O.,\nZombie o in status Pietra.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 16;35;8;{x00}Domanda n°9\n\nGranpozione permette il recupero di 1000 HP.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 16;35;9;{x01}Domanda n°10\n\nCon l'abilità Via per i guil si ottengono guil\ncamminando.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 17;36;0;{x00}Domanda n°1\n\nLe tecniche speciali possono essere usate più\nfrequentemente in status Aura.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 17;36;1;{x01}Domanda n°2\n\nLa Pozione G si può usare anche in battaglia per\nrecuperare l'HP dei G.F.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 17;36;2;{x01}Domanda n°3\n\nL'abilità Nozioni mediche permette di usare\n2 pozioni alla volta.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 17;36;3;{x01}Domanda n°4\n\nI Colpi finali sono più frequenti se il tempo con\ncui si preme il grilletto del Renzokuken di\n{Squall} è buono.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 17;36;4;{x00}Domanda n°5\n\nCon l'abilità Vigilanza si evitano gli attacchi alle\nspalle.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 17;36;5;{x01}Domanda n°6\n\nIn status Berserk è automatico l'uso di tecniche\nspeciali.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 17;36;6;{x01}Domanda n°7\n\nÈ possibile usare le pozioni dal menu per curare un\npersonaggio in status Zombie.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 17;36;7;{x00}Domanda n°8\n\nGli attacchi del G.F. {Alexander} sono di\nproprietà elementale Sacro.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 17;36;8;{x01}Domanda n°9\n\nDa un Archeosaurus si può ottenere il Dente\ndi drago.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 17;36;9;{x01}Domanda n°10\n\nCon Blind non si riconoscono i nemici e si possono\nattaccare i compagni di squadra.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 18;37;0;{x00}Domanda n°1\n\nPer quanto alto sia il proprio livello, non si può fare\nJunction se non si possiedono G.F.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 18;37;1;{x01}Domanda n°2\n\nReflex può rifrangere qualsiasi magia.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 18;37;2;{x01}Domanda n°3\n\nEsistono 30 tipi di Status.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 18;37;3;{x01}Domanda n°4\n\nNon esiste magia che cura lo status Zombie.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 18;37;4;{x00}Domanda n°5\n\nPremendo {L1} durante la battaglia, è possibile\nscegliere il target d'attacco dalle opzioni della\nfinestra che apparirà sullo schermo.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 18;37;5;{x01}Domanda n°6\n\nC'è solo un'abilità che si può apprendere da soli.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 18;37;6;{x01}Domanda n°7\n\nSe riceve un danno magico Wendigo cade a terra\ne spara colpi vibranti dalla bocca. \n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 18;37;7;{x01}Domanda n°8\n\nIn status Sonno l'HP si recupera lentamente.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 18;37;8;{x01}Domanda n°9\n\n{Carbuncle} è il G.F. che usa Protect e Shell su\ntutti i membri del gruppo.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 18;37;9;{x01}Domanda n°10\n\nCaos ha la precedenza su Berserk nel caso\nvengano usati contemporaneamente.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 19;38;0;{x00}Domanda n°1\n\nLa difesa contro la magia Ade è determinata\ndalla % di J ST-Dif Morte.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 19;38;1;{x01}Domanda n°2\n\nSe un personaggio in status Zombie effettua\nDrain ad un nemico col medesimo status, viene\ndanneggiato.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 19;38;2;{x01}Domanda n°3\n\nSe si viene morsi da Cokatoris a volte si può\nessere avvelenati.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 19;38;3;{x00}Domanda n°4\n\nLo status Invincibilità torna alla normalità alla\nfine della battaglia.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 19;38;4;{x01}Domanda n°5\n\nChimera è il mostro con 5 teste: drago, rana,\ncapra, uccello e cinghiale.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 19;38;5;{x01}Domanda n°6\n\nProtect non ha effetto con status RES 0.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 19;38;6;{x01}Domanda n°7\n\nPiù si usa la magia Levita, più si riesce a fluttuare\nnell'aria.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 19;38;7;{x01}Domanda n°8\n\nX-ATMO92 è invincibile.\nSi può tentare solo di fuggire.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 19;38;8;{x01}Domanda n°9\n\nPoiché Medusa riduce a 0 lo Spirito del nemico,\nnon ha effetto sui nemici con SPR 0.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 19;38;9;{x00}Domanda n°10\n\nIl JunkShop indica in grigio le nuove armi che\nvengono apprese dalla rivista ‘Armi mese'.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 20;39;0;{x00}Domanda n°1\n\nNon si incontrano nemici quando si sale in macchina.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 20;39;1;{x00}Domanda n°2\n\nDa 1 Zanna di drago si ottengono 20 Flare.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 20;39;2;{x01}Domanda n°3\n\nL'altezza di un Gyala è di circa 12 metri.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 20;39;3;{x00}Domanda n°4\n\nCi sono anche mostri senza nessuna proprietà\nelementale.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 20;39;4;{x01}Domanda n°5\n\nCol Level up SeeD aumenta il livello MAG e\nl'efficienza del comando Assimila.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 20;39;5;{x00}Domanda n°6\n\nI danni che si infliggono al nemico non dipendono\ndallo stato del proprio HP.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 20;39;6;{x00}Domanda n°7\n\nMigliore è l'affinità con i G.F., minore è il tempo\nimpiegato per invocarli.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 20;39;7;{x00}Domanda n°8\n\nDa Kedachiku si ottiene 1 Ragnatela.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 20;39;8;{x01}Domanda n°9\n\nFRZ+20% e FRZ+40% insieme hanno più efficacia\ndi FRZ+60%.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 20;39;9;{x01}Domanda n°10\n\nIl G.F. {Sire} arreca danni fisici e status\nCaos.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 21;40;0;{x00}Domanda n°1\n\nSpesso Piros usa Kamikaze.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 21;40;1;{x00}Domanda n°2\n\nMolboro è un mostro di Esthar nord.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 21;40;2;{x00}Domanda n°3\n\n‘La guerra' è una rivista che presenta una serie di\ntecniche belliche.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 21;40;3;{x00}Domanda n°4\n\nSi può assimilare un G.F. da Herbia nella Torre di\ntrasmissione.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 21;40;4;{x01}Domanda n°5\n\nSe durante l'invocazione di un G.F. si entra in\nstatus Arresto, il processo di invocazione non\nsi interrompe.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 21;40;5;{x01}Domanda n°6\n\nIl comando Protezione difende da attacchi fisici, ma\nnon protegge da attacchi magici.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 21;40;6;{x00}Domanda n°7\n\nEffettuando Junction a Reiz, aumenta il liv.\ndi difesa di tutte le proprietà elementali.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 21;40;7;{x00}Domanda n°8\n\nNel Garden di Balamb c'è una biblioteca.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 21;40;8;{x00}Domanda n°9\n\nMegafenice è la magia che dà a tutta la squadra\nl'effetto di Coda di fenice.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 21;40;9;{x01}Domanda n°10\n\nDa 1 carta Piros si ottiene 1 Anima di Piros.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 22;41;0;{x01}Domanda n°1\n\nSe si applica la magia Protect su un personaggio\ncon lo status Shell, quest'ultimo status viene\nannullato e resta solo lo status Protect.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 22;41;1;{x01}Domanda n°2\n\nSi possono perdere oggetti e guil se il livello di\nFortuna è basso.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 22;41;2;{x01}Domanda n°3\n\nPer difendersi contro attacco elem. Fuoco basta\ncollegare magie el. Gelo a Elem-Dif.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 22;41;3;{x00}Domanda n°4\n\nCollegando Reflex a ST-Dif i valori dei 9 slot di\ndifesa aumentano.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 22;41;4;{x01}Domanda n°5\n\nZombie e Pain sono magie el. Magia.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 22;41;5;{x01}Domanda n°6\n\nL'oggetto Granpozione+ permette il recupero\ndi 3000 HP.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 22;41;6;{x01}Domanda n°7\n\nPiù alto è livello SeeD più bassi sono i prezzi nei\nnegozi.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 22;41;7;{x00}Domanda n°8\n\nUsando una magia dello stesso elemento\ndell'attacco del G.F. aumenta l'affinità G.F.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 22;41;8;{x00}Domanda n°9\n\nQuando si ottengono nuove informazioni, in Aiuto\ndel menu appariranno ulteriori spiegazioni.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 22;41;9;{x01}Domanda n°10\n\nIl comando Assimila è più efficace quando è molto\nalta la % di Mira. \n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 23;42;0;{x00}Domanda n°1\n\nSi può ottenere Panacea+ da Panacea.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 23;42;1;{x01}Domanda n°2\n\nPer fuggire dalle battaglie si preme {R1} {R2}.\n(In alcune battaglie non si può fuggire)\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 23;42;2;{x01}Domanda n°3\n\nL'abilità Recupero riattiva l'assetto di guerra dei\nmembri della squadra.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 23;42;3;{x01}Domanda n°4\n\nEsna elimina le alterazioni di status, Dispel elimina\nle alterazioni elementali.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 23;42;4;{x01}Domanda n°5\n\nCon Rigene l'HP torna regolare anche se si è in\nstatus Arresto.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 23;42;5;{x00}Domanda n°6\n\nCon status Maledizione non si possono usare le\nTecniche speciali.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 23;42;6;{x00}Domanda n°7\n\nCon Berserk si è più forti nell'attacco, ma si può\nusare solo il comando Attacco.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 23;42;7;{x00}Domanda n°8\n\nEsiste un'abilità che trasforma Antenna Molboro\nin Panacea.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 23;42;8;{x00}Domanda n°9\n\nLo status Levita ha un effetto limitato nel tempo.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 23;42;9;{x00}Domanda n°10\n\nProtect dimezza i danni fisici.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 24;43;0;{x00}Domanda n°1\n\nEsna cura lo status Lentezza.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 24;43;1;{x00}Domanda n°2\n\nEffettuando J Elem-Dif a Levita, aumenta la %\ndi difesa elemento Terra.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 24;43;2;{x01}Domanda n°3\n\nL'ATB continua a scorrere anche quando arriva\nun G.F.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 24;43;3;{x01}Domanda n°4\n\nL'abilità Autoreflex porta lo status Reflex a tutta\nla squadra fino a quando qualche personaggio non\nva in K.O.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 24;43;4;{x00}Domanda n°5\n\n{Ice} indica Abilità G.F.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 24;43;5;{x00}Domanda n°6\n\nIl n° di abilità che il G.F. può apprendere sono\nlimitate.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 24;43;6;{x01}Domanda n°7\n\nPiù si effettua Protect, più si è difesi dagli attacchi\nfisici.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 24;43;7;{x01}Domanda n°8\n\nSe si effettua Drain verso un nemico con status\nVeleno, si assorbe anche il Veleno.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 24;43;8;{x01}Domanda n°9\n\nLe armi si possono rompere dopo molte battaglie.\n(Ma si possono anche riparare)\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 24;43;9;{x00}Domanda n°10\n\nIn status Mutismo e Caos non si possono usare\nmagie.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 25;44;0;{x00}Domanda n°1\n\nSi può rubare il Cannone laser al mostro Invinta.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 25;44;1;{x01}Domanda n°2\n\nIl G.F. {Leviathan} attacca con Ruggito ciclonico.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 25;44;2;{x00}Domanda n°3\n\nSmemorerba fa dimenticare le abilità ai G.F.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 25;44;3;{x00}Domanda n°4\n\nC'è un'abilità che fa trovare tutti i Save Point\ne le fonti energetiche.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 25;44;4;{x00}Domanda n°5\n\nI G.F. accumulano più EXP se solo 1, piuttosto che\ntanti, è in Junction con 1 personaggio del gruppo.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 25;44;5;{x01}Domanda n°6\n\nSi deve tornare a volte al Garden di Balamb per\nprendere lo stipendio.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 25;44;6;{x01}Domanda n°7\n\nLe magie Acqua+ e Acqua++ sono più forti della\nmagia Acqua.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 25;44;7;{x00}Domanda n°8\n\nContrattacco non ha effetto contro i membri della\nsquadra.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 25;44;8;{x01}Domanda n°9\n\nI G.F. possono imparare abilità Ruba con l'oggetto\nchiamato Assegno a vuoto.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 25;44;9;{x01}Domanda n°10\n\nSi possono assorbire magie che causano status\nMaledizione.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 26;45;0;{x00}Domanda n°1\n\nFacendo Drain da un mostro non-morto si\nsubiscono danni.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 26;45;1;{x00}Domanda n°2\n\nL'abilità Iniziativa permette di cominciare le\nbattaglie con ATB al massimo anche quando si\nsubisce attacco alle spalle.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 26;45;2;{x01}Domanda n°3\n\nL'abilità comando Sacrificio permette di causare\nstatus Blind anche con un attacco fisico.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 26;45;3;{x00}Domanda n°4\n\nSancta è l'unica magia di elemento Sacro.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 26;45;4;{x01}Domanda n°5\n\nAnche i G.F. che non sono in Junction accumulano\nEXP e AP.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 26;45;5;{x00}Domanda n°6\n\nLo status Shell dimezza anche l'effetto delle magie\ndi ripristino.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 26;45;6;{x01}Domanda n°7\n\nCon alta % di DST è possibile schivare attacchi\nanche in status Sonno.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 26;45;7;{x00}Domanda n°8\n\nÈ possibile far dimenticare al G.F. un'abilità\nappresa.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 26;45;8;{x01}Domanda n°9\n\nCon Sentenza continua il conto alla rovescia\nanche se si fugge dal campo di battaglia.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 26;45;9;{x01}Domanda n°10\n\nL'attacco magico è più efficace se il valore FRZ\nè più alto di quello di MAG.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 27;46;0;{x01}Domanda n°1\n\nLo status Haste riduce l'efficienza di Assimila.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 27;46;1;{x00}Domanda n°2\n\nLo stipendio SeeD dipende anche dal numero di\nnemici sconfitti.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 27;46;2;{x01}Domanda n°3\n\nPer invocare più G.F. allo stesso tempo esiste\nl'abilità Doppio G.F.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 27;46;3;{x01}Domanda n°4\n\nScegliere Cambia dal Menu per ordinare\nautomaticamente gli oggetti.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 27;46;4;{x01}Domanda n°5\n\nTutti i mostri hanno un punto debole.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 27;46;5;{x01}Domanda n°6\n\nBio è la magia che indebolisce le cellule e rende il\nfisico più vulnerabile.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 27;46;6;{x00}Domanda n°7\n\nÈ difficile fuggire se attaccati alle spalle.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 27;46;7;{x01}Domanda n°8\n\nFlare è una magia di elemento Fuoco.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 27;46;8;{x00}Domanda n°9\n\nÈ possibile sapere quanti mostri il personaggio\nha sconfitto.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 27;46;9;{x01}Domanda n°10\n\nAnche i personaggi che non hanno partecipato\nalla battaglia ricevono EXP.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 28;47;0;{x00}Domanda n°1\n\nPiù alto è il valore di Vel, maggiore\nè la velocità dell'indicatore ATB\ndel personaggio corrispondente.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 28;47;1;{x01}Domanda n°2\n\nEsna cura Sentenza.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 28;47;2;{x01}Domanda n°3\n\nAttacco magico permette un attacco con le magie\ndi tutti gli elementi escluso Sacro.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 28;47;3;{x00}Domanda n°4\n\nNon c'è magia che toglie Sentenza.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 28;47;4;{x00}Domanda n°5\n\nPain causa status Veleno, Blind e Mutismo.\nPerò non sempre causa tutti e tre i tipi di status.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 28;47;5;{x00}Domanda n°6\n\nSe ci si ferma in albergo, HP torna al massimo\ne ogni alterazione di status sparisce.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 28;47;6;{x01}Domanda n°7\n\nPremendo {X} si blocca il Renzokuken di {Squall}.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 28;47;7;{x00}Domanda n°8\n\nDouble e Triple permettono l'uso della stessa magia\npiù volte.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 28;47;8;{x01}Domanda n°9\n\nLo status Pietra sparisce dopo un po' di tempo.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 28;47;9;{x01}Domanda n°10\n\nAnche usando Ago dorato, la pietricazione non\nsi ferma.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 29;48;0;{x01}Domanda n°1\n\nCuore di fenice riattiva l'assetto di guerra dei\npersonaggi.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 29;48;1;{x01}Domanda n°2\n\nUn G.F. in K.O. torna automaticamente in vita nella\nbattaglia successiva.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 29;48;2;{x01}Domanda n°3\n\nRicevendo la magia Double in status Double, lo\nstatus diventa Triple.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 29;48;3;{x00}Domanda n°4\n\nMAG UP aumenta di Forza magica di 1 punto.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 29;48;4;{x00}Domanda n°5\n\nL'abilità Oggetti rari incide sulla probabilità che i\nnemici perdano oggetti.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 29;48;5;{x01}Domanda n°6\n\nBiggs, soldato che combatte nella torre di\ntrasmissione di Galbadia, è colonnello.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 29;48;6;{x01}Domanda n°7\n\nServono almeno 3 magie per usare Triple.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 29;48;7;{x01}Domanda n°8\n\nSe 2 membri della squadra sono uno in status\nZombie e l'altro in status Caos il gioco ha termine. \n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 29;48;8;{x00}Domanda n°9\n\nIl target di attacco Meteor è scelto a caso fra il\ngruppo.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 29;48;9;{x01}Domanda n°10\n\nZero è la magia che scioglie il nemico.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 30;49;0;{x01}Domanda n°1\n\nPoiché Trusthevis in stato critico usa Quake,\nè meglio usare la magia Levita.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 30;49;1;{x00}Domanda n°2\n\nNon è necessario fare Reiz o Areiz su personaggi\nche non sono K.O.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 30;49;2;{x01}Domanda n°3\n\nSe si subisce un danno 800 HP mentre si invoca un\nG.F. con 500 HP, la differenza di 300 HP verrà\nricevuta dal G.F. invocato.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 30;49;3;{x01}Domanda n°4\n\nDa un Kwaul si ottiene Baffi di Kwaul.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 30;49;4;{x01}Domanda n°5\n\nEffettuando Aura in status Maledizione la\nsituazione ritorna alla normalità.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 30;49;5;{x01}Domanda n°6\n\nA Galbadia c'è un mostro che si chiama Gravios.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 30;49;6;{x00}Domanda n°7\n\nStatus Mutismo rimane anche dopo la fine della\nbattaglia.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 30;49;7;{x01}Domanda n°8\n\nLa magia Reflex si ripercuote sempre su chi l'ha\nlanciata.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 30;49;8;{x01}Domanda n°9\n\nSi possono verificare altre alterazioni di status\ncon lo status Pietra.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 30;49;9;{x01}Domanda n°10\n\nL'unico modo per far apprendere le abilità al G.F.\nè accumulare AP.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 31;50;0;{x01}Domanda n°1\n\nPoiché Trusthevis in stato critico usa Quake,\nè meglio usare la magia Levita.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 31;50;1;{x00}Domanda n°2\n\nNon è necessario fare Reiz o Areiz su personaggi\nche non sono K.O.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 31;50;2;{x01}Domanda n°3\n\nSe si subisce un danno 800 HP mentre si invoca un\nG.F. con 500 HP, la differenza di 300 HP verrà\nricevuta dal G.F. invocato.\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 31;50;3;{x01}Domanda n°4\n\nDa un Kwaul si ottiene Baffi di Kwaul.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 31;50;4;{x01}Domanda n°5\n\nEffettuando Aura in status Maledizione la\nsituazione ritorna alla normalità.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 31;50;5;{x01}Domanda n°6\n\nA Galbadia c'è un mostro che si chiama Gravios.\n\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 31;50;6;{x00}Domanda n°7\n\nStatus Mutismo rimane anche dopo la fine della\nbattaglia.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 31;50;7;{x01}Domanda n°8\n\nLa magia Reflex si ripercuote sempre su chi l'ha\nlanciata.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 31;50;8;{x01}Domanda n°9\n\nSi possono verificare altre alterazioni di status\ncon lo status Pietra.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
+Test seed 31;50;9;{x01}Domanda n°10\n\nL'unico modo per far apprendere le abilità al G.F.\nè accumulare AP.\n\n\n  {Cursor_location_id:0x20}SÌ      {Cursor_location_id:0x21}NO
 TextBox00.bin;51;0;Selezionare voce
 TextBox00.bin;51;1;{Cursor_location_id:0x218d}Termini base\n{Cursor_location_id:0x222c}Elementi\n{Cursor_location_id:0x2230}Status\n{Cursor_location_id:0x2021}Menu\n{Cursor_location_id:0x204a}Sistema di battaglia\n{Cursor_location_id:0x2077}Abilità    \n{Cursor_location_id:0x2061}G.F. \n{Cursor_location_id:0x2252}Magie     \n{Cursor_location_id:0x227e}Informazioni\n{x0abf}{Cursor_location_id:0x2347}Prova di Omega\n{x0a3f}
 TextBox00.bin;51;2;Selezionare comando       {xc4}{xc4}       1/2

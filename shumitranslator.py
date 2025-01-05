@@ -414,7 +414,7 @@ class ShumiTranslator(QWidget):
         self.warning_field_label_widget.hide()
 
         # file_to_load = [os.path.join("OriginalFiles", "battle", "c0m028.dat")]  # For developing faster
-        # file_to_load = os.path.join("OriginalFiles", "mngrp.bin")  # For developing faster
+        #file_to_load = os.path.join("OriginalFiles", "mngrp.bin")  # For developing faster
         # file_to_load = ['I:/Mod_FF8/Outils modding/Fichier de travail/GitProject/ShumiTranslator/OriginalFiles/c0m001.dat']  # For developing faster
         #file_to_load = os.path.join("OriginalFiles", "FF8_EN.exe")  # For developing faster
 
@@ -472,7 +472,7 @@ class ShumiTranslator(QWidget):
                 self.layout_translation_lines.addWidget(self.section_widget_list[-1])
             elif "mngrp" in file_name and ".bin" in file_name:
                 self.file_loaded_type = FileType.MNGRP
-                # self.file_mngrphd_loaded = os.path.join("OriginalFiles", "mngrphd.bin")  # For developing faster
+                #self.file_mngrphd_loaded = os.path.join("OriginalFiles", "mngrphd.bin")  # For developing faster
                 self.file_mngrphd_loaded = self.file_dialog.getOpenFileName(parent=self, caption="Find mngrphd", filter="*mngrphd*.bin",
                                                                            directory=os.getcwd())[0]
 

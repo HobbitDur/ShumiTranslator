@@ -865,327 +865,327 @@ Chocobo tutorial;18;11;{xc4}{xc4}{xc4}{xc4}                  {Blue}Die Status-An
 Chocobo tutorial;18;12;{xc4}             {Blue}Infrarotverbindung{White}  8/8\n1: Neutralposition.\n2: Empfänger wählen.\n3: Versender wählen.\n4: Die Kampfsequenz.\n   Rechts steht dein Chocobo-Kid.\n5: Der Sieger kann die Gegner-ID\n   übernehmen. Man kann die eigene\n   ID mit dem Gegner tauschen.\n
 Chocobo tutorial;18;13;{xc4}         {xc4}{xc4}          {Blue}ChocoboWorld{White} 8/8\n
 Chocobo tutorial;18;14;1: Mit {Blue}Unterwegs{White} verläßt der\n   Chocobo FF{xc6}{xc7} und beginnt\n   sein Abenteuer.\n2: Mit {Blue}Nach Hause{White} kehrt der\n   Chocobo nach FF{xc6}{xc7} zurück.\n3: Mit {Blue}Neu{White} wird das Spiel\n   neu gestartet.\n4: {Blue}Anleitung{White}: Du liest sie gerade!\n
-Test seed general;19;0;{NewPage}\nHier wird die schriftliche SEED-Prüfung abgehalten.\nWollen Sie an der Level {x0a22}-Prüfung teilnehmen?\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed general;19;1;{NewPage}\nHier wird die schriftliche SEED-Prüfung abgehalten.\nSie sind auf Level {x0a20}.\n\nWollen Sie an der Level {x0a22}-Prüfung teilnehmen?\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed general;19;2;{NewPage}\nSie haben 100 von 100 Punkten erreicht.\nDamit haben Sie die Level {x0a20}-Prüfung {Red}bestanden!!!{White}\nIhr SEED-Level ist jetzt auf {x0a26}.\n\n\n  {Cursor_location_id:0x20}Beenden
-Test seed general;19;3;{NewPage}\nSie haben 100 von 100 Punkten erreicht.\nDamit haben Sie die Level {x0a20}-Prüfung bestanden!!!\nIhr SEED-Level ist bereits auf {x0a26}\nund steigt nicht mehr.\n\n  {Cursor_location_id:0x20}Beenden\n
-Test seed general;19;4;{NewPage}\nSie haben {x0a20} von 100 Punkten erreicht.\nLeider sind Sie durchgefallen.\nBereiten Sie sich bitte sorgfältiger\nvor. Viel Glück beim nächsten Mal.\n\n  {Cursor_location_id:0x20}Beenden
-Test seed general;19;5;{NewPage}\nIhr TEST-Level ist bereits auf 30.\nSie können daher an keiner Prüfung\nmehr teilnehmen.\n\n\n  {Cursor_location_id:0x20}Zurück.
-Test seed general;19;6;{NewPage}\nIhr SEED-Level ist bereits auf {x0a26}.\nDas ist der höchste SEED-Rang.\nWollen Sie trotzdem teilnehmen?\n\n\n  {Cursor_location_id:0x20}Trotzdem teilnehmen     {Cursor_location_id:0x21}Lassen
-Test seed general;19;7;{NewPage}\nWirklich?\n\n\n\n\n  {Cursor_location_id:0x20}Gelogen     {Cursor_location_id:0x21}Klar
-Test seed general;19;8;{NewPage}\nNachtest bestanden! Level {x0a20} beherrschen Sie\nperfekt!!\n\n\n\n  {Cursor_location_id:0x20}Ende\n
-Test seed general;19;9;{NewPage}\n{x0a20} von 100 Punkten...Sie haben sich verschlechtert.\n\n\n\n\n  {Cursor_location_id:0x20}Ende
-Test seed general;19;10;{NewPage}\nDer Level von {Squall} ist auf {x0a20}. Daher können\nSie nicht an einem Prüfungslevel, der höher\nist als {x0a22}, teilnehmen.\nKommen Sie wieder, wenn Ihr Level gestiegen ist.\n\n  {Cursor_location_id:0x20}Ende
-Test seed 1 ;20;0;{NewPage}Frage 1\n\nMit 【Draw】 kann man Zauber vom Gegner ziehen.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 1 ;20;1;{NewPage}Frage 2\n\n【G.F.】 bedeutet 【GARDEN FIGHTER】.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 1 ;20;2;{NewPage}Frage 3\n\nEs gibt insgesamt 8 Elemente.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 1 ;20;3;{NewPage}Frage 4\n\nJe höher der 【Stärke】-Wert, destostärker der\nkonventionelle Angriff.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 1 ;20;4;{NewPage}Frage 5\n\n【HP-K】 ist eine Kopplungs-Ability.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 1 ;20;5;{NewPage}Frage 6\n\nWelche Abilitys eine G.F. erlernt, ist dem Zufall\nüberlassen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 1 ;20;6;{NewPage}Frage 7\n\nDurch Zaubern wird MP verbraucht.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 1 ;20;7;{NewPage}Frage 8\n\nDer Name der G.F. kann frei bestimmt werden.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 1 ;20;8;{NewPage}Frage 9\n\nDie Charaktere können Rüstungen tragen.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 1 ;20;9;{NewPage}Frage 10\n\nG.F. Der 【G.F.-Level】 steigt durch AP.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 2 ;21;0;{NewPage}Frage 1\n\nDer 【Körper】 steigt durch Zauber-Kopplung.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 2 ;21;1;{NewPage}Frage 2\n\n{Squall} benutzt ein Gauntlet als Waffe.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 2 ;21;2;{NewPage}Frage 3\n\nDie gezogenen Zauber können gelagert werden.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 2 ;21;3;{NewPage}Frage 4\n\nIm 【Gift-Zustand】 wird ein Charakter nur dann\nverletzt, wenn er sich auf irgendeiner Weise bewegt.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 2 ;21;4;{NewPage}Frage 5\n\n【Konfus】 kann durch konventionelle Angriffe geheilt\nwerden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 2 ;21;5;{NewPage}Frage 6\n\n{Squall} beherrscht den Kampfsport als\nSpezial-Technik.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 2 ;21;6;{NewPage}Frage 7\n\nUm 【Zauber】 zu koppeln, muß die entsprechende\nAbility erlernt werden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 2 ;21;7;{NewPage}Frage 8\n\n{CharacterAbility} steht für Kopplungs-Ability.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 2 ;21;8;{NewPage}Frage 9\n\nDie 8 Elemente sind: Hitze·Kälte·Erde·Donner·Gift·\nWind·Schatten·Holy.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 2 ;21;9;{NewPage}Frage 10\n\nMonster besitzen nur eine begrenzte Anzahl an\nZauber, die man ziehen kann.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 3 ;22;0;{NewPage}Frage 1\n\nDie G.F. werden mit 【Potion】 geheilt.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 3 ;22;1;{NewPage}Frage 2\n\nZauber können nur während eines Kampfes gezogen\nwerden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 3 ;22;2;{NewPage}Frage 3\n\nSelphie benutzt ein Nunchaku als Waffe.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 3 ;22;3;{NewPage}Frage 4\n\nZum Aufrüsten von Waffen, benötigt man nur Geld.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 3 ;22;4;{NewPage}Frage 5\n\nDerjenige, der den Gegner beseitigt hat, erhält die\nmeisten Erfahrungspunkte.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 3 ;22;5;{NewPage}Frage 6\n\nJe höher der G.F.-Level, desto stärker der Angriff.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 3 ;22;6;{NewPage}Frage 7\n\n{PartyAbility} steht für 【Befehls-Ability】.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 3 ;22;7;{NewPage}Frage 8\n\nBis zu 5 Charakter- und Truppen-Abilitys können\nmit einem Charakter gekoppelt werden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 3 ;22;8;{NewPage}Frage 9\n\n【Befehls-Abilitys】 müssen vor dem Gebrauch\ngekoppelt werden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 3 ;22;9;{NewPage}Frage 10\n\n【AP】 steht für 【Aktionspunkte】.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 4 ;23;0;{NewPage}Frage 1\n\nNur {Squall} kann eine Gun-Blade benutzen.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 4 ;23;1;{NewPage}Frage 2\n\nMit Zauber kann man sogar seine eigene Truppe\nangreifen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 4 ;23;2;{NewPage}Frage 3\n\nDurch bestimmte Abilitys kann man aus Items\nZauber herstellen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 4 ;23;3;{NewPage}Frage 4\n\nJe höher der 【Körper】-Wert, desto besser die\nAbwehr.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 4 ;23;4;{NewPage}Frage 5\n\n【Blauen Zauber】 kann man lernen, wenn der Gegner\nden entsprechenden Zauber anwendet.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 4 ;23;5;{NewPage}Frage 6\n\n【Gift】 wird durch 【Anti-Z】 geheilt.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 4 ;23;6;{NewPage}Frage 7\n\nWenn ein kampfunfähiger Charakter belebt wird,\nwerden gleichzeitig  auch alle übrigen unnatürlichen\nZustände kuriert.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 4 ;23;7;{NewPage}Frage 8\n\nIn der 【Übungshalle】 des Balamb-Garden lebt ein\nMonster namens 【Archeodinos】.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 4 ;23;8;{NewPage}Frage 9\n\nDie Gun-Blade von {Squall} wird durch das\nDrücken von {L2} stärker.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 4 ;23;9;{NewPage}Frage 10\n\nBis zu 255 Zaubereinheiten können gelagert werden.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 5 ;24;0;{NewPage}Frage 1\n\n{MenuAbility} steht für 【Truppen-Ability】.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 5 ;24;1;{NewPage}Frage 2\n\nMan kann durch Draw, Zauber von einem anderen\nCharakter ziehen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 5 ;24;2;{NewPage}Frage 3\n\nDer Spielstand kann immer und überall gespeichert\nwerden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 5 ;24;3;{NewPage}Frage 4\n\nWenn die G.F. eine bestimmte Ability hinzulernt,\nkann eine neue Ability in der Auswahl erscheinen,\ndie anschließend erlernt werden kann. \n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 5 ;24;4;{NewPage}Frage 5\n\n【Charakter-Abilitys】 werden erst dann wirksam,\nwenn sie mit einem Charakter gekoppelt werden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 5 ;24;5;{NewPage}Frage 6\n\nJe höher der 【Geschick】-Wert, desto öfter wird die\nSpezial-Technik verfügbar.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 5 ;24;6;{NewPage}Frage 7\n\nAbilitys werden erst durch das Sammeln von\nErfahrungspunkten erlernt.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 5 ;24;7;{NewPage}Frage 8\n\nIm 【Zombie】-Zustand ist man schwach gegen Holy.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 5 ;24;8;{NewPage}Frage 9\n\nBei 【konventionellen Angriffen】, wird der Gegner\ndurch Waffen wie Schwerter oder Nunchakus direkt\nangegriffen.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 5 ;24;9;{NewPage}Frage 10\n\nDas 【Eisenrohr】 kann man vom 【Wendigo】 klauen.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 6 ;25;0;{NewPage}Frage 1\n\nXell benutzt Handschuhe als Waffe.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 6 ;25;1;{NewPage}Frage 2\n\nAuch im 【Schweig】-Zustand können G.F. beschwört\nwerden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 6 ;25;2;{NewPage}Frage 3\n\n{Ifrit} kann die Ability 【Hitze-Zauber】\nerlernen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 6 ;25;3;{NewPage}Frage 4\n\nAuch wenn ein Charakter mehrere G.F. koppelt, die\ndie gleichen Abilitys besitzen, ändert sich die\nGesamtwirkung nicht.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 6 ;25;4;{NewPage}Frage 5\n\nAlle unnatürlichen Zustände werden nach dem Kampf\nautomatisch kuriert.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 6 ;25;5;{NewPage}Frage 6\n\nDie Befehle 【Angriff】 und 【Draw】 können auch ohne\nG.F.-Kopplung eingesetzt werden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 6 ;25;6;{NewPage}Frage 7\n\nWenn man die Gun-Blade von {Squall} auf\nAutomatik stellt, muß man nicht mehr {R1} drücken.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 6 ;25;7;{NewPage}Frage 8\n\nDer 【Magie】-Wert bestimmt die Zauberkraft eines\nCharakters.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 6 ;25;8;{NewPage}Frage 9\n\nWenn man Zauber durch 【Optimal】 koppelt, gibt es\nnur zwei Möglichkeiten: Schwerpunkt Stärke oder\nMagie.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 6 ;25;9;{NewPage}Frage 10\n\n【Gratt】 benutzt den ZU-Angriff 【Schlaf】.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 7 ;26;0;{NewPage}Frage 1\n\nJe höher der 【Reflex】-Wert, desto höher die\nWahrscheinlichkeit, daß man Angriffen ausweicht.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 7 ;26;1;{NewPage}Frage 2\n\nWenn ein Gegner 【Hitze】 absorbieren kann, wird er\ndurch 【Feuer】-Zauber geheilt.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 7 ;26;2;{NewPage}Frage 3\n\nWelches Multi {Squall} anwendet, hängt von seiner\nGun-Blade ab.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 7 ;26;3;{NewPage}Frage 4\n\nDer 【Hitze-Wandler】 erzeugt 5× 【Feuer】 aus einem\n【Zaubersplitter】.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 7 ;26;4;{NewPage}Frage 5\n\nBei Kartenspielen existieren Sonderkarten, die es\nnur einmal auf der Welt gibt.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 7 ;26;5;{NewPage}Frage 6\n\n【Buel】 benutzt 【Feuer】.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 7 ;26;6;{NewPage}Frage 7\n\nDer 【Geist】-Wert ist nur für den Zauber 【Konfu】\nwichtig. Je höher der Wert, desto effektiver der\nZauber.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 7 ;26;7;{NewPage}Frage 8\n\nVon 【Heulechsen】 bekommt man 【Schrauben】.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 7 ;26;8;{NewPage}Frage 9\n\nJe höher der 【Charakterlevel】, desto höher der\n【Level des Gegners】.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 7 ;26;9;{NewPage}Frage 10\n\nWenn man im Welt-Modus langsam geht, erscheinen\nkeine Gegner.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 8 ;27;0;{NewPage}Frage 1\n\nDie 【Galbadia-Soldaten】 benutzen keine Zauber.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 8 ;27;1;{NewPage}Frage 2\n\nDie Waffen werden durch Aufrüsten beim\nSchrotthändler stärker.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 8 ;27;2;{NewPage}Frage 3\n\n{Fire} steht für Charakter-Ability.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 8 ;27;3;{NewPage}Frage 4\n\nWenn man 【Gemach】 im 【Hast-Zustand】 benutzt,\nerlischt die 【Hast】-Wirkung.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 8 ;27;4;{NewPage}Frage 5\n\nIn den Wäldern sind mehr Gegner als auf den\nFeldern.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 8 ;27;5;{NewPage}Frage 6\n\nWenn die 【EL-Abwehr】 mehr als 100% beträgt,\nwerden entsprechende 【EL-Angriffe】 absorbiert.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 8 ;27;6;{NewPage}Frage 7\n\nEinen 【Garden】 gibt es nur in Balamb.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 8 ;27;7;{NewPage}Frage 8\n\nIn der 【Feuer-Grotte】 tauchen keine 【Bomber】 auf.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 8 ;27;8;{NewPage}Frage 9\n\nJede G.F. erlernt unterschiedliche Abilitys.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 8 ;27;9;{NewPage}Frage 10\n\nDer Schrotthändler verkauft Waffen.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 9 ;28;0;{NewPage}Frage 1\n\nDie gezogenen G.F. können sofort beschwört werden,\nohne daß man sie erst einmal lagern muß.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 9 ;28;1;{NewPage}Frage 2\n\n{Thunder} steht für Menü-Ability.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 9 ;28;2;{NewPage}Frage 3\n\nBei Selphies 【Tombola】 erscheinen nur die Zauber,\ndie Selphie besitzt.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 9 ;28;3;{NewPage}Frage 4\n\nWenn das Freundschaftsverhältnis zu einer G.F.\nzu schlecht ist, kann es passieren, daß die G.F.\nverschwindet.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 9 ;28;4;{NewPage}Frage 5\n\nDie Truppen-Ability kann auch ohne Kopplungen\neingesetzt werden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 9 ;28;5;{NewPage}Frage 6\n\nWenn man kampfunfähige G.F. für eine Weile\nignoriert, gehen sie für immer verloren.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 9 ;28;6;{NewPage}Frage 7\n\nAus einer 【Spitzen Kralle】 entstehen\n5 【Stahl-Munition】.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 9 ;28;7;{NewPage}Frage 8\n\nEin unnatürlicher Zustand wird auch durch die\nBeseitigung des betreffenden Gegners kuriert.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 9 ;28;8;{NewPage}Frage 9\n\nWenn der Level eines Gegners steigt, verwenden\nsie auch neue Techniken.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 9 ;28;9;{NewPage}Frage 10\n\nIm 【Gift-Zustand】 nimmt ein Charakter Schaden\nnach jeder Aktion.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 10;29;0;{NewPage}Frage 1\n\nDurch 【Konfu】 wird der Betroffene in den\n【Konfus】-Zustand versetzt.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 10;29;1;{NewPage}Frage 2\n\nEine 【Potion】 heilt 100 HP.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 10;29;2;{NewPage}Frage 3\n\nQuistis benutzt ein Zauberschwert als Waffe.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 10;29;3;{NewPage}Frage 4\n\n【ATB】 steht für ABILITY TONE BLACK.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 10;29;4;{NewPage}Frage 5\n\nIm 【Zombie-Zustand】 wird man schwach gegen\n【Hitze】.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 10;29;5;{NewPage}Frage 6\n\nDer 【Item-Wandler】 verwandelt 【Heilwasser】 in\n1 【Zelt】.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 10;29;6;{NewPage}Frage 7\n\nDie Erfahrungspunkte werden nach dem Kampf\nimmer gleichmäßig verteilt.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 10;29;7;{NewPage}Frage 8\n\n【Blende】 saugt das Gehirn des Gegners auf und\nmacht ihn kampfunfähig.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 10;29;8;{NewPage}Frage 9\n\n【Stein】 wird durch Medica bzw. Goldene Nadel\nkuriert.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 10;29;9;{NewPage}Frage 10\n\n【Schlaf】 kann nicht kuriert werden.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 11;30;0;{NewPage}Frage 1\n\nDie HP eines G.F. regeneriert sich beim Gehen.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 11;30;1;{NewPage}Frage 2\n\nWenn der Befehl 【Draw】 nicht gekoppelt ist,\nkönnen 【Draw-Punkte】 nicht benutzt werden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 11;30;2;{NewPage}Frage 3\n\nDurch eine 【Finishing-Blow】 stirbt der Gegner\n100%ig.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 11;30;3;{NewPage}Frage 4\n\n{Sire} kann die Ability 【Behandeln】\nerlernen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 11;30;4;{NewPage}Frage 5\n\nEin Charakter kann mehrere G.F. koppeln.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 11;30;5;{NewPage}Frage 6\n\n【Adamantine】 bekommt man nur von einem\n【Adaman Taimai mit Level 10】.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 11;30;6;{NewPage}Frage 7\n\nSowohl Zauber als auch Items, können in beliebiger\nReihenfolge angeordnet werden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 11;30;7;{NewPage}Frage 8\n\n{Shiva} kann gleich zu Beginn das\n【Todesurteil】 erlernen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 11;30;8;{NewPage}Frage 9\n\n【Saugen】 saugt die HP des Gegners ab, aber nicht\ndie von einem Charakter.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 11;30;9;{NewPage}Frage 10\n\n【Heil-Zauber】 richten Schaden bei untoten Gegnern\nan.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 12;31;0;{NewPage}Frage 1\n\nEsansuci absorbiert 【Erd-Elemente】.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 12;31;1;{NewPage}Frage 2\n\nDer Lebens-Wandler erzeugt aus 【Heilwasser】\n20 【Vitra】.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 12;31;2;{NewPage}Frage 3\n\nAuch ein kampfunfähiger Charakter bekommt nach\neinem Kampf Erfahrungspunkte.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 12;31;3;{NewPage}Frage 4\n\nG.F. können nur bei Kämpfen bzw.\ndurch Draw von Gegnern gezogen werden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 12;31;4;{NewPage}Frage 5\n\nPro Draw (Lagern) können maximal nur\n9 Zaubereinheiten gelagert werden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 12;31;5;{NewPage}Frage 6\n\nVon einem Grande Arlo kann man 【Spitze Krallen】\nrauben.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 12;31;6;{NewPage}Frage 7\n\nUm das Menü während des Kampfes auszublenden,\nmuß man {Select} gedrückt halten.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 12;31;7;{NewPage}Frage 8\n\nBei 【Schweigen】 werden nur die Befehle 【G.F.】 und\n【Zauber】 deaktiviert.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 12;31;8;{NewPage}Frage 9\n\n【Analyse】 kann man auch auf eigene Charaktere\nanwenden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 12;31;9;{NewPage}Frage 10\n\nWenn die 【Gift-Abwehr】 100% beträgt, nimmt der\nCharakter keinen Schaden durch Giftangriffe.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 13;32;0;{NewPage}Frage 1\n\nAuch bei Flucht, bekommt man Erfahrungspunkte,\nwenn man mindestens einen Gegner angegriffen hat.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 13;32;1;{NewPage}Frage 2\n\nVon einem 【Chimära】 können 【Blaue Zähne】 geraubt\nwerden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 13;32;2;{NewPage}Frage 3\n\nSolange eine G.F.-Ability nicht gekoppelt ist,\nbewirkt sie nichts.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 13;32;3;{NewPage}Frage 4\n\nAn jedem Draw-Punkt kann man nur einmal einen\nZauber ziehen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 13;32;4;{NewPage}Frage 5\n\nDie G.F. {Quezacotl} kann auch ohne Items die\nAbility 【Karten-Wandler】 erlernen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 13;32;5;{NewPage}Frage 6\n\nWenn 【Draw】 zu oft fehlschlägt, ist diese Ability\nfür eine Weile nicht verfügbar.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 13;32;6;{NewPage}Frage 7\n\nWenn eine G.F. kampfunfähig wird, verschlechtert\nsich das Verhältnis zum gekoppelten Charakter.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 13;32;7;{NewPage}Frage 8\n\nMan kann vor jedem Gegner flüchten.\nEs ist nur eine Frage des Timings.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 13;32;8;{NewPage}Frage 9\n\nDie Gun-Blade von {Squall} verbraucht Munition.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 13;32;9;{NewPage}Frage 10\n\nWenn man 【Hitze-Monster】 angreift, kontert er\nstets mit 【Hitze-Angriffen】.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 14;33;0;{NewPage}Frage 1\n\nEs gibt G.F., die man von Gegnern ziehen kann.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 14;33;1;{NewPage}Frage 2\n\nDer Multi von {Squall} wird in Gefahrensituationen\nstärker.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 14;33;2;{NewPage}Frage 3\n\nJe höher der 【Treffer】-Wert, desto höher die\nTrefferquote. Die Wahrscheinlichkeit hängt aber\nauch vom 【Reflex】-Wert des Gegners ab.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 14;33;3;{NewPage}Frage 4\n\nEs gibt Items, die das Freundschaftsverhältnis\nzu G.F. verändert.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 14;33;4;{NewPage}Frage 5\n\nDurch 【Shell】 wird die Zauberabwehr vervierfacht.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 14;33;5;{NewPage}Frage 6\n\nEs gibt ein Monster namens 【Belhel Melhel】.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 14;33;6;{NewPage}Frage 7\n\nWenn keine G.F. gekoppelt und keine Befehls-Abilitys\neingesetzt wurden, kann im Kampf nur 【Angriff】\nausgeführt werden.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 14;33;7;{NewPage}Frage 8\n\nWenn ein Gegner durch konventionelle Angriffe\nbeseitigt wird, erhält man mehr Erfahrungspunkte\nals durch Zauber.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 14;33;8;{NewPage}Frage 9\n\n【Beschützen】 deckt nur einen nebenstehende\nCharakter ab.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 14;33;9;{NewPage}Frage 10\n\n【Anfeuern】 ist am effektivsten, wenn man {Square}\ngedrückt hält.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 15;34;0;{NewPage}Frage 1\n\nJe öfter man G.F. beschwört, desto besser die\nFreundschaft.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 15;34;1;{NewPage}Frage 2\n\nEin Charakter kann nur eine begrenzte Anzahl an\nZauber lagern.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 15;34;2;{NewPage}Frage 3\n\nFocarols 【Sandsturm】 ist ein 【Wind-Angriff】.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 15;34;3;{NewPage}Frage 4\n\nEin Zauber, der durch 【Reflek】 reflektiert wurde,\nkann nochmals durch 【Reflek】 zurückgestrahlt\nwerden.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 15;34;4;{NewPage}Frage 5\n\nEin Charakter im 【Konfus】-Zustand, greift niemals\nsich selbst an.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 15;34;5;{NewPage}Frage 6\n\nDurch bestimmte Abilitys kann ein 【Polarwind】 in\n【Eis】 verwandelt werden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 15;34;6;{NewPage}Frage 7\n\n{Cerberus} kann die Ability 【Geschick-Bonus】\nlernen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 15;34;7;{NewPage}Frage 8\n\nBeim 【Schweigen】 wird Zauber auch im Menü\nversiegelt.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 15;34;8;{NewPage}Frage 9\n\nDas 【Echo-Kraut】 hilft gegen Versteinerung.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 15;34;9;{NewPage}Frage 10\n\nWenn 【Schweigen】 während der G.F.-Beschwörung\neintritt, wird der Vorgang abgebrochen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 16;35;0;{NewPage}Frage 1\n\nJe weniger HP, desto häufiger sind\nSpezial-Techniken verfügbar.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 16;35;1;{NewPage}Frage 2\n\nMan kann bis zu 3 Zauber mit【EL-Abwehr】 koppeln,\nwenn man 【EL-Abwehr-K】 und 【EL-Abwehr-K ×2】\nbesitzt.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 16;35;2;{NewPage}Frage 3\n\nIm Kopplungs-Menü gibt es ein Befehl, mit dem nur\ndie G.F., und nicht die Zauber gelöst werden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 16;35;3;{NewPage}Frage 4\n\nAuch wenn ein 【ZU-Angriff】 100% beträgt, gibt es\nGegner, die gegen 【ZU-Angriffe】 immun sind.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 16;35;4;{NewPage}Frage 5\n\nDurch mehrmaliges 【Draw】 kann ein Gegner\nirgendwann keinen Zauber mehr verwenden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 16;35;5;{NewPage}Frage 6\n\nVon 【Beißkäfern】 mit niedrigem Level bekommt man\n【Zaubersplitter】.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 16;35;6;{NewPage}Frage 7\n\nMit 【G-Mega-Potion】 kann eine kampfunfähige G.F.\nbelebt werden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 16;35;7;{NewPage}Frage 8\n\nWenn alle Charaktere zu Zombie, zu Stein oder\nkampfunfähig werden, gilt der Kampf als verloren.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 16;35;8;{NewPage}Frage 9\n\n【Hi-Potion】 heilt einen Charakter um 1000 HP.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 16;35;9;{NewPage}Frage 10\n\nEs gibt eine Ability namens 【Schritt-Gil】.\nDabei bekommt die Truppe bei jedem Schritt 10 Gil.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 17;36;0;{NewPage}Frage 1\n\nDurch 【Aura】 steigt die Wahrscheinlichkeit, daß\nSpezial-Techniken verfügbar werden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 17;36;1;{NewPage}Frage 2\n\nMan kann die 【G-Potion】 während eines Kampfes\nanwenden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 17;36;2;{NewPage}Frage 3\n\nDurch 【Medizinkunde】 kann man zwei Heiltränke auf\neinmal anwenden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 17;36;3;{NewPage}Frage 4\n\nWenn {Squall} seinen Multi präzise ausführt,\nsteigt die Wahrscheinlichkeit daß ein 【Finish-Blow】\nangewendet wird.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 17;36;4;{NewPage}Frage 5\n\nDurch 【Vorsicht】 werden Angriffe von Hinten\nvermieden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 17;36;5;{NewPage}Frage 6\n\nIm 【Tobsucht-Zustand】 werden Spezial-Techniken\nautomatisch angewendet.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 17;36;6;{NewPage}Frage 7\n\nMan kann im Menü 【Potion】 auf einen Charakter im\n【Zombie-Zustand】 anwenden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 17;36;7;{NewPage}Frage 8\n\nDer Angriff der G.F. {Alexander} ist ein\n【Holy-Angriff】.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 17;36;8;{NewPage}Frage 9\n\n【Archeodinos】 besitzen Items mit dem Namen\n【Dino-Zahn】.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 17;36;9;{NewPage}Frage 10\n\nIm 【Blind】-Zustand greift der Charakter Freund wie\nFeind an.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 18;37;0;{NewPage}Frage 1\n\nMan kann nur mit Hilfe der G.F. koppeln.\nDabei spielt der Charakterlevel keine Rolle.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 18;37;1;{NewPage}Frage 2\n\n【Reflek】kann sämtliche Zauber reflektieren.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 18;37;2;{NewPage}Frage 3\n\nEs gibt insgesamt 30 verschiedene Zustände.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 18;37;3;{NewPage}Frage 4\n\n【Zombie】 kann durch Zauber kuriert werden.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 18;37;4;{NewPage}Frage 5\n\nIn der Kampfsequenz kann durch {L1} das Zielobjekt\nüber ein Menü ausgewählt werden. \n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 18;37;5;{NewPage}Frage 6\n\nEs gibt eine Ability, die man ohne G.F. erlernen kann.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 18;37;6;{NewPage}Frage 7\n\nWendigo schwebt, bis er angegriffen wird.\nDanach kontert er mit Pulswellen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 18;37;7;{NewPage}Frage 8\n\nWenn ein Charakter schläft, wird sein HP langsam\nregeneriert.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 18;37;8;{NewPage}Frage 9\n\n{Carbuncle} ist eine G.F., die Shell und Protes auf\ndie Truppe anwendet.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 18;37;9;{NewPage}Frage 10\n\n【Konfu】 hat stets Vorrang vor 【Tobsucht】, wenn\nbeide Zustände gleichzeitig auftreten.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 19;38;0;{NewPage}Frage 1\n\nDie Frage, ob man den 【Tod】 abwenden kann, hängt\nvon 【ZU-K】 und nicht vom 【Körper】 ab.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 19;38;1;{NewPage}Frage 2\n\nWenn ein Charakter im 【Zombie-Zustand】 von einem\nZombie HP absaugt, bekommt er Schaden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 19;38;2;{NewPage}Frage 3\n\nDer 【Cockatrice】 greift manchmal mit\nGift-Elementen an.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 19;38;3;{NewPage}Frage 4\n\nDer 【Gott-Zustand】 währt nur im Kampf.\nEr erlischt danach.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 19;38;4;{NewPage}Frage 5\n\nDie 【Chimära】 hat 5 Köpfe: Drachen-, Frosch-,\nZiegen-,Vogel- und Löwenkopf.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 19;38;5;{NewPage}Frage 6\n\n【Protes】 ist nur dann effektiv, wenn der\n【Körper】-Wert mehr als 0 beträgt.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 19;38;6;{NewPage}Frage 7\n\nJe öfter man 【Levitas】 verwendet, desto höher\nschwebt der Charakter.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 19;38;7;{NewPage}Frage 8\n\nDer 【X-ATM-092】 ist unbesiegbar. Daher bleibt die\nFlucht als einzige Möglichkeit.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 19;38;8;{NewPage}Frage 9\n\n【Stein】 wirkt nur, wenn der 【Geist】-Wert des\nGegners mehr als 0 beträgt.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 19;38;9;{NewPage}Frage 10\n\nDer Schrotthändler zeigt an, welche Items für die\nAufrüstungen nötig sind, bzw. noch fehlen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 20;39;0;{NewPage}Frage 1\n\nBeim Autofahren erscheint kein Gegner.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 20;39;1;{NewPage}Frage 2\n\nAus einem 【Feuerzahn】 kann man 【Flare ×20】\nherstellen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 20;39;2;{NewPage}Frage 3\n\n【Geira】 ist ca. zwölf Meter groß.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 20;39;3;{NewPage}Frage 4\n\nEs gibt Monster, die neutral sind und keinem\nElement zugehören.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 20;39;4;{NewPage}Frage 5\n\nDer SEED-Level wirkt sich auf die Erfolgsquote\nbeim Draw und Zauber aus.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 20;39;5;{NewPage}Frage 6\n\nAuch bei geringer HP bleibt die Angriffsstärke gleich.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 20;39;6;{NewPage}Frage 7\n\nJe besser das Freundschaftsverhältnis, desto\nschneller die Beschwörung.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 20;39;7;{NewPage}Frage 8\n\nEine 【Stichraupe】 besitzt 【Spinnennetze】.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 20;39;8;{NewPage}Frage 9\n\nDas Koppeln von 【Stärke+20%】und【Stärke+40%】\nist effektiver als das Koppeln von 【Stärke+60%】.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 20;39;9;{NewPage}Frage 10\n\nDie G.F. 【{Sire}】 versetzt beim Angriff\nden Gegner in den Konfus-Zustand.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 21;40;0;{NewPage}Frage 1\n\nDer 【Bomber】 benutzt Selbstzerstörung.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 21;40;1;{NewPage}Frage 2\n\nDer 【Morbol】 lebt im Norden Esthars.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 21;40;2;{NewPage}Frage 3\n\nDie Zeitschrift 【Beat{xba}em Up】 berichtet über\nKampftechniken.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 21;40;3;{NewPage}Frage 4\n\nMan kann eine G.F. von 【El Viole】 ziehen.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 21;40;4;{NewPage}Frage 5\n\nWenn 【Stop】während der G.F.-Beschwörung eintritt,\nwird der Vorgang trotzdem fortgesetzt.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 21;40;5;{NewPage}Frage 6\n\nBei der 【Abwehr】 beträgt der physikalische Schaden\ngleich null. 【Abwehr】 zeigt jedoch keine Wirkung\ngegen Zauberangriffe.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 21;40;6;{NewPage}Frage 7\n\nWenn man 【Engel】 koppelt, steigt die EL-Abwehr\ngegen alle Elemente.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 21;40;7;{NewPage}Frage 8\n\nDer 【Balamb-Garden】 besitzt eine Bücherei.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 21;40;8;{NewPage}Frage 9\n\nDer 【Mega-Phönix】 läßt die gesamte Teruppe\nauferstehen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 21;40;9;{NewPage}Frage 10\n\nAus der 【Bomber-Karte】 läßt sich 1 【Bomberseele】\nherstellen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 22;41;0;{NewPage}Frage 1\n\nWenn man zuerst 【Shell】, dann【Protes】 anwendet,\nzeigt nur 【Protes】 Wirkung.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 22;41;1;{NewPage}Frage 2\n\nWenn der 【Glück】-Wert zu niedrig ist, verliert man\ngelegentlich Gil und Items.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 22;41;2;{NewPage}Frage 3\n\nUm die 【Hitze-Abwehr】 zu steigern, muß man\n【Kälte-Zauber】 koppeln.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 22;41;3;{NewPage}Frage 4\n\nWenn man 【Reflek】 mit 【ZU-Abwehr】 koppelt, steigen\ninsgesamt 9 Werte.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 22;41;4;{NewPage}Frage 5\n\n【Zombie】und 【Seuche】 sind 【Schatten-Zauber】.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 22;41;5;{NewPage}Frage 6\n\nDie 【Hi-Potion-2】 heilt die HP um 3000 Punkte.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 22;41;6;{NewPage}Frage 7\n\nJe höher der SEED-Level, desto niedriger die\nWarenpreise in den Shops.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 22;41;7;{NewPage}Frage 8\n\nDas Freundschaftsverhältnis zu den G.F.\nverbessert sich durch die Verwendung eines\nZaubers des gleichen Elements.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 22;41;8;{NewPage}Frage 9\n\nDie 【Hilfe-Option】 wird stets durch neue Infos\nerweitert.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 22;41;9;{NewPage}Frage 10\n\nJe höher der 【Treffer】-Wert, desto effektiver der\nDraw.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 23;42;0;{NewPage}Frage 1\n\nAus einer 【Mega-Pille】 kann man 【Mega-Pille-2】\nherstellen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 23;42;1;{NewPage}Frage 2\n\nDurch das gleichzeitige Drücken von {R1} und {R2}\nwird die Flucht aus Kämpfen eingeleitet.\nEs klappt jedoch bei manchen Gegnern nicht.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 23;42;2;{NewPage}Frage 3\n\nDie Befehls-Ability 【Heilen】 belebt auch einen\nkampfunfähigen Charakter.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 23;42;3;{NewPage}Frage 4\n\n【Medica】 kuriert unnatürliche Zustände, 【Anti-Z】\nkuriert Schäden durch Elemente.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 23;42;4;{NewPage}Frage 5\n\nMit 【Regena】 wird die HP regeneriert, auch wenn\nman sich im 【Stop-Zustand】 befindet.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 23;42;5;{NewPage}Frage 6\n\nBei 【Fluch】 kann man keine Spezial-Techniken mehr\nanwenden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 23;42;6;{NewPage}Frage 7\n\nDurch 【Tobsucht】steigt die 【Stärke】. Dabei wird\nder Befehl 【Angriff】 automatisch ausgeführt.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 23;42;7;{NewPage}Frage 8\n\nEs gibt eine Ability, der einen 【Morbol-Fühler】 in\neine 【Mega-Pille】 verwandelt.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 23;42;8;{NewPage}Frage 9\n\n【Levitas】 wirkt nur für eine bestimmte Zeit.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 23;42;9;{NewPage}Frage 10\n\nDurch 【Protes】 verringert sich der physikalische\nSchaden um 50%.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 24;43;0;{NewPage}Frage 1\n\n【Gemach】 kann man durch 【Medica】 kurieren.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 24;43;1;{NewPage}Frage 2\n\nWenn man 【Levitas】 mit 【EL-Abwehr】 koppelt, steigt\ndie Abwehr gegen 【Erd-Elemente】.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 24;43;2;{NewPage}Frage 3\n\nDie ATB läuft auch, nachdem man eine G.F.\nbeschwört hat.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 24;43;3;{NewPage}Frage 4\n\n【Auto-Reflek】 versetzt einen Charakter in den\n【Reflek-Zustand】, bis er kampfunfähig wird.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 24;43;4;{NewPage}Frage 5\n\n{Ice} steht für G.F.-Ability.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 24;43;5;{NewPage}Frage 6\n\nEine G.F. kann nur eine begrenzte Anzahl an\nAbilitys erlernen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 24;43;6;{NewPage}Frage 7\n\nJe öfter man 【Protes】 anwendet, desto stärker wird\ndie Abwehr.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 24;43;7;{NewPage}Frage 8\n\nWenn man von jemanden im 【Gift】-Zustand HP\nabsaugt, wird das 【Gift】 mit abgesaugt.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 24;43;8;{NewPage}Frage 9\n\nEine Waffe nutzt sich nach und nach ab.\n(Reparatur beim Schrotthändler möglich.)\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 24;43;9;{NewPage}Frage 10\n\nAuch wenn man im 【Schweig】-Zustand 【Konfus】 wird,\nkann dieser Charakter trotzdem keine Zauber\nanwenden.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 25;44;0;{NewPage}Frage 1\n\nVon einem 【Invictus】 kann man eine 【Laser-Kanone】\nrauben.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 25;44;1;{NewPage}Frage 2\n\nDer Angriff der G.F. {Leviathan} heißt 【Sturmflut】.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 25;44;2;{NewPage}Frage 3\n\nMit einem 【Vergißmeinnnicht】 kann eine G.F.-Ability\ngelöscht werden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 25;44;3;{NewPage}Frage 4\n\nEs gibt Speicher- und Draw-Punkte, die nur durch\neine bestimmte Ability sichtbar werden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 25;44;4;{NewPage}Frage 5\n\nEine G.F. erhält mehr Erfahrungspunkte, wenn man\nnur eine, anstatt mehrere G.F. pro Charakter\nkoppelt.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 25;44;5;{NewPage}Frage 6\n\nDer 【SEED-Sold】 wird nur im Balamb-Garden\nausbezahlt.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 25;44;6;{NewPage}Frage 7\n\nEs gibt 3 arten von Wasser-Zauber: Aqua,\nAqura und Aquga.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 25;44;7;{NewPage}Frage 8\n\n【Kontern】 wird nur durch einen gegnerischen\nEinzelangriff aktiviert.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 25;44;8;{NewPage}Frage 9\n\nEs gibt ein Item namens 【Diebeshandschuh】.\nDamit klappt das 【Rauben】 100%ig.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 25;44;9;{NewPage}Frage 10\n\nEs gibt einen Zauber mit 【Fluch-Effekt】, der durch\nDraw gezogen werden kann.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 26;45;0;{NewPage}Frage 1\n\nDurch das Absaugen von Untoten nimmt man\nSchaden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 26;45;1;{NewPage}Frage 2\n\nWenn man die Ability 【Erstschlag】 koppelt, ist die\nATB-Leiste immer voll, auch wenn man von hinten\nangegriffen wird.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 26;45;2;{NewPage}Frage 3\n\nDie Befehls-Ability 【Schatten】 greift den Gegner\nan, und versetzt ihn gleichzeitig in den\n【Blind】-Zustand.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 26;45;3;{NewPage}Frage 4\n\n【Holy】 ist der einzige Zauber mit einem\nHoly-Element.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 26;45;4;{NewPage}Frage 5\n\nAuch G.F., die nicht gekoppelte sind, erhalten AP\nund Erfahrungspunkte.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 26;45;5;{NewPage}Frage 6\n\nDurch 【Shell】 verringert sich die Wirkung eines\nHeilzaubers.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 26;45;6;{NewPage}Frage 7\n\nWenn der 【Reflex】-Wert hoch ist, kann ein\nCharakter auch im 【Schlaf】 Angriffen ausweichen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 26;45;7;{NewPage}Frage 8\n\nMan kann die erlernten 【G.F.-Abilitys】 mit einer\nbestimmten Methode löschen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 26;45;8;{NewPage}Frage 9\n\nDas 【Todesurteil】 behält seine Wirkung auch dann,\nwenn man inmitten des Kampfs flüchtet.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 26;45;9;{NewPage}Frage 10\n\nDie Stärke eines Angriffszaubers hängt nicht von\n【Magie】, sondern von 【Stärke】 ab.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 27;46;0;{NewPage}Frage 1\n\nDurch 【Hast】 verringert sich die Erfolgsquote beim\nDraw.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 27;46;1;{NewPage}Frage 2\n\nDer 【SEED-Sold】 hängt von der Anzahl der\nbesiegten Gegner ab.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 27;46;2;{NewPage}Frage 3\n\nEs gibt eine Ability namens 【G.F. x2】, mit der man\n2 G.F. auf einmal beschwören kann.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 27;46;3;{NewPage}Frage 4\n\nUm die Items automatisch zu ordnen, muß man im\nMenü den Punkt 【Selber】 wählen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 27;46;4;{NewPage}Frage 5\n\nJedes Monster hat mindestens eine Schwachstelle.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 27;46;5;{NewPage}Frage 6\n\n【Bio】 lockert die Moleküle des Gegners auf, um so\nseine Abwehr zu schwächen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 27;46;6;{NewPage}Frage 7\n\nBeim Angriff von Hinten wird die Flucht schwieriger.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 27;46;7;{NewPage}Frage 8\n\n【Flare】 ist ein 【Hitze-Zauber】.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 27;46;8;{NewPage}Frage 9\n\nMan kann die Anzahl der besiegten Monster in\nErfahrung bringen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 27;46;9;{NewPage}Frage 10\n\nDie Charaktere, die an den Kämpfen nicht\nteilnehmen, erhalten trotzdem ein wenig\nErfahrungspunkte.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 28;47;0;{NewPage}Frage 1\n\nJe höher der 【Geschick】-Wert, desto schneller füllt\nsich die ATB-Leiste.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 28;47;1;{NewPage}Frage 2\n\nDas 【Todesurteil】 kann mit 【Medica】 aufgehoben\nwerden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 28;47;2;{NewPage}Frage 3\n\nUnter 【Zauberangriff】 versteht man Angriffe mit\nZauber, ausgenommen Holy.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 28;47;3;{NewPage}Frage 4\n\nGegen 【Todesurteil】 hilft kein Zauber.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 28;47;4;{NewPage}Frage 5\n\nDie 【Seuche】 bewirkt 【Gift】, 【Schweigen】und 【Blind】.\nEs kommt aber vor, daß einige dieser Zustände\nkeine Wirkung zeigen.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 28;47;5;{NewPage}Frage 6\n\nDurch eine Hotelübernachtung werden HP und alle\nunnatürlichen Zustände geheilt.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 28;47;6;{NewPage}Frage 7\n\nDer Multi von {Squall} kann mit {X} abgebrochen\nwerden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 28;47;7;{NewPage}Frage 8\n\nMit 【Doppel】 bzw. 【Tripel】 kann man mehrmals den\nselben Zauber anwenden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 28;47;8;{NewPage}Frage 9\n\nDer 【Stein】-Zustand endet nach einer gewissen\nZeit.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 28;47;9;{NewPage}Frage 10\n\nWenn man eine 【Goldene Nadel】 während einer\nVersteinerung (Countdown) anwendet, zeigt sie\nkeine Wirkung.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 29;48;0;{NewPage}Frage 1\n\nUm einen Kampfunfähigen zu beleben, benutzt man\ndie 【Seele des Phönix】.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 29;48;1;{NewPage}Frage 2\n\nDie Kampfunfähigen G.F. nehmen am nächsten Kampf\nwieder teil.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 29;48;2;{NewPage}Frage 3\n\nWenn man 【Doppel】 2 Mal benutzt, hat das die selbe\nWirkung wie 【Tripel】.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 29;48;3;{NewPage}Frage 4\n\nDurch 【Magie-Plus】steigt der 【Magie】-Wert um 1.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 29;48;4;{NewPage}Frage 5\n\nEs gibt eine Ability, mit der die Wahrscheinlichkeit\nerhöht wird, daß ein Gegner seltene Items hinterläßt.\nDiese Ability heißt 【Rarität】.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 29;48;5;{NewPage}Frage 6\n\nAls Biggs auf dem Sendeturm kämpfte, war sein\nRang Oberst.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 29;48;6;{NewPage}Frage 7\n\n【Tripel】 benötigt mindestens 3 Einheiten eines\nZaubers.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 29;48;7;{NewPage}Frage 8\n\nWenn 2 Charaktere im 【Zombie】-Zustand, und der\ndritte im 【Konfus】-Zustand sind, gilt der Kampf als\nverloren.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 29;48;8;{NewPage}Frage 9\n\nBei 【Meteor】 wird das Ziel zufällig ausgewählt.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 29;48;9;{NewPage}Frage 10\n\n【Melton】 schmilzt den Gegner.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 30;49;0;{NewPage}Frage 1\n\n【Thrust Avis】 benutzt 【Beben】. Daher ist es\nratsam, zuvor 【Levitas】 anzuwenden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 30;49;1;{NewPage}Frage 2\n\nEngel und Erzengel zeigen keine Wirkung auf\nCharaktere, die nicht kampfunfähig sind.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 30;49;2;{NewPage}Frage 3\n\nWenn die G.F.-HP 500 beträgt und sie einen\nSchaden von 800 abbekommt, erhält der gekoppelte\nCharakter den Differenzschaden von 300.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 30;49;3;{NewPage}Frage 4\n\n【Qual】 besitzt 【Quals Bart】.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 30;49;4;{NewPage}Frage 5\n\nWenn 【Fluch】 auf 【Aura】 angewendet wird, erlischt\ndie Aura.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 30;49;5;{NewPage}Frage 6\n\nAuf dem 【Galbadia-Kontinent】 lebt ein Monster\nnamens 【Gra Vaia】.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 30;49;6;{NewPage}Frage 7\n\n【Schweigen】 setzt sich auch nach Kämpfen fort.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 30;49;7;{NewPage}Frage 8\n\n【Reflek】 reflektiert den Zauber auf denjenigen,\nder den Zauber ursprünglich angewendet hat.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 30;49;8;{NewPage}Frage 9\n\nWenn jemand sich im 【Stein】-Zustand befindet,\nkönnen trotzdem noch weitere Zustände eintreten.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 30;49;9;{NewPage}Frage 10\n\nDamit eine G.F. Abilitys erlernt, muß man AP\nsammeln.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 31;50;0;{NewPage}Frage 1\n\n【Thrust Avis】 benutzt 【Beben】. Daher ist es\nratsam, zuvor 【Levitas】 anzuwenden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 31;50;1;{NewPage}Frage 2\n\nEngel und Erzengel zeigen keine Wirkung auf\nCharaktere, die nicht kampfunfähig sind.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 31;50;2;{NewPage}Frage 3\n\nWenn die G.F.-HP 500 beträgt und sie einen\nSchaden von 800 abbekommt, erhält der gekoppelte\nCharakter den Differenzschaden von 300.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 31;50;3;{NewPage}Frage 4\n\n【Qual】 besitzt 【Quals Bart】.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 31;50;4;{NewPage}Frage 5\n\nWenn 【Fluch】 auf 【Aura】 angewendet wird, erlischt\ndie Aura.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 31;50;5;{NewPage}Frage 6\n\nAuf dem 【Galbadia-Kontinent】 lebt ein Monster\nnamens 【Gra Vaia】.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 31;50;6;{NewPage}Frage 7\n\n【Schweigen】 setzt sich auch nach Kämpfen fort.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 31;50;7;{NewPage}Frage 8\n\n【Reflek】 reflektiert den Zauber auf denjenigen,\nder den Zauber ursprünglich angewendet hat.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 31;50;8;{NewPage}Frage 9\n\nWenn jemand sich im 【Stein】-Zustand befindet,\nkönnen trotzdem noch weitere Zustände eintreten.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
-Test seed 31;50;9;{NewPage}Frage 10\n\nDamit eine G.F. Abilitys erlernt, muß man AP\nsammeln.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed general;19;0;{x00}\nHier wird die schriftliche SEED-Prüfung abgehalten.\nWollen Sie an der Level {x0a22}-Prüfung teilnehmen?\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed general;19;1;{x00}\nHier wird die schriftliche SEED-Prüfung abgehalten.\nSie sind auf Level {x0a20}.\n\nWollen Sie an der Level {x0a22}-Prüfung teilnehmen?\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed general;19;2;{x00}\nSie haben 100 von 100 Punkten erreicht.\nDamit haben Sie die Level {x0a20}-Prüfung {Red}bestanden!!!{White}\nIhr SEED-Level ist jetzt auf {x0a26}.\n\n\n  {Cursor_location_id:0x20}Beenden
+Test seed general;19;3;{x00}\nSie haben 100 von 100 Punkten erreicht.\nDamit haben Sie die Level {x0a20}-Prüfung bestanden!!!\nIhr SEED-Level ist bereits auf {x0a26}\nund steigt nicht mehr.\n\n  {Cursor_location_id:0x20}Beenden\n
+Test seed general;19;4;{x00}\nSie haben {x0a20} von 100 Punkten erreicht.\nLeider sind Sie durchgefallen.\nBereiten Sie sich bitte sorgfältiger\nvor. Viel Glück beim nächsten Mal.\n\n  {Cursor_location_id:0x20}Beenden
+Test seed general;19;5;{x00}\nIhr TEST-Level ist bereits auf 30.\nSie können daher an keiner Prüfung\nmehr teilnehmen.\n\n\n  {Cursor_location_id:0x20}Zurück.
+Test seed general;19;6;{x00}\nIhr SEED-Level ist bereits auf {x0a26}.\nDas ist der höchste SEED-Rang.\nWollen Sie trotzdem teilnehmen?\n\n\n  {Cursor_location_id:0x20}Trotzdem teilnehmen     {Cursor_location_id:0x21}Lassen
+Test seed general;19;7;{x00}\nWirklich?\n\n\n\n\n  {Cursor_location_id:0x20}Gelogen     {Cursor_location_id:0x21}Klar
+Test seed general;19;8;{x00}\nNachtest bestanden! Level {x0a20} beherrschen Sie\nperfekt!!\n\n\n\n  {Cursor_location_id:0x20}Ende\n
+Test seed general;19;9;{x00}\n{x0a20} von 100 Punkten...Sie haben sich verschlechtert.\n\n\n\n\n  {Cursor_location_id:0x20}Ende
+Test seed general;19;10;{x00}\nDer Level von {Squall} ist auf {x0a20}. Daher können\nSie nicht an einem Prüfungslevel, der höher\nist als {x0a22}, teilnehmen.\nKommen Sie wieder, wenn Ihr Level gestiegen ist.\n\n  {Cursor_location_id:0x20}Ende
+Test seed 1 ;20;0;{x00}Frage 1\n\nMit 【Draw】 kann man Zauber vom Gegner ziehen.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 1 ;20;1;{x01}Frage 2\n\n【G.F.】 bedeutet 【GARDEN FIGHTER】.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 1 ;20;2;{x00}Frage 3\n\nEs gibt insgesamt 8 Elemente.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 1 ;20;3;{x00}Frage 4\n\nJe höher der 【Stärke】-Wert, destostärker der\nkonventionelle Angriff.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 1 ;20;4;{x00}Frage 5\n\n【HP-K】 ist eine Kopplungs-Ability.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 1 ;20;5;{x01}Frage 6\n\nWelche Abilitys eine G.F. erlernt, ist dem Zufall\nüberlassen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 1 ;20;6;{x01}Frage 7\n\nDurch Zaubern wird MP verbraucht.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 1 ;20;7;{x00}Frage 8\n\nDer Name der G.F. kann frei bestimmt werden.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 1 ;20;8;{x01}Frage 9\n\nDie Charaktere können Rüstungen tragen.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 1 ;20;9;{x01}Frage 10\n\nG.F. Der 【G.F.-Level】 steigt durch AP.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 2 ;21;0;{x00}Frage 1\n\nDer 【Körper】 steigt durch Zauber-Kopplung.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 2 ;21;1;{x01}Frage 2\n\n{Squall} benutzt ein Gauntlet als Waffe.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 2 ;21;2;{x00}Frage 3\n\nDie gezogenen Zauber können gelagert werden.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 2 ;21;3;{x00}Frage 4\n\nIm 【Gift-Zustand】 wird ein Charakter nur dann\nverletzt, wenn er sich auf irgendeiner Weise bewegt.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 2 ;21;4;{x00}Frage 5\n\n【Konfus】 kann durch konventionelle Angriffe geheilt\nwerden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 2 ;21;5;{x01}Frage 6\n\n{Squall} beherrscht den Kampfsport als\nSpezial-Technik.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 2 ;21;6;{x00}Frage 7\n\nUm 【Zauber】 zu koppeln, muß die entsprechende\nAbility erlernt werden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 2 ;21;7;{x00}Frage 8\n\n{CharacterAbility} steht für Kopplungs-Ability.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 2 ;21;8;{x01}Frage 9\n\nDie 8 Elemente sind: Hitze·Kälte·Erde·Donner·Gift·\nWind·Schatten·Holy.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 2 ;21;9;{x01}Frage 10\n\nMonster besitzen nur eine begrenzte Anzahl an\nZauber, die man ziehen kann.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 3 ;22;0;{x01}Frage 1\n\nDie G.F. werden mit 【Potion】 geheilt.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 3 ;22;1;{x01}Frage 2\n\nZauber können nur während eines Kampfes gezogen\nwerden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 3 ;22;2;{x00}Frage 3\n\nSelphie benutzt ein Nunchaku als Waffe.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 3 ;22;3;{x01}Frage 4\n\nZum Aufrüsten von Waffen, benötigt man nur Geld.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 3 ;22;4;{x00}Frage 5\n\nDerjenige, der den Gegner beseitigt hat, erhält die\nmeisten Erfahrungspunkte.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 3 ;22;5;{x00}Frage 6\n\nJe höher der G.F.-Level, desto stärker der Angriff.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 3 ;22;6;{x00}Frage 7\n\n{PartyAbility} steht für 【Befehls-Ability】.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 3 ;22;7;{x01}Frage 8\n\nBis zu 5 Charakter- und Truppen-Abilitys können\nmit einem Charakter gekoppelt werden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 3 ;22;8;{x00}Frage 9\n\n【Befehls-Abilitys】 müssen vor dem Gebrauch\ngekoppelt werden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 3 ;22;9;{x01}Frage 10\n\n【AP】 steht für 【Aktionspunkte】.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 4 ;23;0;{x01}Frage 1\n\nNur {Squall} kann eine Gun-Blade benutzen.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 4 ;23;1;{x00}Frage 2\n\nMit Zauber kann man sogar seine eigene Truppe\nangreifen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 4 ;23;2;{x00}Frage 3\n\nDurch bestimmte Abilitys kann man aus Items\nZauber herstellen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 4 ;23;3;{x00}Frage 4\n\nJe höher der 【Körper】-Wert, desto besser die\nAbwehr.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 4 ;23;4;{x01}Frage 5\n\n【Blauen Zauber】 kann man lernen, wenn der Gegner\nden entsprechenden Zauber anwendet.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 4 ;23;5;{x01}Frage 6\n\n【Gift】 wird durch 【Anti-Z】 geheilt.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 4 ;23;6;{x00}Frage 7\n\nWenn ein kampfunfähiger Charakter belebt wird,\nwerden gleichzeitig  auch alle übrigen unnatürlichen\nZustände kuriert.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 4 ;23;7;{x00}Frage 8\n\nIn der 【Übungshalle】 des Balamb-Garden lebt ein\nMonster namens 【Archeodinos】.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 4 ;23;8;{x01}Frage 9\n\nDie Gun-Blade von {Squall} wird durch das\nDrücken von {L2} stärker.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 4 ;23;9;{x01}Frage 10\n\nBis zu 255 Zaubereinheiten können gelagert werden.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 5 ;24;0;{x01}Frage 1\n\n{MenuAbility} steht für 【Truppen-Ability】.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 5 ;24;1;{x01}Frage 2\n\nMan kann durch Draw, Zauber von einem anderen\nCharakter ziehen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 5 ;24;2;{x01}Frage 3\n\nDer Spielstand kann immer und überall gespeichert\nwerden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 5 ;24;3;{x00}Frage 4\n\nWenn die G.F. eine bestimmte Ability hinzulernt,\nkann eine neue Ability in der Auswahl erscheinen,\ndie anschließend erlernt werden kann. \n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 5 ;24;4;{x00}Frage 5\n\n【Charakter-Abilitys】 werden erst dann wirksam,\nwenn sie mit einem Charakter gekoppelt werden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 5 ;24;5;{x01}Frage 6\n\nJe höher der 【Geschick】-Wert, desto öfter wird die\nSpezial-Technik verfügbar.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 5 ;24;6;{x01}Frage 7\n\nAbilitys werden erst durch das Sammeln von\nErfahrungspunkten erlernt.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 5 ;24;7;{x00}Frage 8\n\nIm 【Zombie】-Zustand ist man schwach gegen Holy.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 5 ;24;8;{x00}Frage 9\n\nBei 【konventionellen Angriffen】, wird der Gegner\ndurch Waffen wie Schwerter oder Nunchakus direkt\nangegriffen.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 5 ;24;9;{x00}Frage 10\n\nDas 【Eisenrohr】 kann man vom 【Wendigo】 klauen.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 6 ;25;0;{x00}Frage 1\n\nXell benutzt Handschuhe als Waffe.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 6 ;25;1;{x01}Frage 2\n\nAuch im 【Schweig】-Zustand können G.F. beschwört\nwerden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 6 ;25;2;{x00}Frage 3\n\n{Ifrit} kann die Ability 【Hitze-Zauber】\nerlernen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 6 ;25;3;{x00}Frage 4\n\nAuch wenn ein Charakter mehrere G.F. koppelt, die\ndie gleichen Abilitys besitzen, ändert sich die\nGesamtwirkung nicht.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 6 ;25;4;{x01}Frage 5\n\nAlle unnatürlichen Zustände werden nach dem Kampf\nautomatisch kuriert.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 6 ;25;5;{x01}Frage 6\n\nDie Befehle 【Angriff】 und 【Draw】 können auch ohne\nG.F.-Kopplung eingesetzt werden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 6 ;25;6;{x00}Frage 7\n\nWenn man die Gun-Blade von {Squall} auf\nAutomatik stellt, muß man nicht mehr {R1} drücken.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 6 ;25;7;{x00}Frage 8\n\nDer 【Magie】-Wert bestimmt die Zauberkraft eines\nCharakters.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 6 ;25;8;{x01}Frage 9\n\nWenn man Zauber durch 【Optimal】 koppelt, gibt es\nnur zwei Möglichkeiten: Schwerpunkt Stärke oder\nMagie.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 6 ;25;9;{x00}Frage 10\n\n【Gratt】 benutzt den ZU-Angriff 【Schlaf】.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 7 ;26;0;{x00}Frage 1\n\nJe höher der 【Reflex】-Wert, desto höher die\nWahrscheinlichkeit, daß man Angriffen ausweicht.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 7 ;26;1;{x00}Frage 2\n\nWenn ein Gegner 【Hitze】 absorbieren kann, wird er\ndurch 【Feuer】-Zauber geheilt.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 7 ;26;2;{x00}Frage 3\n\nWelches Multi {Squall} anwendet, hängt von seiner\nGun-Blade ab.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 7 ;26;3;{x00}Frage 4\n\nDer 【Hitze-Wandler】 erzeugt 5× 【Feuer】 aus einem\n【Zaubersplitter】.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 7 ;26;4;{x00}Frage 5\n\nBei Kartenspielen existieren Sonderkarten, die es\nnur einmal auf der Welt gibt.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 7 ;26;5;{x00}Frage 6\n\n【Buel】 benutzt 【Feuer】.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 7 ;26;6;{x01}Frage 7\n\nDer 【Geist】-Wert ist nur für den Zauber 【Konfu】\nwichtig. Je höher der Wert, desto effektiver der\nZauber.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 7 ;26;7;{x00}Frage 8\n\nVon 【Heulechsen】 bekommt man 【Schrauben】.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 7 ;26;8;{x00}Frage 9\n\nJe höher der 【Charakterlevel】, desto höher der\n【Level des Gegners】.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 7 ;26;9;{x01}Frage 10\n\nWenn man im Welt-Modus langsam geht, erscheinen\nkeine Gegner.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 8 ;27;0;{x01}Frage 1\n\nDie 【Galbadia-Soldaten】 benutzen keine Zauber.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 8 ;27;1;{x00}Frage 2\n\nDie Waffen werden durch Aufrüsten beim\nSchrotthändler stärker.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 8 ;27;2;{x01}Frage 3\n\n{Fire} steht für Charakter-Ability.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 8 ;27;3;{x01}Frage 4\n\nWenn man 【Gemach】 im 【Hast-Zustand】 benutzt,\nerlischt die 【Hast】-Wirkung.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 8 ;27;4;{x00}Frage 5\n\nIn den Wäldern sind mehr Gegner als auf den\nFeldern.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 8 ;27;5;{x00}Frage 6\n\nWenn die 【EL-Abwehr】 mehr als 100% beträgt,\nwerden entsprechende 【EL-Angriffe】 absorbiert.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 8 ;27;6;{x01}Frage 7\n\nEinen 【Garden】 gibt es nur in Balamb.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 8 ;27;7;{x01}Frage 8\n\nIn der 【Feuer-Grotte】 tauchen keine 【Bomber】 auf.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 8 ;27;8;{x00}Frage 9\n\nJede G.F. erlernt unterschiedliche Abilitys.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 8 ;27;9;{x01}Frage 10\n\nDer Schrotthändler verkauft Waffen.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 9 ;28;0;{x01}Frage 1\n\nDie gezogenen G.F. können sofort beschwört werden,\nohne daß man sie erst einmal lagern muß.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 9 ;28;1;{x00}Frage 2\n\n{Thunder} steht für Menü-Ability.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 9 ;28;2;{x01}Frage 3\n\nBei Selphies 【Tombola】 erscheinen nur die Zauber,\ndie Selphie besitzt.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 9 ;28;3;{x01}Frage 4\n\nWenn das Freundschaftsverhältnis zu einer G.F.\nzu schlecht ist, kann es passieren, daß die G.F.\nverschwindet.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 9 ;28;4;{x01}Frage 5\n\nDie Truppen-Ability kann auch ohne Kopplungen\neingesetzt werden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 9 ;28;5;{x01}Frage 6\n\nWenn man kampfunfähige G.F. für eine Weile\nignoriert, gehen sie für immer verloren.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 9 ;28;6;{x01}Frage 7\n\nAus einer 【Spitzen Kralle】 entstehen\n5 【Stahl-Munition】.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 9 ;28;7;{x01}Frage 8\n\nEin unnatürlicher Zustand wird auch durch die\nBeseitigung des betreffenden Gegners kuriert.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 9 ;28;8;{x00}Frage 9\n\nWenn der Level eines Gegners steigt, verwenden\nsie auch neue Techniken.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 9 ;28;9;{x00}Frage 10\n\nIm 【Gift-Zustand】 nimmt ein Charakter Schaden\nnach jeder Aktion.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 10;29;0;{x00}Frage 1\n\nDurch 【Konfu】 wird der Betroffene in den\n【Konfus】-Zustand versetzt.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 10;29;1;{x01}Frage 2\n\nEine 【Potion】 heilt 100 HP.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 10;29;2;{x01}Frage 3\n\nQuistis benutzt ein Zauberschwert als Waffe.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 10;29;3;{x01}Frage 4\n\n【ATB】 steht für ABILITY TONE BLACK.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 10;29;4;{x01}Frage 5\n\nIm 【Zombie-Zustand】 wird man schwach gegen\n【Hitze】.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 10;29;5;{x01}Frage 6\n\nDer 【Item-Wandler】 verwandelt 【Heilwasser】 in\n1 【Zelt】.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 10;29;6;{x01}Frage 7\n\nDie Erfahrungspunkte werden nach dem Kampf\nimmer gleichmäßig verteilt.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 10;29;7;{x01}Frage 8\n\n【Blende】 saugt das Gehirn des Gegners auf und\nmacht ihn kampfunfähig.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 10;29;8;{x00}Frage 9\n\n【Stein】 wird durch Medica bzw. Goldene Nadel\nkuriert.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 10;29;9;{x01}Frage 10\n\n【Schlaf】 kann nicht kuriert werden.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 11;30;0;{x00}Frage 1\n\nDie HP eines G.F. regeneriert sich beim Gehen.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 11;30;1;{x00}Frage 2\n\nWenn der Befehl 【Draw】 nicht gekoppelt ist,\nkönnen 【Draw-Punkte】 nicht benutzt werden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 11;30;2;{x01}Frage 3\n\nDurch eine 【Finishing-Blow】 stirbt der Gegner\n100%ig.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 11;30;3;{x00}Frage 4\n\n{Sire} kann die Ability 【Behandeln】\nerlernen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 11;30;4;{x00}Frage 5\n\nEin Charakter kann mehrere G.F. koppeln.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 11;30;5;{x01}Frage 6\n\n【Adamantine】 bekommt man nur von einem\n【Adaman Taimai mit Level 10】.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 11;30;6;{x00}Frage 7\n\nSowohl Zauber als auch Items, können in beliebiger\nReihenfolge angeordnet werden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 11;30;7;{x01}Frage 8\n\n{Shiva} kann gleich zu Beginn das\n【Todesurteil】 erlernen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 11;30;8;{x01}Frage 9\n\n【Saugen】 saugt die HP des Gegners ab, aber nicht\ndie von einem Charakter.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 11;30;9;{x00}Frage 10\n\n【Heil-Zauber】 richten Schaden bei untoten Gegnern\nan.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 12;31;0;{x01}Frage 1\n\nEsansuci absorbiert 【Erd-Elemente】.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 12;31;1;{x00}Frage 2\n\nDer Lebens-Wandler erzeugt aus 【Heilwasser】\n20 【Vitra】.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 12;31;2;{x01}Frage 3\n\nAuch ein kampfunfähiger Charakter bekommt nach\neinem Kampf Erfahrungspunkte.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 12;31;3;{x01}Frage 4\n\nG.F. können nur bei Kämpfen bzw.\ndurch Draw von Gegnern gezogen werden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 12;31;4;{x00}Frage 5\n\nPro Draw (Lagern) können maximal nur\n9 Zaubereinheiten gelagert werden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 12;31;5;{x01}Frage 6\n\nVon einem Grande Arlo kann man 【Spitze Krallen】\nrauben.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 12;31;6;{x00}Frage 7\n\nUm das Menü während des Kampfes auszublenden,\nmuß man {Select} gedrückt halten.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 12;31;7;{x01}Frage 8\n\nBei 【Schweigen】 werden nur die Befehle 【G.F.】 und\n【Zauber】 deaktiviert.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 12;31;8;{x00}Frage 9\n\n【Analyse】 kann man auch auf eigene Charaktere\nanwenden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 12;31;9;{x01}Frage 10\n\nWenn die 【Gift-Abwehr】 100% beträgt, nimmt der\nCharakter keinen Schaden durch Giftangriffe.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 13;32;0;{x00}Frage 1\n\nAuch bei Flucht, bekommt man Erfahrungspunkte,\nwenn man mindestens einen Gegner angegriffen hat.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 13;32;1;{x01}Frage 2\n\nVon einem 【Chimära】 können 【Blaue Zähne】 geraubt\nwerden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 13;32;2;{x01}Frage 3\n\nSolange eine G.F.-Ability nicht gekoppelt ist,\nbewirkt sie nichts.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 13;32;3;{x01}Frage 4\n\nAn jedem Draw-Punkt kann man nur einmal einen\nZauber ziehen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 13;32;4;{x00}Frage 5\n\nDie G.F. {Quezacotl} kann auch ohne Items die\nAbility 【Karten-Wandler】 erlernen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 13;32;5;{x01}Frage 6\n\nWenn 【Draw】 zu oft fehlschlägt, ist diese Ability\nfür eine Weile nicht verfügbar.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 13;32;6;{x01}Frage 7\n\nWenn eine G.F. kampfunfähig wird, verschlechtert\nsich das Verhältnis zum gekoppelten Charakter.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 13;32;7;{x01}Frage 8\n\nMan kann vor jedem Gegner flüchten.\nEs ist nur eine Frage des Timings.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 13;32;8;{x01}Frage 9\n\nDie Gun-Blade von {Squall} verbraucht Munition.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 13;32;9;{x01}Frage 10\n\nWenn man 【Hitze-Monster】 angreift, kontert er\nstets mit 【Hitze-Angriffen】.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 14;33;0;{x00}Frage 1\n\nEs gibt G.F., die man von Gegnern ziehen kann.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 14;33;1;{x00}Frage 2\n\nDer Multi von {Squall} wird in Gefahrensituationen\nstärker.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 14;33;2;{x00}Frage 3\n\nJe höher der 【Treffer】-Wert, desto höher die\nTrefferquote. Die Wahrscheinlichkeit hängt aber\nauch vom 【Reflex】-Wert des Gegners ab.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 14;33;3;{x00}Frage 4\n\nEs gibt Items, die das Freundschaftsverhältnis\nzu G.F. verändert.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 14;33;4;{x01}Frage 5\n\nDurch 【Shell】 wird die Zauberabwehr vervierfacht.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 14;33;5;{x00}Frage 6\n\nEs gibt ein Monster namens 【Belhel Melhel】.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 14;33;6;{x00}Frage 7\n\nWenn keine G.F. gekoppelt und keine Befehls-Abilitys\neingesetzt wurden, kann im Kampf nur 【Angriff】\nausgeführt werden.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 14;33;7;{x01}Frage 8\n\nWenn ein Gegner durch konventionelle Angriffe\nbeseitigt wird, erhält man mehr Erfahrungspunkte\nals durch Zauber.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 14;33;8;{x00}Frage 9\n\n【Beschützen】 deckt nur einen nebenstehende\nCharakter ab.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 14;33;9;{x01}Frage 10\n\n【Anfeuern】 ist am effektivsten, wenn man {Square}\ngedrückt hält.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 15;34;0;{x00}Frage 1\n\nJe öfter man G.F. beschwört, desto besser die\nFreundschaft.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 15;34;1;{x00}Frage 2\n\nEin Charakter kann nur eine begrenzte Anzahl an\nZauber lagern.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 15;34;2;{x01}Frage 3\n\nFocarols 【Sandsturm】 ist ein 【Wind-Angriff】.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 15;34;3;{x01}Frage 4\n\nEin Zauber, der durch 【Reflek】 reflektiert wurde,\nkann nochmals durch 【Reflek】 zurückgestrahlt\nwerden.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 15;34;4;{x01}Frage 5\n\nEin Charakter im 【Konfus】-Zustand, greift niemals\nsich selbst an.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 15;34;5;{x01}Frage 6\n\nDurch bestimmte Abilitys kann ein 【Polarwind】 in\n【Eis】 verwandelt werden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 15;34;6;{x01}Frage 7\n\n{Cerberus} kann die Ability 【Geschick-Bonus】\nlernen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 15;34;7;{x00}Frage 8\n\nBeim 【Schweigen】 wird Zauber auch im Menü\nversiegelt.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 15;34;8;{x01}Frage 9\n\nDas 【Echo-Kraut】 hilft gegen Versteinerung.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 15;34;9;{x00}Frage 10\n\nWenn 【Schweigen】 während der G.F.-Beschwörung\neintritt, wird der Vorgang abgebrochen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 16;35;0;{x00}Frage 1\n\nJe weniger HP, desto häufiger sind\nSpezial-Techniken verfügbar.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 16;35;1;{x01}Frage 2\n\nMan kann bis zu 3 Zauber mit【EL-Abwehr】 koppeln,\nwenn man 【EL-Abwehr-K】 und 【EL-Abwehr-K ×2】\nbesitzt.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 16;35;2;{x01}Frage 3\n\nIm Kopplungs-Menü gibt es ein Befehl, mit dem nur\ndie G.F., und nicht die Zauber gelöst werden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 16;35;3;{x00}Frage 4\n\nAuch wenn ein 【ZU-Angriff】 100% beträgt, gibt es\nGegner, die gegen 【ZU-Angriffe】 immun sind.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 16;35;4;{x01}Frage 5\n\nDurch mehrmaliges 【Draw】 kann ein Gegner\nirgendwann keinen Zauber mehr verwenden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 16;35;5;{x00}Frage 6\n\nVon 【Beißkäfern】 mit niedrigem Level bekommt man\n【Zaubersplitter】.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 16;35;6;{x01}Frage 7\n\nMit 【G-Mega-Potion】 kann eine kampfunfähige G.F.\nbelebt werden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 16;35;7;{x01}Frage 8\n\nWenn alle Charaktere zu Zombie, zu Stein oder\nkampfunfähig werden, gilt der Kampf als verloren.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 16;35;8;{x00}Frage 9\n\n【Hi-Potion】 heilt einen Charakter um 1000 HP.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 16;35;9;{x01}Frage 10\n\nEs gibt eine Ability namens 【Schritt-Gil】.\nDabei bekommt die Truppe bei jedem Schritt 10 Gil.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 17;36;0;{x00}Frage 1\n\nDurch 【Aura】 steigt die Wahrscheinlichkeit, daß\nSpezial-Techniken verfügbar werden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 17;36;1;{x01}Frage 2\n\nMan kann die 【G-Potion】 während eines Kampfes\nanwenden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 17;36;2;{x01}Frage 3\n\nDurch 【Medizinkunde】 kann man zwei Heiltränke auf\neinmal anwenden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 17;36;3;{x01}Frage 4\n\nWenn {Squall} seinen Multi präzise ausführt,\nsteigt die Wahrscheinlichkeit daß ein 【Finish-Blow】\nangewendet wird.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 17;36;4;{x00}Frage 5\n\nDurch 【Vorsicht】 werden Angriffe von Hinten\nvermieden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 17;36;5;{x01}Frage 6\n\nIm 【Tobsucht-Zustand】 werden Spezial-Techniken\nautomatisch angewendet.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 17;36;6;{x01}Frage 7\n\nMan kann im Menü 【Potion】 auf einen Charakter im\n【Zombie-Zustand】 anwenden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 17;36;7;{x00}Frage 8\n\nDer Angriff der G.F. {Alexander} ist ein\n【Holy-Angriff】.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 17;36;8;{x01}Frage 9\n\n【Archeodinos】 besitzen Items mit dem Namen\n【Dino-Zahn】.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 17;36;9;{x01}Frage 10\n\nIm 【Blind】-Zustand greift der Charakter Freund wie\nFeind an.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 18;37;0;{x00}Frage 1\n\nMan kann nur mit Hilfe der G.F. koppeln.\nDabei spielt der Charakterlevel keine Rolle.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 18;37;1;{x01}Frage 2\n\n【Reflek】kann sämtliche Zauber reflektieren.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 18;37;2;{x01}Frage 3\n\nEs gibt insgesamt 30 verschiedene Zustände.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 18;37;3;{x01}Frage 4\n\n【Zombie】 kann durch Zauber kuriert werden.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 18;37;4;{x00}Frage 5\n\nIn der Kampfsequenz kann durch {L1} das Zielobjekt\nüber ein Menü ausgewählt werden. \n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 18;37;5;{x01}Frage 6\n\nEs gibt eine Ability, die man ohne G.F. erlernen kann.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 18;37;6;{x01}Frage 7\n\nWendigo schwebt, bis er angegriffen wird.\nDanach kontert er mit Pulswellen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 18;37;7;{x01}Frage 8\n\nWenn ein Charakter schläft, wird sein HP langsam\nregeneriert.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 18;37;8;{x01}Frage 9\n\n{Carbuncle} ist eine G.F., die Shell und Protes auf\ndie Truppe anwendet.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 18;37;9;{x01}Frage 10\n\n【Konfu】 hat stets Vorrang vor 【Tobsucht】, wenn\nbeide Zustände gleichzeitig auftreten.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 19;38;0;{x00}Frage 1\n\nDie Frage, ob man den 【Tod】 abwenden kann, hängt\nvon 【ZU-K】 und nicht vom 【Körper】 ab.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 19;38;1;{x01}Frage 2\n\nWenn ein Charakter im 【Zombie-Zustand】 von einem\nZombie HP absaugt, bekommt er Schaden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 19;38;2;{x01}Frage 3\n\nDer 【Cockatrice】 greift manchmal mit\nGift-Elementen an.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 19;38;3;{x00}Frage 4\n\nDer 【Gott-Zustand】 währt nur im Kampf.\nEr erlischt danach.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 19;38;4;{x01}Frage 5\n\nDie 【Chimära】 hat 5 Köpfe: Drachen-, Frosch-,\nZiegen-,Vogel- und Löwenkopf.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 19;38;5;{x01}Frage 6\n\n【Protes】 ist nur dann effektiv, wenn der\n【Körper】-Wert mehr als 0 beträgt.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 19;38;6;{x01}Frage 7\n\nJe öfter man 【Levitas】 verwendet, desto höher\nschwebt der Charakter.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 19;38;7;{x01}Frage 8\n\nDer 【X-ATM-092】 ist unbesiegbar. Daher bleibt die\nFlucht als einzige Möglichkeit.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 19;38;8;{x01}Frage 9\n\n【Stein】 wirkt nur, wenn der 【Geist】-Wert des\nGegners mehr als 0 beträgt.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 19;38;9;{x00}Frage 10\n\nDer Schrotthändler zeigt an, welche Items für die\nAufrüstungen nötig sind, bzw. noch fehlen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 20;39;0;{x00}Frage 1\n\nBeim Autofahren erscheint kein Gegner.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 20;39;1;{x00}Frage 2\n\nAus einem 【Feuerzahn】 kann man 【Flare ×20】\nherstellen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 20;39;2;{x01}Frage 3\n\n【Geira】 ist ca. zwölf Meter groß.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 20;39;3;{x00}Frage 4\n\nEs gibt Monster, die neutral sind und keinem\nElement zugehören.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 20;39;4;{x01}Frage 5\n\nDer SEED-Level wirkt sich auf die Erfolgsquote\nbeim Draw und Zauber aus.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 20;39;5;{x00}Frage 6\n\nAuch bei geringer HP bleibt die Angriffsstärke gleich.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 20;39;6;{x00}Frage 7\n\nJe besser das Freundschaftsverhältnis, desto\nschneller die Beschwörung.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 20;39;7;{x00}Frage 8\n\nEine 【Stichraupe】 besitzt 【Spinnennetze】.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 20;39;8;{x01}Frage 9\n\nDas Koppeln von 【Stärke+20%】und【Stärke+40%】\nist effektiver als das Koppeln von 【Stärke+60%】.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 20;39;9;{x01}Frage 10\n\nDie G.F. 【{Sire}】 versetzt beim Angriff\nden Gegner in den Konfus-Zustand.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 21;40;0;{x00}Frage 1\n\nDer 【Bomber】 benutzt Selbstzerstörung.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 21;40;1;{x00}Frage 2\n\nDer 【Morbol】 lebt im Norden Esthars.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 21;40;2;{x00}Frage 3\n\nDie Zeitschrift 【Beat{xba}em Up】 berichtet über\nKampftechniken.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 21;40;3;{x00}Frage 4\n\nMan kann eine G.F. von 【El Viole】 ziehen.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 21;40;4;{x01}Frage 5\n\nWenn 【Stop】während der G.F.-Beschwörung eintritt,\nwird der Vorgang trotzdem fortgesetzt.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 21;40;5;{x01}Frage 6\n\nBei der 【Abwehr】 beträgt der physikalische Schaden\ngleich null. 【Abwehr】 zeigt jedoch keine Wirkung\ngegen Zauberangriffe.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 21;40;6;{x00}Frage 7\n\nWenn man 【Engel】 koppelt, steigt die EL-Abwehr\ngegen alle Elemente.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 21;40;7;{x00}Frage 8\n\nDer 【Balamb-Garden】 besitzt eine Bücherei.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 21;40;8;{x00}Frage 9\n\nDer 【Mega-Phönix】 läßt die gesamte Teruppe\nauferstehen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 21;40;9;{x01}Frage 10\n\nAus der 【Bomber-Karte】 läßt sich 1 【Bomberseele】\nherstellen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 22;41;0;{x01}Frage 1\n\nWenn man zuerst 【Shell】, dann【Protes】 anwendet,\nzeigt nur 【Protes】 Wirkung.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 22;41;1;{x01}Frage 2\n\nWenn der 【Glück】-Wert zu niedrig ist, verliert man\ngelegentlich Gil und Items.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 22;41;2;{x01}Frage 3\n\nUm die 【Hitze-Abwehr】 zu steigern, muß man\n【Kälte-Zauber】 koppeln.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 22;41;3;{x00}Frage 4\n\nWenn man 【Reflek】 mit 【ZU-Abwehr】 koppelt, steigen\ninsgesamt 9 Werte.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 22;41;4;{x01}Frage 5\n\n【Zombie】und 【Seuche】 sind 【Schatten-Zauber】.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 22;41;5;{x01}Frage 6\n\nDie 【Hi-Potion-2】 heilt die HP um 3000 Punkte.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 22;41;6;{x01}Frage 7\n\nJe höher der SEED-Level, desto niedriger die\nWarenpreise in den Shops.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 22;41;7;{x00}Frage 8\n\nDas Freundschaftsverhältnis zu den G.F.\nverbessert sich durch die Verwendung eines\nZaubers des gleichen Elements.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 22;41;8;{x00}Frage 9\n\nDie 【Hilfe-Option】 wird stets durch neue Infos\nerweitert.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 22;41;9;{x01}Frage 10\n\nJe höher der 【Treffer】-Wert, desto effektiver der\nDraw.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 23;42;0;{x00}Frage 1\n\nAus einer 【Mega-Pille】 kann man 【Mega-Pille-2】\nherstellen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 23;42;1;{x01}Frage 2\n\nDurch das gleichzeitige Drücken von {R1} und {R2}\nwird die Flucht aus Kämpfen eingeleitet.\nEs klappt jedoch bei manchen Gegnern nicht.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 23;42;2;{x01}Frage 3\n\nDie Befehls-Ability 【Heilen】 belebt auch einen\nkampfunfähigen Charakter.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 23;42;3;{x01}Frage 4\n\n【Medica】 kuriert unnatürliche Zustände, 【Anti-Z】\nkuriert Schäden durch Elemente.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 23;42;4;{x01}Frage 5\n\nMit 【Regena】 wird die HP regeneriert, auch wenn\nman sich im 【Stop-Zustand】 befindet.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 23;42;5;{x00}Frage 6\n\nBei 【Fluch】 kann man keine Spezial-Techniken mehr\nanwenden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 23;42;6;{x00}Frage 7\n\nDurch 【Tobsucht】steigt die 【Stärke】. Dabei wird\nder Befehl 【Angriff】 automatisch ausgeführt.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 23;42;7;{x00}Frage 8\n\nEs gibt eine Ability, der einen 【Morbol-Fühler】 in\neine 【Mega-Pille】 verwandelt.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 23;42;8;{x00}Frage 9\n\n【Levitas】 wirkt nur für eine bestimmte Zeit.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 23;42;9;{x00}Frage 10\n\nDurch 【Protes】 verringert sich der physikalische\nSchaden um 50%.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 24;43;0;{x00}Frage 1\n\n【Gemach】 kann man durch 【Medica】 kurieren.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 24;43;1;{x00}Frage 2\n\nWenn man 【Levitas】 mit 【EL-Abwehr】 koppelt, steigt\ndie Abwehr gegen 【Erd-Elemente】.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 24;43;2;{x01}Frage 3\n\nDie ATB läuft auch, nachdem man eine G.F.\nbeschwört hat.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 24;43;3;{x01}Frage 4\n\n【Auto-Reflek】 versetzt einen Charakter in den\n【Reflek-Zustand】, bis er kampfunfähig wird.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 24;43;4;{x00}Frage 5\n\n{Ice} steht für G.F.-Ability.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 24;43;5;{x00}Frage 6\n\nEine G.F. kann nur eine begrenzte Anzahl an\nAbilitys erlernen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 24;43;6;{x01}Frage 7\n\nJe öfter man 【Protes】 anwendet, desto stärker wird\ndie Abwehr.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 24;43;7;{x01}Frage 8\n\nWenn man von jemanden im 【Gift】-Zustand HP\nabsaugt, wird das 【Gift】 mit abgesaugt.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 24;43;8;{x01}Frage 9\n\nEine Waffe nutzt sich nach und nach ab.\n(Reparatur beim Schrotthändler möglich.)\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 24;43;9;{x00}Frage 10\n\nAuch wenn man im 【Schweig】-Zustand 【Konfus】 wird,\nkann dieser Charakter trotzdem keine Zauber\nanwenden.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 25;44;0;{x00}Frage 1\n\nVon einem 【Invictus】 kann man eine 【Laser-Kanone】\nrauben.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 25;44;1;{x01}Frage 2\n\nDer Angriff der G.F. {Leviathan} heißt 【Sturmflut】.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 25;44;2;{x00}Frage 3\n\nMit einem 【Vergißmeinnnicht】 kann eine G.F.-Ability\ngelöscht werden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 25;44;3;{x00}Frage 4\n\nEs gibt Speicher- und Draw-Punkte, die nur durch\neine bestimmte Ability sichtbar werden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 25;44;4;{x00}Frage 5\n\nEine G.F. erhält mehr Erfahrungspunkte, wenn man\nnur eine, anstatt mehrere G.F. pro Charakter\nkoppelt.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 25;44;5;{x01}Frage 6\n\nDer 【SEED-Sold】 wird nur im Balamb-Garden\nausbezahlt.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 25;44;6;{x01}Frage 7\n\nEs gibt 3 arten von Wasser-Zauber: Aqua,\nAqura und Aquga.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 25;44;7;{x00}Frage 8\n\n【Kontern】 wird nur durch einen gegnerischen\nEinzelangriff aktiviert.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 25;44;8;{x01}Frage 9\n\nEs gibt ein Item namens 【Diebeshandschuh】.\nDamit klappt das 【Rauben】 100%ig.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 25;44;9;{x01}Frage 10\n\nEs gibt einen Zauber mit 【Fluch-Effekt】, der durch\nDraw gezogen werden kann.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 26;45;0;{x00}Frage 1\n\nDurch das Absaugen von Untoten nimmt man\nSchaden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 26;45;1;{x00}Frage 2\n\nWenn man die Ability 【Erstschlag】 koppelt, ist die\nATB-Leiste immer voll, auch wenn man von hinten\nangegriffen wird.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 26;45;2;{x01}Frage 3\n\nDie Befehls-Ability 【Schatten】 greift den Gegner\nan, und versetzt ihn gleichzeitig in den\n【Blind】-Zustand.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 26;45;3;{x00}Frage 4\n\n【Holy】 ist der einzige Zauber mit einem\nHoly-Element.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 26;45;4;{x01}Frage 5\n\nAuch G.F., die nicht gekoppelte sind, erhalten AP\nund Erfahrungspunkte.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 26;45;5;{x00}Frage 6\n\nDurch 【Shell】 verringert sich die Wirkung eines\nHeilzaubers.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 26;45;6;{x01}Frage 7\n\nWenn der 【Reflex】-Wert hoch ist, kann ein\nCharakter auch im 【Schlaf】 Angriffen ausweichen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 26;45;7;{x00}Frage 8\n\nMan kann die erlernten 【G.F.-Abilitys】 mit einer\nbestimmten Methode löschen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 26;45;8;{x01}Frage 9\n\nDas 【Todesurteil】 behält seine Wirkung auch dann,\nwenn man inmitten des Kampfs flüchtet.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 26;45;9;{x01}Frage 10\n\nDie Stärke eines Angriffszaubers hängt nicht von\n【Magie】, sondern von 【Stärke】 ab.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 27;46;0;{x01}Frage 1\n\nDurch 【Hast】 verringert sich die Erfolgsquote beim\nDraw.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 27;46;1;{x00}Frage 2\n\nDer 【SEED-Sold】 hängt von der Anzahl der\nbesiegten Gegner ab.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 27;46;2;{x01}Frage 3\n\nEs gibt eine Ability namens 【G.F. x2】, mit der man\n2 G.F. auf einmal beschwören kann.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 27;46;3;{x01}Frage 4\n\nUm die Items automatisch zu ordnen, muß man im\nMenü den Punkt 【Selber】 wählen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 27;46;4;{x01}Frage 5\n\nJedes Monster hat mindestens eine Schwachstelle.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 27;46;5;{x01}Frage 6\n\n【Bio】 lockert die Moleküle des Gegners auf, um so\nseine Abwehr zu schwächen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 27;46;6;{x00}Frage 7\n\nBeim Angriff von Hinten wird die Flucht schwieriger.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 27;46;7;{x01}Frage 8\n\n【Flare】 ist ein 【Hitze-Zauber】.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 27;46;8;{x00}Frage 9\n\nMan kann die Anzahl der besiegten Monster in\nErfahrung bringen.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 27;46;9;{x01}Frage 10\n\nDie Charaktere, die an den Kämpfen nicht\nteilnehmen, erhalten trotzdem ein wenig\nErfahrungspunkte.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 28;47;0;{x00}Frage 1\n\nJe höher der 【Geschick】-Wert, desto schneller füllt\nsich die ATB-Leiste.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 28;47;1;{x01}Frage 2\n\nDas 【Todesurteil】 kann mit 【Medica】 aufgehoben\nwerden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 28;47;2;{x01}Frage 3\n\nUnter 【Zauberangriff】 versteht man Angriffe mit\nZauber, ausgenommen Holy.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 28;47;3;{x00}Frage 4\n\nGegen 【Todesurteil】 hilft kein Zauber.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 28;47;4;{x00}Frage 5\n\nDie 【Seuche】 bewirkt 【Gift】, 【Schweigen】und 【Blind】.\nEs kommt aber vor, daß einige dieser Zustände\nkeine Wirkung zeigen.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 28;47;5;{x00}Frage 6\n\nDurch eine Hotelübernachtung werden HP und alle\nunnatürlichen Zustände geheilt.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 28;47;6;{x01}Frage 7\n\nDer Multi von {Squall} kann mit {X} abgebrochen\nwerden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 28;47;7;{x00}Frage 8\n\nMit 【Doppel】 bzw. 【Tripel】 kann man mehrmals den\nselben Zauber anwenden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 28;47;8;{x01}Frage 9\n\nDer 【Stein】-Zustand endet nach einer gewissen\nZeit.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 28;47;9;{x01}Frage 10\n\nWenn man eine 【Goldene Nadel】 während einer\nVersteinerung (Countdown) anwendet, zeigt sie\nkeine Wirkung.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 29;48;0;{x01}Frage 1\n\nUm einen Kampfunfähigen zu beleben, benutzt man\ndie 【Seele des Phönix】.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 29;48;1;{x01}Frage 2\n\nDie Kampfunfähigen G.F. nehmen am nächsten Kampf\nwieder teil.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 29;48;2;{x01}Frage 3\n\nWenn man 【Doppel】 2 Mal benutzt, hat das die selbe\nWirkung wie 【Tripel】.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 29;48;3;{x00}Frage 4\n\nDurch 【Magie-Plus】steigt der 【Magie】-Wert um 1.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 29;48;4;{x00}Frage 5\n\nEs gibt eine Ability, mit der die Wahrscheinlichkeit\nerhöht wird, daß ein Gegner seltene Items hinterläßt.\nDiese Ability heißt 【Rarität】.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 29;48;5;{x01}Frage 6\n\nAls Biggs auf dem Sendeturm kämpfte, war sein\nRang Oberst.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 29;48;6;{x01}Frage 7\n\n【Tripel】 benötigt mindestens 3 Einheiten eines\nZaubers.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 29;48;7;{x01}Frage 8\n\nWenn 2 Charaktere im 【Zombie】-Zustand, und der\ndritte im 【Konfus】-Zustand sind, gilt der Kampf als\nverloren.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 29;48;8;{x00}Frage 9\n\nBei 【Meteor】 wird das Ziel zufällig ausgewählt.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 29;48;9;{x01}Frage 10\n\n【Melton】 schmilzt den Gegner.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 30;49;0;{x01}Frage 1\n\n【Thrust Avis】 benutzt 【Beben】. Daher ist es\nratsam, zuvor 【Levitas】 anzuwenden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 30;49;1;{x00}Frage 2\n\nEngel und Erzengel zeigen keine Wirkung auf\nCharaktere, die nicht kampfunfähig sind.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 30;49;2;{x01}Frage 3\n\nWenn die G.F.-HP 500 beträgt und sie einen\nSchaden von 800 abbekommt, erhält der gekoppelte\nCharakter den Differenzschaden von 300.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 30;49;3;{x01}Frage 4\n\n【Qual】 besitzt 【Quals Bart】.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 30;49;4;{x01}Frage 5\n\nWenn 【Fluch】 auf 【Aura】 angewendet wird, erlischt\ndie Aura.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 30;49;5;{x01}Frage 6\n\nAuf dem 【Galbadia-Kontinent】 lebt ein Monster\nnamens 【Gra Vaia】.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 30;49;6;{x00}Frage 7\n\n【Schweigen】 setzt sich auch nach Kämpfen fort.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 30;49;7;{x01}Frage 8\n\n【Reflek】 reflektiert den Zauber auf denjenigen,\nder den Zauber ursprünglich angewendet hat.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 30;49;8;{x01}Frage 9\n\nWenn jemand sich im 【Stein】-Zustand befindet,\nkönnen trotzdem noch weitere Zustände eintreten.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 30;49;9;{x01}Frage 10\n\nDamit eine G.F. Abilitys erlernt, muß man AP\nsammeln.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 31;50;0;{x01}Frage 1\n\n【Thrust Avis】 benutzt 【Beben】. Daher ist es\nratsam, zuvor 【Levitas】 anzuwenden.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 31;50;1;{x00}Frage 2\n\nEngel und Erzengel zeigen keine Wirkung auf\nCharaktere, die nicht kampfunfähig sind.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 31;50;2;{x01}Frage 3\n\nWenn die G.F.-HP 500 beträgt und sie einen\nSchaden von 800 abbekommt, erhält der gekoppelte\nCharakter den Differenzschaden von 300.\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 31;50;3;{x01}Frage 4\n\n【Qual】 besitzt 【Quals Bart】.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 31;50;4;{x01}Frage 5\n\nWenn 【Fluch】 auf 【Aura】 angewendet wird, erlischt\ndie Aura.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 31;50;5;{x01}Frage 6\n\nAuf dem 【Galbadia-Kontinent】 lebt ein Monster\nnamens 【Gra Vaia】.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 31;50;6;{x00}Frage 7\n\n【Schweigen】 setzt sich auch nach Kämpfen fort.\n\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 31;50;7;{x01}Frage 8\n\n【Reflek】 reflektiert den Zauber auf denjenigen,\nder den Zauber ursprünglich angewendet hat.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 31;50;8;{x01}Frage 9\n\nWenn jemand sich im 【Stein】-Zustand befindet,\nkönnen trotzdem noch weitere Zustände eintreten.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
+Test seed 31;50;9;{x01}Frage 10\n\nDamit eine G.F. Abilitys erlernt, muß man AP\nsammeln.\n\n\n  {Cursor_location_id:0x20}Ja     {Cursor_location_id:0x21}Nein
 TextBox00.bin;51;0;Info-Auswahl
 TextBox00.bin;51;1;{Cursor_location_id:0x218d}Grundbegriffe\n{Cursor_location_id:0x222c}Elemente\n{Cursor_location_id:0x2230}Zustände   \n{Cursor_location_id:0x2021}Menü\n{Cursor_location_id:0x204a}Kampfsystem\n{Cursor_location_id:0x2077}Ability-Liste\n{Cursor_location_id:0x2061}G.F. \n{Cursor_location_id:0x2252}Zauber     \n{Cursor_location_id:0x227e}Infos\n{x0abf}{Cursor_location_id:0x2347}Omega-Orden\n{x0a3f}
 TextBox00.bin;51;2;Auswahl: Menü                    {xc4}   1/2

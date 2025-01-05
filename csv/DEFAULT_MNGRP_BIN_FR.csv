@@ -873,327 +873,327 @@ Chocobo tutorial;18;11;{xc4}                      {Blue}Ecran de Situation{White
 Chocobo tutorial;18;12;  {Blue}Ecran Communication Optique{White} 8/8\n1:Position neutre.\n2:Récepteur choisit flèches en Bas.\n3:Emétteur choisit flèches en Haut.\n4:Comme pour les autres combats,\n  votre Chicobo est à droite.\n5:Prenez l'ID de votre adversaire.\n  Comparez-le avec le votre. S'il\n  est plus élevé, utilisez-le.\n
 Chocobo tutorial;18;13;{xc4}         {xc4}{xc4}          {Blue}ChocoboWorld{White} 8/8\n
 Chocobo tutorial;18;14;1:{Blue}World{White} pour faire passer Boko\n de FF{xc6}{xc7} à la 【Chocobo World】.\n2:{Blue}Retour{White} pour replacer Boko\n dans l'univers de FF{xc6}{xc7}.\n3: {Blue}Nouveau{White} pour retrouver \n votre position dans FF{xc6}{xc7}, ou\n si vous perdez votre 【Chocobo World】.\n4:Merci d'avoir lu ces explications.\n
-Test seed general;19;0;{NewPage}Vous allez maintenant passer l'examen\nécrit du Seed. Vous commencez au niveau {x0a22}?\n\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed general;19;1;{NewPage}Débutons maintenant l'épreuve écrite du Seed.\nVous avez atteint le niveau {x0a20}.\n\nVoulez-vous passer le test de niveau {x0a22}?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed general;19;2;{NewPage}Vous obtenez 100% de bonnes réponses.\nVous avez réussi le test de niveau {x0a20}.\nVotre rang Seed passe donc à {x0a26}.\n\n\n\n  {Cursor_location_id:0x20}Retour
-Test seed general;19;3;{NewPage}Vous avez obtenu 100%.\nVous avez réussi le test du niveau {x0a20}.\nVotre rang ne dépassera pas {x0a26}.\n\n\n\n  {Cursor_location_id:0x20}Retour
-Test seed general;19;4;{NewPage}Votre score est de {x0a20}.\nVous avez échoué à l'examen.\nRéessayez plus tard.\n\n\n\n  {Cursor_location_id:0x20}Retour
-Test seed general;19;5;{NewPage}Vous avez réussi le test No 30.\nIl s'agit du dernier examen écrit.\n\n\n\n\n  {Cursor_location_id:0x20}Retour
-Test seed general;19;6;{NewPage}Votre avez le rang {x0a26}.\nVous ne pouvez pas aller plus haut.\nVoulez-vous quand même\npasser l'épreuve écrite?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed general;19;7;{NewPage}Vous confirmez?\n\n\n\n\n\n  {Cursor_location_id:0x20}Non    {Cursor_location_id:0x21}Oui
-Test seed general;19;8;{NewPage}Fin de la révision!\nVous maîtrisez le niveau {x0a20}!\n\n\n\n\n  {Cursor_location_id:0x20}Retour
-Test seed general;19;9;{NewPage}Vous avez obtenu {x0a20}. C'est pas terrible!\n\n\n\n\n\n  {Cursor_location_id:0x20}Retour
-Test seed general;19;10;{NewPage}{Squall} est au niveau {x0a20}.\nVous ne pouvez rien passer au-dessus de {x0a22}.\nAméliorez votre niveau puis recommencez.\n\n\n\n  {Cursor_location_id:0x20}Retour
-Test seed 1 ;20;0;{NewPage}Question 1\n\nVoler sert-il à dérober les sorts ennemis?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 1 ;20;1;{NewPage}Question 2\n\nLes G-Forces assistent-elles\nles ennemis?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 1 ;20;2;{NewPage}Question 3\n\nExiste-t-il 8 forces élémentales?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 1 ;20;3;{NewPage}Question 4\n\nEn combat, plus votre Vigueur est\nélevée plus vous causez de dommages?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 1 ;20;4;{NewPage}Question 5\n\nHP-A signifie (capacité) HP Associée?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 1 ;20;5;{NewPage}Question 6\n\nVotre G-Force ne peut\napprendre aucune capacité.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 1 ;20;6;{NewPage}Question 7\n\nLa Magie utilise-t-elle des points MP?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 1 ;20;7;{NewPage}Question 8\n\nPouvez-vous renommer une G-Force?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 1 ;20;8;{NewPage}Question 9\n\nExiste-t-il des tenues de protection?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 1 ;20;9;{NewPage}Question 10\n\nPouvez-vous augmenter le niveau\nd'EXP d'une G-Force avec des PDC?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 2 ;21;0;{NewPage}Question 1\n\nPouvez-vous augmenter votre Défense\nen associant de la magie?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 2 ;21;1;{NewPage}Question 2\n\nL'arme de {Squall} est-elle la Gauntlet?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 2 ;21;2;{NewPage}Question 3\n\nPouvez-vous stocker de la magie volée?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 2 ;21;3;{NewPage}Question 4\n\nPerdez-vous des points si vous attaquez\nen étant empoisonné? Si vous passez\nvotre tour, perdez-vous des points aussi?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 2 ;21;4;{NewPage}Question 5\n\nFolie est-il annulé si vous\nsubissez une attaque armée?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 2 ;21;5;{NewPage}Question 6\n\nle Limit Break de {Squall}\nest le Kenzokuken.\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 2 ;21;6;{NewPage}Question 7\n\nPour faire une association de magie,\nfaut il une capacité correspondant\nà l'association désirée?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 2 ;21;7;{NewPage}Question 8\n\n{CharacterAbility} signifie Capacité Associée?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 2 ;21;8;{NewPage}Question 9\n\nLes 8 éléments sont Feu, Neige, Tonnerre,\nTerre, Poison, Sorcellerie, Vent et Sacré.\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 2 ;21;9;{NewPage}Question 10\n\nLa quantité de magie que vous\npouvez voler est-elle limitée?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 3 ;22;0;{NewPage}Question 1\n\nLes potions restaurent-elles\nles HP des G-Forces?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 3 ;22;1;{NewPage}Question 2\n\nLa magie n'est-elle obtenue\nqu'en la volant à vos ennemis?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 3 ;22;2;{NewPage}Question 3\n\nL'arme de Selphie est un Nunchaku.\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 3 ;22;3;{NewPage}Question 4\n\nSuffit-il d'un peu d'argent\npour améliorer votre arme?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 3 ;22;4;{NewPage}Question 5\n\nCelui qui donne le coup de grâce\nreçoit-il le plus de points d'EXP?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 3 ;22;5;{NewPage}Question 6\n\nLa puissance d'attaque des G-Forces\ndépend-elle de leur niveau?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 3 ;22;6;{NewPage}Question 7\n\n{PartyAbility} signifie capacité Actions.\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 3 ;22;7;{NewPage}Question 8\n\nChaque membre de l'équipe dispose de\n5 Capacités individuelles et globales?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 3 ;22;8;{NewPage}Question 9\n\nLes commandes actions doivent être\nplacées dans le menu Action pour\nêtre utilisées lors des combats.\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 3 ;22;9;{NewPage}Question 10\n\nPDC signifie Points de Compétence.\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 4 ;23;0;{NewPage}Question 1\n\n{Squall} est-il le seul à\npouvoir utiliser une Gunblade?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 4 ;23;1;{NewPage}Question 2\n\nPouvez-vous attaquer vos équipiers\navec de la magie?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 4 ;23;2;{NewPage}Question 3\n\nExiste-t-il une capacité permettant\nde créer des sorts à partir d'objets?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 4 ;23;3;{NewPage}Question 4\n\nUne plus grande Défense réduit\nelle les dommages (armés) reçus?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 4 ;23;4;{NewPage}Question 5\n\nL'Initiation s'acquière-t-elle\nau moment des combats?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 4 ;23;5;{NewPage}Question 6\n\nAnti-Sort guérit-il le sort Poison?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 4 ;23;6;{NewPage}Question 7\n\nSi vous êtes mis KO par une attaque mentale\net que l'on vous ressuscite après le combat,\nl'attaque mentale est-elle annulée?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 4 ;23;7;{NewPage}Question 8\n\nEst-ce que T-Rex vit dans la\nserre de combat de la BGU?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 4 ;23;8;{NewPage}Question 9\n\nLa Gunblade de {Squall} provoque-t-elle\nplus de dégâts en appuyant sur {L2}?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 4 ;23;9;{NewPage}Question 10\n\nEst-il possible de stocker\njusqu'à 255 fois le même sort?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 5 ;24;0;{NewPage}Question 1\n\n{MenuAbility} signifie Capacité Equipe.\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 5 ;24;1;{NewPage}Question 2\n\nPouvez-vous Voler vos équipiers?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 5 ;24;2;{NewPage}Question 3\n\nPouvez-vous sauvegarder la partie\nà n'importe quel moment?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 5 ;24;3;{NewPage}Question 4\n\nQuand une G-Force acquiert une capacité,\nd'autres compétences peuvent-elles\napparaître?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 5 ;24;4;{NewPage}Question 5\n\nFaut-il configurer la capacité d'un\npersonnage pour pouvoir s'en servir?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 5 ;24;5;{NewPage}Question 6\n\nPlus votre Vitesse est élevée, plus vous\navez de chance d'utiliser votre Limit Break.\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 5 ;24;6;{NewPage}Question 7\n\nAcquiert-on une capacité en\ngagnant des points d'EXP?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 5 ;24;7;{NewPage}Question 8\n\nEtes-vous plus vulnérable aux attaques\nSacrées quand vous êtes atteint par Zombie?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 5 ;24;8;{NewPage}Question 9\n\nLes attaques armées utilisent,\npar exemples, une épée ou une\narme à feu?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 5 ;24;9;{NewPage}Question 10\n\nPouvez-vous dérober le sort Samâdhi à Wendigo?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 6 ;25;0;{NewPage}Question 1\n\nLes armes de Zell sont ses gants.\n\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 6 ;25;1;{NewPage}Question 2\n\nSous Aphasie, pouvez-vous\ninvoquer une G-Force?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 6 ;25;2;{NewPage}Question 3\n\n{Ifrit} peut-il acquérir la\ncapacité Créa-Mgi-Inc?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 6 ;25;3;{NewPage}Question 4\n\nSi plus d'une G-Force ayant la même capacité associée\nsont attachées à un personnage, les effets de ces\ncapacités restent-ils identiques?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 6 ;25;4;{NewPage}Question 5\n\nLes attaques mentales disparaissent\nelles après un combat?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 6 ;25;5;{NewPage}Question 6\n\nPouvez-vous Attaquer et Voler sans\navoir associé une G-Force à votre\npersonnage?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 6 ;25;6;{NewPage}Question 7\n\nSi vous configurez la gunblade\nde {Squall} sur Auto, inutile\nd'appuyer sur {R1}.\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 6 ;25;7;{NewPage}Question 8\n\nLe niveau de magie détermine-t-il la\npuissance et l'efficacité de vos sorts?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 6 ;25;8;{NewPage}Question 9\n\nQuand vous utilisez Auto pour\nles associations, votre choix est-il\nlimité à Attaque et Défense?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 6 ;25;9;{NewPage}Question 10\n\nOrchida utilise-t-elle Morphée?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 7 ;26;0;{NewPage}Question 1\n\nEsquive indique vos chances d'éviter\nles dégâts des attaques armées.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 7 ;26;1;{NewPage}Question 2\n\nSi vous utilisez Brasier contre des\nennemis qui absorbent ce sort, cela\naugmente-t-il leurs HP?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 7 ;26;2;{NewPage}Question 3\n\nLe coup de grâce de {Squall} est-il\ndifférent en fonction de la gunblade\nqu'il utilise?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 7 ;26;3;{NewPage}Question 4\n\nAvec Créa-Mgi-Inc, pouvez-vous créer\n5 Brasiers à partir d'1 Caillou Magik?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 7 ;26;4;{NewPage}Question 5\n\nExiste-t-il une seule carte rare au monde?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 7 ;26;5;{NewPage}Question 6\n\nSchizoïd utilise-t-il le Brasier?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 7 ;26;6;{NewPage}Question 7\n\nLa valeur Psy concerne seulement la Folie?\nCette valeur augmente-t-elle vos chances\nde succès quand vous utilisez Folie?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 7 ;26;7;{NewPage}Question 8\n\nBogomile perd beaucoup d'Enclumes?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 7 ;26;8;{NewPage}Question 9\n\nLe rang de vos ennemis\ns'améliore-t-il comme le vôtre?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 7 ;26;9;{NewPage}Question 10\n\nRencontrerez-vous moins d'ennemis\ndans l'Atlas si vous marchez\nau lieu de courir?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 8 ;27;0;{NewPage}Question 1\n\nLes Galbadiens n'utilisent pas de magie.\n\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 8 ;27;1;{NewPage}Question 2\n\nPouvez-vous améliorer vos\narmes dans les Bazars?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 8 ;27;2;{NewPage}Question 3\n\n{Fire} signifie capacité Personnage?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 8 ;27;3;{NewPage}Question 4\n\nL'état de la cible redevient-il\nnormal si vous lancez Somni\npar dessus Booster?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 8 ;27;4;{NewPage}Question 5\n\nRencontrez-vous plus d'ennemis dans\nles forêts que dans les plaines?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 8 ;27;5;{NewPage}Question 6\n\nQuand la valeur Déf-Elé dépasse 100%,\nun dommage élémental est-il absorbé?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 8 ;27;6;{NewPage}Question 7\n\nIl n'existe qu'une seule Fac,\nelle se trouve à Balamb.\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 8 ;27;7;{NewPage}Question 8\n\nIl n'y a pas de Succubes\ndans la Mine de Souffre.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 8 ;27;8;{NewPage}Question 9\n\nLes G-Forces peuvent-elles acquérir\ndes capacités différentes?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 8 ;27;9;{NewPage}Question 10\n\nPouvez-vous acheter des\narmes dans les Bazars?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 9 ;28;0;{NewPage}Question 1\n\nPouvez-vous Lancer la G-Force que vous\navez volée au lieu de la Stocker?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 9 ;28;1;{NewPage}Question 2\n\n{Thunder} signifie Menu Capacité.\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 9 ;28;2;{NewPage}Question 3\n\nLes sorts figurant dans la liste\ndu Limit Break de Selphie sont-ils\nceux qu'elle possède en stock?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 9 ;28;3;{NewPage}Question 4\n\nUne G-Force peu utilisée (ou faiblement\ncompatible) peut quitter son utilisateur.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 9 ;28;4;{NewPage}Question 5\n\nLes capacités d'équipe peuvent-elles\nêtre utilisées sans être configurées?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 9 ;28;5;{NewPage}Question 6\n\nSi vous laissez une G-Force KO trop\nlongtemps, risque-t-elle de mourir?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 9 ;28;6;{NewPage}Question 7\n\nUn 9 inch nail peut-il\ncréer 5 balles anti-char?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 9 ;28;7;{NewPage}Question 8\n\nEn tuant un ennemi qui vous a\nlancé une attaque mentale, votre\nétat redevient-il normal?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 9 ;28;8;{NewPage}Question 9\n\nLes ennemis modifient-ils leur stratégie\nd'attaque lorsque votre niveau augmente?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 9 ;28;9;{NewPage}Question 10\n\nQuand vous êtes empoisonné, vos\nactions vous coûtent-elles des points?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 10;29;0;{NewPage}Question 1\n\nLe sort Folie provoque-t-il un\nétat de démence chez la cible?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 10;29;1;{NewPage}Question 2\n\nUne Potion vous fait récupérer 100 HP.\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 10;29;2;{NewPage}Question 3\n\nL'arme de Quistis est-elle une épée magique?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 10;29;3;{NewPage}Question 4\n\nATB signifie (jauge) Anti Time Battle.\n\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 10;29;4;{NewPage}Question 5\n\nEst-il plus facile de tirer si\nvous êtes atteint par Zombie?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 10;29;5;{NewPage}Question 6\n\nPouvez-vous créer une Red Kross à partir\nd'1 Onde Bénite dans le Menu Créa-Outils?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 10;29;6;{NewPage}Question 7\n\nLes points d'EXP sont-ils partagés de façon\néquitable entre les différents combattants?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 10;29;7;{NewPage}Question 8\n\nLe sort Cécité empêche-t-il\nun ennemi d'attaquer?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 10;29;8;{NewPage}Question 9\n\nEsuna et Défijeur guérissent-ils Fossile?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 10;29;9;{NewPage}Question 10\n\nLe sort Morphée est non-guérissable.\n\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 11;30;0;{NewPage}Question 1\n\nLes G-Forces peuvent-elles récupérer\ndes HP lorsque vous marchez?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 11;30;1;{NewPage}Question 2\n\nLa commande Voler doit être placée\ndans le menu Action pour utiliser\nles sources de magie.\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 11;30;2;{NewPage}Question 3\n\nLes Limit Break sont-ils fatals?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 11;30;3;{NewPage}Question 4\n\n{Sire} peut-elle acquérir\nla capacité Traitement?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 11;30;4;{NewPage}Question 5\n\nPeut-on associer plusieurs G-Forces?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 11;30;5;{NewPage}Question 6\n\nL'objet Adamantine est-il obtenu\npar un Ao de niveau 10?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 11;30;6;{NewPage}Question 7\n\nPouvez-vous classer les Sorts et les\nObjets affichés en cours de combat?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 11;30;7;{NewPage}Question 8\n\n{Shiva} peut-elle acquérir Peine de\nMort juste après être devenue une alliée?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 11;30;8;{NewPage}Question 9\n\nSaignée absorbe les HP ennemis,\nmais pas ceux de vos équipiers.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 11;30;9;{NewPage}Question 10\n\nLes sorts de soin endommagent\nles morts-vivants.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 12;31;0;{NewPage}Question 1\n\nScavenger absorbe-t-il les\nattaques Terrestres?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 12;31;1;{NewPage}Question 2\n\nPouvez-vous créer 20 Soins + à partir\nd'1 Onde Bénite avec Créa-Mgi-Méd?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 12;31;2;{NewPage}Question 3\n\nSi vous êtes KO mais que votre équipe\ngagne le combat, recevez-vous quand\nmême des points d'EXP?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 12;31;3;{NewPage}Question 4\n\nLe seul moyen d'acquérir une G-Force\nest de la vaincre.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 12;31;4;{NewPage}Question 5\n\nLa quantité maximum de sorts que vous\npouvez Voler à un ennemi est de 9 sorts.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 12;31;5;{NewPage}Question 6\n\nImpossible de Voler 9 Inch Nail à Selek?\n\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 12;31;6;{NewPage}Question 7\n\nPeut-on masquer les menus en cours\nde combat en appuyant sur {Select}?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 12;31;7;{NewPage}Question 8\n\nLe sort Aphasie n'est-il efficace\nque contre les G-Forces et la Magie?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 12;31;8;{NewPage}Question 9\n\nPeut-on utiliser Scan sur ses équipiers?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 12;31;9;{NewPage}Question 10\n\nSi vous associez la magie Poison (100%)\net Déf-Mtl-A, vous ne subirez plus de\ndommages d'attaques armées empoisonnées.\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 13;32;0;{NewPage}Question 1\n\nGagnez-vous des points d'EXP si vous\nprenez la fuite après avoir attaqué\nun adversaire?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 13;32;1;{NewPage}Question 2\n\nPouvez-vous Piller des\nEpines Bleues à Chimaira?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 13;32;2;{NewPage}Question 3\n\nEtes-vous obligé d'associer les\ncapacités d'une G-Force à votre joueur\npour qu'elles soient efficaces?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 13;32;3;{NewPage}Question 4\n\nLes sources de magie ne sont\nutilisables qu'une seule fois.\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 13;32;4;{NewPage}Question 5\n\n{Quezacotl} peut-il acquérir le Mode\nCarte sans utiliser un objet?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 13;32;5;{NewPage}Question 6\n\nSi vous subissez plusieurs échecs avec\nla commande Voler, celle-ci est\nmise en sommeil pendant un certain temps.\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 13;32;6;{NewPage}Question 7\n\nSi une G-Force est KO, sa compatibilité\navec l'équipier baisse.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 13;32;7;{NewPage}Question 8 \n\nPouvez-vous échapper à\nn'importe quel ennemi?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 13;32;8;{NewPage}Question 9\n\nDevez-vous posséder des munitions pour\ntirer avec la gunblade de {Squall}?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 13;32;9;{NewPage}Question 10\n\nUn monstre de feu ne lance que\ndes attaques de feu.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 14;33;0;{NewPage}Question 1\n\nPouvez-vous Voler des G-Forces\nà vos ennemis?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 14;33;1;{NewPage}Question 2\n\nDans les situations délicates, {Squall}\npeut-il utiliser Renzokuken plus souvent?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 14;33;2;{NewPage}Question 3\n\nAvec un niveau de Précision élevé, vous\ntouchez plus souvent votre adversaire (sauf\nsi son niveau d'Esquive est très haut).\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 14;33;3;{NewPage}Question4\n\nCertains objets altèrent la relation\nentre une G-Force et un équipier?\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 14;33;4;{NewPage}Question 5\n\nAvec Blindage, l'effet des sorts de\nvos ennemis est-il réduit de 75%?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 14;33;5;{NewPage}Question 6\n\nExiste-t-il un monstre nommé Koatl?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 14;33;6;{NewPage}Question 7\n\nSi vous n'avez pas associé une G-Force ou si vous\nn'avez pas configuré de capacités, vous ne\ndisposez que de la commande Attaquer.\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 14;33;7;{NewPage}Question 8\n\nEn tuant vos ennemis avec des attaques\narmées plutôt qu'avec la magie,\nobtenez-vous plus de points d'EXP?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 14;33;8;{NewPage}Question 9\n\nEmpathie ne protège-t-il que\nl'équipier qui est à côté de vous?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 14;33;9;{NewPage}Question 10\n\nLa meilleure façon d'utiliser Turbo\nest-elle d'appuyer sans arrêt sur {Square}?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 15;34;0;{NewPage}Question 1\n\nLa compatibilité avec une G-Force\ns'améliore-t-elle à mesure que vous\nl'invoquez?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 15;34;1;{NewPage}Question 2\n\nUn équipier peut disposer\nde tous les sorts magiques.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 15;34;2;{NewPage}Question 3\n\nLa Tempête des Sables de Diodon\nest-elle une attaque de Vent?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 15;34;3;{NewPage}Question 4\n\nPouvez-vous utiliser Boomerang pour\nrenvoyer un sort déjà renvoyé par Boomerang?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 15;34;4;{NewPage}Question 5\n\nAtteint de Folie, vous ne pouvez\npas vous attaquer vous-même.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 15;34;5;{NewPage}Question 6\n\nPouvez-vous changer Blizzard en\nGlacier en utilisant une capacité?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 15;34;6;{NewPage}Question 7\n\nLa G-Force {Cerberus} peut-elle acquérir\nla compétence Bonus Vts?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 15;34;7;{NewPage}Question 8\n\nUn équipier atteint d'Aphasie\nne peut pas lancer de sorts.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 15;34;8;{NewPage}Question 9\n\nBocca guérit-il Fossile?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 15;34;9;{NewPage}Question 10\n\nSi vous êtes atteint d'Aphasie lorsque vous\ninvoquez une G-Force, celle-ci est annulée.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 16;35;0;{NewPage}Question 1\n\nPouvez-vous utiliser les Limit Break\nplus souvent quand vos HP sont peu élevés?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 16;35;1;{NewPage}Question 2\n\nAprès l'association d'une G-Force ayant Déf-Elé-A\net Déf-Elé-Ax2, pouvez-vous associer 3 sorts\ndans les emplacements vides de Déf-Elé?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 16;35;2;{NewPage}Question 3\n\nExiste-t-il une commande permettant de\nretirer une G-Force sans perdre de magie\ndans le menu Associer?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 16;35;3;{NewPage}Question 4\n\nL'état de certains ennemis ne\nchange pas, même si votre Atq-Mtl-A\nest configurée à 100%.\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 16;35;4;{NewPage}Question 5\n\nVoler signifie dérober les sorts dont\ndispose votre ennemi. Quand il n'en a plus,\nle monstre ne peut plus jeter de sortilèges.\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 16;35;5;{NewPage}Question 6\n\nLes Elmideas de faible niveau\nlaissent tomber des Cailloux Magik.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 16;35;6;{NewPage}Question 7\n\nLes Mégapotions GF redonnent\nelles vie à une G-Force KO?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 16;35;7;{NewPage}Question 8\n\nLa partie s'arrête-t-elle lorsque\ntous les équipiers sont atteints\nde Mort, Zombie ou Fossile?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 16;35;8;{NewPage}Question 9\n\nL'Hypra-potion redonne-t-elle 1000 HP?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 16;35;9;{NewPage}Question 10\n\nGil-Nomade est-elle une compétence\npour acquérir des gils en marchant?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 17;36;0;{NewPage}Question 1\n\nPouvez-vous utiliser vos Limit Break plus\nsouvent quand vous êtes sous Aura?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 17;36;1;{NewPage}Question 2\n\nLes potions GF, restaurant les HP des\nG-Forces, peuvent-elles être utilisées\nen cours de combat?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 17;36;2;{NewPage}Question 3\n\nLa capacité Schweitzer permet-elle\nd'utiliser 2 potions à la fois?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 17;36;3;{NewPage}Question 4\n\nLes coups de grâce sont-ils plus fréquents\nsi vous appuyez sur la gâchette de la\ngunblade de {Squall} au bon moment?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 17;36;4;{NewPage}Question 5\n\nFaut-il configurer la compétence Prudence\npour éviter les attaques en traître?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 17;36;5;{NewPage}Question 6\n\nLes Limit Break sont-ils disponibles\nlorsque vous êtes sous Furie?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 17;36;6;{NewPage}Question 7\n\nDans le menu, pouvez-vous utiliser une\npotion pour soigner un équipier zombifié?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 17;36;7;{NewPage}Question 8\n\nLes attaques de la G-Force {Alexander}\nsont-elles des attaques Sacrées?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 17;36;8;{NewPage}Question 9\n\nLe T-Rex laisse-t-il parfois\ntomber des Crocs de Dinosaure?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 17;36;9;{NewPage}Question 10\n\nSous Darkness, vous êtes aveugle et\nvous risquez d'attaquer un équipier.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 18;37;0;{NewPage}Question 1\n\nVous ne pouvez pas faire d'association\nsans G-Force, quel que soit votre niveau.\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 18;37;1;{NewPage}Question 2\n\nBoomerang peut-il renvoyer tous les sorts?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 18;37;2;{NewPage}Question 3\n\nExiste-t-il 30 altérations\nde l'état d'un personnage?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 18;37;3;{NewPage}Question 4\n\nAucun sort ne peut guérir Zombie.\n\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 18;37;4;{NewPage}Question 5\n\nLorsque vous ciblez un ennemi en combat,\nfaut-il appuyer sur {L1} pour le\nsélectionner à partir d'un menu?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 18;37;5;{NewPage}Question 6\n\nExiste-t-il une capacité que vous\npouvez acquérir par vous même?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 18;37;6;{NewPage}Question 7\n\nAprès avoir subi une attaque magique,\nWendigo atterrit-il pour tirer des\nBalles Pulsar avec sa bouche?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 18;37;7;{NewPage}Question 8\n\nLes HP sont-ils restaurés\nplus lentement sous Morphée?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 18;37;8;{NewPage}Question 9\n\nLe G-Force {Carbuncle} donne-t-elle Carapace\net Blindage à tous les équipiers?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 18;37;9;{NewPage}Question 10\n\nFolie est-il plus fort que Furie quand\nils sont lancés simultanément?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 19;38;0;{NewPage}Question 1\n\nLa défense face à Ankou est-elle déterminée\npar le niveau Ankou dans Déf-Mtl-A?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 19;38;1;{NewPage}Question 2\n\nLes équipiers atteints par Zombie\nsubissent-ils des dommages en utilisant\nSaignée sur un ennemi aussi zombifié?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 19;38;2;{NewPage}Question 3\n\nLes morsures de Gallus sont\nparfois empoisonnées.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 19;38;3;{NewPage}Question 4\n\nL'état Invincibilité redevient-il\nnormal une fois le combat terminé?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 19;38;4;{NewPage}Question 5\n\nLa Chimaira a-t-elle des\ntêtes de grenouille, de bouc,\nd'oiseau et de sanglier?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 19;38;5;{NewPage}Question 6\n\nCarapace n'est pas efficace lorsque\nvotre Défense (Dfs) est à zéro.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 19;38;6;{NewPage}Question 7\n\nFlottez-vous plus haut à chaque\nfois que vous utilisez Décubitus?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 19;38;7;{NewPage}Question 8\n\nDevez-vous fuir devant Goliath,\npuisqu'il est invincible?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 19;38;8;{NewPage}Question 9\n\nMégalith ramène le niveau Psy d'un\nennemi à zéro. Il est donc inefficace\nsur les monstres ayant zéro de Psy.\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 19;38;9;{NewPage}Question 10\n\nAvec les armes décrites dans Fanas de\nFlingues Fanzine, le Bazar vous précise\nles objets dont vous avez besoin (en gris).\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 20;39;0;{NewPage}Question 1\n\nVous ne pouvez pas être attaqué\nlorsque vous voyagez en voiture.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 20;39;1;{NewPage}Question 2\n\n1 Canicule peut-elle être\ntransformée en 20 Fournaises?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 20;39;2;{NewPage}Question 3\n\nUne Aphide mesure-t-elle 12 mètres de haut?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 20;39;3;{NewPage}Question 4\n\nLa plupart des monstres non-élémentaux\nn'ont pas de capacité élémentale.\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 20;39;4;{NewPage}Question 5\n\nLorsque votre niveau Seed augmente,\nvos pouvoirs magiques et la réussite\nde vos Vols augmentent-ils aussi?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 20;39;5;{NewPage}Question 6\n\nLes dommages que vous causez ne changent\npas en fonction de votre niveau HP.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 20;39;6;{NewPage}Question 7\n\nUne bonne compatibilité avec une G-Force\nréduit-elle son temps d'invocation?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 20;39;7;{NewPage}Question 8\n\nLarva perd des U-Boats?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 20;39;8;{NewPage}Question 9\n\nUne configuration Vgr+20% et Vgr+40%\nest-elle plus efficace que Vgr+60%?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 20;39;9;{NewPage}Question 10\n\n{Sire} utilise-t-elle un sort nommé\nMorphée en plus des attaques armées?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 21;40;0;{NewPage}Question 1\n\nLes Succubes explosent-ils tous seuls?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 21;40;1;{NewPage}Question 2\n\nLes Xylomides sont-ils cachés\nau nord d'Esthar?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 21;40;2;{NewPage}Question 3\n\nBaston Magazine est une\nrevue d'arts martiaux.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 21;40;3;{NewPage}Question 4\n\nPouvez-vous Voler une G-Force à\nSulfura sur la tour de Dollet?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 21;40;4;{NewPage}Question 5\n\nQuand vous êtes atteint par Stop pendant\nl'invocation d'une G-Force, celle-ci\nne subit pas les effets de ce sort?\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 21;40;5;{NewPage}Question 6\n\nDéfense vous protège contre les\nattaques armées, mais êtes-vous\ntoujours vulnérable à la magie?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 21;40;6;{NewPage}Question 7\n\nFaut-il associer Vie pour augmenter votre\ndéfense contre les attaques élémentales?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 21;40;7;{NewPage}Question 8\n\nY'a-t-il une bibliothèque à la BGU?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 21;40;8;{NewPage}Question 9\n\nMaxi MT-Psy est un objet qui\ndonne MT-Psy à tous les équipiers.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 21;40;9;{NewPage}Question 10\n\nPouvez-vous créer une Nova à\npartir d'une carte Succube?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 22;41;0;{NewPage}Question 1\n\nSi vous utilisez Carapace par-dessus\nBlindage, ce dernier est-il annulé?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 22;41;1;{NewPage}Question 2\n\nPouvez-vous perdre des gils et des objets\nsi votre niveau de Chance (Chc) est faible?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 22;41;2;{NewPage}Question 3\n\nPour vous défendre contre des attaques\nde Brasier, faut-il associer la magie\nNeige et Déf-Elé-A?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 22;41;3;{NewPage}Question 4\n\nL'association de Boomerang et Déf-Mtl\naugmente la défense sur 9 capacités?\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 22;41;4;{NewPage}Question 5\n\nZombie et Supplice correspondent à\nun sort élémental de Sorcellerie.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 22;41;5;{NewPage}Question 6\n\nExiste-t-il un objet nommé Maxi Potion\nqui restaure vos HP de 3000 points?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 22;41;6;{NewPage}Question 7\n\nQuand votre niveau Seed augmente, les\nboutiques vous font-elles un rabais?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 22;41;7;{NewPage}Question 8\n\nEn utilisant la même magie élémentale que\nvotre G-Force, votre compatibilité augmente?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 22;41;8;{NewPage}Question 9\n\nLe menu d'Aide évolue en cours de partie?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 22;41;9;{NewPage}Question 10\n\nUn niveau de Précision (Prc) élevé\naugmente vos chances de succès pour Voler?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 23;42;0;{NewPage}Question 1\n\nPouvez-vous créer Remède +\nà partir de Remède?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 23;42;1;{NewPage}Question 2\n\nPour fuir un combat, faut-il appuyer\nen même temps sur {R1} et {R2},\n(parfois sans succès)?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 23;42;2;{NewPage}Question 3\n\nLa Commande Arnica peut-elle\nressusciter les équipiers tués?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 23;42;3;{NewPage}Question 4\n\nEsuna annule-t-il les attaques\nmentales, et Anti-sort les\nattaques élémentales?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 23;42;4;{NewPage}Question 5\n\nSous Récup, les HP sont\nrestaurés régulièrement même\nsi vous êtes atteint par Stop.\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 23;42;5;{NewPage}Question 6\n\nSous Fléau, vous ne pouvez\npas utiliser vos Limit Break.\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 23;42;6;{NewPage}Question 7\n\nFurie augmente la puissance\ndes attaques. Mais la seule\ncommande disponible est Attaquer.\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 23;42;7;{NewPage}Question 8\n\nAvez-vous la possibilité de fabriquer\nun Remède à partir d'un Germe?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 23;42;8;{NewPage}Question 9\n\nDécubitus s'affaiblit-il\naprès un certain temps.\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 23;42;9;{NewPage}Question 10\n\nCarapace réduit-il les dégâts des\nattaques armées de moitié?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 24;43;0;{NewPage}Question 1\n\nFaut-il utiliser Esuna pour guérir Somni?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 24;43;1;{NewPage}Question 2\n\nL'association Décubitus avec Déf-Elém-A\naugmente-t-elle votre défense face\naux attaques Elémentales Terrestres?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 24;43;2;{NewPage}Question 3\n\nLa jauge ATB est-elle active\nquand une G-Force est invoquée?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 24;43;3;{NewPage}Question 4\n\nAuto-Boomerang fonctionne\ntant que vous n'êtes pas KO.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 24;43;4;{NewPage}Question 5\n\nEst-ce que {Ice}\nsignifie Capacité G-Forces?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 24;43;5;{NewPage}Question 6\n\nLes Capacités que peuvent acquérir les\nG-Forces sont-elles limitées?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 24;43;6;{NewPage}Question 7\n\nCarapace se renforce à chaque utilisation?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 24;43;7;{NewPage}Question 8\n\nObtenez-vous Poison (en + des HP)\nquand vous utilisez Saignée\ncontre une cible empoisonnée.\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 24;43;8;{NewPage}Question 9\n\nUne arme peut-elle se casser\naprès de trop nombreux combats?\nPeut-elle être réparée?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 24;43;9;{NewPage}Question 10\n\nSi vous êtes atteint de Folie et d'Aphasie,\nvous ne pouvez pas lancer de sorts?\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 25;44;0;{NewPage}Question 1\n\nPouvez-vous Piller un\nRayon à Protesis?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 25;44;1;{NewPage}Question 2\n\nLe sort Tsunami de la G-Force {Leviathan}\nprovoque-t-il un feu de forêt?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 25;44;2;{NewPage}Question 3\n\nLe Décapaciteur permet-il à une\nG-Force d'oublier une Capacité?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 25;44;3;{NewPage}Question 4\n\nExiste-t-il une Capacité vous\npermettant de voir les Sources\nde magie et les PDS cachés?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 25;44;4;{NewPage}Question 5\n\nLes G-Forces gagnent-elles plus\nd'EXP si une seule G-Force est\nassociée à chaque équipier?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 25;44;5;{NewPage}Question 6\n\nFaut-il revenir de temps en temps à\nla BGU pour recevoir son salaire?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 25;44;6;{NewPage}Question 7\n\nLes sorts H2o + et H2o Max sont-ils\nplus puissants que le sort H2o?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 25;44;7;{NewPage}Question 8\n\nAmorce ne fonctionne pas contre les\nattaques affectant tous les équipiers?\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 25;44;8;{NewPage}Question 9\n\nLes G-Forces peuvent-elles réussir\ntous les pillages en utilisant\nun objet appelé Passe-partout?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 25;44;9;{NewPage}Question 10\n\nVous ne pouvez pas Voler le sort Fléau.\n\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 26;45;0;{NewPage}Question 1\n\nL'utilisation de Saignée sur des morts\nvivants provoque-t-elle des dégâts?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 26;45;1;{NewPage}Question 2\n\nLa capacité individuelle Genki permet-elle de\ndémarrer un combat avec une jauge ATB pleine,\nmême si vous êtes attaqué par derrière?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 26;45;2;{NewPage}Question 3\n\nLa commande Combustion inflige-t-elle\nDarkness quand vous faites une attaque armée?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 26;45;3;{NewPage}Question 4\n\nSidéral est-il le seul sort élémental Sacré?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 26;45;4;{NewPage}Question 5\n\nMême les G-Forces non-associées\nobtiennent des EXP et des PDC.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 26;45;5;{NewPage}Question 6\n\nBlindage réduit-il l'efficacité de\nla magie soignante de moitié?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 26;45;6;{NewPage}Question 7\n\nSi votre capacité d'Esquive est élevée,\npouvez-vous éviter les coups sous Morphée?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 26;45;7;{NewPage}Question 8\n\nPeut-on faire oublier une\ncapacité à une G-Force?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 26;45;8;{NewPage}Question 9\n\nChâtiment reste-t-il efficace\naprès avoir pris la fuite?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 26;45;9;{NewPage}Question 10\n\nLes sorts sont efficaces si votre\nMagie (Mgi) est faible, du moment\nque votre Vigueur (Vgr) est élevée.\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 27;46;0;{NewPage}Question 1\n\nBooster réduit-il l'efficacité de Voler?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 27;46;1;{NewPage}Question 2\n\nVotre salaire Seed dépend-il\ndu nombre d'ennemis tués?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 27;46;2;{NewPage}Question 3\n\nLa Capacité G-Force Double permet-elle\nd'invoquer plusieurs G-Forces à la fois?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 27;46;3;{NewPage}Question 4\n\nChoisir Remplacer dans le\nmenu permet de classer les\nobjets automatiquement?\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 27;46;4;{NewPage}Question 5\n\nTous les monstres ont-ils un point faible?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 27;46;5;{NewPage}Question 6\n\nCyanure affaiblit-il la structure\ncellulaire de votre ennemi pour\nle rendre plus vulnérable?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 27;46;6;{NewPage}Question 7\n\nEst-il plus difficile de fuir quand\nvous êtes attaqué par derrière?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 27;46;7;{NewPage}Question 8\n\nFournaise est-il un sort élémental de Feu?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 27;46;8;{NewPage}Question 9\n\nPouvez-vous savoir combien de\nmonstres vous avez tués?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 27;46;9;{NewPage}Question 10\n\nLes équipiers n'ayant pas participé\nau combat reçoivent-ils un petit\nnombre d'EXP?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 28;47;0;{NewPage}Question 1\n\nUn niveau de Vts plus élevé remplit-il\nplus rapidement votre jauge ATB?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 28;47;1;{NewPage}Question 2\n\nPeut-on annuler Châtiment\navec Esuna?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 28;47;2;{NewPage}Question 3\n\nAttaque magique signifie-t-il que\nvous attaquez avec n'importe quel sort,\nexceptée la magie Sacrée?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 28;47;3;{NewPage}Question 4\n\nAucun sort ne peut annuler Châtiment.\n\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 28;47;4;{NewPage}Question 5\n\nSupplice inflige Poison, Aphasie et\nDarkness à vos ennemis, mais parfois\nseuls 1 ou 2 sorts fonctionnent.\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 28;47;5;{NewPage}Question 6\n\nUne nuit à l'hôtel annule les attaques\nmentales et restaure tous les HP?\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 28;47;6;{NewPage}Question 7\n\nPouvez-vous annuler le Renzokuken de\n{Squall} en appuyant sur {X}?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 28;47;7;{NewPage}Question 8\n\nDouble ou Triple permettent-ils\nd'utiliser le même sort plusieurs fois?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 28;47;8;{NewPage}Question 9\n\nFossile s'amenuise-t-il avec le temps?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 28;47;9;{NewPage}Question 10\n\nL'utilisation du Défijeur pendant\nl'état SubFossile n'empêche pas la\nfossilisation du personnage.\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 29;48;0;{NewPage}Question 1\n\nMT-Psaume ressuscite-t-il\nles équipiers tués?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 29;48;1;{NewPage}Question 2\n\nUne G-Force KO est-elle automatiquement\nressuscitée pour le prochain combat?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 29;48;2;{NewPage}Question 3\n\nSi vous lancez Double sur un équipier\ndéjà sous Double, passe-t-il sous Triple?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 29;48;3;{NewPage}Question 4\n\nBonus Magie augmente-t-il\nvotre niveau magique d'1 point?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 29;48;4;{NewPage}Question 5\n\nLa capacité Sensor modifie-t-elle\nla probabilité pour un ennemi\nde laisser tomber des objets?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 29;48;5;{NewPage}Question 6\n\nBiggs, le soldat Galbadien est-il Général?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 29;48;6;{NewPage}Question 7\n\nDevez-vous disposer d'au moins 3 sorts\nen stock pour utiliser Triple?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 29;48;7;{NewPage}Question 8\n\nSi 2 équipiers sont atteints par\nZombie et que vous subissez Folie,\nla partie est-elle terminée?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 29;48;8;{NewPage}Question 9\n\nMétéore est lancé au hasard sur\nles cibles ennemies.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 29;48;9;{NewPage}Question 10\n\nMeltdown est-il un sort qui\ndissout les ennemis?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 30;49;0;{NewPage}Question 1\n\nEst-il efficace d'employer Décubitus\nlorsque vous combattez Malaku, qui\nutilise l'arme Séisme?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 30;49;1;{NewPage}Question 2\n\nIl est inutile d'utiliser Vie ou\nVie Max sur des équipiers en vie.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 30;49;2;{NewPage}Question 3\n\nSi vous subissez 800 HP de dégâts pendant\nl'invocation d'une G-Force ayant 500 HP, la\ndifférence de 300 points est-elle subie par le\njoueur ayant invoqué la G-Force?\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 30;49;3;{NewPage}Question 4\n\nMarsupial laisse-t-il parfois tomber\nun objet appelé Crinière de Marsupial?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 30;49;4;{NewPage}Question 5\n\nLancer Aura par-dessus Fléau\nramène-t-il votre état à la normale?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 30;49;5;{NewPage}Question 6\n\nTrouve-t-on un monstre appelé\nGrabia sur le continent Galbadien?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 30;49;6;{NewPage}Question 7\n\nAphasie n'est pas annulé,\nmême après le combat.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 30;49;7;{NewPage}Question 8\n\nBoomerang renvoie toujours le\nsort à celui qui l'a lancé.\n\n\n  {Cursor_location_id:0x20}Vrai    {Cursor_location_id:0x21}Faux
-Test seed 30;49;8;{NewPage}Question 9\n\nVotre état change-t-il sous Fossile?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 30;49;9;{NewPage}Question 10\n\nLe seul moyen pour une G-Force d'acquérir\ndes Capacités est-il d'obtenir des PDC?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 31;50;0;{NewPage}Question 1\n\nEst-il efficace d'employer Décubitus\nlorsque vous combattez Malaku, qui\nutilise l'arme Séisme?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 31;50;1;{NewPage}Question 2\n\nIl est inutile d'utiliser Vie ou\nVie Max sur des équipiers en vie.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 31;50;2;{NewPage}Question 3\n\nSi vous subissez 800 HP de dégâts pendant\nl'invocation d'une G-Force ayant 500 HP, la\ndifférence de 300 points est-elle subie par le\njoueur ayant invoqué la G-Force?\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 31;50;3;{NewPage}Question 4\n\nMarsupial laisse-t-il parfois tomber\nun objet appelé Crinière de Marsupial?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 31;50;4;{NewPage}Question 5\n\nLancer Aura par-dessus Fléau\nramène-t-il votre état à la normale?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 31;50;5;{NewPage}Question 6\n\nTrouve-t-on un monstre appelé\nGrabia sur le continent Galbadien?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 31;50;6;{NewPage}Question 7\n\nAphasie n'est pas annulé,\nmême après le combat.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
-Test seed 31;50;7;{NewPage}Question 8\n\nBoomerang renvoie toujours le\nsort à celui qui l'a lancé.\n\n\n  {Cursor_location_id:0x20}Vrai    {Cursor_location_id:0x21}Faux
-Test seed 31;50;8;{NewPage}Question 9\n\nVotre état change-t-il sous Fossile?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
-Test seed 31;50;9;{NewPage}Question 10\n\nLe seul moyen pour une G-Force d'acquérir\ndes Capacités est-il d'obtenir des PDC?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed general;19;0;{x00}Vous allez maintenant passer l'examen\nécrit du Seed. Vous commencez au niveau {x0a22}?\n\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed general;19;1;{x00}Débutons maintenant l'épreuve écrite du Seed.\nVous avez atteint le niveau {x0a20}.\n\nVoulez-vous passer le test de niveau {x0a22}?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed general;19;2;{x00}Vous obtenez 100% de bonnes réponses.\nVous avez réussi le test de niveau {x0a20}.\nVotre rang Seed passe donc à {x0a26}.\n\n\n\n  {Cursor_location_id:0x20}Retour
+Test seed general;19;3;{x00}Vous avez obtenu 100%.\nVous avez réussi le test du niveau {x0a20}.\nVotre rang ne dépassera pas {x0a26}.\n\n\n\n  {Cursor_location_id:0x20}Retour
+Test seed general;19;4;{x00}Votre score est de {x0a20}.\nVous avez échoué à l'examen.\nRéessayez plus tard.\n\n\n\n  {Cursor_location_id:0x20}Retour
+Test seed general;19;5;{x00}Vous avez réussi le test No 30.\nIl s'agit du dernier examen écrit.\n\n\n\n\n  {Cursor_location_id:0x20}Retour
+Test seed general;19;6;{x00}Votre avez le rang {x0a26}.\nVous ne pouvez pas aller plus haut.\nVoulez-vous quand même\npasser l'épreuve écrite?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed general;19;7;{x00}Vous confirmez?\n\n\n\n\n\n  {Cursor_location_id:0x20}Non    {Cursor_location_id:0x21}Oui
+Test seed general;19;8;{x00}Fin de la révision!\nVous maîtrisez le niveau {x0a20}!\n\n\n\n\n  {Cursor_location_id:0x20}Retour
+Test seed general;19;9;{x00}Vous avez obtenu {x0a20}. C'est pas terrible!\n\n\n\n\n\n  {Cursor_location_id:0x20}Retour
+Test seed general;19;10;{x00}{Squall} est au niveau {x0a20}.\nVous ne pouvez rien passer au-dessus de {x0a22}.\nAméliorez votre niveau puis recommencez.\n\n\n\n  {Cursor_location_id:0x20}Retour
+Test seed 1 ;20;0;{x00}Question 1\n\nVoler sert-il à dérober les sorts ennemis?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 1 ;20;1;{x01}Question 2\n\nLes G-Forces assistent-elles\nles ennemis?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 1 ;20;2;{x00}Question 3\n\nExiste-t-il 8 forces élémentales?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 1 ;20;3;{x00}Question 4\n\nEn combat, plus votre Vigueur est\nélevée plus vous causez de dommages?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 1 ;20;4;{x00}Question 5\n\nHP-A signifie (capacité) HP Associée?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 1 ;20;5;{x01}Question 6\n\nVotre G-Force ne peut\napprendre aucune capacité.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 1 ;20;6;{x01}Question 7\n\nLa Magie utilise-t-elle des points MP?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 1 ;20;7;{x00}Question 8\n\nPouvez-vous renommer une G-Force?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 1 ;20;8;{x01}Question 9\n\nExiste-t-il des tenues de protection?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 1 ;20;9;{x01}Question 10\n\nPouvez-vous augmenter le niveau\nd'EXP d'une G-Force avec des PDC?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 2 ;21;0;{x00}Question 1\n\nPouvez-vous augmenter votre Défense\nen associant de la magie?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 2 ;21;1;{x01}Question 2\n\nL'arme de {Squall} est-elle la Gauntlet?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 2 ;21;2;{x00}Question 3\n\nPouvez-vous stocker de la magie volée?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 2 ;21;3;{x00}Question 4\n\nPerdez-vous des points si vous attaquez\nen étant empoisonné? Si vous passez\nvotre tour, perdez-vous des points aussi?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 2 ;21;4;{x00}Question 5\n\nFolie est-il annulé si vous\nsubissez une attaque armée?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 2 ;21;5;{x01}Question 6\n\nle Limit Break de {Squall}\nest le Kenzokuken.\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 2 ;21;6;{x00}Question 7\n\nPour faire une association de magie,\nfaut il une capacité correspondant\nà l'association désirée?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 2 ;21;7;{x00}Question 8\n\n{CharacterAbility} signifie Capacité Associée?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 2 ;21;8;{x01}Question 9\n\nLes 8 éléments sont Feu, Neige, Tonnerre,\nTerre, Poison, Sorcellerie, Vent et Sacré.\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 2 ;21;9;{x01}Question 10\n\nLa quantité de magie que vous\npouvez voler est-elle limitée?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 3 ;22;0;{x01}Question 1\n\nLes potions restaurent-elles\nles HP des G-Forces?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 3 ;22;1;{x01}Question 2\n\nLa magie n'est-elle obtenue\nqu'en la volant à vos ennemis?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 3 ;22;2;{x00}Question 3\n\nL'arme de Selphie est un Nunchaku.\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 3 ;22;3;{x01}Question 4\n\nSuffit-il d'un peu d'argent\npour améliorer votre arme?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 3 ;22;4;{x00}Question 5\n\nCelui qui donne le coup de grâce\nreçoit-il le plus de points d'EXP?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 3 ;22;5;{x00}Question 6\n\nLa puissance d'attaque des G-Forces\ndépend-elle de leur niveau?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 3 ;22;6;{x00}Question 7\n\n{PartyAbility} signifie capacité Actions.\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 3 ;22;7;{x01}Question 8\n\nChaque membre de l'équipe dispose de\n5 Capacités individuelles et globales?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 3 ;22;8;{x00}Question 9\n\nLes commandes actions doivent être\nplacées dans le menu Action pour\nêtre utilisées lors des combats.\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 3 ;22;9;{x01}Question 10\n\nPDC signifie Points de Compétence.\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 4 ;23;0;{x01}Question 1\n\n{Squall} est-il le seul à\npouvoir utiliser une Gunblade?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 4 ;23;1;{x00}Question 2\n\nPouvez-vous attaquer vos équipiers\navec de la magie?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 4 ;23;2;{x00}Question 3\n\nExiste-t-il une capacité permettant\nde créer des sorts à partir d'objets?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 4 ;23;3;{x00}Question 4\n\nUne plus grande Défense réduit\nelle les dommages (armés) reçus?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 4 ;23;4;{x01}Question 5\n\nL'Initiation s'acquière-t-elle\nau moment des combats?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 4 ;23;5;{x01}Question 6\n\nAnti-Sort guérit-il le sort Poison?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 4 ;23;6;{x00}Question 7\n\nSi vous êtes mis KO par une attaque mentale\net que l'on vous ressuscite après le combat,\nl'attaque mentale est-elle annulée?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 4 ;23;7;{x00}Question 8\n\nEst-ce que T-Rex vit dans la\nserre de combat de la BGU?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 4 ;23;8;{x01}Question 9\n\nLa Gunblade de {Squall} provoque-t-elle\nplus de dégâts en appuyant sur {L2}?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 4 ;23;9;{x01}Question 10\n\nEst-il possible de stocker\njusqu'à 255 fois le même sort?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 5 ;24;0;{x01}Question 1\n\n{MenuAbility} signifie Capacité Equipe.\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 5 ;24;1;{x01}Question 2\n\nPouvez-vous Voler vos équipiers?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 5 ;24;2;{x01}Question 3\n\nPouvez-vous sauvegarder la partie\nà n'importe quel moment?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 5 ;24;3;{x00}Question 4\n\nQuand une G-Force acquiert une capacité,\nd'autres compétences peuvent-elles\napparaître?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 5 ;24;4;{x00}Question 5\n\nFaut-il configurer la capacité d'un\npersonnage pour pouvoir s'en servir?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 5 ;24;5;{x01}Question 6\n\nPlus votre Vitesse est élevée, plus vous\navez de chance d'utiliser votre Limit Break.\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 5 ;24;6;{x01}Question 7\n\nAcquiert-on une capacité en\ngagnant des points d'EXP?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 5 ;24;7;{x00}Question 8\n\nEtes-vous plus vulnérable aux attaques\nSacrées quand vous êtes atteint par Zombie?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 5 ;24;8;{x00}Question 9\n\nLes attaques armées utilisent,\npar exemples, une épée ou une\narme à feu?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 5 ;24;9;{x00}Question 10\n\nPouvez-vous dérober le sort Samâdhi à Wendigo?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 6 ;25;0;{x00}Question 1\n\nLes armes de Zell sont ses gants.\n\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 6 ;25;1;{x01}Question 2\n\nSous Aphasie, pouvez-vous\ninvoquer une G-Force?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 6 ;25;2;{x00}Question 3\n\n{Ifrit} peut-il acquérir la\ncapacité Créa-Mgi-Inc?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 6 ;25;3;{x00}Question 4\n\nSi plus d'une G-Force ayant la même capacité associée\nsont attachées à un personnage, les effets de ces\ncapacités restent-ils identiques?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 6 ;25;4;{x01}Question 5\n\nLes attaques mentales disparaissent\nelles après un combat?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 6 ;25;5;{x01}Question 6\n\nPouvez-vous Attaquer et Voler sans\navoir associé une G-Force à votre\npersonnage?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 6 ;25;6;{x00}Question 7\n\nSi vous configurez la gunblade\nde {Squall} sur Auto, inutile\nd'appuyer sur {R1}.\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 6 ;25;7;{x00}Question 8\n\nLe niveau de magie détermine-t-il la\npuissance et l'efficacité de vos sorts?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 6 ;25;8;{x01}Question 9\n\nQuand vous utilisez Auto pour\nles associations, votre choix est-il\nlimité à Attaque et Défense?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 6 ;25;9;{x00}Question 10\n\nOrchida utilise-t-elle Morphée?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 7 ;26;0;{x00}Question 1\n\nEsquive indique vos chances d'éviter\nles dégâts des attaques armées.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 7 ;26;1;{x00}Question 2\n\nSi vous utilisez Brasier contre des\nennemis qui absorbent ce sort, cela\naugmente-t-il leurs HP?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 7 ;26;2;{x00}Question 3\n\nLe coup de grâce de {Squall} est-il\ndifférent en fonction de la gunblade\nqu'il utilise?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 7 ;26;3;{x00}Question 4\n\nAvec Créa-Mgi-Inc, pouvez-vous créer\n5 Brasiers à partir d'1 Caillou Magik?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 7 ;26;4;{x00}Question 5\n\nExiste-t-il une seule carte rare au monde?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 7 ;26;5;{x00}Question 6\n\nSchizoïd utilise-t-il le Brasier?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 7 ;26;6;{x01}Question 7\n\nLa valeur Psy concerne seulement la Folie?\nCette valeur augmente-t-elle vos chances\nde succès quand vous utilisez Folie?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 7 ;26;7;{x00}Question 8\n\nBogomile perd beaucoup d'Enclumes?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 7 ;26;8;{x00}Question 9\n\nLe rang de vos ennemis\ns'améliore-t-il comme le vôtre?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 7 ;26;9;{x01}Question 10\n\nRencontrerez-vous moins d'ennemis\ndans l'Atlas si vous marchez\nau lieu de courir?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 8 ;27;0;{x01}Question 1\n\nLes Galbadiens n'utilisent pas de magie.\n\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 8 ;27;1;{x00}Question 2\n\nPouvez-vous améliorer vos\narmes dans les Bazars?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 8 ;27;2;{x01}Question 3\n\n{Fire} signifie capacité Personnage?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 8 ;27;3;{x01}Question 4\n\nL'état de la cible redevient-il\nnormal si vous lancez Somni\npar dessus Booster?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 8 ;27;4;{x00}Question 5\n\nRencontrez-vous plus d'ennemis dans\nles forêts que dans les plaines?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 8 ;27;5;{x00}Question 6\n\nQuand la valeur Déf-Elé dépasse 100%,\nun dommage élémental est-il absorbé?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 8 ;27;6;{x01}Question 7\n\nIl n'existe qu'une seule Fac,\nelle se trouve à Balamb.\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 8 ;27;7;{x01}Question 8\n\nIl n'y a pas de Succubes\ndans la Mine de Souffre.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 8 ;27;8;{x00}Question 9\n\nLes G-Forces peuvent-elles acquérir\ndes capacités différentes?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 8 ;27;9;{x01}Question 10\n\nPouvez-vous acheter des\narmes dans les Bazars?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 9 ;28;0;{x01}Question 1\n\nPouvez-vous Lancer la G-Force que vous\navez volée au lieu de la Stocker?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 9 ;28;1;{x00}Question 2\n\n{Thunder} signifie Menu Capacité.\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 9 ;28;2;{x01}Question 3\n\nLes sorts figurant dans la liste\ndu Limit Break de Selphie sont-ils\nceux qu'elle possède en stock?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 9 ;28;3;{x01}Question 4\n\nUne G-Force peu utilisée (ou faiblement\ncompatible) peut quitter son utilisateur.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 9 ;28;4;{x01}Question 5\n\nLes capacités d'équipe peuvent-elles\nêtre utilisées sans être configurées?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 9 ;28;5;{x01}Question 6\n\nSi vous laissez une G-Force KO trop\nlongtemps, risque-t-elle de mourir?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 9 ;28;6;{x01}Question 7\n\nUn 9 inch nail peut-il\ncréer 5 balles anti-char?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 9 ;28;7;{x01}Question 8\n\nEn tuant un ennemi qui vous a\nlancé une attaque mentale, votre\nétat redevient-il normal?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 9 ;28;8;{x00}Question 9\n\nLes ennemis modifient-ils leur stratégie\nd'attaque lorsque votre niveau augmente?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 9 ;28;9;{x00}Question 10\n\nQuand vous êtes empoisonné, vos\nactions vous coûtent-elles des points?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 10;29;0;{x00}Question 1\n\nLe sort Folie provoque-t-il un\nétat de démence chez la cible?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 10;29;1;{x01}Question 2\n\nUne Potion vous fait récupérer 100 HP.\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 10;29;2;{x01}Question 3\n\nL'arme de Quistis est-elle une épée magique?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 10;29;3;{x01}Question 4\n\nATB signifie (jauge) Anti Time Battle.\n\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 10;29;4;{x01}Question 5\n\nEst-il plus facile de tirer si\nvous êtes atteint par Zombie?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 10;29;5;{x01}Question 6\n\nPouvez-vous créer une Red Kross à partir\nd'1 Onde Bénite dans le Menu Créa-Outils?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 10;29;6;{x01}Question 7\n\nLes points d'EXP sont-ils partagés de façon\néquitable entre les différents combattants?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 10;29;7;{x01}Question 8\n\nLe sort Cécité empêche-t-il\nun ennemi d'attaquer?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 10;29;8;{x00}Question 9\n\nEsuna et Défijeur guérissent-ils Fossile?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 10;29;9;{x01}Question 10\n\nLe sort Morphée est non-guérissable.\n\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 11;30;0;{x00}Question 1\n\nLes G-Forces peuvent-elles récupérer\ndes HP lorsque vous marchez?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 11;30;1;{x00}Question 2\n\nLa commande Voler doit être placée\ndans le menu Action pour utiliser\nles sources de magie.\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 11;30;2;{x01}Question 3\n\nLes Limit Break sont-ils fatals?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 11;30;3;{x00}Question 4\n\n{Sire} peut-elle acquérir\nla capacité Traitement?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 11;30;4;{x00}Question 5\n\nPeut-on associer plusieurs G-Forces?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 11;30;5;{x01}Question 6\n\nL'objet Adamantine est-il obtenu\npar un Ao de niveau 10?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 11;30;6;{x00}Question 7\n\nPouvez-vous classer les Sorts et les\nObjets affichés en cours de combat?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 11;30;7;{x01}Question 8\n\n{Shiva} peut-elle acquérir Peine de\nMort juste après être devenue une alliée?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 11;30;8;{x01}Question 9\n\nSaignée absorbe les HP ennemis,\nmais pas ceux de vos équipiers.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 11;30;9;{x00}Question 10\n\nLes sorts de soin endommagent\nles morts-vivants.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 12;31;0;{x01}Question 1\n\nScavenger absorbe-t-il les\nattaques Terrestres?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 12;31;1;{x00}Question 2\n\nPouvez-vous créer 20 Soins + à partir\nd'1 Onde Bénite avec Créa-Mgi-Méd?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 12;31;2;{x01}Question 3\n\nSi vous êtes KO mais que votre équipe\ngagne le combat, recevez-vous quand\nmême des points d'EXP?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 12;31;3;{x01}Question 4\n\nLe seul moyen d'acquérir une G-Force\nest de la vaincre.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 12;31;4;{x00}Question 5\n\nLa quantité maximum de sorts que vous\npouvez Voler à un ennemi est de 9 sorts.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 12;31;5;{x01}Question 6\n\nImpossible de Voler 9 Inch Nail à Selek?\n\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 12;31;6;{x00}Question 7\n\nPeut-on masquer les menus en cours\nde combat en appuyant sur {Select}?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 12;31;7;{x01}Question 8\n\nLe sort Aphasie n'est-il efficace\nque contre les G-Forces et la Magie?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 12;31;8;{x00}Question 9\n\nPeut-on utiliser Scan sur ses équipiers?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 12;31;9;{x01}Question 10\n\nSi vous associez la magie Poison (100%)\net Déf-Mtl-A, vous ne subirez plus de\ndommages d'attaques armées empoisonnées.\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 13;32;0;{x00}Question 1\n\nGagnez-vous des points d'EXP si vous\nprenez la fuite après avoir attaqué\nun adversaire?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 13;32;1;{x01}Question 2\n\nPouvez-vous Piller des\nEpines Bleues à Chimaira?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 13;32;2;{x01}Question 3\n\nEtes-vous obligé d'associer les\ncapacités d'une G-Force à votre joueur\npour qu'elles soient efficaces?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 13;32;3;{x01}Question 4\n\nLes sources de magie ne sont\nutilisables qu'une seule fois.\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 13;32;4;{x00}Question 5\n\n{Quezacotl} peut-il acquérir le Mode\nCarte sans utiliser un objet?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 13;32;5;{x01}Question 6\n\nSi vous subissez plusieurs échecs avec\nla commande Voler, celle-ci est\nmise en sommeil pendant un certain temps.\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 13;32;6;{x01}Question 7\n\nSi une G-Force est KO, sa compatibilité\navec l'équipier baisse.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 13;32;7;{x01}Question 8 \n\nPouvez-vous échapper à\nn'importe quel ennemi?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 13;32;8;{x01}Question 9\n\nDevez-vous posséder des munitions pour\ntirer avec la gunblade de {Squall}?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 13;32;9;{x01}Question 10\n\nUn monstre de feu ne lance que\ndes attaques de feu.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 14;33;0;{x00}Question 1\n\nPouvez-vous Voler des G-Forces\nà vos ennemis?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 14;33;1;{x00}Question 2\n\nDans les situations délicates, {Squall}\npeut-il utiliser Renzokuken plus souvent?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 14;33;2;{x00}Question 3\n\nAvec un niveau de Précision élevé, vous\ntouchez plus souvent votre adversaire (sauf\nsi son niveau d'Esquive est très haut).\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 14;33;3;{x00}Question4\n\nCertains objets altèrent la relation\nentre une G-Force et un équipier?\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 14;33;4;{x01}Question 5\n\nAvec Blindage, l'effet des sorts de\nvos ennemis est-il réduit de 75%?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 14;33;5;{x00}Question 6\n\nExiste-t-il un monstre nommé Koatl?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 14;33;6;{x00}Question 7\n\nSi vous n'avez pas associé une G-Force ou si vous\nn'avez pas configuré de capacités, vous ne\ndisposez que de la commande Attaquer.\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 14;33;7;{x01}Question 8\n\nEn tuant vos ennemis avec des attaques\narmées plutôt qu'avec la magie,\nobtenez-vous plus de points d'EXP?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 14;33;8;{x00}Question 9\n\nEmpathie ne protège-t-il que\nl'équipier qui est à côté de vous?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 14;33;9;{x01}Question 10\n\nLa meilleure façon d'utiliser Turbo\nest-elle d'appuyer sans arrêt sur {Square}?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 15;34;0;{x00}Question 1\n\nLa compatibilité avec une G-Force\ns'améliore-t-elle à mesure que vous\nl'invoquez?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 15;34;1;{x00}Question 2\n\nUn équipier peut disposer\nde tous les sorts magiques.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 15;34;2;{x01}Question 3\n\nLa Tempête des Sables de Diodon\nest-elle une attaque de Vent?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 15;34;3;{x01}Question 4\n\nPouvez-vous utiliser Boomerang pour\nrenvoyer un sort déjà renvoyé par Boomerang?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 15;34;4;{x01}Question 5\n\nAtteint de Folie, vous ne pouvez\npas vous attaquer vous-même.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 15;34;5;{x01}Question 6\n\nPouvez-vous changer Blizzard en\nGlacier en utilisant une capacité?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 15;34;6;{x01}Question 7\n\nLa G-Force {Cerberus} peut-elle acquérir\nla compétence Bonus Vts?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 15;34;7;{x00}Question 8\n\nUn équipier atteint d'Aphasie\nne peut pas lancer de sorts.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 15;34;8;{x01}Question 9\n\nBocca guérit-il Fossile?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 15;34;9;{x00}Question 10\n\nSi vous êtes atteint d'Aphasie lorsque vous\ninvoquez une G-Force, celle-ci est annulée.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 16;35;0;{x00}Question 1\n\nPouvez-vous utiliser les Limit Break\nplus souvent quand vos HP sont peu élevés?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 16;35;1;{x01}Question 2\n\nAprès l'association d'une G-Force ayant Déf-Elé-A\net Déf-Elé-Ax2, pouvez-vous associer 3 sorts\ndans les emplacements vides de Déf-Elé?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 16;35;2;{x01}Question 3\n\nExiste-t-il une commande permettant de\nretirer une G-Force sans perdre de magie\ndans le menu Associer?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 16;35;3;{x00}Question 4\n\nL'état de certains ennemis ne\nchange pas, même si votre Atq-Mtl-A\nest configurée à 100%.\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 16;35;4;{x01}Question 5\n\nVoler signifie dérober les sorts dont\ndispose votre ennemi. Quand il n'en a plus,\nle monstre ne peut plus jeter de sortilèges.\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 16;35;5;{x00}Question 6\n\nLes Elmideas de faible niveau\nlaissent tomber des Cailloux Magik.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 16;35;6;{x01}Question 7\n\nLes Mégapotions GF redonnent\nelles vie à une G-Force KO?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 16;35;7;{x01}Question 8\n\nLa partie s'arrête-t-elle lorsque\ntous les équipiers sont atteints\nde Mort, Zombie ou Fossile?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 16;35;8;{x00}Question 9\n\nL'Hypra-potion redonne-t-elle 1000 HP?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 16;35;9;{x01}Question 10\n\nGil-Nomade est-elle une compétence\npour acquérir des gils en marchant?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 17;36;0;{x00}Question 1\n\nPouvez-vous utiliser vos Limit Break plus\nsouvent quand vous êtes sous Aura?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 17;36;1;{x01}Question 2\n\nLes potions GF, restaurant les HP des\nG-Forces, peuvent-elles être utilisées\nen cours de combat?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 17;36;2;{x01}Question 3\n\nLa capacité Schweitzer permet-elle\nd'utiliser 2 potions à la fois?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 17;36;3;{x01}Question 4\n\nLes coups de grâce sont-ils plus fréquents\nsi vous appuyez sur la gâchette de la\ngunblade de {Squall} au bon moment?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 17;36;4;{x00}Question 5\n\nFaut-il configurer la compétence Prudence\npour éviter les attaques en traître?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 17;36;5;{x01}Question 6\n\nLes Limit Break sont-ils disponibles\nlorsque vous êtes sous Furie?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 17;36;6;{x01}Question 7\n\nDans le menu, pouvez-vous utiliser une\npotion pour soigner un équipier zombifié?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 17;36;7;{x00}Question 8\n\nLes attaques de la G-Force {Alexander}\nsont-elles des attaques Sacrées?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 17;36;8;{x01}Question 9\n\nLe T-Rex laisse-t-il parfois\ntomber des Crocs de Dinosaure?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 17;36;9;{x01}Question 10\n\nSous Darkness, vous êtes aveugle et\nvous risquez d'attaquer un équipier.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 18;37;0;{x00}Question 1\n\nVous ne pouvez pas faire d'association\nsans G-Force, quel que soit votre niveau.\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 18;37;1;{x01}Question 2\n\nBoomerang peut-il renvoyer tous les sorts?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 18;37;2;{x01}Question 3\n\nExiste-t-il 30 altérations\nde l'état d'un personnage?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 18;37;3;{x01}Question 4\n\nAucun sort ne peut guérir Zombie.\n\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 18;37;4;{x00}Question 5\n\nLorsque vous ciblez un ennemi en combat,\nfaut-il appuyer sur {L1} pour le\nsélectionner à partir d'un menu?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 18;37;5;{x01}Question 6\n\nExiste-t-il une capacité que vous\npouvez acquérir par vous même?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 18;37;6;{x01}Question 7\n\nAprès avoir subi une attaque magique,\nWendigo atterrit-il pour tirer des\nBalles Pulsar avec sa bouche?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 18;37;7;{x01}Question 8\n\nLes HP sont-ils restaurés\nplus lentement sous Morphée?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 18;37;8;{x01}Question 9\n\nLe G-Force {Carbuncle} donne-t-elle Carapace\net Blindage à tous les équipiers?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 18;37;9;{x01}Question 10\n\nFolie est-il plus fort que Furie quand\nils sont lancés simultanément?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 19;38;0;{x00}Question 1\n\nLa défense face à Ankou est-elle déterminée\npar le niveau Ankou dans Déf-Mtl-A?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 19;38;1;{x01}Question 2\n\nLes équipiers atteints par Zombie\nsubissent-ils des dommages en utilisant\nSaignée sur un ennemi aussi zombifié?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 19;38;2;{x01}Question 3\n\nLes morsures de Gallus sont\nparfois empoisonnées.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 19;38;3;{x00}Question 4\n\nL'état Invincibilité redevient-il\nnormal une fois le combat terminé?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 19;38;4;{x01}Question 5\n\nLa Chimaira a-t-elle des\ntêtes de grenouille, de bouc,\nd'oiseau et de sanglier?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 19;38;5;{x01}Question 6\n\nCarapace n'est pas efficace lorsque\nvotre Défense (Dfs) est à zéro.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 19;38;6;{x01}Question 7\n\nFlottez-vous plus haut à chaque\nfois que vous utilisez Décubitus?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 19;38;7;{x01}Question 8\n\nDevez-vous fuir devant Goliath,\npuisqu'il est invincible?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 19;38;8;{x01}Question 9\n\nMégalith ramène le niveau Psy d'un\nennemi à zéro. Il est donc inefficace\nsur les monstres ayant zéro de Psy.\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 19;38;9;{x00}Question 10\n\nAvec les armes décrites dans Fanas de\nFlingues Fanzine, le Bazar vous précise\nles objets dont vous avez besoin (en gris).\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 20;39;0;{x00}Question 1\n\nVous ne pouvez pas être attaqué\nlorsque vous voyagez en voiture.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 20;39;1;{x00}Question 2\n\n1 Canicule peut-elle être\ntransformée en 20 Fournaises?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 20;39;2;{x01}Question 3\n\nUne Aphide mesure-t-elle 12 mètres de haut?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 20;39;3;{x00}Question 4\n\nLa plupart des monstres non-élémentaux\nn'ont pas de capacité élémentale.\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 20;39;4;{x01}Question 5\n\nLorsque votre niveau Seed augmente,\nvos pouvoirs magiques et la réussite\nde vos Vols augmentent-ils aussi?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 20;39;5;{x00}Question 6\n\nLes dommages que vous causez ne changent\npas en fonction de votre niveau HP.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 20;39;6;{x00}Question 7\n\nUne bonne compatibilité avec une G-Force\nréduit-elle son temps d'invocation?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 20;39;7;{x00}Question 8\n\nLarva perd des U-Boats?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 20;39;8;{x01}Question 9\n\nUne configuration Vgr+20% et Vgr+40%\nest-elle plus efficace que Vgr+60%?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 20;39;9;{x01}Question 10\n\n{Sire} utilise-t-elle un sort nommé\nMorphée en plus des attaques armées?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 21;40;0;{x00}Question 1\n\nLes Succubes explosent-ils tous seuls?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 21;40;1;{x00}Question 2\n\nLes Xylomides sont-ils cachés\nau nord d'Esthar?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 21;40;2;{x00}Question 3\n\nBaston Magazine est une\nrevue d'arts martiaux.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 21;40;3;{x00}Question 4\n\nPouvez-vous Voler une G-Force à\nSulfura sur la tour de Dollet?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 21;40;4;{x01}Question 5\n\nQuand vous êtes atteint par Stop pendant\nl'invocation d'une G-Force, celle-ci\nne subit pas les effets de ce sort?\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 21;40;5;{x01}Question 6\n\nDéfense vous protège contre les\nattaques armées, mais êtes-vous\ntoujours vulnérable à la magie?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 21;40;6;{x00}Question 7\n\nFaut-il associer Vie pour augmenter votre\ndéfense contre les attaques élémentales?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 21;40;7;{x00}Question 8\n\nY'a-t-il une bibliothèque à la BGU?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 21;40;8;{x00}Question 9\n\nMaxi MT-Psy est un objet qui\ndonne MT-Psy à tous les équipiers.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 21;40;9;{x01}Question 10\n\nPouvez-vous créer une Nova à\npartir d'une carte Succube?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 22;41;0;{x01}Question 1\n\nSi vous utilisez Carapace par-dessus\nBlindage, ce dernier est-il annulé?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 22;41;1;{x01}Question 2\n\nPouvez-vous perdre des gils et des objets\nsi votre niveau de Chance (Chc) est faible?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 22;41;2;{x01}Question 3\n\nPour vous défendre contre des attaques\nde Brasier, faut-il associer la magie\nNeige et Déf-Elé-A?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 22;41;3;{x00}Question 4\n\nL'association de Boomerang et Déf-Mtl\naugmente la défense sur 9 capacités?\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 22;41;4;{x01}Question 5\n\nZombie et Supplice correspondent à\nun sort élémental de Sorcellerie.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 22;41;5;{x01}Question 6\n\nExiste-t-il un objet nommé Maxi Potion\nqui restaure vos HP de 3000 points?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 22;41;6;{x01}Question 7\n\nQuand votre niveau Seed augmente, les\nboutiques vous font-elles un rabais?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 22;41;7;{x00}Question 8\n\nEn utilisant la même magie élémentale que\nvotre G-Force, votre compatibilité augmente?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 22;41;8;{x00}Question 9\n\nLe menu d'Aide évolue en cours de partie?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 22;41;9;{x01}Question 10\n\nUn niveau de Précision (Prc) élevé\naugmente vos chances de succès pour Voler?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 23;42;0;{x00}Question 1\n\nPouvez-vous créer Remède +\nà partir de Remède?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 23;42;1;{x01}Question 2\n\nPour fuir un combat, faut-il appuyer\nen même temps sur {R1} et {R2},\n(parfois sans succès)?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 23;42;2;{x01}Question 3\n\nLa Commande Arnica peut-elle\nressusciter les équipiers tués?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 23;42;3;{x01}Question 4\n\nEsuna annule-t-il les attaques\nmentales, et Anti-sort les\nattaques élémentales?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 23;42;4;{x01}Question 5\n\nSous Récup, les HP sont\nrestaurés régulièrement même\nsi vous êtes atteint par Stop.\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 23;42;5;{x00}Question 6\n\nSous Fléau, vous ne pouvez\npas utiliser vos Limit Break.\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 23;42;6;{x00}Question 7\n\nFurie augmente la puissance\ndes attaques. Mais la seule\ncommande disponible est Attaquer.\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 23;42;7;{x00}Question 8\n\nAvez-vous la possibilité de fabriquer\nun Remède à partir d'un Germe?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 23;42;8;{x00}Question 9\n\nDécubitus s'affaiblit-il\naprès un certain temps.\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 23;42;9;{x00}Question 10\n\nCarapace réduit-il les dégâts des\nattaques armées de moitié?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 24;43;0;{x00}Question 1\n\nFaut-il utiliser Esuna pour guérir Somni?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 24;43;1;{x00}Question 2\n\nL'association Décubitus avec Déf-Elém-A\naugmente-t-elle votre défense face\naux attaques Elémentales Terrestres?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 24;43;2;{x01}Question 3\n\nLa jauge ATB est-elle active\nquand une G-Force est invoquée?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 24;43;3;{x01}Question 4\n\nAuto-Boomerang fonctionne\ntant que vous n'êtes pas KO.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 24;43;4;{x00}Question 5\n\nEst-ce que {Ice}\nsignifie Capacité G-Forces?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 24;43;5;{x00}Question 6\n\nLes Capacités que peuvent acquérir les\nG-Forces sont-elles limitées?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 24;43;6;{x01}Question 7\n\nCarapace se renforce à chaque utilisation?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 24;43;7;{x01}Question 8\n\nObtenez-vous Poison (en + des HP)\nquand vous utilisez Saignée\ncontre une cible empoisonnée.\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 24;43;8;{x01}Question 9\n\nUne arme peut-elle se casser\naprès de trop nombreux combats?\nPeut-elle être réparée?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 24;43;9;{x00}Question 10\n\nSi vous êtes atteint de Folie et d'Aphasie,\nvous ne pouvez pas lancer de sorts?\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 25;44;0;{x00}Question 1\n\nPouvez-vous Piller un\nRayon à Protesis?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 25;44;1;{x01}Question 2\n\nLe sort Tsunami de la G-Force {Leviathan}\nprovoque-t-il un feu de forêt?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 25;44;2;{x00}Question 3\n\nLe Décapaciteur permet-il à une\nG-Force d'oublier une Capacité?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 25;44;3;{x00}Question 4\n\nExiste-t-il une Capacité vous\npermettant de voir les Sources\nde magie et les PDS cachés?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 25;44;4;{x00}Question 5\n\nLes G-Forces gagnent-elles plus\nd'EXP si une seule G-Force est\nassociée à chaque équipier?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 25;44;5;{x01}Question 6\n\nFaut-il revenir de temps en temps à\nla BGU pour recevoir son salaire?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 25;44;6;{x01}Question 7\n\nLes sorts H2o + et H2o Max sont-ils\nplus puissants que le sort H2o?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 25;44;7;{x00}Question 8\n\nAmorce ne fonctionne pas contre les\nattaques affectant tous les équipiers?\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 25;44;8;{x01}Question 9\n\nLes G-Forces peuvent-elles réussir\ntous les pillages en utilisant\nun objet appelé Passe-partout?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 25;44;9;{x01}Question 10\n\nVous ne pouvez pas Voler le sort Fléau.\n\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 26;45;0;{x00}Question 1\n\nL'utilisation de Saignée sur des morts\nvivants provoque-t-elle des dégâts?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 26;45;1;{x00}Question 2\n\nLa capacité individuelle Genki permet-elle de\ndémarrer un combat avec une jauge ATB pleine,\nmême si vous êtes attaqué par derrière?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 26;45;2;{x01}Question 3\n\nLa commande Combustion inflige-t-elle\nDarkness quand vous faites une attaque armée?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 26;45;3;{x00}Question 4\n\nSidéral est-il le seul sort élémental Sacré?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 26;45;4;{x01}Question 5\n\nMême les G-Forces non-associées\nobtiennent des EXP et des PDC.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 26;45;5;{x00}Question 6\n\nBlindage réduit-il l'efficacité de\nla magie soignante de moitié?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 26;45;6;{x01}Question 7\n\nSi votre capacité d'Esquive est élevée,\npouvez-vous éviter les coups sous Morphée?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 26;45;7;{x00}Question 8\n\nPeut-on faire oublier une\ncapacité à une G-Force?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 26;45;8;{x01}Question 9\n\nChâtiment reste-t-il efficace\naprès avoir pris la fuite?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 26;45;9;{x01}Question 10\n\nLes sorts sont efficaces si votre\nMagie (Mgi) est faible, du moment\nque votre Vigueur (Vgr) est élevée.\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 27;46;0;{x01}Question 1\n\nBooster réduit-il l'efficacité de Voler?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 27;46;1;{x00}Question 2\n\nVotre salaire Seed dépend-il\ndu nombre d'ennemis tués?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 27;46;2;{x01}Question 3\n\nLa Capacité G-Force Double permet-elle\nd'invoquer plusieurs G-Forces à la fois?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 27;46;3;{x01}Question 4\n\nChoisir Remplacer dans le\nmenu permet de classer les\nobjets automatiquement?\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 27;46;4;{x01}Question 5\n\nTous les monstres ont-ils un point faible?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 27;46;5;{x01}Question 6\n\nCyanure affaiblit-il la structure\ncellulaire de votre ennemi pour\nle rendre plus vulnérable?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 27;46;6;{x00}Question 7\n\nEst-il plus difficile de fuir quand\nvous êtes attaqué par derrière?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 27;46;7;{x01}Question 8\n\nFournaise est-il un sort élémental de Feu?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 27;46;8;{x00}Question 9\n\nPouvez-vous savoir combien de\nmonstres vous avez tués?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 27;46;9;{x01}Question 10\n\nLes équipiers n'ayant pas participé\nau combat reçoivent-ils un petit\nnombre d'EXP?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 28;47;0;{x00}Question 1\n\nUn niveau de Vts plus élevé remplit-il\nplus rapidement votre jauge ATB?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 28;47;1;{x01}Question 2\n\nPeut-on annuler Châtiment\navec Esuna?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 28;47;2;{x01}Question 3\n\nAttaque magique signifie-t-il que\nvous attaquez avec n'importe quel sort,\nexceptée la magie Sacrée?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 28;47;3;{x00}Question 4\n\nAucun sort ne peut annuler Châtiment.\n\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 28;47;4;{x00}Question 5\n\nSupplice inflige Poison, Aphasie et\nDarkness à vos ennemis, mais parfois\nseuls 1 ou 2 sorts fonctionnent.\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 28;47;5;{x00}Question 6\n\nUne nuit à l'hôtel annule les attaques\nmentales et restaure tous les HP?\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 28;47;6;{x01}Question 7\n\nPouvez-vous annuler le Renzokuken de\n{Squall} en appuyant sur {X}?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 28;47;7;{x00}Question 8\n\nDouble ou Triple permettent-ils\nd'utiliser le même sort plusieurs fois?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 28;47;8;{x01}Question 9\n\nFossile s'amenuise-t-il avec le temps?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 28;47;9;{x01}Question 10\n\nL'utilisation du Défijeur pendant\nl'état SubFossile n'empêche pas la\nfossilisation du personnage.\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 29;48;0;{x01}Question 1\n\nMT-Psaume ressuscite-t-il\nles équipiers tués?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 29;48;1;{x01}Question 2\n\nUne G-Force KO est-elle automatiquement\nressuscitée pour le prochain combat?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 29;48;2;{x01}Question 3\n\nSi vous lancez Double sur un équipier\ndéjà sous Double, passe-t-il sous Triple?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 29;48;3;{x00}Question 4\n\nBonus Magie augmente-t-il\nvotre niveau magique d'1 point?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 29;48;4;{x00}Question 5\n\nLa capacité Sensor modifie-t-elle\nla probabilité pour un ennemi\nde laisser tomber des objets?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 29;48;5;{x01}Question 6\n\nBiggs, le soldat Galbadien est-il Général?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 29;48;6;{x01}Question 7\n\nDevez-vous disposer d'au moins 3 sorts\nen stock pour utiliser Triple?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 29;48;7;{x01}Question 8\n\nSi 2 équipiers sont atteints par\nZombie et que vous subissez Folie,\nla partie est-elle terminée?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 29;48;8;{x00}Question 9\n\nMétéore est lancé au hasard sur\nles cibles ennemies.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 29;48;9;{x01}Question 10\n\nMeltdown est-il un sort qui\ndissout les ennemis?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 30;49;0;{x01}Question 1\n\nEst-il efficace d'employer Décubitus\nlorsque vous combattez Malaku, qui\nutilise l'arme Séisme?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 30;49;1;{x00}Question 2\n\nIl est inutile d'utiliser Vie ou\nVie Max sur des équipiers en vie.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 30;49;2;{x01}Question 3\n\nSi vous subissez 800 HP de dégâts pendant\nl'invocation d'une G-Force ayant 500 HP, la\ndifférence de 300 points est-elle subie par le\njoueur ayant invoqué la G-Force?\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 30;49;3;{x01}Question 4\n\nMarsupial laisse-t-il parfois tomber\nun objet appelé Crinière de Marsupial?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 30;49;4;{x01}Question 5\n\nLancer Aura par-dessus Fléau\nramène-t-il votre état à la normale?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 30;49;5;{x01}Question 6\n\nTrouve-t-on un monstre appelé\nGrabia sur le continent Galbadien?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 30;49;6;{x00}Question 7\n\nAphasie n'est pas annulé,\nmême après le combat.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 30;49;7;{x01}Question 8\n\nBoomerang renvoie toujours le\nsort à celui qui l'a lancé.\n\n\n  {Cursor_location_id:0x20}Vrai    {Cursor_location_id:0x21}Faux
+Test seed 30;49;8;{x01}Question 9\n\nVotre état change-t-il sous Fossile?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 30;49;9;{x01}Question 10\n\nLe seul moyen pour une G-Force d'acquérir\ndes Capacités est-il d'obtenir des PDC?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 31;50;0;{x01}Question 1\n\nEst-il efficace d'employer Décubitus\nlorsque vous combattez Malaku, qui\nutilise l'arme Séisme?\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 31;50;1;{x00}Question 2\n\nIl est inutile d'utiliser Vie ou\nVie Max sur des équipiers en vie.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 31;50;2;{x01}Question 3\n\nSi vous subissez 800 HP de dégâts pendant\nl'invocation d'une G-Force ayant 500 HP, la\ndifférence de 300 points est-elle subie par le\njoueur ayant invoqué la G-Force?\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 31;50;3;{x01}Question 4\n\nMarsupial laisse-t-il parfois tomber\nun objet appelé Crinière de Marsupial?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 31;50;4;{x01}Question 5\n\nLancer Aura par-dessus Fléau\nramène-t-il votre état à la normale?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 31;50;5;{x01}Question 6\n\nTrouve-t-on un monstre appelé\nGrabia sur le continent Galbadien?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 31;50;6;{x00}Question 7\n\nAphasie n'est pas annulé,\nmême après le combat.\n\n\n  {Cursor_location_id:0x20}Vrai     {Cursor_location_id:0x21}Faux
+Test seed 31;50;7;{x01}Question 8\n\nBoomerang renvoie toujours le\nsort à celui qui l'a lancé.\n\n\n  {Cursor_location_id:0x20}Vrai    {Cursor_location_id:0x21}Faux
+Test seed 31;50;8;{x01}Question 9\n\nVotre état change-t-il sous Fossile?\n\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
+Test seed 31;50;9;{x01}Question 10\n\nLe seul moyen pour une G-Force d'acquérir\ndes Capacités est-il d'obtenir des PDC?\n\n\n  {Cursor_location_id:0x20}Oui     {Cursor_location_id:0x21}Non
 TextBox00.bin;51;0;Choix d'un terme
 TextBox00.bin;51;1;{Cursor_location_id:0x218e}Glossaire\n{Cursor_location_id:0x222d}Elémental\n{Cursor_location_id:0x2231}Situation   \n{Cursor_location_id:0x2021}Menu\n{Cursor_location_id:0x204b}Combat    \n{Cursor_location_id:0x2078}Capacités\n{Cursor_location_id:0x2062}G-Force \n{Cursor_location_id:0x2253}Magie     \n{Cursor_location_id:0x227f}Infos\n{x0abf}{Cursor_location_id:0x2348}Diplôme Minotaure\n{x0a3f}
 TextBox00.bin;51;2;Choix d'une action               {xc4}{xc4}  1/2

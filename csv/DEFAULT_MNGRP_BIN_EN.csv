@@ -863,327 +863,327 @@ Chocobo tutorial;18;11;{xc4}         {xc4}{xc4}{xc4}                {Blue}Status
 Chocobo tutorial;18;12;{xc4}{xc4}{Blue}Optical Communication Screen{White} 8/8\n1: Neutral position.\n2: Receiver selects the bottom.\n3: Sender selects the top.\n4: Operate like any other battle.\n  The Chicobo on the right is yours.\n5: Take your opponent's ID\n  if you win.  Compare with your\n  own.  Select it like a weapon.\n
 Chocobo tutorial;18;13;{xc4}         {xc4}{xc4}            {Blue}ChocoboWorld{White} 8/8\n
 Chocobo tutorial;18;14;1: Select {Blue}World{White} to move Chicobo\n  into ChocoboWorld.\n2: Select {Blue}Home{White} to move Chicobo\n  back into FF{xc6}{xc7} world.\n3: If you want to start over\n  from where you left off,\n  select {Blue}Do over{White}.\n4: {Blue}How to play{White}: This tutorial.\n
-Test seed general;19;0;{NewPage}We will begin the SeeD written test.\nWill you take the level {x0a22} test?\n\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed general;19;1;{NewPage}We will begin the SeeD written test.\nYour test level now is {x0a20}.\n\nWill you take the level {x0a22} test?\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed general;19;2;{NewPage}Your scored 100%.\nYou {Red}passed{White} the level {x0a20} written test.\nYour SeeD rank will go up to {x0a26}.\n\n\n\n  {Cursor_location_id:0x20}END
-Test seed general;19;3;{NewPage}Your score was 100%.\nYou passed level {x0a20} written test.\nYour SeeD rank won't go any higher than {x0a20}.\n\n\n\n  {Cursor_location_id:0x20}END\n
-Test seed general;19;4;{NewPage}Your score was {x0a20}.\nYou failed.\nBetter luck next time.\n\n\n\n  {Cursor_location_id:0x20}END
-Test seed general;19;5;{NewPage}Your written test level is 30.\nYou are not allowed to take any more SeeD written\ntests.\n\n\n\n  {Cursor_location_id:0x20}GO BACK\n
-Test seed general;19;6;|{NewPage}Your SeeD rank is {x0a26}.\nYour SeeD rank won't go any higher;\nwill you still take the written test?\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO|
-Test seed general;19;7;{NewPage}Really?\n\n\n\n\n\n  {Cursor_location_id:0x20}NO      {Cursor_location_id:0x21}YES\n
-Test seed general;19;8;{NewPage}End of review!\nYou have mastered everything in level {x0a20}!\n\n\n\n\n  {Cursor_location_id:0x20}END\n
-Test seed general;19;9;{NewPage}You scored {x0a20}.\nWhat happened...?\n\n\n\n\n  {Cursor_location_id:0x20}END
-Test seed general;19;10;{NewPage}{Squall} is at level {x0a20}.\nYou can't take anything above {x0a22}.\nPlease level up first and try again.\n\n\n\n  {Cursor_location_id:0x20}END
-Test seed 1 ;20;0;{NewPage}Question 1\n\nThe Draw command extracts magic from enemies.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 1 ;20;1;{NewPage}Question 2\n\nGF stands for Garden Fighter.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 1 ;20;2;{NewPage}Question 3\n\nThere are a total of 8 elemental attributes.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 1 ;20;3;{NewPage}Question 4\n\nIn battle, a higher Strength stat causes more\nphysical damage.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 1 ;20;4;{NewPage}Question 5\n\nHP-J is a junction ability.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 1 ;20;5;{NewPage}Question 6\n\nYou can't assign specific abilities for your GF to\nlearn.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 1 ;20;6;{NewPage}Question 7\n\nMagic uses MP.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 1 ;20;7;{NewPage}Question 8\n\nYou can name your GF.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 1 ;20;8;{NewPage}Question 9\n\nYou can wear protective gear.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 1 ;20;9;{NewPage}Question 10\n\nGF level up with AP.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 2 ;21;0;{NewPage}Question 1\n\nYou can raise your Vitality by junctioning magic.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 2 ;21;1;{NewPage}Question 2\n\n{Squall}'s weapon is the Gauntlet.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 2 ;21;2;{NewPage}Question 3\n\nYou can Stock drawn magic.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 2 ;21;3;{NewPage}Question 4\n\nAny action taken while Poisoned causes damage.\nThere is no damage if you take no action.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 2 ;21;4;{NewPage}Question 5\n\nBeing hit by a physical attack removes Confuse.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 2 ;21;5;{NewPage}Question 6\n\n{Squall}'s Limit Break is Kenzokuken.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 2 ;21;6;{NewPage}Question 7\n\nTo junction magic, you need a matching junction\nability for the stat you want to junction.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 2 ;21;7;{NewPage}Question 8\n\n{CharacterAbility} signifies Junction Ability.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 2 ;21;8;{NewPage}Question 9\n\nThe 8 elements are Fire, Ice, Thunder, Poison,\nEarth, Sorcery, Wind, and Holy.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 2 ;21;9;{NewPage}Question 10\n\nThere is a limit to how much magic you can draw\nfrom monsters.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 3 ;22;0;{NewPage}Question 1\n\nPotions can restore a GF's HP.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 3 ;22;1;{NewPage}Question 2\n\nMagic can only be acquired by drawing from enemies.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 3 ;22;2;{NewPage}Question 3\n\nSelphie's weapon is the nunchaku.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 3 ;22;3;{NewPage}Question 4\n\nYou only need money to remodel your weapon.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 3 ;22;4;{NewPage}Question 5\n\nWhoever strikes the finishing blow in battle receives\nthe most EXP.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 3 ;22;5;|{NewPage}Question 6\n\nGF also have levels; the higher their levels, the\nstronger their attacks.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO|
-Test seed 3 ;22;6;{NewPage}Question 7\n\n{PartyAbility} signifies Command Ability.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 3 ;22;7;{NewPage}Question 8\n\nEach party member can have up to 5 Character\nand Party Abilities.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 3 ;22;8;{NewPage}Question 9\n\nCommand Abilities must be set to be used in battle.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 3 ;22;9;{NewPage}Question 10\n\nAP means Action Point.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 4 ;23;0;{NewPage}Question 1\n\nOnly {Squall} can use a gunblade.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 4 ;23;1;{NewPage}Question 2\n\nAttack magic can be used against party members.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 4 ;23;2;{NewPage}Question 3\n\nThere is an ability that allows you to make magic\nfrom items.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 4 ;23;3;{NewPage}Question 4\n\nHigher Vitality reduces physical damage.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 4 ;23;4;{NewPage}Question 5\n\nBlue Magic is learned by being attacked by a\nmonster.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 4 ;23;5;{NewPage}Question 6\n\nThe magic Dispel cures Poison.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 4 ;23;6;{NewPage}Question 7\n\nIf you are KO'd with status change, but are revived\nafter battle, the status change is removed.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 4 ;23;7;{NewPage}Question 8\n\nT-Rexaur is a monster that lives in Balamb\nGarden's training center.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 4 ;23;8;{NewPage}Question 9\n\n{Squall}'s gunblade causes more damage\nby pressing {L2} at the right time.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 4 ;23;9;{NewPage}Question 10\n\nYou can stock up to 255 of each magic.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 5 ;24;0;{NewPage}Question 1\n\n{MenuAbility} signifies Party Ability.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 5 ;24;1;{NewPage}Question 2\n\nYou can Draw from party members.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 5 ;24;2;{NewPage}Question 3\n\nYou can save the game anywhere.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 5 ;24;3;{NewPage}Question 4\n\nWhen a GF learns an ability, some new abilities may\nappear.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 5 ;24;4;|{NewPage}Question 5\n\nA Character Ability must be set; otherwise, it is\nuseless.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO|
-Test seed 5 ;24;5;{NewPage}Question 6\n\nThe higher the Speed stat, the better your chances\nof using a Limit Break.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 5 ;24;6;{NewPage}Question 7\n\nAn Ability is something you learn by gaining EXP.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 5 ;24;7;{NewPage}Question 8\n\nUnder Zombie, you succumb more easily to Holy\nattacks.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 5 ;24;8;{NewPage}Question 9\n\n‘Physical Attack' means harm caused by use of\nweapons like swords and guns.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 5 ;24;9;{NewPage}Question 10\n\nYou can steal Steel Pipe from a Wendigo.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 6 ;25;0;{NewPage}Question 1\n\nZell's weapons are gloves.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 6 ;25;1;{NewPage}Question 2\n\nYou can still summon GF when Silenced.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 6 ;25;2;{NewPage}Question 3\n\n{Ifrit} can learn the F Mag-RF ability.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 6 ;25;3;{NewPage}Question 4\n\nIf more than 1 GF with the same junction ability is\njunctioned to a character, the effect of those\nabilities remains the same.\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 6 ;25;4;{NewPage}Question 5\n\nAll status changes return to normal after battle.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 6 ;25;5;{NewPage}Question 6\n\nYou can use the Attack and Draw commands without\njunctioning a GF.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 6 ;25;6;{NewPage}Question 7\n\nWhen you set {Squall}'s gunblade on auto, there\nis no need to press {R1}.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 6 ;25;7;{NewPage}Question 8\n\nThe Mag stat determines the strength and\neffectiveness of magic.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 6 ;25;8;{NewPage}Question 9\n\nWhen using Auto to junction, you can only choose\nfrom Atk or Def.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 6 ;25;9;{NewPage}Question 10\n\nA Grat uses Sleep attacks.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 7 ;26;0;{NewPage}Question 1\n\nEvade indicates how well you can evade physical\nattacks.\nHigher Eva stat reduces hits from physical attack.\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 7 ;26;1;{NewPage}Question 2\n\nUsing Fire against enemies that absorb Fire raises\ntheir HP.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 7 ;26;2;{NewPage}Question 3\n\n{Squall}'s finishing blow is different depending on\nthe type of gunblade he uses.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 7 ;26;3;{NewPage}Question 4\n\nBy using F Mag-RF, you can refine 5 Fires from 1\nM-Stone Piece.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 7 ;26;4;{NewPage}Question 5\n\nOnly 1 rare card exists in the whole world.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 7 ;26;5;{NewPage}Question 6\n\nA Buel sometimes uses Fire.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 7 ;26;6;{NewPage}Question 7\n\nSpirit only relates to using Confuse.\nHigher Spr stat increases the likelihood of success\nwhen using Confuse.\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 7 ;26;7;{NewPage}Question 8\n\nA Geezard drops many Screws.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 7 ;26;8;{NewPage}Question 9\n\nEnemies level up as you do.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 7 ;26;9;{NewPage}Question 10\n\nYou encounter fewer enemies on the World Map if\nyou walk instead of run.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 8 ;27;0;{NewPage}Question 1\n\nGalbadian Soldiers don't use magic.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 8 ;27;1;{NewPage}Question 2\n\nWeapons can be remodeled into more powerful models\nat the Junk Shop.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 8 ;27;2;{NewPage}Question 3\n\n{Fire} signifies Character Ability.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 8 ;27;3;{NewPage}Question 4\n\nCasting Slow over Haste will cancel Haste and\nreturn the target's status to normal.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 8 ;27;4;{NewPage}Question 5\n\nYou encounter more enemies in the forest than the\nplains on the World Map.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 8 ;27;5;{NewPage}Question 6\n\nWhen Elem-Def goes over 100%, that element's\ndamage will be absorbed.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 8 ;27;6;{NewPage}Question 7\n\nThe Garden exists only in Balamb.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 8 ;27;7;{NewPage}Question 8\n\nThere are no Bombs in the Fire Cavern.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 8 ;27;8;{NewPage}Question 9\n\nEach GF can learn different abilities.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 8 ;27;9;{NewPage}Question 10\n\nJunk Shops sell weapons.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 9 ;28;0;{NewPage}Question 1\n\nYou can Cast the GF you drew instead of Stock.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 9 ;28;1;{NewPage}Question 2\n\n{Thunder} signifies Menu Ability.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 9 ;28;2;{NewPage}Question 3\n\nMagic listed in Selphie's Limit Break is magic she\nowns.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 9 ;28;3;{NewPage}Question 4\n\nIf a GF is hardly used, or has low compatibility\nwith party members, it may leave your party.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 9 ;28;4;{NewPage}Question 5\n\nParty Abilities can be used without setting them as\nabilities.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 9 ;28;5;{NewPage}Question 6\n\nGF left KO'd too long perish and cannot be revived.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 9 ;28;6;{NewPage}Question 7\n\n1 Sharp Spike refines into 5 AP Ammo.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 9 ;28;7;{NewPage}Question 8\n\nDefeating the enemy who caused a status change\nreturns status to normal.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 9 ;28;8;{NewPage}Question 9\n\nEnemies change attack patterns as you level up.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 9 ;28;9;{NewPage}Question 10\n\nWhen Poisoned, every action you take damages you.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 10;29;0;{NewPage}Question 1\n\nUse the magic Confuse to inflict confuse status on\nyour enemy.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 10;29;1;{NewPage}Question 2\n\nA Potion restores 100 HP.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 10;29;2;{NewPage}Question 3\n\nQuistis' weapon is a magic sword.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 10;29;3;{NewPage}Question 4\n\nATB stands for Ability Tone Black.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 10;29;4;{NewPage}Question 5\n\nYou are more susceptible to fire under Zombie.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 10;29;5;{NewPage}Question 6\n\nYou can refine 1 Tent from 1 Healing Water by\nusing the Menu Ability Tool-RF.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 10;29;6;{NewPage}Question 7\n\nEXP are divided equally among all characters\nparticipating in battle.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 10;29;7;{NewPage}Question 8\n\nBlind sucks out an enemy's brain to prevent him\nfrom attacking.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 10;29;8;{NewPage}Question 9\n\nEsuna or Soft removes Petrify.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 10;29;9;{NewPage}Question 10\n\nNothing removes Sleep.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 11;30;0;{NewPage}Question 1\n\nGF can regain HP while walking.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 11;30;1;{NewPage}Question 2\n\nThe Draw command must be set in order to use a\nDraw Point.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 11;30;2;{NewPage}Question 3\n\nLimit Breaks always kill enemies.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 11;30;3;{NewPage}Question 4\n\n{Sire} can learn the ability Treatment.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 11;30;4;{NewPage}Question 5\n\nYou can junction more than one GF.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 11;30;5;{NewPage}Question 6\n\nAdamantine is an item dropped by a Level 10\nAdamantoise.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 11;30;6;{NewPage}Question 7\n\nYou can rearrange the magic and items displayed\nduring battle.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 11;30;7;{NewPage}Question 8\n\n{Shiva} can learn Doom right after becoming\nan ally.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 11;30;8;{NewPage}Question 9\n\nDrain absorbs HP from enemies, but can't be used\nto absorb from party members.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 11;30;9;{NewPage}Question 10\n\nRecovery magic damages Undead monsters.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 12;31;0;{NewPage}Question 1\n\nArmadodo absorbs Earth attacks.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 12;31;1;{NewPage}Question 2\n\nYou can refine 20 Curas from 1 Healing Water by\nusing L Mag-RF.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 12;31;2;{NewPage}Question 3\n\nYou receive EXP after the battle is won even when\nKO'd.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 12;31;3;{NewPage}Question 4\n\nYou can only draw GF from an enemy or defeat\na GF to make them yours.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 12;31;4;{NewPage}Question 5\n\nThe maximum number of magic that can be drawn\nfrom an enemy in one turn is 9.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 12;31;5;{NewPage}Question 6\n\nYou can't steal Sharp Spike from a Grand Mantis.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 12;31;6;{NewPage}Question 7\n\nPress {Select} to hide battle commands temporarily in\nbattle.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 12;31;7;{NewPage}Question 8\n\nMagic and GF commands are the only commands\ndisabled by Silence.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 12;31;8;{NewPage}Question 9\n\nYou can use Scan on party members.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 12;31;9;{NewPage}Question 10\n\nIf you set Poison magic(100%) to ST-Def-J, you\ndon't receive damage from poisonous physical\nattacks.\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 13;32;0;{NewPage}Question 1\n\nYou gain EXP for the damage you inflict on enemies,\neven if you run away.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 13;32;1;{NewPage}Question 2\n\nYou can mug Blue Spikes from a Chimera.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 13;32;2;{NewPage}Question 3\n\nGF abilities must be set to a party member for use,\nor it is ineffective.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 13;32;3;{NewPage}Question 4\n\nYou can only Draw once from any Draw Point.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 13;32;4;{NewPage}Question 5\n\nGF {Quezacotl} can learn the Card Mod ability\nwithout using an item.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 13;32;5;{NewPage}Question 6\n\nWhen you fail to Draw a number of times, you can't\nuse the Draw ability for a while.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 13;32;6;{NewPage}Question 7\n\nWhen a GF is KO'd, its compatibility goes down with\nthe junctioned party member.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 13;32;7;{NewPage}Question 8 \n\nYou can run from any enemy if you take enough\ntime.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 13;32;8;{NewPage}Question 9\n\nYou must have ammo to pull {Squall}'s gunblade\ntrigger.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 13;32;9;{NewPage}Question 10\n\nWhen you attack a Fire monster, you always\nreceive Fire damage.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 14;33;0;{NewPage}Question 1\n\nYou can Draw some GF from enemies.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 14;33;1;{NewPage}Question 2\n\nIn critical situations, {Squall} can use\nRenzokuken more often.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 14;33;2;{NewPage}Question 3\n\nHigher the Hit stat, higher the accuracy of\nphysical attacks, but if the enemy's Evade is high,\nyou may still miss.\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 14;33;3;{NewPage}Question 4\n\nSome items affect the compatibility value between\nGF and party members.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 14;33;4;{NewPage}Question 5\n\nUnder Shell, magic damage is reduced to 1/4 of its\nusual amount.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 14;33;5;{NewPage}Question 6\n\nThere is a monster called Belhelmel.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 14;33;6;{NewPage}Question 7\n\nYou can only use the Attack command in battle if\nno GF are junctioned, or command abilities aren't\nset.\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 14;33;7;{NewPage}Question 8\n\nDefeating enemies by physical attacks rather than\nmagical attacks gives you more EXP.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 14;33;8;{NewPage}Question 9\n\nCover only protects a party member standing next\nto you.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 14;33;9;{NewPage}Question 10\n\nPressing {Square} continuously is the best way to use\nBoost.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 15;34;0;{NewPage}Question 1\n\nCompatibility with GF increases as you summon\nthem.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 15;34;1;{NewPage}Question 2\n\nIt's not possible for one member to hold all types of\nmagic.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 15;34;2;{NewPage}Question 3\n\nFastitocalon's Sand Storm is a Wind attack.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 15;34;3;{NewPage}Question 4\n\nYou can use Reflect to reflect magic that has\nalready been reflected.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 15;34;4;{NewPage}Question 5\n\nConfuse doesn't make you attack yourself.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 15;34;5;{NewPage}Question 6\n\nYou can refine Arctic Wind into Blizzard by using an\nability.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 15;34;6;{NewPage}Question 7\n\nGF {Cerberus} can learn the Spd Bonus ability.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 15;34;7;{NewPage}Question 8\n\nParty members under Silence can't use magic, even\nin the menu.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 15;34;8;{NewPage}Question 9\n\nEcho Screen cures Petrify.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 15;34;9;{NewPage}Question 10\n\nWhen afflicted with Silence while summoning GF, the\nsummoning stops.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 16;35;0;{NewPage}Question 1\n\nYou can use Limit Breaks more often when your HP\nis low.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 16;35;1;{NewPage}Question 2\n\nWhen you junction with a GF who learned Elem-Def-J\nand Elem-Defx2, you can junction 3 magic to\nElem-Def slots.\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 16;35;2;{NewPage}Question 3\n\nThere is a command to remove GF without losing\nmagic on the menu junction screen.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 16;35;3;{NewPage}Question 4\n\nThere are enemies whose status doesn't change,\neven if your ST-Atk-J is set at 100%.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 16;35;4;{NewPage}Question 5\n\nDraw means drawing magic stocked by a monster.\nWhen it runs out of stock, it can no longer use\nmagic.\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 16;35;5;{NewPage}Question 6\n\nLow level Bite Bugs drop M-Stone Pieces.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 16;35;6;{NewPage}Question 7\n\nG-Mega-Potion revives a KO'd GF.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 16;35;7;{NewPage}Question 8\n\nThe game is over when all party members are\nafflicted with Death, Zombie, or Petrify.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 16;35;8;{NewPage}Question 9\n\nHi-Potion restores 1,000 HP.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 16;35;9;{NewPage}Question 10\n\nWalk-Gil is an ability to acquire Gil by walking on\nthe field.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 17;36;0;{NewPage}Question 1\n\nYou can use Limit Breaks more frequently under\nAura.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 17;36;1;{NewPage}Question 2\n\nG-Potion, which restores GF's HP, can also be used\nin battle.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 17;36;2;{NewPage}Question 3\n\nThe Med Data ability enables the use of 2 potions\nin 1 turn.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 17;36;3;{NewPage}Question 4\n\nFinishing blows come out more often if you time the\ntrigger for {Squall}'s Renzokuken correctly.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 17;36;4;{NewPage}Question 5\n\nSet the ability Alert to avoid back attacks.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 17;36;5;{NewPage}Question 6\n\nLimit Breaks activate when Berserked.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 17;36;6;{NewPage}Question 7\n\nYou can use Potions to cure a zombied party\nmembers in the menu.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 17;36;7;{NewPage}Question 8\n\nGF {Alexander}'s attacks are Holy attacks.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 17;36;8;{NewPage}Question 9\n\nT-Rexaur sometimes drops Dinosaur Fangs.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 17;36;9;{NewPage}Question 10\n\nUnder Darkness, you are blinded, and may attack\nparty members.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 18;37;0;{NewPage}Question 1\n\nYou can't junction without GF, no matter how high\nyour level.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 18;37;1;{NewPage}Question 2\n\nReflect can turn away any magic.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 18;37;2;{NewPage}Question 3\n\nThere are a total of 30 different statuses.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 18;37;3;{NewPage}Question 4\n\nThere is no magic that cures Zombie.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 18;37;4;{NewPage}Question 5\n\nWhen choosing a target in battle, press {L1} to\nchoose your target from a window.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 18;37;5;{NewPage}Question 6\n\nThere is 1 ability you can learn by yourself.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 18;37;6;{NewPage}Question 7\n\nAfter receiving magic damage, Wendigo lands to\nshoot Pulse Ammo from its mouth.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 18;37;7;{NewPage}Question 8\n\nHP is restored slowly in Sleep.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 18;37;8;{NewPage}Question 9\n\nGF {Carbuncle} casts Shell and Protect on all\nparty members.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 18;37;9;{NewPage}Question 10\n\nConfuse takes precedence over Berserk when the 2\nare cast simultaneously.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 19;38;0;{NewPage}Question 1\n\nDefense against Death is determined by Death%\nstat in ST-Def-J.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 19;38;1;{NewPage}Question 2\n\nZombied party members take damage if they use\nDrain on a Zombie enemy.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 19;38;2;{NewPage}Question 3\n\nCockatrice bites can sometimes be poisonous.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 19;38;3;{NewPage}Question 4\n\nInvincible status returns to normal after battle.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 19;38;4;{NewPage}Question 5\n\nThe Chimera has dragon, frog, goat, bird, and wild\nboar heads.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 19;38;5;{NewPage}Question 6\n\nProtect is not effective while Vitality is zero.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 19;38;6;{NewPage}Question 7\n\nYou float higher each time you cast Float.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 19;38;7;{NewPage}Question 8\n\nYou must run from X-ATMO92, as it is invincible.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 19;38;8;{NewPage}Question 9\n\nBreak turns an enemy's Spirit to zero, so it has no\neffect on enemies with zero Spirit.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 19;38;9;{NewPage}Question 10\n\nWith weapons learned from Weapons Monthly, the\nJunk Shop tells you which items you need in gray.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 20;39;0;{NewPage}Question 1\n\nYou don't encounter enemies while in a car.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 20;39;1;{NewPage}Question 2\n\n1 Inferno Fang refines into 20 Flares.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 20;39;2;{NewPage}Question 3\n\nA Gayla is about 12 meters tall.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 20;39;3;{NewPage}Question 4\n\nThere are some non-elemental monsters that have\nno elemental attributes.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 20;39;4;{NewPage}Question 5\n\nWhen your SeeD level goes up, your Magic power\nand Draw success rates go up.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 20;39;5;{NewPage}Question 6\n\nThe damage you inflict on enemies doesn't change\neven if your HP is running low.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 20;39;6;{NewPage}Question 7\n\nHigh compatibility with GF assures a shorter\nsummoning time.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 20;39;7;{NewPage}Question 8\n\nA Caterchipillar sometimes drops Spider Webs.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 20;39;8;{NewPage}Question 9\n\nSetting Str+20% and Str+40% is more effective\nthan setting Str+60% alone.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 20;39;9;{NewPage}Question 10\n\nGF {Sire}'s attack is physical damage plus\nConfusion.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 21;40;0;{NewPage}Question 1\n\nBombs sometimes self-detonate.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 21;40;1;{NewPage}Question 2\n\nMalboros lurk in North Esthar.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 21;40;2;{NewPage}Question 3\n\nCombat King is a magazine that introduces combat\nskills.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 21;40;3;{NewPage}Question 4\n\nYou can draw a GF from Elvoret on the\ncommunication tower.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 21;40;4;{NewPage}Question 5\n\nEven if afflicted with Stop while summoning a GF,\nsummoning continues, because the GF is not\naffected by Stop.\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 21;40;5;{NewPage}Question 6\n\nDefend protects you from all physical attacks, but\nmagic attacks can still inflict damage.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 21;40;6;{NewPage}Question 7\n\nJunction Life to raise defense against all elemental\nattributes.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 21;40;7;{NewPage}Question 8\n\nThere is a library in Balamb Garden.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 21;40;8;{NewPage}Question 9\n\nMega Phoenix is an item that casts Phoenix Down\non all party members.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 21;40;9;{NewPage}Question 10\n\nYou can refine 1 Bomb Spirit from 1 Bomb Card.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 22;41;0;{NewPage}Question 1\n\nCasting Protect over Shell cancels Shell, leaving the\nparty member only with Protect.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 22;41;1;{NewPage}Question 2\n\nYou may drop Gil and Items if your Luck stat is low.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 22;41;2;{NewPage}Question 3\n\nTo defend against Fire attacks, Junction Ice magic\nto Elem-Def-J.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 22;41;3;{NewPage}Question 4\n\nJunctioning Reflect to ST-Def raises your defense\nstat in 9 slots.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 22;41;4;{NewPage}Question 5\n\nZombie and Pain are Sorcery elemental magic.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 22;41;5;{NewPage}Question 6\n\nThere is an Item called Hi-Potion+ that restores\n3,000 HP.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 22;41;6;{NewPage}Question 7\n\nWhen your SeeD level goes up, shops give you a\ndiscount.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 22;41;7;{NewPage}Question 8\n\nIf you use the same elemental magic used in a GF's\nattack, your compatibility goes up.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 22;41;8;{NewPage}Question 9\n\nWhen new info is acquired, more explanations may\nbe added to the Help menu.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 22;41;9;{NewPage}Question 10\n\nA higher Hit stat affects the success rate of Draw.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 23;42;0;{NewPage}Question 1\n\nYou can make Remedy+ from Remedy.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 23;42;1;{NewPage}Question 2\n\nHold down {R1}{R2} simultaneously to escape from\nbattle.  (But sometimes you can't run.)\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 23;42;2;{NewPage}Question 3\n\nThe command ability Recover can revive party\nmembers from KO.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 23;42;3;{NewPage}Question 4\n\nEsuna removes status changes, and Dispel removes\nelemental changes.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 23;42;4;{NewPage}Question 5\n\nUnder Regen, HP is restored regularly, even if you\nare afflicted with Stop.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 23;42;5;{NewPage}Question 6\n\nYou can't use any Limit Breaks when Cursed.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 23;42;6;{NewPage}Question 7\n\nBerserk raises attack power, but the only command\nactivated is Attack.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 23;42;7;{NewPage}Question 8\n\nThere is an ability to make Remedy from Malboro\nTentacles.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 23;42;8;{NewPage}Question 9\n\nFloat expires after a certain time.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 23;42;9;{NewPage}Question 10\n\nProtect reduces physical damage by 1/2.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 24;43;0;{NewPage}Question1\n\nUse Esuna to cure Slow.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 24;43;1;{NewPage}Question 2\n\nSetting Float to Elem-Def-J raises defense against\nEarth elemental attacks.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 24;43;2;{NewPage}Question 3\n\nThe ATB runs even while a GF is appearing.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 24;43;3;{NewPage}Question 4\n\nAuto Reflect casts Reflect on you as long as you\ndon't fall under KO.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 24;43;4;{NewPage}Question 5\n\n{Ice} signifies GF ability.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 24;43;5;{NewPage}Question 6\n\nThere are a limited number of abilities a GF can\nlearn.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 24;43;6;{NewPage}Question 7\n\nProtect keeps reducing damage with each use.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 24;43;7;{NewPage}Question 8\n\nYou get Poison along with HP when using Drain\nagainst a poisoned target.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 24;43;8;{NewPage}Question 9\n\nA weapon can break after multiple battles.\n(It can be fixed.)\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 24;43;9;{NewPage}Question 10\n\nIf you are Silenced while you are afflicted with\nConfuse, you cannot use magic.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 25;44;0;{NewPage}Question 1\n\nYou can Mug a Laser Cannon from an enemy called\nElastoid.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 25;44;1;{NewPage}Question 2\n\nGF {Leviathan}'s skill Tsunami causes a forest\nfire.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 25;44;2;{NewPage}Question 3\n\nUse Amnesia Greens to make GF forget an ability.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 25;44;3;{NewPage}Question 4\n\nThere is an ability to see Save Points and Draw\nPoints you can't usually see.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 25;44;4;{NewPage}Question 5\n\nGF gains more EXP if only 1 GF is junctioned to a\nparty member.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 25;44;5;{NewPage}Question 6\n\nIt is good to return to Balamb Garden once in a\nwhile to collect your SeeD salary.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 25;44;6;{NewPage}Question 7\n\nThe magic Watera and Waterga are more powerful\nthan magic Water.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 25;44;7;{NewPage}Question 8\n\nCounter doesn't react to attacks which affect all\nparty members.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 25;44;8;{NewPage}Question 9\n\nGF can learn an ability to succeed in every Mug by\nusing an Item called Bandit's Hand.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 25;44;9;{NewPage}Question 10\n\nYou can Draw magic that causes Curse.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 26;45;0;{NewPage}Question 1\n\nUsing Drain on the undead damages you.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 26;45;1;{NewPage}Question 2\n\nThe Character ability Initiative enables you to\nbegin battle with a full ATB gauge, even when you\nare back-attacked.\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 26;45;2;{NewPage}Question 3\n\nThe Command Ability, Darkside, inflicts Darkness\non a target when you make a physical attack.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 26;45;3;{NewPage}Question 4\n\nHoly is the only Holy elemental magic.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 26;45;4;{NewPage}Question 5\n\nEven GFs that are not junctioned gain EXP and AP.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 26;45;5;{NewPage}Question 6\n\nShell reduces the effectiveness of recovery magic\nby half.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 26;45;6;{NewPage}Question 7\n\nWith a high Evade stat, you sometimes evade\nattacks even when under Sleep.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 26;45;7;{NewPage}Question 8\n\nYou can make GF forget an ability.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 26;45;8;{NewPage}Question 9\n\nDoom continues counting down in the field even after\nyou run from battle.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 26;45;9;{NewPage}Question 10\n\nAttack magic is more effective if your Strength,\nrather than Magic stat is high.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 27;46;0;{NewPage}Question 1\n\nHaste reduces Draw's success rate.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 27;46;1;{NewPage}Question 2\n\nYour SeeD salary relates to how many enemies you\nhave defeated.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 27;46;2;{NewPage}Question 3\n\nThe Double GF ability summons multiple GF\nsimultaneously.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 27;46;3;{NewPage}Question 4\n\nChoose Rearrange in the menu to rearrange items\nautomatically.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 27;46;4;{NewPage}Question 5\n\nEvery monster has a weakness.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 27;46;5;{NewPage}Question 6\n\nBio weakens the target's cell structure to make the\nbody more vulnerable.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 27;46;6;{NewPage}Question 7\n\nIt's harder to run when back-attacked.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 27;46;7;{NewPage}Question 8\n\nFlare is a Fire elemental magic.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 27;46;8;{NewPage}Question 9\n\nYou can find out how many monsters you have\ndefeated.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 27;46;9;{NewPage}Question 10\n\nParty members not participating in battle also\nreceive a small amount of EXP.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 28;47;0;{NewPage}Question 1\n\nA higher Speed stat fills the ATB gauge faster.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 28;47;1;{NewPage}Question 2\n\nYou can remove Doom with Esuna.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 28;47;2;{NewPage}Question 3\n\nMagic attack means attacking with any type of\nmagic, except for Holy magic.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 28;47;3;{NewPage}Question 4\n\nNo magic removes Doom.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 28;47;4;{NewPage}Question 5\n\nPain inflicts Poison, Silence, and Darkness on\nenemies, but sometimes not all 3 status changes\nwill occur.\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 28;47;5;{NewPage}Question 6\n\nStaying at a hotel removes status changes and\nrestores all HP.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 28;47;6;{NewPage}Question 7\n\nYou can stop {Squall}'s Renzokuken by pressing\n{X}.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 28;47;7;{NewPage}Question 8\n\nDouble or Triple lets you use the same magic\nmultiple times.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 28;47;8;{NewPage}Question 9\n\nPetrify wears off after time passes.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 28;47;9;{NewPage}Question 10\n\nUsing Soft while Petrifying won't stop the countdown.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 29;48;0;{NewPage}Question 1\n\nPhoenix Heart restores party members from KO.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 29;48;1;{NewPage}Question 2\n\nA GF in KO is revived in the next battle, even if you\ndon't revive it.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 29;48;2;{NewPage}Question 3\n\nCasting Double while under Double turns the status\ninto Triple.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 29;48;3;{NewPage}Question 4\n\nMag Up raises the Mag stat by 1.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 29;48;4;{NewPage}Question 5\n\nThe ability Rare Item changes the probability of\nenemies dropping items.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 29;48;5;{NewPage}Question 6\n\nThe Galbadian soldier Biggs, who was on the\ncommunication tower, is a colonel.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 29;48;6;{NewPage}Question 7\n\nYou need at least 3 magic in stock to use triple.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 29;48;7;{NewPage}Question 8\n\nIf 2 party members are under Zombie and you\nbecome inflicted by Confuse, game is over.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 29;48;8;{NewPage}Question 9\n\nMeteor chooses targets randomly from the enemy\ngroup.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 29;48;9;{NewPage}Question 10\n\nMeltdown is a magic attack that melts enemies.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 30;49;0;{NewPage}Question 1\n\nIt is good to use Float when fighting Thrustaevis,\nwho uses Earthquakes.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 30;49;1;{NewPage}Question 2\n\nThere is no point using Life or Full-life on party\nmembers who haven't been KO'd.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 30;49;2;{NewPage}Question 3\n\nIf you receive 800 HP damage while summoning a\nGF with 500 HP, the difference of 300 HP are\nreceived by the summoner.\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 30;49;3;{NewPage}Question 4\n\nTorama sometimes drops an item called Torama's\nBeard.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 30;49;4;{NewPage}Question 5\n\nCasting Aura under Curse will bring your status\nback to normal.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 30;49;5;{NewPage}Question 6\n\nThere is a monster called GraBia on the Galbadia\ncontinent.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 30;49;6;{NewPage}Question 7\n\nSilence is not removed, even after battle.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 30;49;7;{NewPage}Question 8\n\nReflect always returns magic to the one who cast\nit.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 30;49;8;{NewPage}Question 9\n\nStatus can change while under Petrify.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 30;49;9;{NewPage}Question 10\n\nThe only way for GF to learn abilities is to gain AP\n(Ability Points).\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 31;50;0;{NewPage}Question 1\n\nIt is good to use Float when fighting Thrustaevis,\nwho uses Earthquakes.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 31;50;1;{NewPage}Question 2\n\nThere is no point using Life or Full-life on party\nmembers who haven't been KO'd.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 31;50;2;{NewPage}Question 3\n\nIf you receive 800 HP damage while summoning a\nGF with 500 HP, the difference of 300 HP are\nreceived by the summoner.\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 31;50;3;{NewPage}Question 4\n\nTorama sometimes drops an item called Torama's\nBeard.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 31;50;4;{NewPage}Question 5\n\nCasting Aura under Curse will bring your status\nback to normal.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 31;50;5;{NewPage}Question 6\n\nThere is a monster called GraBia on the Galbadia\ncontinent.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 31;50;6;{NewPage}Question 7\n\nSilence is not removed, even after battle.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 31;50;7;{NewPage}Question 8\n\nReflect always returns magic to the one who cast\nit.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 31;50;8;{NewPage}Question 9\n\nStatus can change while under Petrify.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
-Test seed 31;50;9;{NewPage}Question 10\n\nThe only way for GF to learn abilities is to gain AP\n(Ability Points).\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed general;19;0;{x00}We will begin the SeeD written test.\nWill you take the level {x0a22} test?\n\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed general;19;1;{x00}We will begin the SeeD written test.\nYour test level now is {x0a20}.\n\nWill you take the level {x0a22} test?\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed general;19;2;{x00}Your scored 100%.\nYou {Red}passed{White} the level {x0a20} written test.\nYour SeeD rank will go up to {x0a26}.\n\n\n\n  {Cursor_location_id:0x20}END
+Test seed general;19;3;{x00}Your score was 100%.\nYou passed level {x0a20} written test.\nYour SeeD rank won't go any higher than {x0a20}.\n\n\n\n  {Cursor_location_id:0x20}END\n
+Test seed general;19;4;{x00}Your score was {x0a20}.\nYou failed.\nBetter luck next time.\n\n\n\n  {Cursor_location_id:0x20}END
+Test seed general;19;5;{x00}Your written test level is 30.\nYou are not allowed to take any more SeeD written\ntests.\n\n\n\n  {Cursor_location_id:0x20}GO BACK\n
+Test seed general;19;6;|{x00}Your SeeD rank is {x0a26}.\nYour SeeD rank won't go any higher;\nwill you still take the written test?\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO|
+Test seed general;19;7;{x00}Really?\n\n\n\n\n\n  {Cursor_location_id:0x20}NO      {Cursor_location_id:0x21}YES\n
+Test seed general;19;8;{x00}End of review!\nYou have mastered everything in level {x0a20}!\n\n\n\n\n  {Cursor_location_id:0x20}END\n
+Test seed general;19;9;{x00}You scored {x0a20}.\nWhat happened...?\n\n\n\n\n  {Cursor_location_id:0x20}END
+Test seed general;19;10;{x00}{Squall} is at level {x0a20}.\nYou can't take anything above {x0a22}.\nPlease level up first and try again.\n\n\n\n  {Cursor_location_id:0x20}END
+Test seed 1 ;20;0;{x00}Question 1\n\nThe Draw command extracts magic from enemies.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 1 ;20;1;{x01}Question 2\n\nGF stands for Garden Fighter.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 1 ;20;2;{x00}Question 3\n\nThere are a total of 8 elemental attributes.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 1 ;20;3;{x00}Question 4\n\nIn battle, a higher Strength stat causes more\nphysical damage.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 1 ;20;4;{x00}Question 5\n\nHP-J is a junction ability.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 1 ;20;5;{x01}Question 6\n\nYou can't assign specific abilities for your GF to\nlearn.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 1 ;20;6;{x01}Question 7\n\nMagic uses MP.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 1 ;20;7;{x00}Question 8\n\nYou can name your GF.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 1 ;20;8;{x01}Question 9\n\nYou can wear protective gear.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 1 ;20;9;{x01}Question 10\n\nGF level up with AP.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 2 ;21;0;{x00}Question 1\n\nYou can raise your Vitality by junctioning magic.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 2 ;21;1;{x01}Question 2\n\n{Squall}'s weapon is the Gauntlet.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 2 ;21;2;{x00}Question 3\n\nYou can Stock drawn magic.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 2 ;21;3;{x00}Question 4\n\nAny action taken while Poisoned causes damage.\nThere is no damage if you take no action.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 2 ;21;4;{x00}Question 5\n\nBeing hit by a physical attack removes Confuse.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 2 ;21;5;{x01}Question 6\n\n{Squall}'s Limit Break is Kenzokuken.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 2 ;21;6;{x00}Question 7\n\nTo junction magic, you need a matching junction\nability for the stat you want to junction.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 2 ;21;7;{x00}Question 8\n\n{CharacterAbility} signifies Junction Ability.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 2 ;21;8;{x01}Question 9\n\nThe 8 elements are Fire, Ice, Thunder, Poison,\nEarth, Sorcery, Wind, and Holy.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 2 ;21;9;{x01}Question 10\n\nThere is a limit to how much magic you can draw\nfrom monsters.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 3 ;22;0;{x01}Question 1\n\nPotions can restore a GF's HP.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 3 ;22;1;{x01}Question 2\n\nMagic can only be acquired by drawing from enemies.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 3 ;22;2;{x00}Question 3\n\nSelphie's weapon is the nunchaku.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 3 ;22;3;{x01}Question 4\n\nYou only need money to remodel your weapon.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 3 ;22;4;{x00}Question 5\n\nWhoever strikes the finishing blow in battle receives\nthe most EXP.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 3 ;22;5;|{x00}Question 6\n\nGF also have levels; the higher their levels, the\nstronger their attacks.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO|
+Test seed 3 ;22;6;{x00}Question 7\n\n{PartyAbility} signifies Command Ability.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 3 ;22;7;{x01}Question 8\n\nEach party member can have up to 5 Character\nand Party Abilities.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 3 ;22;8;{x00}Question 9\n\nCommand Abilities must be set to be used in battle.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 3 ;22;9;{x01}Question 10\n\nAP means Action Point.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 4 ;23;0;{x01}Question 1\n\nOnly {Squall} can use a gunblade.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 4 ;23;1;{x00}Question 2\n\nAttack magic can be used against party members.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 4 ;23;2;{x00}Question 3\n\nThere is an ability that allows you to make magic\nfrom items.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 4 ;23;3;{x00}Question 4\n\nHigher Vitality reduces physical damage.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 4 ;23;4;{x01}Question 5\n\nBlue Magic is learned by being attacked by a\nmonster.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 4 ;23;5;{x01}Question 6\n\nThe magic Dispel cures Poison.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 4 ;23;6;{x00}Question 7\n\nIf you are KO'd with status change, but are revived\nafter battle, the status change is removed.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 4 ;23;7;{x00}Question 8\n\nT-Rexaur is a monster that lives in Balamb\nGarden's training center.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 4 ;23;8;{x01}Question 9\n\n{Squall}'s gunblade causes more damage\nby pressing {L2} at the right time.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 4 ;23;9;{x01}Question 10\n\nYou can stock up to 255 of each magic.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 5 ;24;0;{x01}Question 1\n\n{MenuAbility} signifies Party Ability.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 5 ;24;1;{x01}Question 2\n\nYou can Draw from party members.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 5 ;24;2;{x01}Question 3\n\nYou can save the game anywhere.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 5 ;24;3;{x00}Question 4\n\nWhen a GF learns an ability, some new abilities may\nappear.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 5 ;24;4;|{x00}Question 5\n\nA Character Ability must be set; otherwise, it is\nuseless.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO|
+Test seed 5 ;24;5;{x01}Question 6\n\nThe higher the Speed stat, the better your chances\nof using a Limit Break.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 5 ;24;6;{x01}Question 7\n\nAn Ability is something you learn by gaining EXP.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 5 ;24;7;{x00}Question 8\n\nUnder Zombie, you succumb more easily to Holy\nattacks.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 5 ;24;8;{x00}Question 9\n\n‘Physical Attack' means harm caused by use of\nweapons like swords and guns.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 5 ;24;9;{x00}Question 10\n\nYou can steal Steel Pipe from a Wendigo.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 6 ;25;0;{x00}Question 1\n\nZell's weapons are gloves.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 6 ;25;1;{x01}Question 2\n\nYou can still summon GF when Silenced.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 6 ;25;2;{x00}Question 3\n\n{Ifrit} can learn the F Mag-RF ability.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 6 ;25;3;{x00}Question 4\n\nIf more than 1 GF with the same junction ability is\njunctioned to a character, the effect of those\nabilities remains the same.\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 6 ;25;4;{x01}Question 5\n\nAll status changes return to normal after battle.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 6 ;25;5;{x01}Question 6\n\nYou can use the Attack and Draw commands without\njunctioning a GF.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 6 ;25;6;{x00}Question 7\n\nWhen you set {Squall}'s gunblade on auto, there\nis no need to press {R1}.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 6 ;25;7;{x00}Question 8\n\nThe Mag stat determines the strength and\neffectiveness of magic.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 6 ;25;8;{x01}Question 9\n\nWhen using Auto to junction, you can only choose\nfrom Atk or Def.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 6 ;25;9;{x00}Question 10\n\nA Grat uses Sleep attacks.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 7 ;26;0;{x00}Question 1\n\nEvade indicates how well you can evade physical\nattacks.\nHigher Eva stat reduces hits from physical attack.\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 7 ;26;1;{x00}Question 2\n\nUsing Fire against enemies that absorb Fire raises\ntheir HP.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 7 ;26;2;{x00}Question 3\n\n{Squall}'s finishing blow is different depending on\nthe type of gunblade he uses.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 7 ;26;3;{x00}Question 4\n\nBy using F Mag-RF, you can refine 5 Fires from 1\nM-Stone Piece.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 7 ;26;4;{x00}Question 5\n\nOnly 1 rare card exists in the whole world.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 7 ;26;5;{x00}Question 6\n\nA Buel sometimes uses Fire.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 7 ;26;6;{x01}Question 7\n\nSpirit only relates to using Confuse.\nHigher Spr stat increases the likelihood of success\nwhen using Confuse.\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 7 ;26;7;{x00}Question 8\n\nA Geezard drops many Screws.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 7 ;26;8;{x00}Question 9\n\nEnemies level up as you do.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 7 ;26;9;{x01}Question 10\n\nYou encounter fewer enemies on the World Map if\nyou walk instead of run.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 8 ;27;0;{x01}Question 1\n\nGalbadian Soldiers don't use magic.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 8 ;27;1;{x00}Question 2\n\nWeapons can be remodeled into more powerful models\nat the Junk Shop.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 8 ;27;2;{x01}Question 3\n\n{Fire} signifies Character Ability.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 8 ;27;3;{x01}Question 4\n\nCasting Slow over Haste will cancel Haste and\nreturn the target's status to normal.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 8 ;27;4;{x00}Question 5\n\nYou encounter more enemies in the forest than the\nplains on the World Map.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 8 ;27;5;{x00}Question 6\n\nWhen Elem-Def goes over 100%, that element's\ndamage will be absorbed.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 8 ;27;6;{x01}Question 7\n\nThe Garden exists only in Balamb.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 8 ;27;7;{x01}Question 8\n\nThere are no Bombs in the Fire Cavern.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 8 ;27;8;{x00}Question 9\n\nEach GF can learn different abilities.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 8 ;27;9;{x01}Question 10\n\nJunk Shops sell weapons.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 9 ;28;0;{x01}Question 1\n\nYou can Cast the GF you drew instead of Stock.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 9 ;28;1;{x00}Question 2\n\n{Thunder} signifies Menu Ability.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 9 ;28;2;{x01}Question 3\n\nMagic listed in Selphie's Limit Break is magic she\nowns.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 9 ;28;3;{x01}Question 4\n\nIf a GF is hardly used, or has low compatibility\nwith party members, it may leave your party.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 9 ;28;4;{x01}Question 5\n\nParty Abilities can be used without setting them as\nabilities.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 9 ;28;5;{x01}Question 6\n\nGF left KO'd too long perish and cannot be revived.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 9 ;28;6;{x01}Question 7\n\n1 Sharp Spike refines into 5 AP Ammo.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 9 ;28;7;{x01}Question 8\n\nDefeating the enemy who caused a status change\nreturns status to normal.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 9 ;28;8;{x00}Question 9\n\nEnemies change attack patterns as you level up.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 9 ;28;9;{x00}Question 10\n\nWhen Poisoned, every action you take damages you.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 10;29;0;{x00}Question 1\n\nUse the magic Confuse to inflict confuse status on\nyour enemy.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 10;29;1;{x01}Question 2\n\nA Potion restores 100 HP.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 10;29;2;{x01}Question 3\n\nQuistis' weapon is a magic sword.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 10;29;3;{x01}Question 4\n\nATB stands for Ability Tone Black.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 10;29;4;{x01}Question 5\n\nYou are more susceptible to fire under Zombie.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 10;29;5;{x01}Question 6\n\nYou can refine 1 Tent from 1 Healing Water by\nusing the Menu Ability Tool-RF.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 10;29;6;{x01}Question 7\n\nEXP are divided equally among all characters\nparticipating in battle.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 10;29;7;{x01}Question 8\n\nBlind sucks out an enemy's brain to prevent him\nfrom attacking.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 10;29;8;{x00}Question 9\n\nEsuna or Soft removes Petrify.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 10;29;9;{x01}Question 10\n\nNothing removes Sleep.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 11;30;0;{x00}Question 1\n\nGF can regain HP while walking.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 11;30;1;{x00}Question 2\n\nThe Draw command must be set in order to use a\nDraw Point.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 11;30;2;{x01}Question 3\n\nLimit Breaks always kill enemies.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 11;30;3;{x00}Question 4\n\n{Sire} can learn the ability Treatment.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 11;30;4;{x00}Question 5\n\nYou can junction more than one GF.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 11;30;5;{x01}Question 6\n\nAdamantine is an item dropped by a Level 10\nAdamantoise.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 11;30;6;{x00}Question 7\n\nYou can rearrange the magic and items displayed\nduring battle.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 11;30;7;{x01}Question 8\n\n{Shiva} can learn Doom right after becoming\nan ally.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 11;30;8;{x01}Question 9\n\nDrain absorbs HP from enemies, but can't be used\nto absorb from party members.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 11;30;9;{x00}Question 10\n\nRecovery magic damages Undead monsters.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 12;31;0;{x01}Question 1\n\nArmadodo absorbs Earth attacks.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 12;31;1;{x00}Question 2\n\nYou can refine 20 Curas from 1 Healing Water by\nusing L Mag-RF.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 12;31;2;{x01}Question 3\n\nYou receive EXP after the battle is won even when\nKO'd.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 12;31;3;{x01}Question 4\n\nYou can only draw GF from an enemy or defeat\na GF to make them yours.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 12;31;4;{x00}Question 5\n\nThe maximum number of magic that can be drawn\nfrom an enemy in one turn is 9.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 12;31;5;{x01}Question 6\n\nYou can't steal Sharp Spike from a Grand Mantis.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 12;31;6;{x00}Question 7\n\nPress {Select} to hide battle commands temporarily in\nbattle.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 12;31;7;{x01}Question 8\n\nMagic and GF commands are the only commands\ndisabled by Silence.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 12;31;8;{x00}Question 9\n\nYou can use Scan on party members.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 12;31;9;{x01}Question 10\n\nIf you set Poison magic(100%) to ST-Def-J, you\ndon't receive damage from poisonous physical\nattacks.\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 13;32;0;{x00}Question 1\n\nYou gain EXP for the damage you inflict on enemies,\neven if you run away.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 13;32;1;{x01}Question 2\n\nYou can mug Blue Spikes from a Chimera.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 13;32;2;{x01}Question 3\n\nGF abilities must be set to a party member for use,\nor it is ineffective.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 13;32;3;{x01}Question 4\n\nYou can only Draw once from any Draw Point.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 13;32;4;{x00}Question 5\n\nGF {Quezacotl} can learn the Card Mod ability\nwithout using an item.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 13;32;5;{x01}Question 6\n\nWhen you fail to Draw a number of times, you can't\nuse the Draw ability for a while.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 13;32;6;{x01}Question 7\n\nWhen a GF is KO'd, its compatibility goes down with\nthe junctioned party member.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 13;32;7;{x01}Question 8 \n\nYou can run from any enemy if you take enough\ntime.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 13;32;8;{x01}Question 9\n\nYou must have ammo to pull {Squall}'s gunblade\ntrigger.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 13;32;9;{x01}Question 10\n\nWhen you attack a Fire monster, you always\nreceive Fire damage.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 14;33;0;{x00}Question 1\n\nYou can Draw some GF from enemies.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 14;33;1;{x00}Question 2\n\nIn critical situations, {Squall} can use\nRenzokuken more often.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 14;33;2;{x00}Question 3\n\nHigher the Hit stat, higher the accuracy of\nphysical attacks, but if the enemy's Evade is high,\nyou may still miss.\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 14;33;3;{x00}Question 4\n\nSome items affect the compatibility value between\nGF and party members.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 14;33;4;{x01}Question 5\n\nUnder Shell, magic damage is reduced to 1/4 of its\nusual amount.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 14;33;5;{x00}Question 6\n\nThere is a monster called Belhelmel.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 14;33;6;{x00}Question 7\n\nYou can only use the Attack command in battle if\nno GF are junctioned, or command abilities aren't\nset.\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 14;33;7;{x01}Question 8\n\nDefeating enemies by physical attacks rather than\nmagical attacks gives you more EXP.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 14;33;8;{x00}Question 9\n\nCover only protects a party member standing next\nto you.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 14;33;9;{x01}Question 10\n\nPressing {Square} continuously is the best way to use\nBoost.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 15;34;0;{x00}Question 1\n\nCompatibility with GF increases as you summon\nthem.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 15;34;1;{x00}Question 2\n\nIt's not possible for one member to hold all types of\nmagic.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 15;34;2;{x01}Question 3\n\nFastitocalon's Sand Storm is a Wind attack.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 15;34;3;{x01}Question 4\n\nYou can use Reflect to reflect magic that has\nalready been reflected.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 15;34;4;{x01}Question 5\n\nConfuse doesn't make you attack yourself.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 15;34;5;{x01}Question 6\n\nYou can refine Arctic Wind into Blizzard by using an\nability.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 15;34;6;{x01}Question 7\n\nGF {Cerberus} can learn the Spd Bonus ability.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 15;34;7;{x00}Question 8\n\nParty members under Silence can't use magic, even\nin the menu.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 15;34;8;{x01}Question 9\n\nEcho Screen cures Petrify.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 15;34;9;{x00}Question 10\n\nWhen afflicted with Silence while summoning GF, the\nsummoning stops.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 16;35;0;{x00}Question 1\n\nYou can use Limit Breaks more often when your HP\nis low.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 16;35;1;{x01}Question 2\n\nWhen you junction with a GF who learned Elem-Def-J\nand Elem-Defx2, you can junction 3 magic to\nElem-Def slots.\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 16;35;2;{x01}Question 3\n\nThere is a command to remove GF without losing\nmagic on the menu junction screen.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 16;35;3;{x00}Question 4\n\nThere are enemies whose status doesn't change,\neven if your ST-Atk-J is set at 100%.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 16;35;4;{x01}Question 5\n\nDraw means drawing magic stocked by a monster.\nWhen it runs out of stock, it can no longer use\nmagic.\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 16;35;5;{x00}Question 6\n\nLow level Bite Bugs drop M-Stone Pieces.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 16;35;6;{x01}Question 7\n\nG-Mega-Potion revives a KO'd GF.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 16;35;7;{x01}Question 8\n\nThe game is over when all party members are\nafflicted with Death, Zombie, or Petrify.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 16;35;8;{x00}Question 9\n\nHi-Potion restores 1,000 HP.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 16;35;9;{x01}Question 10\n\nWalk-Gil is an ability to acquire Gil by walking on\nthe field.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 17;36;0;{x00}Question 1\n\nYou can use Limit Breaks more frequently under\nAura.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 17;36;1;{x01}Question 2\n\nG-Potion, which restores GF's HP, can also be used\nin battle.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 17;36;2;{x01}Question 3\n\nThe Med Data ability enables the use of 2 potions\nin 1 turn.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 17;36;3;{x01}Question 4\n\nFinishing blows come out more often if you time the\ntrigger for {Squall}'s Renzokuken correctly.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 17;36;4;{x00}Question 5\n\nSet the ability Alert to avoid back attacks.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 17;36;5;{x01}Question 6\n\nLimit Breaks activate when Berserked.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 17;36;6;{x01}Question 7\n\nYou can use Potions to cure a zombied party\nmembers in the menu.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 17;36;7;{x00}Question 8\n\nGF {Alexander}'s attacks are Holy attacks.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 17;36;8;{x01}Question 9\n\nT-Rexaur sometimes drops Dinosaur Fangs.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 17;36;9;{x01}Question 10\n\nUnder Darkness, you are blinded, and may attack\nparty members.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 18;37;0;{x00}Question 1\n\nYou can't junction without GF, no matter how high\nyour level.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 18;37;1;{x01}Question 2\n\nReflect can turn away any magic.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 18;37;2;{x01}Question 3\n\nThere are a total of 30 different statuses.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 18;37;3;{x01}Question 4\n\nThere is no magic that cures Zombie.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 18;37;4;{x00}Question 5\n\nWhen choosing a target in battle, press {L1} to\nchoose your target from a window.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 18;37;5;{x01}Question 6\n\nThere is 1 ability you can learn by yourself.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 18;37;6;{x01}Question 7\n\nAfter receiving magic damage, Wendigo lands to\nshoot Pulse Ammo from its mouth.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 18;37;7;{x01}Question 8\n\nHP is restored slowly in Sleep.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 18;37;8;{x01}Question 9\n\nGF {Carbuncle} casts Shell and Protect on all\nparty members.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 18;37;9;{x01}Question 10\n\nConfuse takes precedence over Berserk when the 2\nare cast simultaneously.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 19;38;0;{x00}Question 1\n\nDefense against Death is determined by Death%\nstat in ST-Def-J.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 19;38;1;{x01}Question 2\n\nZombied party members take damage if they use\nDrain on a Zombie enemy.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 19;38;2;{x01}Question 3\n\nCockatrice bites can sometimes be poisonous.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 19;38;3;{x00}Question 4\n\nInvincible status returns to normal after battle.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 19;38;4;{x01}Question 5\n\nThe Chimera has dragon, frog, goat, bird, and wild\nboar heads.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 19;38;5;{x01}Question 6\n\nProtect is not effective while Vitality is zero.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 19;38;6;{x01}Question 7\n\nYou float higher each time you cast Float.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 19;38;7;{x01}Question 8\n\nYou must run from X-ATMO92, as it is invincible.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 19;38;8;{x01}Question 9\n\nBreak turns an enemy's Spirit to zero, so it has no\neffect on enemies with zero Spirit.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 19;38;9;{x00}Question 10\n\nWith weapons learned from Weapons Monthly, the\nJunk Shop tells you which items you need in gray.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 20;39;0;{x00}Question 1\n\nYou don't encounter enemies while in a car.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 20;39;1;{x00}Question 2\n\n1 Inferno Fang refines into 20 Flares.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 20;39;2;{x01}Question 3\n\nA Gayla is about 12 meters tall.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 20;39;3;{x00}Question 4\n\nThere are some non-elemental monsters that have\nno elemental attributes.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 20;39;4;{x01}Question 5\n\nWhen your SeeD level goes up, your Magic power\nand Draw success rates go up.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 20;39;5;{x00}Question 6\n\nThe damage you inflict on enemies doesn't change\neven if your HP is running low.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 20;39;6;{x00}Question 7\n\nHigh compatibility with GF assures a shorter\nsummoning time.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 20;39;7;{x00}Question 8\n\nA Caterchipillar sometimes drops Spider Webs.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 20;39;8;{x01}Question 9\n\nSetting Str+20% and Str+40% is more effective\nthan setting Str+60% alone.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 20;39;9;{x01}Question 10\n\nGF {Sire}'s attack is physical damage plus\nConfusion.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 21;40;0;{x00}Question 1\n\nBombs sometimes self-detonate.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 21;40;1;{x00}Question 2\n\nMalboros lurk in North Esthar.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 21;40;2;{x00}Question 3\n\nCombat King is a magazine that introduces combat\nskills.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 21;40;3;{x00}Question 4\n\nYou can draw a GF from Elvoret on the\ncommunication tower.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 21;40;4;{x01}Question 5\n\nEven if afflicted with Stop while summoning a GF,\nsummoning continues, because the GF is not\naffected by Stop.\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 21;40;5;{x01}Question 6\n\nDefend protects you from all physical attacks, but\nmagic attacks can still inflict damage.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 21;40;6;{x00}Question 7\n\nJunction Life to raise defense against all elemental\nattributes.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 21;40;7;{x00}Question 8\n\nThere is a library in Balamb Garden.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 21;40;8;{x00}Question 9\n\nMega Phoenix is an item that casts Phoenix Down\non all party members.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 21;40;9;{x01}Question 10\n\nYou can refine 1 Bomb Spirit from 1 Bomb Card.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 22;41;0;{x01}Question 1\n\nCasting Protect over Shell cancels Shell, leaving the\nparty member only with Protect.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 22;41;1;{x01}Question 2\n\nYou may drop Gil and Items if your Luck stat is low.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 22;41;2;{x01}Question 3\n\nTo defend against Fire attacks, Junction Ice magic\nto Elem-Def-J.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 22;41;3;{x00}Question 4\n\nJunctioning Reflect to ST-Def raises your defense\nstat in 9 slots.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 22;41;4;{x01}Question 5\n\nZombie and Pain are Sorcery elemental magic.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 22;41;5;{x01}Question 6\n\nThere is an Item called Hi-Potion+ that restores\n3,000 HP.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 22;41;6;{x01}Question 7\n\nWhen your SeeD level goes up, shops give you a\ndiscount.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 22;41;7;{x00}Question 8\n\nIf you use the same elemental magic used in a GF's\nattack, your compatibility goes up.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 22;41;8;{x00}Question 9\n\nWhen new info is acquired, more explanations may\nbe added to the Help menu.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 22;41;9;{x01}Question 10\n\nA higher Hit stat affects the success rate of Draw.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 23;42;0;{x00}Question 1\n\nYou can make Remedy+ from Remedy.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 23;42;1;{x01}Question 2\n\nHold down {R1}{R2} simultaneously to escape from\nbattle.  (But sometimes you can't run.)\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 23;42;2;{x01}Question 3\n\nThe command ability Recover can revive party\nmembers from KO.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 23;42;3;{x01}Question 4\n\nEsuna removes status changes, and Dispel removes\nelemental changes.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 23;42;4;{x01}Question 5\n\nUnder Regen, HP is restored regularly, even if you\nare afflicted with Stop.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 23;42;5;{x00}Question 6\n\nYou can't use any Limit Breaks when Cursed.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 23;42;6;{x00}Question 7\n\nBerserk raises attack power, but the only command\nactivated is Attack.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 23;42;7;{x00}Question 8\n\nThere is an ability to make Remedy from Malboro\nTentacles.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 23;42;8;{x00}Question 9\n\nFloat expires after a certain time.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 23;42;9;{x00}Question 10\n\nProtect reduces physical damage by 1/2.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 24;43;0;{x00}Question1\n\nUse Esuna to cure Slow.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 24;43;1;{x00}Question 2\n\nSetting Float to Elem-Def-J raises defense against\nEarth elemental attacks.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 24;43;2;{x01}Question 3\n\nThe ATB runs even while a GF is appearing.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 24;43;3;{x01}Question 4\n\nAuto Reflect casts Reflect on you as long as you\ndon't fall under KO.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 24;43;4;{x00}Question 5\n\n{Ice} signifies GF ability.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 24;43;5;{x00}Question 6\n\nThere are a limited number of abilities a GF can\nlearn.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 24;43;6;{x01}Question 7\n\nProtect keeps reducing damage with each use.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 24;43;7;{x01}Question 8\n\nYou get Poison along with HP when using Drain\nagainst a poisoned target.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 24;43;8;{x01}Question 9\n\nA weapon can break after multiple battles.\n(It can be fixed.)\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 24;43;9;{x00}Question 10\n\nIf you are Silenced while you are afflicted with\nConfuse, you cannot use magic.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 25;44;0;{x00}Question 1\n\nYou can Mug a Laser Cannon from an enemy called\nElastoid.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 25;44;1;{x01}Question 2\n\nGF {Leviathan}'s skill Tsunami causes a forest\nfire.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 25;44;2;{x00}Question 3\n\nUse Amnesia Greens to make GF forget an ability.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 25;44;3;{x00}Question 4\n\nThere is an ability to see Save Points and Draw\nPoints you can't usually see.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 25;44;4;{x00}Question 5\n\nGF gains more EXP if only 1 GF is junctioned to a\nparty member.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 25;44;5;{x01}Question 6\n\nIt is good to return to Balamb Garden once in a\nwhile to collect your SeeD salary.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 25;44;6;{x01}Question 7\n\nThe magic Watera and Waterga are more powerful\nthan magic Water.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 25;44;7;{x00}Question 8\n\nCounter doesn't react to attacks which affect all\nparty members.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 25;44;8;{x01}Question 9\n\nGF can learn an ability to succeed in every Mug by\nusing an Item called Bandit's Hand.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 25;44;9;{x01}Question 10\n\nYou can Draw magic that causes Curse.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 26;45;0;{x00}Question 1\n\nUsing Drain on the undead damages you.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 26;45;1;{x00}Question 2\n\nThe Character ability Initiative enables you to\nbegin battle with a full ATB gauge, even when you\nare back-attacked.\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 26;45;2;{x01}Question 3\n\nThe Command Ability, Darkside, inflicts Darkness\non a target when you make a physical attack.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 26;45;3;{x00}Question 4\n\nHoly is the only Holy elemental magic.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 26;45;4;{x01}Question 5\n\nEven GFs that are not junctioned gain EXP and AP.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 26;45;5;{x00}Question 6\n\nShell reduces the effectiveness of recovery magic\nby half.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 26;45;6;{x01}Question 7\n\nWith a high Evade stat, you sometimes evade\nattacks even when under Sleep.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 26;45;7;{x00}Question 8\n\nYou can make GF forget an ability.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 26;45;8;{x01}Question 9\n\nDoom continues counting down in the field even after\nyou run from battle.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 26;45;9;{x01}Question 10\n\nAttack magic is more effective if your Strength,\nrather than Magic stat is high.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 27;46;0;{x01}Question 1\n\nHaste reduces Draw's success rate.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 27;46;1;{x00}Question 2\n\nYour SeeD salary relates to how many enemies you\nhave defeated.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 27;46;2;{x01}Question 3\n\nThe Double GF ability summons multiple GF\nsimultaneously.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 27;46;3;{x01}Question 4\n\nChoose Rearrange in the menu to rearrange items\nautomatically.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 27;46;4;{x01}Question 5\n\nEvery monster has a weakness.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 27;46;5;{x01}Question 6\n\nBio weakens the target's cell structure to make the\nbody more vulnerable.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 27;46;6;{x00}Question 7\n\nIt's harder to run when back-attacked.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 27;46;7;{x01}Question 8\n\nFlare is a Fire elemental magic.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 27;46;8;{x00}Question 9\n\nYou can find out how many monsters you have\ndefeated.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 27;46;9;{x01}Question 10\n\nParty members not participating in battle also\nreceive a small amount of EXP.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 28;47;0;{x00}Question 1\n\nA higher Speed stat fills the ATB gauge faster.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 28;47;1;{x01}Question 2\n\nYou can remove Doom with Esuna.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 28;47;2;{x01}Question 3\n\nMagic attack means attacking with any type of\nmagic, except for Holy magic.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 28;47;3;{x00}Question 4\n\nNo magic removes Doom.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 28;47;4;{x00}Question 5\n\nPain inflicts Poison, Silence, and Darkness on\nenemies, but sometimes not all 3 status changes\nwill occur.\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 28;47;5;{x00}Question 6\n\nStaying at a hotel removes status changes and\nrestores all HP.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 28;47;6;{x01}Question 7\n\nYou can stop {Squall}'s Renzokuken by pressing\n{X}.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 28;47;7;{x00}Question 8\n\nDouble or Triple lets you use the same magic\nmultiple times.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 28;47;8;{x01}Question 9\n\nPetrify wears off after time passes.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 28;47;9;{x01}Question 10\n\nUsing Soft while Petrifying won't stop the countdown.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 29;48;0;{x01}Question 1\n\nPhoenix Heart restores party members from KO.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 29;48;1;{x01}Question 2\n\nA GF in KO is revived in the next battle, even if you\ndon't revive it.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 29;48;2;{x01}Question 3\n\nCasting Double while under Double turns the status\ninto Triple.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 29;48;3;{x00}Question 4\n\nMag Up raises the Mag stat by 1.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 29;48;4;{x00}Question 5\n\nThe ability Rare Item changes the probability of\nenemies dropping items.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 29;48;5;{x01}Question 6\n\nThe Galbadian soldier Biggs, who was on the\ncommunication tower, is a colonel.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 29;48;6;{x01}Question 7\n\nYou need at least 3 magic in stock to use triple.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 29;48;7;{x01}Question 8\n\nIf 2 party members are under Zombie and you\nbecome inflicted by Confuse, game is over.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 29;48;8;{x00}Question 9\n\nMeteor chooses targets randomly from the enemy\ngroup.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 29;48;9;{x01}Question 10\n\nMeltdown is a magic attack that melts enemies.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 30;49;0;{x01}Question 1\n\nIt is good to use Float when fighting Thrustaevis,\nwho uses Earthquakes.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 30;49;1;{x00}Question 2\n\nThere is no point using Life or Full-life on party\nmembers who haven't been KO'd.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 30;49;2;{x01}Question 3\n\nIf you receive 800 HP damage while summoning a\nGF with 500 HP, the difference of 300 HP are\nreceived by the summoner.\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 30;49;3;{x01}Question 4\n\nTorama sometimes drops an item called Torama's\nBeard.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 30;49;4;{x01}Question 5\n\nCasting Aura under Curse will bring your status\nback to normal.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 30;49;5;{x01}Question 6\n\nThere is a monster called GraBia on the Galbadia\ncontinent.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 30;49;6;{x00}Question 7\n\nSilence is not removed, even after battle.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 30;49;7;{x01}Question 8\n\nReflect always returns magic to the one who cast\nit.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 30;49;8;{x01}Question 9\n\nStatus can change while under Petrify.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 30;49;9;{x01}Question 10\n\nThe only way for GF to learn abilities is to gain AP\n(Ability Points).\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 31;50;0;{x01}Question 1\n\nIt is good to use Float when fighting Thrustaevis,\nwho uses Earthquakes.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 31;50;1;{x00}Question 2\n\nThere is no point using Life or Full-life on party\nmembers who haven't been KO'd.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 31;50;2;{x01}Question 3\n\nIf you receive 800 HP damage while summoning a\nGF with 500 HP, the difference of 300 HP are\nreceived by the summoner.\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 31;50;3;{x01}Question 4\n\nTorama sometimes drops an item called Torama's\nBeard.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 31;50;4;{x01}Question 5\n\nCasting Aura under Curse will bring your status\nback to normal.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 31;50;5;{x01}Question 6\n\nThere is a monster called GraBia on the Galbadia\ncontinent.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 31;50;6;{x00}Question 7\n\nSilence is not removed, even after battle.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 31;50;7;{x01}Question 8\n\nReflect always returns magic to the one who cast\nit.\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 31;50;8;{x01}Question 9\n\nStatus can change while under Petrify.\n\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
+Test seed 31;50;9;{x01}Question 10\n\nThe only way for GF to learn abilities is to gain AP\n(Ability Points).\n\n\n  {Cursor_location_id:0x20}YES     {Cursor_location_id:0x21}NO
 TextBox00.bin;51;0;Select term
 TextBox00.bin;51;1;{Cursor_location_id:0x218e}Basic Terms\n{Cursor_location_id:0x222d}Elemental\n{Cursor_location_id:0x2231}Status\n{Cursor_location_id:0x2021}Menu\n{Cursor_location_id:0x204b}Battle System\n{Cursor_location_id:0x2078}Abilities\n{Cursor_location_id:0x2062}GF \n{Cursor_location_id:0x2253}Magic     \n{Cursor_location_id:0x227f}Information\n{x0abf}{Cursor_location_id:0x2348}Proof of Omega\n{x0a3f}
 TextBox00.bin;51;2;Select command                 {xc4}{xc4}{xc4}  1/2
