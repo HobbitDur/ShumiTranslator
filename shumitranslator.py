@@ -164,10 +164,8 @@ class ShumiTranslator(QWidget):
         self.warning_mngrp_label_widget.hide()
         self.warning_exe_label_widget = QLabel(
             "/!\\ Only compatible with FFNx (2000 and 2013 version)<br/>"
-            "W"
-            "hen saving, this tool produce:<br/>"
-            "- msd files that need to be put in the folder direct/exe/<br/>"
-            "- hext files that need to be put in hext/nv depending of your version<br/>")
+            "When saving, this tool produce<br/>"
+            "msd files that need to be put in the folder direct/exe/<br/>")
         self.warning_exe_label_widget.hide()
         self.warning_field_label_widget = QLabel(
             "This tool use deling, an external tool done my myst6re, to manage all field text (what character says). <br/> Due to this, the tool doesn't offer direct "
@@ -266,7 +264,7 @@ class ShumiTranslator(QWidget):
                 folder_to_save = self.file_dialog.getExistingDirectory(parent=self, caption="Save msd file", directory=os.getcwd())
                 if folder_to_save:
                     self.exe_manager.save_file(folder_to_save)
-                    popup_text = "Msd and hext files saved to folder <b>{}</b>".format(pathlib.Path(folder_to_save).name)
+                    popup_text = "Msd files saved to folder <b>{}</b>".format(pathlib.Path(folder_to_save).name)
                 else:
                     popup_save = False
             elif self.file_loaded_type == FileType.DAT:
