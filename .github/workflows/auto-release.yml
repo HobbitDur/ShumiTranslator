@@ -41,7 +41,6 @@ jobs:
           cp -R FF8GameData/fs/DelingCli release/ShumiTranslator/FF8GameData/fs/
           cd release
           rm -r build
-          rm *.exe
       - name: zip name continuous
         shell: bash
         if: github.event.ref_type != 'tag' && github.ref == 'refs/heads/master'
