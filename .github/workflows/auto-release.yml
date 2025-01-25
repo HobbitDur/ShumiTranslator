@@ -38,7 +38,7 @@ jobs:
           cp -R Resources release/ShumiTranslator/
           cp -R FF8GameData/Resources release/ShumiTranslator/FF8GameData/
           cp release/*.exe release/ShumiTranslator/
-          cp -R FF8GameData/fs/DelingCli release/ShumiTranslator/FF8GameData/fs/
+          cp -R FF8GameData/fs/ release/ShumiTranslator/FF8GameData/
           cd release
           rm -r build
       - name: zip name continuous
