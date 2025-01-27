@@ -27,6 +27,8 @@ class SubSectionData(Section):
             id = 0
         self._data_list.append(FF8Data(game_data=self._game_data, data_hex=data_hex, own_offset=offset, id=id, offset_type=offset_type))
 
+
+
     def get_all_offset(self):
         offset_list = []
         for data in self._data_list:

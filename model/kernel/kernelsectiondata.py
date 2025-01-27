@@ -15,6 +15,7 @@ class SectionData(Section):
     def init_subsection(self, subsection_sized: int, nb_subsection: int):
         for i in range(nb_subsection):
             self.add_subsection(self._data_hex[i * subsection_sized: (i + 1) * subsection_sized])
+        self.update_data_hex()
 
     def add_subsection(self, data_hex: bytearray):
         if self._subsection_list:
@@ -25,6 +26,8 @@ class SectionData(Section):
             id = 0
         self._subsection_list.append(
             SubSectionData(game_data=self._game_data, data_hex=data_hex, own_offset=offset, id=id, nb_text_offset=self._subsection_nb_text_offset))
+
+
 
     def get_all_offset(self):
         offset_list = []

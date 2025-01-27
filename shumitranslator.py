@@ -40,6 +40,7 @@ class ShumiTranslator(QWidget):
         self.game_data.load_status_data()
         self.game_data.load_gforce_data()
         self.game_data.load_special_action_data()
+        #self.game_data.load_all()
 
         self.translation_list = []
         self.file_loaded = ""
@@ -411,7 +412,7 @@ class ShumiTranslator(QWidget):
         self.warning_field_label_widget.hide()
 
         # file_to_load = [os.path.join("OriginalFiles", "battle", "c0m028.dat")]  # For developing faster
-        #file_to_load = os.path.join("OriginalFiles", "mngrp.bin")  # For developing faster
+        #file_to_load = os.path.join("OriginalFiles", "kernel.bin")  # For developing faster
         # file_to_load = ['I:/Mod_FF8/Outils modding/Fichier de travail/GitProject/ShumiTranslator/OriginalFiles/c0m001.dat']  # For developing faster
         #file_to_load = os.path.join("OriginalFiles", "FF8_EN.exe")  # For developing faster
 

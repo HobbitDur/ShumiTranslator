@@ -26,6 +26,9 @@ class KernelManager():
             if section.type == SectionType.FF8_TEXT:
                 section.update_data_hex()
                 self.section_list[0].set_section_offset_value_from_id(index_section, current_offset)
+            if section.type == SectionType.DATA:
+                section.update_data_hex()
+                self.section_list[0].set_section_offset_value_from_id(index_section, current_offset)
             current_offset += len(section)
 
         for section in self.section_list:
@@ -52,23 +55,29 @@ class KernelManager():
             if next_section_offset_value is None:
                 next_section_offset_value = len(current_file_data)
             if section_info["type"] == SectionType.DATA:
+                data_hex = current_file_data[own_offset:next_section_offset_value]
+                # if section_info['id'] == 4:
+                #     index_unknown = 0
+                #     for i in range(0, 33*12, 12):
+                #         print(f"Weapons Data Section: {self.game_data.kernel_data_json['weapon_data'][index_unknown]}")
+                #         print(f"Unknown 0x03:  {data_hex[i+0x03]}")
+                #         #{" ".join(f"0x{byte:02X}" for byte in data_hex[i + 0x15:i + 0x15 + 7])}
+                #         index_unknown+=1
                 new_section = SectionData(game_data=self.game_data, id=section_id, own_offset=own_offset,
-                                          data_hex=current_file_data[own_offset:next_section_offset_value],
+                                          data_hex=data_hex,
                                           subsection_nb_text_offset=section_info['sub_section_nb_text_offset'],
                                           name=section_info['section_name'])
                 new_section.init_subsection(nb_subsection=section_info['number_sub_section'],
                                             subsection_sized=section_info['sub_section_size'])
             elif section_info["type"] == SectionType.FF8_TEXT:
                 section_data_linked = [self.section_list[i] for i in range(1, len(self.section_list)) if
-                                       section_info['section_offset_data_linked'] == self.section_list[
-                                           0].get_section_header_offset_from_id(i)][0]
+                                       section_info['section_id_data_linked'] == self.section_list[i].id][0]
                 new_section = ListFF8Text(game_data=self.game_data, id=section_id, own_offset=own_offset,
                                           data_hex=current_file_data[own_offset:next_section_offset_value],
                                           section_data_linked=section_data_linked,
                                           name=section_info['section_name'])
             else:
                 new_section = None
-                # new_section.init_subsection(nb_subsection=section_info['number_sub_section'], subsection_sized=section_info['sub_section_size'])
             self.section_list.append(new_section)
 
         for i, section in enumerate(self.section_list):
