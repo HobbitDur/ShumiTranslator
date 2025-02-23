@@ -1,10 +1,12 @@
 import os
+import re
 import shutil
+
 from FF8GameData.fs.delingclimanager import DelingCliManager
 from FF8GameData.gamedata import GameData
 
 
-class FieldFsManager:
+class WorldFsManager:
     def __init__(self, game_data: GameData):
         self.game_data = game_data
         self._file_path = ""
@@ -12,8 +14,8 @@ class FieldFsManager:
 
     def save_file(self, dest_folder_path):
         self._deling_manager.unpack(self._file_path, os.path.join(dest_folder_path, "temp"))
-        self.delete_non_msd_files(os.path.join(dest_folder_path, "temp"))
-        self.move_contents_and_delete_parents(os.path.join(dest_folder_path, "temp"), os.path.join(dest_folder_path, "field") )
+        self.delete_non_wmsetxx_obj_files(os.path.join(dest_folder_path, "temp"))
+        self.move_contents_and_delete_parents(os.path.join(dest_folder_path, "temp"), os.path.join(dest_folder_path, "world"))
 
     def load_file(self, file_to_load):
         self._file_path = file_to_load
@@ -27,10 +29,10 @@ class FieldFsManager:
             self._deling_manager.import_csv(self._file_path, csv_to_load)
 
     @staticmethod
-    def delete_non_msd_files(folder_path):
+    def delete_non_wmsetxx_obj_files(folder_path):
         """
         Recursively deletes all files in a folder and its subfolders
-        if their extension is not .msd.
+        if it's not wmsetxx.obj file
 
         :param folder_path: Path to the target folder.
         """
@@ -43,14 +45,24 @@ class FieldFsManager:
         for root, _, files in os.walk(folder_path):
             for file in files:
                 file_path = os.path.join(root, file)
+                pattern = r'^wmset[a-zA-Z]{2}\.obj$'
+                if not bool(re.match(pattern, file.lower())):
+                    try:
+                        os.remove(file_path)
+                    except Exception as e:
+                        print(f"Error deleting file {file_path}: {e}")
 
-                # Check if the file does not end with .msd
-                if not file.lower().endswith('.msd'):
-                    if not file.lower().endswith('.jsm'):
-                        try:
-                            os.remove(file_path)
-                        except Exception as e:
-                            print(f"Error deleting file {file_path}: {e}")
+        # remove empty directory
+        for root, dirs, files in os.walk(folder_path, topdown=False):
+            for dir_name in dirs:
+                full_path = os.path.join(root, dir_name)
+                try:
+                    # Check if the directory is empty
+                    if not os.listdir(full_path):
+                        print(f"Removing empty directory: {full_path}")
+                        os.rmdir(full_path)  # Remove the empty directory
+                except OSError as e:
+                    print(f"Error: {e}")
 
     @staticmethod
     def move_contents_and_delete_parents(base_folder, target_field_folder):

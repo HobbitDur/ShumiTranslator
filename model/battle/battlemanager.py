@@ -1,9 +1,9 @@
 import pathlib
 import csv
 
+from FF8GameData.dat.monsteranalyser import GarbageFileError, MonsterAnalyser
 from FF8GameData.gamedata import GameData
 from FF8GameData.GenericSection.listff8text import ListFF8Text
-from IfritAI.IfritAI.ennemy import Ennemy, GarbageFileError
 
 
 class BattleManager:
@@ -27,12 +27,12 @@ class BattleManager:
 
     def add_file(self, com_file):
         self.file_list.append(com_file)
-        ennemy = Ennemy(self.game_data)
+        ennemy = MonsterAnalyser(self.game_data)
         ennemy.load_file_data(com_file, self.game_data)
 
         try:
             ennemy.analyse_loaded_data(self.game_data)
-            name = ennemy.info_stat_data['monster_name']
+            name = ennemy.info_stat_data['monster_name'].get_str()
             error = False
         except GarbageFileError:
             name = "None"
@@ -41,7 +41,7 @@ class BattleManager:
         self.section_text_list.append(
             ListFF8Text(game_data=self.game_data, data_hex=bytearray(), id=len(self.section_text_list), own_offset=0, name=name))
         if not error:
-            self.section_text_list[-1].add_text(self.game_data.translate_str_to_hex(ennemy.info_stat_data['monster_name']))
+            self.section_text_list[-1].add_text(self.game_data.translate_str_to_hex(ennemy.info_stat_data['monster_name'].get_str()))
             for text in ennemy.battle_script_data['battle_text']:
                 self.section_text_list[-1].add_text(self.game_data.translate_str_to_hex(text))
 

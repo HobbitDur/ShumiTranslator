@@ -15,14 +15,15 @@ from model.field.fieldfsmanager import FieldFsManager
 from model.kernel.kernelmanager import KernelManager
 from model.mngrp.mngrpmanager import MngrpManager
 from model.mngrp.string.sectionstring import SectionString
+from model.world.worldfsmanager import WorldFsManager
 from view.sectionwidget import SectionWidget
 from view.tabholderwidget import TabHolderWidget
 
 
 class ShumiTranslator(QWidget):
     CSV_FOLDER = "csv"
-    FILE_MANAGED = ['kernel.bin', 'namedic.bin', 'mngrp.bin', 'FF8.exe/remaster.dat', 'c0mxx.dat', 'field.fs']
-    FILE_MANAGED_REGEX = ['*kernel*.bin', '*namedic*.bin', '*mngrp*.bin', 'FF8*.exe;off_cards_names_*.dat', "c0m*.dat", 'field*.fs']
+    FILE_MANAGED = ['kernel.bin', 'namedic.bin', 'mngrp.bin', 'FF8.exe/remaster.dat', 'c0mxx.dat', 'field.fs', 'world.fs']
+    FILE_MANAGED_REGEX = ['*kernel*.bin', '*namedic*.bin', '*mngrp*.bin', 'FF8*.exe;off_cards_names_*.dat', "c0m*.dat", 'field*.fs', 'world*.fs']
 
     def __init__(self, icon_path='Resources'):
         QWidget.__init__(self)
@@ -176,8 +177,16 @@ class ShumiTranslator(QWidget):
             "For the moment, it only works on Windows.<br/>"
             "<b>/!\\ When saving or uploading csv, there is a lot of work being done, so be patient.</b><br/>"
             "The save put all files in a field folder that can be directly put in the direct folder of FFNx.")
-
         self.warning_field_label_widget.hide()
+        self.warning_world_label_widget = QLabel(
+            "This tool use deling, an external tool done my myst6re, to manage all world text (Draw point, aubel,...). <br/> Due to this, the tool doesn't offer direct "
+            "modification but allows to export and import csv. <br/> "
+            "The input is the world.fs file (need the .fi and .fl with same name and in same folder than world.fs)<br/>"
+            "It will output a folder containing only the msd files which correspond to the file text.<br/>"
+            "For the moment, it only works on Windows.<br/>"
+            "<b>/!\\ When saving or uploading csv, there is a lot of work being done, so be patient.</b><br/>"
+            "The save put all files in a world folder that can be directly put in the direct folder of FFNx.")
+        self.warning_world_label_widget.hide()
 
         self.layout_full_top = QVBoxLayout()
         self.layout_full_top.addLayout(self.layout_top)
@@ -202,6 +211,7 @@ class ShumiTranslator(QWidget):
         self.layout_main.addWidget(self.warning_mngrp_label_widget)
         self.layout_main.addWidget(self.warning_exe_label_widget)
         self.layout_main.addWidget(self.warning_field_label_widget)
+        self.layout_main.addWidget(self.warning_world_label_widget)
         self.layout_main.addLayout(self._tab_layout)
         self.layout_main.addLayout(self.layout_translation_lines)
         self.layout_main.addStretch(1)
@@ -215,6 +225,7 @@ class ShumiTranslator(QWidget):
         self.battle_manager = BattleManager(game_data=self.game_data)
         self.remaster_dat_manager = RemasterDatManager(game_data=self.game_data)
         self.field_fs_manager = FieldFsManager(game_data=self.game_data)
+        self.world_fs_manager = WorldFsManager(game_data=self.game_data)
 
     def __show_info(self):
         message_box = QMessageBox()
@@ -290,6 +301,19 @@ class ShumiTranslator(QWidget):
                 self.scroll_area.setEnabled(True)
                 self.csv_upload_button.setEnabled(True)
                 self.csv_save_button.setEnabled(True)
+            elif self.file_loaded_type == FileType.WORLD_FS:
+                self.scroll_area.setEnabled(False)
+                self.csv_upload_button.setEnabled(False)
+                self.csv_save_button.setEnabled(False)
+                folder_to_save = self.file_dialog.getExistingDirectory(parent=self, caption="Save world fs unpacked", directory=os.getcwd())
+                if folder_to_save:
+                    self.world_fs_manager.save_file(folder_to_save)
+                    popup_text = "wmsetxx.obj file saved to folder <b>{}</b>".format(pathlib.Path(folder_to_save).name)
+                else:
+                    popup_save = False
+                self.scroll_area.setEnabled(True)
+                self.csv_upload_button.setEnabled(True)
+                self.csv_save_button.setEnabled(True)
 
             if popup_save:
                 message_box = QMessageBox()
@@ -314,11 +338,14 @@ class ShumiTranslator(QWidget):
                                                          filter="*.csv", directory=directory)[0]
             if csv_to_load:
                 try:
-                    if self.file_loaded_type == FileType.FIELD_FS:
+                    if self.file_loaded_type == FileType.FIELD_FS or self.file_loaded_type == FileType.WORLD_FS:
                         self.scroll_area.setEnabled(False)
                         self.csv_upload_button.setEnabled(False)
                         self.csv_save_button.setEnabled(False)
-                        self.field_fs_manager.load_csv(csv_to_load=csv_to_load)
+                        if self.file_loaded_type == FileType.FIELD_FS:
+                            self.field_fs_manager.load_csv(csv_to_load=csv_to_load)
+                        elif self.file_loaded_type == FileType.WORLD_FS:
+                            self.world_fs_manager.load_csv(csv_to_load=csv_to_load)
                         self.scroll_area.setEnabled(True)
                         self.csv_upload_button.setEnabled(True)
                         self.csv_save_button.setEnabled(True)
@@ -380,6 +407,11 @@ class ShumiTranslator(QWidget):
                 self.csv_upload_button.setEnabled(False)
                 self.csv_save_button.setEnabled(False)
                 self.field_fs_manager.save_csv(file_to_save)
+            if self.file_loaded_type == FileType.WORLD_FS:
+                self.scroll_area.setEnabled(False)
+                self.csv_upload_button.setEnabled(False)
+                self.csv_save_button.setEnabled(False)
+                self.world_fs_manager.save_csv(file_to_save)
             else:
                 with open(file_to_save, 'w', newline='', encoding="utf-8") as csv_file:
                     csv_writer = csv.writer(csv_file, delimiter=GameData.find_delimiter_from_csv_file(file_to_save), quotechar='|', quoting=csv.QUOTE_MINIMAL)
@@ -389,7 +421,7 @@ class ShumiTranslator(QWidget):
                         for ff8_widget_id, ff8_text in enumerate(section_widget.section.get_text_list()):
                             csv_writer.writerow([section_widget.section.name, section_widget_id, ff8_widget_id, ff8_text.get_str().replace('\n', '\\n')])
 
-        if self.file_loaded_type == FileType.FIELD_FS:
+        if self.file_loaded_type == FileType.FIELD_FS or self.file_loaded_type == FileType.WORLD_FS:
             self.scroll_area.setEnabled(True)
             self.csv_upload_button.setEnabled(True)
             self.csv_save_button.setEnabled(True)
@@ -552,6 +584,10 @@ class ShumiTranslator(QWidget):
                 self.warning_field_label_widget.show()
                 self.file_loaded_type = FileType.FIELD_FS
                 self.field_fs_manager.load_file(self.file_loaded)
+            elif "world" in file_name and ".fs" in file_name:
+                self.warning_world_label_widget.show()
+                self.file_loaded_type = FileType.WORLD_FS
+                self.world_fs_manager.load_file(self.file_loaded)
 
             self.csv_save_button.setEnabled(True)
             self.save_button.setEnabled(True)
