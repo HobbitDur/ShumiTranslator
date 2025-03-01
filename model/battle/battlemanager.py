@@ -33,17 +33,16 @@ class BattleManager:
         try:
             ennemy.analyse_loaded_data(self.game_data)
             name = ennemy.info_stat_data['monster_name'].get_str()
-            error = False
-        except GarbageFileError:
-            name = "None"
-            error = True
-        self.ennemy_list.append(ennemy)
-        self.section_text_list.append(
-            ListFF8Text(game_data=self.game_data, data_hex=bytearray(), id=len(self.section_text_list), own_offset=0, name=name))
-        if not error:
+            self.ennemy_list.append(ennemy)
+            self.section_text_list.append(
+                ListFF8Text(game_data=self.game_data, data_hex=bytearray(), id=len(self.section_text_list), own_offset=0, name=name))
             self.section_text_list[-1].add_text(self.game_data.translate_str_to_hex(ennemy.info_stat_data['monster_name'].get_str()))
             for text in ennemy.battle_script_data['battle_text']:
-                self.section_text_list[-1].add_text(self.game_data.translate_str_to_hex(text))
+                self.section_text_list[-1].add_text(self.game_data.translate_str_to_hex(text.get_str()))
+        except GarbageFileError as e:
+            pass
+            #print(f"GarbageFileError: {e}")
+
 
 
     def get_section_list(self):
@@ -54,10 +53,7 @@ class BattleManager:
             if self.section_text_list[i]:
                 self.section_text_list[i].update_data_hex()
                 self.ennemy_list[i].info_stat_data['monster_name'] = self.section_text_list[i].get_text_list()[0]
-                offset = 0
                 for j, text in enumerate(self.section_text_list[i].get_text_list()[1:]):
-                    self.ennemy_list[i].battle_script_data['text_offset'][j] = offset
                     self.ennemy_list[i].battle_script_data['battle_text'][j] = text
-                    offset += len(text)
-                self.ennemy_list[i].write_data_to_file(self.game_data, self.file_list[i])
+            self.ennemy_list[i].write_data_to_file(self.game_data, self.file_list[i])
 
