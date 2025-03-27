@@ -361,7 +361,7 @@ class ShumiTranslator(QWidget):
 
                         with open(csv_to_load, newline='', encoding="utf-8") as csv_file:
 
-                            csv_data = csv.reader(csv_file, delimiter=GameData.find_delimiter_from_csv_file(csv_to_load), quotechar='|')
+                            csv_data = csv.reader(csv_file, delimiter=GameData.find_delimiter_from_csv_file(csv_to_load), quotechar='§')
                             #   ['Section data name', 'Section widget id', 'Text Sub id', 'Text']
                             for row_index, row in enumerate(csv_data):
                                 if row_index == 0:  # Ignoring title row
@@ -415,7 +415,7 @@ class ShumiTranslator(QWidget):
                 self.world_fs_manager.save_csv(file_to_save)
             else:
                 with open(file_to_save, 'w', newline='', encoding="utf-8") as csv_file:
-                    csv_writer = csv.writer(csv_file, delimiter=GameData.find_delimiter_from_csv_file(file_to_save), quotechar='|', quoting=csv.QUOTE_MINIMAL)
+                    csv_writer = csv.writer(csv_file, delimiter=GameData.find_delimiter_from_csv_file(file_to_save), quotechar='§', quoting=csv.QUOTE_MINIMAL)
                     csv_writer.writerow(['Section data name', 'Section Widget id', 'Text Sub id', 'Text'])
 
                     for section_widget_id, section_widget in enumerate(self.section_widget_list):
